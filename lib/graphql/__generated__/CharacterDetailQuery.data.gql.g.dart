@@ -3387,7 +3387,7 @@ class GCharacterDetailQueryData_Character_media_edges_node_mediaListEntryBuilder
       _build() {
     final _$result = _$v ??
         new _$GCharacterDetailQueryData_Character_media_edges_node_mediaListEntry
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GCharacterDetailQueryData_Character_media_edges_node_mediaListEntry',
@@ -3717,7 +3717,7 @@ class GCharacterDetailQueryData_Character_media_edges_voiceActors_nameBuilder
   _$GCharacterDetailQueryData_Character_media_edges_voiceActors_name _build() {
     final _$result = _$v ??
         new _$GCharacterDetailQueryData_Character_media_edges_voiceActors_name
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GCharacterDetailQueryData_Character_media_edges_voiceActors_name',
@@ -3847,7 +3847,7 @@ class GCharacterDetailQueryData_Character_media_edges_voiceActors_imageBuilder
   _$GCharacterDetailQueryData_Character_media_edges_voiceActors_image _build() {
     final _$result = _$v ??
         new _$GCharacterDetailQueryData_Character_media_edges_voiceActors_image
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GCharacterDetailQueryData_Character_media_edges_voiceActors_image',

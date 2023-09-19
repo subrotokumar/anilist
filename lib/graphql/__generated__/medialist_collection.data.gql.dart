@@ -160,6 +160,7 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media
   GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage?
       get coverImage;
   String? get bannerImage;
+  _i2.GMediaStatus? get status;
   int? get episodes;
   int? get chapters;
   int? get volumes;

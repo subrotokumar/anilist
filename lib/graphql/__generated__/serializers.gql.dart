@@ -75,19 +75,11 @@ import 'package:anilist/graphql/__generated__/FavAnimeQuery.data.gql.dart'
         GFavAnimeQueryData_Viewer_favourites_anime_nodes,
         GFavAnimeQueryData_Viewer_favourites_anime_nodes_coverImage,
         GFavAnimeQueryData_Viewer_favourites_anime_nodes_title,
-        GFavAnimeQueryData_Viewer_favourites_anime_pageInfo,
-        GFavMangaQueryData,
-        GFavMangaQueryData_Viewer,
-        GFavMangaQueryData_Viewer_favourites,
-        GFavMangaQueryData_Viewer_favourites_manga,
-        GFavMangaQueryData_Viewer_favourites_manga_nodes,
-        GFavMangaQueryData_Viewer_favourites_manga_nodes_coverImage,
-        GFavMangaQueryData_Viewer_favourites_manga_nodes_title,
-        GFavMangaQueryData_Viewer_favourites_manga_pageInfo;
+        GFavAnimeQueryData_Viewer_favourites_anime_pageInfo;
 import 'package:anilist/graphql/__generated__/FavAnimeQuery.req.gql.dart'
-    show GFavAnimeQueryReq, GFavMangaQueryReq;
+    show GFavAnimeQueryReq;
 import 'package:anilist/graphql/__generated__/FavAnimeQuery.var.gql.dart'
-    show GFavAnimeQueryVars, GFavMangaQueryVars;
+    show GFavAnimeQueryVars;
 import 'package:anilist/graphql/__generated__/FavCharacterQuery.data.gql.dart'
     show
         GFavCharacterQueryData,
@@ -102,6 +94,20 @@ import 'package:anilist/graphql/__generated__/FavCharacterQuery.req.gql.dart'
     show GFavCharacterQueryReq;
 import 'package:anilist/graphql/__generated__/FavCharacterQuery.var.gql.dart'
     show GFavCharacterQueryVars;
+import 'package:anilist/graphql/__generated__/FavMangaQuery.data.gql.dart'
+    show
+        GFavMangaQueryData,
+        GFavMangaQueryData_Viewer,
+        GFavMangaQueryData_Viewer_favourites,
+        GFavMangaQueryData_Viewer_favourites_manga,
+        GFavMangaQueryData_Viewer_favourites_manga_nodes,
+        GFavMangaQueryData_Viewer_favourites_manga_nodes_coverImage,
+        GFavMangaQueryData_Viewer_favourites_manga_nodes_title,
+        GFavMangaQueryData_Viewer_favourites_manga_pageInfo;
+import 'package:anilist/graphql/__generated__/FavMangaQuery.req.gql.dart'
+    show GFavMangaQueryReq;
+import 'package:anilist/graphql/__generated__/FavMangaQuery.var.gql.dart'
+    show GFavMangaQueryVars;
 import 'package:anilist/graphql/__generated__/media_detail_query.data.gql.dart'
     show
         GMediaDetailQueryData,
@@ -109,12 +115,7 @@ import 'package:anilist/graphql/__generated__/media_detail_query.data.gql.dart'
         GMediaDetailQueryData_Media_characters,
         GMediaDetailQueryData_Media_characters_edges,
         GMediaDetailQueryData_Media_characters_edges_node,
-        GMediaDetailQueryData_Media_characters_edges_node_dateOfBirth,
         GMediaDetailQueryData_Media_characters_edges_node_image,
-        GMediaDetailQueryData_Media_characters_edges_node_media,
-        GMediaDetailQueryData_Media_characters_edges_node_media_nodes,
-        GMediaDetailQueryData_Media_characters_edges_node_media_nodes_coverImage,
-        GMediaDetailQueryData_Media_characters_edges_node_media_nodes_title,
         GMediaDetailQueryData_Media_characters_edges_node_name,
         GMediaDetailQueryData_Media_characters_edges_voiceActors,
         GMediaDetailQueryData_Media_characters_edges_voiceActors_image,
@@ -489,12 +490,7 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GMediaDetailQueryData_Media_characters,
   GMediaDetailQueryData_Media_characters_edges,
   GMediaDetailQueryData_Media_characters_edges_node,
-  GMediaDetailQueryData_Media_characters_edges_node_dateOfBirth,
   GMediaDetailQueryData_Media_characters_edges_node_image,
-  GMediaDetailQueryData_Media_characters_edges_node_media,
-  GMediaDetailQueryData_Media_characters_edges_node_media_nodes,
-  GMediaDetailQueryData_Media_characters_edges_node_media_nodes_coverImage,
-  GMediaDetailQueryData_Media_characters_edges_node_media_nodes_title,
   GMediaDetailQueryData_Media_characters_edges_node_name,
   GMediaDetailQueryData_Media_characters_edges_voiceActors,
   GMediaDetailQueryData_Media_characters_edges_voiceActors_image,

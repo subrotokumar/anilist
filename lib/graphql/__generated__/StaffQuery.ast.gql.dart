@@ -54,6 +54,20 @@ const StaffQuery = _i1.OperationDefinitionNode(
           ]),
         ),
         _i1.FieldNode(
+          name: _i1.NameNode(value: 'isFavourite'),
+          alias: null,
+          arguments: [],
+          directives: [],
+          selectionSet: null,
+        ),
+        _i1.FieldNode(
+          name: _i1.NameNode(value: 'favourites'),
+          alias: null,
+          arguments: [],
+          directives: [],
+          selectionSet: null,
+        ),
+        _i1.FieldNode(
           name: _i1.NameNode(value: 'languageV2'),
           alias: null,
           arguments: [],

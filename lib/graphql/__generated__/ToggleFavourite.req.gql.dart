@@ -19,8 +19,8 @@ part 'ToggleFavourite.req.gql.g.dart';
 abstract class GToggleFavouriteReq
     implements
         Built<GToggleFavouriteReq, GToggleFavouriteReqBuilder>,
-        _i1.OperationRequest<_i2.GToggleFavouriteData,
-            _i3.GToggleFavouriteVars> {
+        _i1
+        .OperationRequest<_i2.GToggleFavouriteData, _i3.GToggleFavouriteVars> {
   GToggleFavouriteReq._();
 
   factory GToggleFavouriteReq(

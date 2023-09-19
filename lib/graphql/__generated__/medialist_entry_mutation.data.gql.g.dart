@@ -1972,7 +1972,7 @@ class GMediaListEntryMutationData_SaveMediaListEntry_media_mediaListEntryBuilder
     try {
       _$result = _$v ??
           new _$GMediaListEntryMutationData_SaveMediaListEntry_media_mediaListEntry
-                  ._(
+              ._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
                   G__typename,
                   r'GMediaListEntryMutationData_SaveMediaListEntry_media_mediaListEntry',
@@ -2154,7 +2154,7 @@ class GMediaListEntryMutationData_SaveMediaListEntry_media_mediaListEntry_starte
       _build() {
     final _$result = _$v ??
         new _$GMediaListEntryMutationData_SaveMediaListEntry_media_mediaListEntry_startedAt
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GMediaListEntryMutationData_SaveMediaListEntry_media_mediaListEntry_startedAt',
@@ -2310,7 +2310,7 @@ class GMediaListEntryMutationData_SaveMediaListEntry_media_mediaListEntry_comple
       _build() {
     final _$result = _$v ??
         new _$GMediaListEntryMutationData_SaveMediaListEntry_media_mediaListEntry_completedAt
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GMediaListEntryMutationData_SaveMediaListEntry_media_mediaListEntry_completedAt',

@@ -48,6 +48,8 @@ abstract class GStaffQueryData_Staff
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GStaffQueryData_Staff_name? get name;
+  bool get isFavourite;
+  int? get favourites;
   String? get languageV2;
   GStaffQueryData_Staff_image? get image;
   String? get description;

@@ -120,17 +120,7 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GMediaDetailQueryData_Media_characters.serializer)
       ..add(GMediaDetailQueryData_Media_characters_edges.serializer)
       ..add(GMediaDetailQueryData_Media_characters_edges_node.serializer)
-      ..add(GMediaDetailQueryData_Media_characters_edges_node_dateOfBirth
-          .serializer)
       ..add(GMediaDetailQueryData_Media_characters_edges_node_image.serializer)
-      ..add(GMediaDetailQueryData_Media_characters_edges_node_media.serializer)
-      ..add(GMediaDetailQueryData_Media_characters_edges_node_media_nodes
-          .serializer)
-      ..add(
-          GMediaDetailQueryData_Media_characters_edges_node_media_nodes_coverImage
-              .serializer)
-      ..add(GMediaDetailQueryData_Media_characters_edges_node_media_nodes_title
-          .serializer)
       ..add(GMediaDetailQueryData_Media_characters_edges_node_name.serializer)
       ..add(GMediaDetailQueryData_Media_characters_edges_voiceActors.serializer)
       ..add(GMediaDetailQueryData_Media_characters_edges_voiceActors_image
@@ -420,13 +410,6 @@ Serializers _$serializers = (new Serializers().toBuilder()
           ]),
           () =>
               new ListBuilder<GMediaDetailQueryData_Media_characters_edges?>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [
-            const FullType.nullable(
-                GMediaDetailQueryData_Media_characters_edges_node_media_nodes)
-          ]),
-          () => new ListBuilder<
-              GMediaDetailQueryData_Media_characters_edges_node_media_nodes?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
             const FullType.nullable(

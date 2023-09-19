@@ -343,6 +343,13 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_mediaSerializ
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
+    value = object.status;
+    if (value != null) {
+      result
+        ..add('status')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i2.GMediaStatus)));
+    }
     value = object.episodes;
     if (value != null) {
       result
@@ -413,6 +420,11 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_mediaSerializ
         case 'bannerImage':
           result.bannerImage = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
+          break;
+        case 'status':
+          result.status = serializers.deserialize(value,
+                  specifiedType: const FullType(_i2.GMediaStatus))
+              as _i2.GMediaStatus?;
           break;
         case 'episodes':
           result.episodes = serializers.deserialize(value,
@@ -1290,6 +1302,8 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
   @override
   final String? bannerImage;
   @override
+  final _i2.GMediaStatus? status;
+  @override
   final int? episodes;
   @override
   final int? chapters;
@@ -1313,6 +1327,7 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
       this.title,
       this.coverImage,
       this.bannerImage,
+      this.status,
       this.episodes,
       this.chapters,
       this.volumes,
@@ -1352,6 +1367,7 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
         title == other.title &&
         coverImage == other.coverImage &&
         bannerImage == other.bannerImage &&
+        status == other.status &&
         episodes == other.episodes &&
         chapters == other.chapters &&
         volumes == other.volumes &&
@@ -1367,6 +1383,7 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
     _$hash = $jc(_$hash, title.hashCode);
     _$hash = $jc(_$hash, coverImage.hashCode);
     _$hash = $jc(_$hash, bannerImage.hashCode);
+    _$hash = $jc(_$hash, status.hashCode);
     _$hash = $jc(_$hash, episodes.hashCode);
     _$hash = $jc(_$hash, chapters.hashCode);
     _$hash = $jc(_$hash, volumes.hashCode);
@@ -1385,6 +1402,7 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
           ..add('title', title)
           ..add('coverImage', coverImage)
           ..add('bannerImage', bannerImage)
+          ..add('status', status)
           ..add('episodes', episodes)
           ..add('chapters', chapters)
           ..add('volumes', volumes)
@@ -1442,6 +1460,10 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
   String? get bannerImage => _$this._bannerImage;
   set bannerImage(String? bannerImage) => _$this._bannerImage = bannerImage;
 
+  _i2.GMediaStatus? _status;
+  _i2.GMediaStatus? get status => _$this._status;
+  set status(_i2.GMediaStatus? status) => _$this._status = status;
+
   int? _episodes;
   int? get episodes => _$this._episodes;
   set episodes(int? episodes) => _$this._episodes = episodes;
@@ -1473,6 +1495,7 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
       _title = $v.title?.toBuilder();
       _coverImage = $v.coverImage?.toBuilder();
       _bannerImage = $v.bannerImage;
+      _status = $v.status;
       _episodes = $v.episodes;
       _chapters = $v.chapters;
       _volumes = $v.volumes;
@@ -1507,7 +1530,7 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
     try {
       _$result = _$v ??
           new _$GMediaListCollectionData_MediaListCollection_lists_entries_media
-                  ._(
+              ._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
                   G__typename,
                   r'GMediaListCollectionData_MediaListCollection_lists_entries_media',
@@ -1520,6 +1543,7 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
               title: _title?.build(),
               coverImage: _coverImage?.build(),
               bannerImage: bannerImage,
+              status: status,
               episodes: episodes,
               chapters: chapters,
               volumes: volumes,
@@ -1901,7 +1925,7 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_media_titleBuil
       _build() {
     final _$result = _$v ??
         new _$GMediaListCollectionData_MediaListCollection_lists_entries_media_title
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GMediaListCollectionData_MediaListCollection_lists_entries_media_title',
@@ -2071,7 +2095,7 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImag
       _build() {
     final _$result = _$v ??
         new _$GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage',

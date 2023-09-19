@@ -4,6 +4,8 @@ query StaffQuery($id: Int) {
       full
       userPreferred
     }
+    isFavourite
+    favourites
     languageV2
     image {
       medium

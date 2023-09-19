@@ -2038,7 +2038,7 @@ class GNotificationsQueryData_Page_notifications__asAiringNotification_mediaBuil
     try {
       _$result = _$v ??
           new _$GNotificationsQueryData_Page_notifications__asAiringNotification_media
-                  ._(
+              ._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
                   G__typename,
                   r'GNotificationsQueryData_Page_notifications__asAiringNotification_media',
@@ -2194,7 +2194,7 @@ class GNotificationsQueryData_Page_notifications__asAiringNotification_media_tit
       _build() {
     final _$result = _$v ??
         new _$GNotificationsQueryData_Page_notifications__asAiringNotification_media_title
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GNotificationsQueryData_Page_notifications__asAiringNotification_media_title',
@@ -2328,7 +2328,7 @@ class GNotificationsQueryData_Page_notifications__asAiringNotification_media_cov
       _build() {
     final _$result = _$v ??
         new _$GNotificationsQueryData_Page_notifications__asAiringNotification_media_coverImage
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GNotificationsQueryData_Page_notifications__asAiringNotification_media_coverImage',
@@ -2536,7 +2536,7 @@ class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifica
     try {
       _$result = _$v ??
           new _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification
-                  ._(
+              ._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
                   G__typename,
                   r'GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification',
@@ -2749,7 +2749,7 @@ class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifica
     try {
       _$result = _$v ??
           new _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media
-                  ._(
+              ._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
                   G__typename,
                   r'GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media',
@@ -2905,7 +2905,7 @@ class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifica
       _build() {
     final _$result = _$v ??
         new _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_title
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_title',
@@ -3039,7 +3039,7 @@ class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifica
       _build() {
     final _$result = _$v ??
         new _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_coverImage
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_coverImage',

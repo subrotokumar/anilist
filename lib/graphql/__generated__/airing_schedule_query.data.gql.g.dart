@@ -2028,7 +2028,7 @@ class GAiringScheduleQueryData_Page_airingSchedules_media_mediaListEntryBuilder
       _build() {
     final _$result = _$v ??
         new _$GAiringScheduleQueryData_Page_airingSchedules_media_mediaListEntry
-                ._(
+            ._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
                 r'GAiringScheduleQueryData_Page_airingSchedules_media_mediaListEntry',

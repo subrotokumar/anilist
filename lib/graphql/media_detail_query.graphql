@@ -123,31 +123,31 @@ query MediaDetailQuery($id: Int!, $limit: Int, $page: Int, $perPage: Int) {
             large
             medium
           }
-          gender
-          age
-          dateOfBirth {
-            day
-            month
-            year
-          }
-          bloodType
-          favourites
-          isFavourite
-          siteUrl
-          description(asHtml: false)
-          media {
-            nodes {
-              id
-              title {
-                userPreferred
-              }
-              coverImage {
-                large
-              }
-              format
-              type
-            }
-          }
+          # gender
+          # age
+          # dateOfBirth {
+          #   day
+          #   month
+          #   year
+          # }
+          # bloodType
+          # favourites
+          # isFavourite
+          # siteUrl
+          # description(asHtml: false)
+          # media {
+          #   nodes {
+          #     id
+          #     title {
+          #       userPreferred
+          #     }
+          #     coverImage {
+          #       large
+          #     }
+          #     format
+          #     type
+          #   }
+          # }
         }
       }
     }

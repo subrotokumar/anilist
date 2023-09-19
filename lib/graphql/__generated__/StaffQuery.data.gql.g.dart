@@ -114,6 +114,9 @@ class _$GStaffQueryData_StaffSerializer
       '__typename',
       serializers.serialize(object.G__typename,
           specifiedType: const FullType(String)),
+      'isFavourite',
+      serializers.serialize(object.isFavourite,
+          specifiedType: const FullType(bool)),
     ];
     Object? value;
     value = object.name;
@@ -122,6 +125,12 @@ class _$GStaffQueryData_StaffSerializer
         ..add('name')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(GStaffQueryData_Staff_name)));
+    }
+    value = object.favourites;
+    if (value != null) {
+      result
+        ..add('favourites')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.languageV2;
     if (value != null) {
@@ -216,6 +225,14 @@ class _$GStaffQueryData_StaffSerializer
           result.name.replace(serializers.deserialize(value,
                   specifiedType: const FullType(GStaffQueryData_Staff_name))!
               as GStaffQueryData_Staff_name);
+          break;
+        case 'isFavourite':
+          result.isFavourite = serializers.deserialize(value,
+              specifiedType: const FullType(bool))! as bool;
+          break;
+        case 'favourites':
+          result.favourites = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
         case 'languageV2':
           result.languageV2 = serializers.deserialize(value,
@@ -1179,6 +1196,10 @@ class _$GStaffQueryData_Staff extends GStaffQueryData_Staff {
   @override
   final GStaffQueryData_Staff_name? name;
   @override
+  final bool isFavourite;
+  @override
+  final int? favourites;
+  @override
   final String? languageV2;
   @override
   final GStaffQueryData_Staff_image? image;
@@ -1206,6 +1227,8 @@ class _$GStaffQueryData_Staff extends GStaffQueryData_Staff {
   _$GStaffQueryData_Staff._(
       {required this.G__typename,
       this.name,
+      required this.isFavourite,
+      this.favourites,
       this.languageV2,
       this.image,
       this.description,
@@ -1219,6 +1242,8 @@ class _$GStaffQueryData_Staff extends GStaffQueryData_Staff {
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename, r'GStaffQueryData_Staff', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        isFavourite, r'GStaffQueryData_Staff', 'isFavourite');
   }
 
   @override
@@ -1236,6 +1261,8 @@ class _$GStaffQueryData_Staff extends GStaffQueryData_Staff {
     return other is GStaffQueryData_Staff &&
         G__typename == other.G__typename &&
         name == other.name &&
+        isFavourite == other.isFavourite &&
+        favourites == other.favourites &&
         languageV2 == other.languageV2 &&
         image == other.image &&
         description == other.description &&
@@ -1253,6 +1280,8 @@ class _$GStaffQueryData_Staff extends GStaffQueryData_Staff {
     var _$hash = 0;
     _$hash = $jc(_$hash, G__typename.hashCode);
     _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, isFavourite.hashCode);
+    _$hash = $jc(_$hash, favourites.hashCode);
     _$hash = $jc(_$hash, languageV2.hashCode);
     _$hash = $jc(_$hash, image.hashCode);
     _$hash = $jc(_$hash, description.hashCode);
@@ -1272,6 +1301,8 @@ class _$GStaffQueryData_Staff extends GStaffQueryData_Staff {
     return (newBuiltValueToStringHelper(r'GStaffQueryData_Staff')
           ..add('G__typename', G__typename)
           ..add('name', name)
+          ..add('isFavourite', isFavourite)
+          ..add('favourites', favourites)
           ..add('languageV2', languageV2)
           ..add('image', image)
           ..add('description', description)
@@ -1298,6 +1329,14 @@ class GStaffQueryData_StaffBuilder
   GStaffQueryData_Staff_nameBuilder get name =>
       _$this._name ??= new GStaffQueryData_Staff_nameBuilder();
   set name(GStaffQueryData_Staff_nameBuilder? name) => _$this._name = name;
+
+  bool? _isFavourite;
+  bool? get isFavourite => _$this._isFavourite;
+  set isFavourite(bool? isFavourite) => _$this._isFavourite = isFavourite;
+
+  int? _favourites;
+  int? get favourites => _$this._favourites;
+  set favourites(int? favourites) => _$this._favourites = favourites;
 
   String? _languageV2;
   String? get languageV2 => _$this._languageV2;
@@ -1357,6 +1396,8 @@ class GStaffQueryData_StaffBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _name = $v.name?.toBuilder();
+      _isFavourite = $v.isFavourite;
+      _favourites = $v.favourites;
       _languageV2 = $v.languageV2;
       _image = $v.image?.toBuilder();
       _description = $v.description;
@@ -1394,6 +1435,9 @@ class GStaffQueryData_StaffBuilder
               G__typename: BuiltValueNullFieldError.checkNotNull(
                   G__typename, r'GStaffQueryData_Staff', 'G__typename'),
               name: _name?.build(),
+              isFavourite: BuiltValueNullFieldError.checkNotNull(
+                  isFavourite, r'GStaffQueryData_Staff', 'isFavourite'),
+              favourites: favourites,
               languageV2: languageV2,
               image: _image?.build(),
               description: description,
