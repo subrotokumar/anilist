@@ -1,11 +1,13 @@
 targets:
   $default:
     builders:
-      ferry_generator|graphql_builder:
+      ferry_generator|src/graphql_builder:
         enabled: true
         options:
-          schema: anilist|lib/graphql/schema.graphql
+          schema: anilist|lib/src/graphql/schema.src/graphql
+          output_dir: 'generated'
       ferry_generator|serializer_builder:
         enabled: true
         options:
-          schema: anilist|lib/graphql/schema.graphql
+          schema: anilist|lib/src/graphql/schema.src/graphql
+          output_dir: 'generated'
