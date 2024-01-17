@@ -1,5 +1,6 @@
 query MediaDetailQuery($id: Int!, $limit: Int, $page: Int, $perPage: Int) {
   Media(id: $id) {
+    # siteUrl
     id
     idMal
     title {
@@ -176,6 +177,16 @@ query MediaDetailQuery($id: Int!, $limit: Int, $page: Int, $perPage: Int) {
         rating
         ratingAmount
         userRating
+      }
+    }
+    stats {
+      scoreDistribution {
+        score
+        amount
+      }
+      statusDistribution {
+        status
+        amount
       }
     }
   }

@@ -33,6 +33,7 @@ abstract class GSearchAnimeQueryReq
       operationName: 'SearchAnimeQuery',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GSearchAnimeQueryVars get vars;
   @override
@@ -42,6 +43,7 @@ abstract class GSearchAnimeQueryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -63,12 +65,15 @@ abstract class GSearchAnimeQueryReq
   @override
   _i2.GSearchAnimeQueryData? parseData(Map<String, dynamic> json) =>
       _i2.GSearchAnimeQueryData.fromJson(json);
+
   static Serializer<GSearchAnimeQueryReq> get serializer =>
       _$gSearchAnimeQueryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GSearchAnimeQueryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GSearchAnimeQueryReq.serializer,

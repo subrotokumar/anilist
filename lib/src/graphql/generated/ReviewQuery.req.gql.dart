@@ -28,6 +28,7 @@ abstract class GReviewQueryReq
       operationName: 'ReviewQuery',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GReviewQueryVars get vars;
   @override
@@ -37,6 +38,7 @@ abstract class GReviewQueryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -58,12 +60,15 @@ abstract class GReviewQueryReq
   @override
   _i2.GReviewQueryData? parseData(Map<String, dynamic> json) =>
       _i2.GReviewQueryData.fromJson(json);
+
   static Serializer<GReviewQueryReq> get serializer =>
       _$gReviewQueryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GReviewQueryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GReviewQueryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GReviewQueryReq.serializer,

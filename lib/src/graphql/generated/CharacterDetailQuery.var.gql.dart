@@ -21,10 +21,12 @@ abstract class GCharacterDetailQueryVars
   int? get page;
   static Serializer<GCharacterDetailQueryVars> get serializer =>
       _$gCharacterDetailQueryVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryVars? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GCharacterDetailQueryVars.serializer,

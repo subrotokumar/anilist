@@ -18,15 +18,18 @@ abstract class GtrendingAnimeData
 
   static void _initializeBuilder(GtrendingAnimeDataBuilder b) =>
       b..G__typename = 'Query';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GtrendingAnimeData_Page? get Page;
   static Serializer<GtrendingAnimeData> get serializer =>
       _$gtrendingAnimeDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GtrendingAnimeData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GtrendingAnimeData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GtrendingAnimeData.serializer,
@@ -44,16 +47,19 @@ abstract class GtrendingAnimeData_Page
 
   static void _initializeBuilder(GtrendingAnimeData_PageBuilder b) =>
       b..G__typename = 'Page';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GtrendingAnimeData_Page_pageInfo? get pageInfo;
   BuiltList<GtrendingAnimeData_Page_media?>? get media;
   static Serializer<GtrendingAnimeData_Page> get serializer =>
       _$gtrendingAnimeDataPageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GtrendingAnimeData_Page.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GtrendingAnimeData_Page? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GtrendingAnimeData_Page.serializer,
@@ -73,6 +79,7 @@ abstract class GtrendingAnimeData_Page_pageInfo
 
   static void _initializeBuilder(GtrendingAnimeData_Page_pageInfoBuilder b) =>
       b..G__typename = 'PageInfo';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get total;
@@ -82,10 +89,12 @@ abstract class GtrendingAnimeData_Page_pageInfo
   bool? get hasNextPage;
   static Serializer<GtrendingAnimeData_Page_pageInfo> get serializer =>
       _$gtrendingAnimeDataPagePageInfoSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GtrendingAnimeData_Page_pageInfo.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GtrendingAnimeData_Page_pageInfo? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -106,6 +115,7 @@ abstract class GtrendingAnimeData_Page_media
 
   static void _initializeBuilder(GtrendingAnimeData_Page_mediaBuilder b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -115,10 +125,12 @@ abstract class GtrendingAnimeData_Page_media
   GtrendingAnimeData_Page_media_coverImage? get coverImage;
   static Serializer<GtrendingAnimeData_Page_media> get serializer =>
       _$gtrendingAnimeDataPageMediaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GtrendingAnimeData_Page_media.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GtrendingAnimeData_Page_media? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GtrendingAnimeData_Page_media.serializer,
@@ -139,6 +151,7 @@ abstract class GtrendingAnimeData_Page_media_title
   static void _initializeBuilder(
           GtrendingAnimeData_Page_media_titleBuilder b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get romaji;
@@ -146,10 +159,12 @@ abstract class GtrendingAnimeData_Page_media_title
   String? get userPreferred;
   static Serializer<GtrendingAnimeData_Page_media_title> get serializer =>
       _$gtrendingAnimeDataPageMediaTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GtrendingAnimeData_Page_media_title.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GtrendingAnimeData_Page_media_title? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -171,6 +186,7 @@ abstract class GtrendingAnimeData_Page_media_coverImage
   static void _initializeBuilder(
           GtrendingAnimeData_Page_media_coverImageBuilder b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get extraLarge;
@@ -179,10 +195,12 @@ abstract class GtrendingAnimeData_Page_media_coverImage
   String? get color;
   static Serializer<GtrendingAnimeData_Page_media_coverImage> get serializer =>
       _$gtrendingAnimeDataPageMediaCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GtrendingAnimeData_Page_media_coverImage.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GtrendingAnimeData_Page_media_coverImage? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(

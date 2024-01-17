@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'discover_media.req.gql.dart';
+part of 'discover_media_query.req.gql.dart';
 
 // **************************************************************************
 // BuiltValueGenerator

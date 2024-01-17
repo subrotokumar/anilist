@@ -33,6 +33,7 @@ abstract class GFavCharacterQueryReq
       operationName: 'FavCharacterQuery',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GFavCharacterQueryVars get vars;
   @override
@@ -42,6 +43,7 @@ abstract class GFavCharacterQueryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -63,12 +65,15 @@ abstract class GFavCharacterQueryReq
   @override
   _i2.GFavCharacterQueryData? parseData(Map<String, dynamic> json) =>
       _i2.GFavCharacterQueryData.fromJson(json);
+
   static Serializer<GFavCharacterQueryReq> get serializer =>
       _$gFavCharacterQueryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GFavCharacterQueryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavCharacterQueryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GFavCharacterQueryReq.serializer,

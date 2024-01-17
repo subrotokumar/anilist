@@ -48,10 +48,12 @@ abstract class GSearchAnimeQueryVars
   int? get seasonYear;
   static Serializer<GSearchAnimeQueryVars> get serializer =>
       _$gSearchAnimeQueryVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
         GSearchAnimeQueryVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryVars? fromJson(Map<String, dynamic> json) =>
       _i2.serializers.deserializeWith(
         GSearchAnimeQueryVars.serializer,

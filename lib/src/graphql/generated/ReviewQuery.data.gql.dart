@@ -18,15 +18,18 @@ abstract class GReviewQueryData
 
   static void _initializeBuilder(GReviewQueryDataBuilder b) =>
       b..G__typename = 'Query';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GReviewQueryData_Page? get Page;
   static Serializer<GReviewQueryData> get serializer =>
       _$gReviewQueryDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GReviewQueryData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GReviewQueryData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GReviewQueryData.serializer,
@@ -44,15 +47,18 @@ abstract class GReviewQueryData_Page
 
   static void _initializeBuilder(GReviewQueryData_PageBuilder b) =>
       b..G__typename = 'Page';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GReviewQueryData_Page_reviews?>? get reviews;
   static Serializer<GReviewQueryData_Page> get serializer =>
       _$gReviewQueryDataPageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GReviewQueryData_Page.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GReviewQueryData_Page? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GReviewQueryData_Page.serializer,
@@ -72,6 +78,7 @@ abstract class GReviewQueryData_Page_reviews
 
   static void _initializeBuilder(GReviewQueryData_Page_reviewsBuilder b) =>
       b..G__typename = 'Review';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get userId;
@@ -84,10 +91,12 @@ abstract class GReviewQueryData_Page_reviews
   GReviewQueryData_Page_reviews_media? get media;
   static Serializer<GReviewQueryData_Page_reviews> get serializer =>
       _$gReviewQueryDataPageReviewsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GReviewQueryData_Page_reviews.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GReviewQueryData_Page_reviews? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GReviewQueryData_Page_reviews.serializer,
@@ -107,15 +116,18 @@ abstract class GReviewQueryData_Page_reviews_user
 
   static void _initializeBuilder(GReviewQueryData_Page_reviews_userBuilder b) =>
       b..G__typename = 'User';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String get name;
   static Serializer<GReviewQueryData_Page_reviews_user> get serializer =>
       _$gReviewQueryDataPageReviewsUserSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GReviewQueryData_Page_reviews_user.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GReviewQueryData_Page_reviews_user? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -137,18 +149,22 @@ abstract class GReviewQueryData_Page_reviews_media
   static void _initializeBuilder(
           GReviewQueryData_Page_reviews_mediaBuilder b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
+  String? get siteUrl;
   int get id;
   GReviewQueryData_Page_reviews_media_title? get title;
   String? get bannerImage;
   GReviewQueryData_Page_reviews_media_coverImage? get coverImage;
   static Serializer<GReviewQueryData_Page_reviews_media> get serializer =>
       _$gReviewQueryDataPageReviewsMediaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GReviewQueryData_Page_reviews_media.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GReviewQueryData_Page_reviews_media? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -170,15 +186,18 @@ abstract class GReviewQueryData_Page_reviews_media_title
   static void _initializeBuilder(
           GReviewQueryData_Page_reviews_media_titleBuilder b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get userPreferred;
   static Serializer<GReviewQueryData_Page_reviews_media_title> get serializer =>
       _$gReviewQueryDataPageReviewsMediaTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GReviewQueryData_Page_reviews_media_title.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GReviewQueryData_Page_reviews_media_title? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -200,6 +219,7 @@ abstract class GReviewQueryData_Page_reviews_media_coverImage
   static void _initializeBuilder(
           GReviewQueryData_Page_reviews_media_coverImageBuilder b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get extraLarge;
@@ -207,10 +227,12 @@ abstract class GReviewQueryData_Page_reviews_media_coverImage
   String? get color;
   static Serializer<GReviewQueryData_Page_reviews_media_coverImage>
       get serializer => _$gReviewQueryDataPageReviewsMediaCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GReviewQueryData_Page_reviews_media_coverImage.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GReviewQueryData_Page_reviews_media_coverImage? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(

@@ -1,0 +1,16 @@
+query StaffSearchQuery($search: String) {
+  Page(page: 1, perPage: 50) {
+    staff(search: $search) {
+      siteUrl
+      id
+      name {
+        userPreferred
+      }
+      favourites
+      image {
+        large
+        medium
+      }
+    }
+  }
+}

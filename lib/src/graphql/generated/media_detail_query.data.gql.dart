@@ -20,16 +20,19 @@ abstract class GMediaDetailQueryData
 
   static void _initializeBuilder(GMediaDetailQueryDataBuilder b) =>
       b..G__typename = 'Query';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GMediaDetailQueryData_Media? get Media;
   GMediaDetailQueryData_Page? get Page;
   static Serializer<GMediaDetailQueryData> get serializer =>
       _$gMediaDetailQueryDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GMediaDetailQueryData.serializer,
@@ -48,6 +51,7 @@ abstract class GMediaDetailQueryData_Media
 
   static void _initializeBuilder(GMediaDetailQueryData_MediaBuilder b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -87,12 +91,15 @@ abstract class GMediaDetailQueryData_Media
   bool? get isAdult;
   BuiltList<GMediaDetailQueryData_Media_externalLinks?>? get externalLinks;
   GMediaDetailQueryData_Media_reviews? get reviews;
+  GMediaDetailQueryData_Media_stats? get stats;
   static Serializer<GMediaDetailQueryData_Media> get serializer =>
       _$gMediaDetailQueryDataMediaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GMediaDetailQueryData_Media.serializer,
@@ -112,6 +119,7 @@ abstract class GMediaDetailQueryData_Media_title
 
   static void _initializeBuilder(GMediaDetailQueryData_Media_titleBuilder b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get english;
@@ -119,10 +127,12 @@ abstract class GMediaDetailQueryData_Media_title
   String? get userPreferred;
   static Serializer<GMediaDetailQueryData_Media_title> get serializer =>
       _$gMediaDetailQueryDataMediaTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_title.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_title? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -144,6 +154,7 @@ abstract class GMediaDetailQueryData_Media_coverImage
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_coverImageBuilder b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get extraLarge;
@@ -152,10 +163,12 @@ abstract class GMediaDetailQueryData_Media_coverImage
   String? get color;
   static Serializer<GMediaDetailQueryData_Media_coverImage> get serializer =>
       _$gMediaDetailQueryDataMediaCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_coverImage.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_coverImage? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -177,16 +190,19 @@ abstract class GMediaDetailQueryData_Media_nextAiringEpisode
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_nextAiringEpisodeBuilder b) =>
       b..G__typename = 'AiringSchedule';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get airingAt;
   int get episode;
   static Serializer<GMediaDetailQueryData_Media_nextAiringEpisode>
       get serializer => _$gMediaDetailQueryDataMediaNextAiringEpisodeSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_nextAiringEpisode.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_nextAiringEpisode? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -208,6 +224,7 @@ abstract class GMediaDetailQueryData_Media_startDate
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_startDateBuilder b) =>
       b..G__typename = 'FuzzyDate';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get day;
@@ -215,10 +232,12 @@ abstract class GMediaDetailQueryData_Media_startDate
   int? get year;
   static Serializer<GMediaDetailQueryData_Media_startDate> get serializer =>
       _$gMediaDetailQueryDataMediaStartDateSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_startDate.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_startDate? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -240,6 +259,7 @@ abstract class GMediaDetailQueryData_Media_endDate
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_endDateBuilder b) =>
       b..G__typename = 'FuzzyDate';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get day;
@@ -247,10 +267,12 @@ abstract class GMediaDetailQueryData_Media_endDate
   int? get year;
   static Serializer<GMediaDetailQueryData_Media_endDate> get serializer =>
       _$gMediaDetailQueryDataMediaEndDateSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_endDate.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_endDate? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -272,6 +294,7 @@ abstract class GMediaDetailQueryData_Media_trailer
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_trailerBuilder b) =>
       b..G__typename = 'MediaTrailer';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get id;
@@ -279,10 +302,12 @@ abstract class GMediaDetailQueryData_Media_trailer
   String? get thumbnail;
   static Serializer<GMediaDetailQueryData_Media_trailer> get serializer =>
       _$gMediaDetailQueryDataMediaTrailerSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_trailer.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_trailer? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -303,6 +328,7 @@ abstract class GMediaDetailQueryData_Media_tags
 
   static void _initializeBuilder(GMediaDetailQueryData_Media_tagsBuilder b) =>
       b..G__typename = 'MediaTag';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -311,10 +337,12 @@ abstract class GMediaDetailQueryData_Media_tags
   int? get rank;
   static Serializer<GMediaDetailQueryData_Media_tags> get serializer =>
       _$gMediaDetailQueryDataMediaTagsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_tags.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_tags? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -336,15 +364,18 @@ abstract class GMediaDetailQueryData_Media_relations
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_relationsBuilder b) =>
       b..G__typename = 'MediaConnection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GMediaDetailQueryData_Media_relations_nodes?>? get nodes;
   static Serializer<GMediaDetailQueryData_Media_relations> get serializer =>
       _$gMediaDetailQueryDataMediaRelationsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_relations.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_relations? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -366,6 +397,7 @@ abstract class GMediaDetailQueryData_Media_relations_nodes
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_relations_nodesBuilder b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -375,10 +407,12 @@ abstract class GMediaDetailQueryData_Media_relations_nodes
   _i2.GMediaFormat? get format;
   static Serializer<GMediaDetailQueryData_Media_relations_nodes>
       get serializer => _$gMediaDetailQueryDataMediaRelationsNodesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_relations_nodes.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_relations_nodes? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -400,6 +434,7 @@ abstract class GMediaDetailQueryData_Media_relations_nodes_title
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_relations_nodes_titleBuilder b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get romaji;
@@ -408,10 +443,12 @@ abstract class GMediaDetailQueryData_Media_relations_nodes_title
   static Serializer<GMediaDetailQueryData_Media_relations_nodes_title>
       get serializer =>
           _$gMediaDetailQueryDataMediaRelationsNodesTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_relations_nodes_title.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_relations_nodes_title? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -433,6 +470,7 @@ abstract class GMediaDetailQueryData_Media_relations_nodes_coverImage
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_relations_nodes_coverImageBuilder b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get large;
@@ -440,10 +478,12 @@ abstract class GMediaDetailQueryData_Media_relations_nodes_coverImage
   static Serializer<GMediaDetailQueryData_Media_relations_nodes_coverImage>
       get serializer =>
           _$gMediaDetailQueryDataMediaRelationsNodesCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_relations_nodes_coverImage.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_relations_nodes_coverImage? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -465,6 +505,7 @@ abstract class GMediaDetailQueryData_Media_mediaListEntry
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_mediaListEntryBuilder b) =>
       b..G__typename = 'MediaList';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -482,10 +523,12 @@ abstract class GMediaDetailQueryData_Media_mediaListEntry
   GMediaDetailQueryData_Media_mediaListEntry_completedAt? get completedAt;
   static Serializer<GMediaDetailQueryData_Media_mediaListEntry>
       get serializer => _$gMediaDetailQueryDataMediaMediaListEntrySerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_mediaListEntry.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_mediaListEntry? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -507,6 +550,7 @@ abstract class GMediaDetailQueryData_Media_mediaListEntry_startedAt
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_mediaListEntry_startedAtBuilder b) =>
       b..G__typename = 'FuzzyDate';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get year;
@@ -515,10 +559,12 @@ abstract class GMediaDetailQueryData_Media_mediaListEntry_startedAt
   static Serializer<GMediaDetailQueryData_Media_mediaListEntry_startedAt>
       get serializer =>
           _$gMediaDetailQueryDataMediaMediaListEntryStartedAtSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_mediaListEntry_startedAt.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_mediaListEntry_startedAt? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -540,6 +586,7 @@ abstract class GMediaDetailQueryData_Media_mediaListEntry_completedAt
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_mediaListEntry_completedAtBuilder b) =>
       b..G__typename = 'FuzzyDate';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get year;
@@ -548,10 +595,12 @@ abstract class GMediaDetailQueryData_Media_mediaListEntry_completedAt
   static Serializer<GMediaDetailQueryData_Media_mediaListEntry_completedAt>
       get serializer =>
           _$gMediaDetailQueryDataMediaMediaListEntryCompletedAtSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_mediaListEntry_completedAt.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_mediaListEntry_completedAt? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -573,15 +622,18 @@ abstract class GMediaDetailQueryData_Media_characters
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_charactersBuilder b) =>
       b..G__typename = 'CharacterConnection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GMediaDetailQueryData_Media_characters_edges?>? get edges;
   static Serializer<GMediaDetailQueryData_Media_characters> get serializer =>
       _$gMediaDetailQueryDataMediaCharactersSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_characters.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_characters? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -603,6 +655,7 @@ abstract class GMediaDetailQueryData_Media_characters_edges
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_characters_edgesBuilder b) =>
       b..G__typename = 'CharacterEdge';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get id;
@@ -612,10 +665,12 @@ abstract class GMediaDetailQueryData_Media_characters_edges
   GMediaDetailQueryData_Media_characters_edges_node? get node;
   static Serializer<GMediaDetailQueryData_Media_characters_edges>
       get serializer => _$gMediaDetailQueryDataMediaCharactersEdgesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_characters_edges.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_characters_edges? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -638,6 +693,7 @@ abstract class GMediaDetailQueryData_Media_characters_edges_voiceActors
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_characters_edges_voiceActorsBuilder b) =>
       b..G__typename = 'Staff';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -647,10 +703,12 @@ abstract class GMediaDetailQueryData_Media_characters_edges_voiceActors
   static Serializer<GMediaDetailQueryData_Media_characters_edges_voiceActors>
       get serializer =>
           _$gMediaDetailQueryDataMediaCharactersEdgesVoiceActorsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_characters_edges_voiceActors.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_characters_edges_voiceActors? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -676,6 +734,7 @@ abstract class GMediaDetailQueryData_Media_characters_edges_voiceActors_name
           GMediaDetailQueryData_Media_characters_edges_voiceActors_nameBuilder
               b) =>
       b..G__typename = 'StaffName';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get full;
@@ -684,11 +743,13 @@ abstract class GMediaDetailQueryData_Media_characters_edges_voiceActors_name
           GMediaDetailQueryData_Media_characters_edges_voiceActors_name>
       get serializer =>
           _$gMediaDetailQueryDataMediaCharactersEdgesVoiceActorsNameSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_characters_edges_voiceActors_name
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_characters_edges_voiceActors_name?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GMediaDetailQueryData_Media_characters_edges_voiceActors_name
@@ -714,6 +775,7 @@ abstract class GMediaDetailQueryData_Media_characters_edges_voiceActors_image
           GMediaDetailQueryData_Media_characters_edges_voiceActors_imageBuilder
               b) =>
       b..G__typename = 'StaffImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get medium;
@@ -721,11 +783,13 @@ abstract class GMediaDetailQueryData_Media_characters_edges_voiceActors_image
           GMediaDetailQueryData_Media_characters_edges_voiceActors_image>
       get serializer =>
           _$gMediaDetailQueryDataMediaCharactersEdgesVoiceActorsImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_characters_edges_voiceActors_image
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_characters_edges_voiceActors_image?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GMediaDetailQueryData_Media_characters_edges_voiceActors_image
@@ -747,6 +811,7 @@ abstract class GMediaDetailQueryData_Media_characters_edges_node
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_characters_edges_nodeBuilder b) =>
       b..G__typename = 'Character';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -755,10 +820,12 @@ abstract class GMediaDetailQueryData_Media_characters_edges_node
   static Serializer<GMediaDetailQueryData_Media_characters_edges_node>
       get serializer =>
           _$gMediaDetailQueryDataMediaCharactersEdgesNodeSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_characters_edges_node.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_characters_edges_node? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -780,6 +847,7 @@ abstract class GMediaDetailQueryData_Media_characters_edges_node_name
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_characters_edges_node_nameBuilder b) =>
       b..G__typename = 'CharacterName';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get full;
@@ -787,10 +855,12 @@ abstract class GMediaDetailQueryData_Media_characters_edges_node_name
   static Serializer<GMediaDetailQueryData_Media_characters_edges_node_name>
       get serializer =>
           _$gMediaDetailQueryDataMediaCharactersEdgesNodeNameSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_characters_edges_node_name.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_characters_edges_node_name? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -813,6 +883,7 @@ abstract class GMediaDetailQueryData_Media_characters_edges_node_image
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_characters_edges_node_imageBuilder b) =>
       b..G__typename = 'CharacterImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get large;
@@ -820,10 +891,12 @@ abstract class GMediaDetailQueryData_Media_characters_edges_node_image
   static Serializer<GMediaDetailQueryData_Media_characters_edges_node_image>
       get serializer =>
           _$gMediaDetailQueryDataMediaCharactersEdgesNodeImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_characters_edges_node_image.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_characters_edges_node_image? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -845,16 +918,19 @@ abstract class GMediaDetailQueryData_Media_studios
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_studiosBuilder b) =>
       b..G__typename = 'StudioConnection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GMediaDetailQueryData_Media_studios_pageInfo? get pageInfo;
   BuiltList<GMediaDetailQueryData_Media_studios_nodes?>? get nodes;
   static Serializer<GMediaDetailQueryData_Media_studios> get serializer =>
       _$gMediaDetailQueryDataMediaStudiosSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_studios.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_studios? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -876,16 +952,19 @@ abstract class GMediaDetailQueryData_Media_studios_pageInfo
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_studios_pageInfoBuilder b) =>
       b..G__typename = 'PageInfo';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get perPage;
   int? get currentPage;
   static Serializer<GMediaDetailQueryData_Media_studios_pageInfo>
       get serializer => _$gMediaDetailQueryDataMediaStudiosPageInfoSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_studios_pageInfo.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_studios_pageInfo? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -907,15 +986,18 @@ abstract class GMediaDetailQueryData_Media_studios_nodes
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_studios_nodesBuilder b) =>
       b..G__typename = 'Studio';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String get name;
   static Serializer<GMediaDetailQueryData_Media_studios_nodes> get serializer =>
       _$gMediaDetailQueryDataMediaStudiosNodesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_studios_nodes.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_studios_nodes? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -937,6 +1019,7 @@ abstract class GMediaDetailQueryData_Media_externalLinks
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_externalLinksBuilder b) =>
       b..G__typename = 'MediaExternalLink';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -947,10 +1030,12 @@ abstract class GMediaDetailQueryData_Media_externalLinks
   String? get color;
   static Serializer<GMediaDetailQueryData_Media_externalLinks> get serializer =>
       _$gMediaDetailQueryDataMediaExternalLinksSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_externalLinks.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_externalLinks? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -972,15 +1057,18 @@ abstract class GMediaDetailQueryData_Media_reviews
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_reviewsBuilder b) =>
       b..G__typename = 'ReviewConnection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GMediaDetailQueryData_Media_reviews_nodes?>? get nodes;
   static Serializer<GMediaDetailQueryData_Media_reviews> get serializer =>
       _$gMediaDetailQueryDataMediaReviewsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_reviews.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_reviews? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -1002,6 +1090,7 @@ abstract class GMediaDetailQueryData_Media_reviews_nodes
   static void _initializeBuilder(
           GMediaDetailQueryData_Media_reviews_nodesBuilder b) =>
       b..G__typename = 'Review';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get summary;
@@ -1011,14 +1100,121 @@ abstract class GMediaDetailQueryData_Media_reviews_nodes
   _i2.GReviewRating? get userRating;
   static Serializer<GMediaDetailQueryData_Media_reviews_nodes> get serializer =>
       _$gMediaDetailQueryDataMediaReviewsNodesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Media_reviews_nodes.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Media_reviews_nodes? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GMediaDetailQueryData_Media_reviews_nodes.serializer,
+        json,
+      );
+}
+
+abstract class GMediaDetailQueryData_Media_stats
+    implements
+        Built<GMediaDetailQueryData_Media_stats,
+            GMediaDetailQueryData_Media_statsBuilder> {
+  GMediaDetailQueryData_Media_stats._();
+
+  factory GMediaDetailQueryData_Media_stats(
+          [Function(GMediaDetailQueryData_Media_statsBuilder b) updates]) =
+      _$GMediaDetailQueryData_Media_stats;
+
+  static void _initializeBuilder(GMediaDetailQueryData_Media_statsBuilder b) =>
+      b..G__typename = 'MediaStats';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  BuiltList<GMediaDetailQueryData_Media_stats_scoreDistribution?>?
+      get scoreDistribution;
+  BuiltList<GMediaDetailQueryData_Media_stats_statusDistribution?>?
+      get statusDistribution;
+  static Serializer<GMediaDetailQueryData_Media_stats> get serializer =>
+      _$gMediaDetailQueryDataMediaStatsSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMediaDetailQueryData_Media_stats.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GMediaDetailQueryData_Media_stats? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMediaDetailQueryData_Media_stats.serializer,
+        json,
+      );
+}
+
+abstract class GMediaDetailQueryData_Media_stats_scoreDistribution
+    implements
+        Built<GMediaDetailQueryData_Media_stats_scoreDistribution,
+            GMediaDetailQueryData_Media_stats_scoreDistributionBuilder> {
+  GMediaDetailQueryData_Media_stats_scoreDistribution._();
+
+  factory GMediaDetailQueryData_Media_stats_scoreDistribution(
+      [Function(GMediaDetailQueryData_Media_stats_scoreDistributionBuilder b)
+          updates]) = _$GMediaDetailQueryData_Media_stats_scoreDistribution;
+
+  static void _initializeBuilder(
+          GMediaDetailQueryData_Media_stats_scoreDistributionBuilder b) =>
+      b..G__typename = 'ScoreDistribution';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  int? get score;
+  int? get amount;
+  static Serializer<GMediaDetailQueryData_Media_stats_scoreDistribution>
+      get serializer =>
+          _$gMediaDetailQueryDataMediaStatsScoreDistributionSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMediaDetailQueryData_Media_stats_scoreDistribution.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GMediaDetailQueryData_Media_stats_scoreDistribution? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMediaDetailQueryData_Media_stats_scoreDistribution.serializer,
+        json,
+      );
+}
+
+abstract class GMediaDetailQueryData_Media_stats_statusDistribution
+    implements
+        Built<GMediaDetailQueryData_Media_stats_statusDistribution,
+            GMediaDetailQueryData_Media_stats_statusDistributionBuilder> {
+  GMediaDetailQueryData_Media_stats_statusDistribution._();
+
+  factory GMediaDetailQueryData_Media_stats_statusDistribution(
+      [Function(GMediaDetailQueryData_Media_stats_statusDistributionBuilder b)
+          updates]) = _$GMediaDetailQueryData_Media_stats_statusDistribution;
+
+  static void _initializeBuilder(
+          GMediaDetailQueryData_Media_stats_statusDistributionBuilder b) =>
+      b..G__typename = 'StatusDistribution';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  _i2.GMediaListStatus? get status;
+  int? get amount;
+  static Serializer<GMediaDetailQueryData_Media_stats_statusDistribution>
+      get serializer =>
+          _$gMediaDetailQueryDataMediaStatsStatusDistributionSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMediaDetailQueryData_Media_stats_statusDistribution.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GMediaDetailQueryData_Media_stats_statusDistribution? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMediaDetailQueryData_Media_stats_statusDistribution.serializer,
         json,
       );
 }
@@ -1034,15 +1230,18 @@ abstract class GMediaDetailQueryData_Page
 
   static void _initializeBuilder(GMediaDetailQueryData_PageBuilder b) =>
       b..G__typename = 'Page';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GMediaDetailQueryData_Page_recommendations?>? get recommendations;
   static Serializer<GMediaDetailQueryData_Page> get serializer =>
       _$gMediaDetailQueryDataPageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Page.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Page? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GMediaDetailQueryData_Page.serializer,
@@ -1063,16 +1262,19 @@ abstract class GMediaDetailQueryData_Page_recommendations
   static void _initializeBuilder(
           GMediaDetailQueryData_Page_recommendationsBuilder b) =>
       b..G__typename = 'Recommendation';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GMediaDetailQueryData_Page_recommendations_mediaRecommendation?
       get mediaRecommendation;
   static Serializer<GMediaDetailQueryData_Page_recommendations>
       get serializer => _$gMediaDetailQueryDataPageRecommendationsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Page_recommendations.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Page_recommendations? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -1098,6 +1300,7 @@ abstract class GMediaDetailQueryData_Page_recommendations_mediaRecommendation
           GMediaDetailQueryData_Page_recommendations_mediaRecommendationBuilder
               b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -1109,11 +1312,13 @@ abstract class GMediaDetailQueryData_Page_recommendations_mediaRecommendation
           GMediaDetailQueryData_Page_recommendations_mediaRecommendation>
       get serializer =>
           _$gMediaDetailQueryDataPageRecommendationsMediaRecommendationSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Page_recommendations_mediaRecommendation
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Page_recommendations_mediaRecommendation?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GMediaDetailQueryData_Page_recommendations_mediaRecommendation
@@ -1140,6 +1345,7 @@ abstract class GMediaDetailQueryData_Page_recommendations_mediaRecommendation_ti
           GMediaDetailQueryData_Page_recommendations_mediaRecommendation_titleBuilder
               b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get romaji;
@@ -1149,11 +1355,13 @@ abstract class GMediaDetailQueryData_Page_recommendations_mediaRecommendation_ti
           GMediaDetailQueryData_Page_recommendations_mediaRecommendation_title>
       get serializer =>
           _$gMediaDetailQueryDataPageRecommendationsMediaRecommendationTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Page_recommendations_mediaRecommendation_title
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Page_recommendations_mediaRecommendation_title?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GMediaDetailQueryData_Page_recommendations_mediaRecommendation_title
@@ -1180,6 +1388,7 @@ abstract class GMediaDetailQueryData_Page_recommendations_mediaRecommendation_co
           GMediaDetailQueryData_Page_recommendations_mediaRecommendation_coverImageBuilder
               b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get extraLarge;
@@ -1190,11 +1399,13 @@ abstract class GMediaDetailQueryData_Page_recommendations_mediaRecommendation_co
           GMediaDetailQueryData_Page_recommendations_mediaRecommendation_coverImage>
       get serializer =>
           _$gMediaDetailQueryDataPageRecommendationsMediaRecommendationCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryData_Page_recommendations_mediaRecommendation_coverImage
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryData_Page_recommendations_mediaRecommendation_coverImage?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GMediaDetailQueryData_Page_recommendations_mediaRecommendation_coverImage

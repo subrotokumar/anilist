@@ -31,6 +31,7 @@ abstract class GFavAnimeQueryReq
       operationName: 'FavAnimeQuery',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GFavAnimeQueryVars get vars;
   @override
@@ -40,6 +41,7 @@ abstract class GFavAnimeQueryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -61,12 +63,15 @@ abstract class GFavAnimeQueryReq
   @override
   _i2.GFavAnimeQueryData? parseData(Map<String, dynamic> json) =>
       _i2.GFavAnimeQueryData.fromJson(json);
+
   static Serializer<GFavAnimeQueryReq> get serializer =>
       _$gFavAnimeQueryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GFavAnimeQueryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavAnimeQueryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GFavAnimeQueryReq.serializer,

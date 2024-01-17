@@ -94,6 +94,15 @@ Serializer<GMediaDetailQueryData_Media_reviews>
 Serializer<GMediaDetailQueryData_Media_reviews_nodes>
     _$gMediaDetailQueryDataMediaReviewsNodesSerializer =
     new _$GMediaDetailQueryData_Media_reviews_nodesSerializer();
+Serializer<GMediaDetailQueryData_Media_stats>
+    _$gMediaDetailQueryDataMediaStatsSerializer =
+    new _$GMediaDetailQueryData_Media_statsSerializer();
+Serializer<GMediaDetailQueryData_Media_stats_scoreDistribution>
+    _$gMediaDetailQueryDataMediaStatsScoreDistributionSerializer =
+    new _$GMediaDetailQueryData_Media_stats_scoreDistributionSerializer();
+Serializer<GMediaDetailQueryData_Media_stats_statusDistribution>
+    _$gMediaDetailQueryDataMediaStatsStatusDistributionSerializer =
+    new _$GMediaDetailQueryData_Media_stats_statusDistributionSerializer();
 Serializer<GMediaDetailQueryData_Page> _$gMediaDetailQueryDataPageSerializer =
     new _$GMediaDetailQueryData_PageSerializer();
 Serializer<GMediaDetailQueryData_Page_recommendations>
@@ -455,6 +464,13 @@ class _$GMediaDetailQueryData_MediaSerializer
             specifiedType:
                 const FullType(GMediaDetailQueryData_Media_reviews)));
     }
+    value = object.stats;
+    if (value != null) {
+      result
+        ..add('stats')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(GMediaDetailQueryData_Media_stats)));
+    }
     return result;
   }
 
@@ -656,6 +672,12 @@ class _$GMediaDetailQueryData_MediaSerializer
                   specifiedType:
                       const FullType(GMediaDetailQueryData_Media_reviews))!
               as GMediaDetailQueryData_Media_reviews);
+          break;
+        case 'stats':
+          result.stats.replace(serializers.deserialize(value,
+                  specifiedType:
+                      const FullType(GMediaDetailQueryData_Media_stats))!
+              as GMediaDetailQueryData_Media_stats);
           break;
       }
     }
@@ -2939,6 +2961,227 @@ class _$GMediaDetailQueryData_Media_reviews_nodesSerializer
   }
 }
 
+class _$GMediaDetailQueryData_Media_statsSerializer
+    implements StructuredSerializer<GMediaDetailQueryData_Media_stats> {
+  @override
+  final Iterable<Type> types = const [
+    GMediaDetailQueryData_Media_stats,
+    _$GMediaDetailQueryData_Media_stats
+  ];
+  @override
+  final String wireName = 'GMediaDetailQueryData_Media_stats';
+
+  @override
+  Iterable<Object?> serialize(
+      Serializers serializers, GMediaDetailQueryData_Media_stats object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+    ];
+    Object? value;
+    value = object.scoreDistribution;
+    if (value != null) {
+      result
+        ..add('scoreDistribution')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(
+                  GMediaDetailQueryData_Media_stats_scoreDistribution)
+            ])));
+    }
+    value = object.statusDistribution;
+    if (value != null) {
+      result
+        ..add('statusDistribution')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(
+                  GMediaDetailQueryData_Media_stats_statusDistribution)
+            ])));
+    }
+    return result;
+  }
+
+  @override
+  GMediaDetailQueryData_Media_stats deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GMediaDetailQueryData_Media_statsBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'scoreDistribution':
+          result.scoreDistribution.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GMediaDetailQueryData_Media_stats_scoreDistribution)
+              ]))! as BuiltList<Object?>);
+          break;
+        case 'statusDistribution':
+          result.statusDistribution.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GMediaDetailQueryData_Media_stats_statusDistribution)
+              ]))! as BuiltList<Object?>);
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GMediaDetailQueryData_Media_stats_scoreDistributionSerializer
+    implements
+        StructuredSerializer<
+            GMediaDetailQueryData_Media_stats_scoreDistribution> {
+  @override
+  final Iterable<Type> types = const [
+    GMediaDetailQueryData_Media_stats_scoreDistribution,
+    _$GMediaDetailQueryData_Media_stats_scoreDistribution
+  ];
+  @override
+  final String wireName = 'GMediaDetailQueryData_Media_stats_scoreDistribution';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GMediaDetailQueryData_Media_stats_scoreDistribution object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+    ];
+    Object? value;
+    value = object.score;
+    if (value != null) {
+      result
+        ..add('score')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    value = object.amount;
+    if (value != null) {
+      result
+        ..add('amount')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    return result;
+  }
+
+  @override
+  GMediaDetailQueryData_Media_stats_scoreDistribution deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result =
+        new GMediaDetailQueryData_Media_stats_scoreDistributionBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'score':
+          result.score = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+        case 'amount':
+          result.amount = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GMediaDetailQueryData_Media_stats_statusDistributionSerializer
+    implements
+        StructuredSerializer<
+            GMediaDetailQueryData_Media_stats_statusDistribution> {
+  @override
+  final Iterable<Type> types = const [
+    GMediaDetailQueryData_Media_stats_statusDistribution,
+    _$GMediaDetailQueryData_Media_stats_statusDistribution
+  ];
+  @override
+  final String wireName =
+      'GMediaDetailQueryData_Media_stats_statusDistribution';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GMediaDetailQueryData_Media_stats_statusDistribution object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+    ];
+    Object? value;
+    value = object.status;
+    if (value != null) {
+      result
+        ..add('status')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i2.GMediaListStatus)));
+    }
+    value = object.amount;
+    if (value != null) {
+      result
+        ..add('amount')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    return result;
+  }
+
+  @override
+  GMediaDetailQueryData_Media_stats_statusDistribution deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result =
+        new GMediaDetailQueryData_Media_stats_statusDistributionBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'status':
+          result.status = serializers.deserialize(value,
+                  specifiedType: const FullType(_i2.GMediaListStatus))
+              as _i2.GMediaListStatus?;
+          break;
+        case 'amount':
+          result.amount = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
 class _$GMediaDetailQueryData_PageSerializer
     implements StructuredSerializer<GMediaDetailQueryData_Page> {
   @override
@@ -3535,6 +3778,8 @@ class _$GMediaDetailQueryData_Media extends GMediaDetailQueryData_Media {
   final BuiltList<GMediaDetailQueryData_Media_externalLinks?>? externalLinks;
   @override
   final GMediaDetailQueryData_Media_reviews? reviews;
+  @override
+  final GMediaDetailQueryData_Media_stats? stats;
 
   factory _$GMediaDetailQueryData_Media(
           [void Function(GMediaDetailQueryData_MediaBuilder)? updates]) =>
@@ -3578,7 +3823,8 @@ class _$GMediaDetailQueryData_Media extends GMediaDetailQueryData_Media {
       this.studios,
       this.isAdult,
       this.externalLinks,
-      this.reviews})
+      this.reviews,
+      this.stats})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename, r'GMediaDetailQueryData_Media', 'G__typename');
@@ -3638,7 +3884,8 @@ class _$GMediaDetailQueryData_Media extends GMediaDetailQueryData_Media {
         studios == other.studios &&
         isAdult == other.isAdult &&
         externalLinks == other.externalLinks &&
-        reviews == other.reviews;
+        reviews == other.reviews &&
+        stats == other.stats;
   }
 
   @override
@@ -3682,6 +3929,7 @@ class _$GMediaDetailQueryData_Media extends GMediaDetailQueryData_Media {
     _$hash = $jc(_$hash, isAdult.hashCode);
     _$hash = $jc(_$hash, externalLinks.hashCode);
     _$hash = $jc(_$hash, reviews.hashCode);
+    _$hash = $jc(_$hash, stats.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -3726,7 +3974,8 @@ class _$GMediaDetailQueryData_Media extends GMediaDetailQueryData_Media {
           ..add('studios', studios)
           ..add('isAdult', isAdult)
           ..add('externalLinks', externalLinks)
-          ..add('reviews', reviews))
+          ..add('reviews', reviews)
+          ..add('stats', stats))
         .toString();
   }
 }
@@ -3927,6 +4176,12 @@ class GMediaDetailQueryData_MediaBuilder
   set reviews(GMediaDetailQueryData_Media_reviewsBuilder? reviews) =>
       _$this._reviews = reviews;
 
+  GMediaDetailQueryData_Media_statsBuilder? _stats;
+  GMediaDetailQueryData_Media_statsBuilder get stats =>
+      _$this._stats ??= new GMediaDetailQueryData_Media_statsBuilder();
+  set stats(GMediaDetailQueryData_Media_statsBuilder? stats) =>
+      _$this._stats = stats;
+
   GMediaDetailQueryData_MediaBuilder() {
     GMediaDetailQueryData_Media._initializeBuilder(this);
   }
@@ -3972,6 +4227,7 @@ class GMediaDetailQueryData_MediaBuilder
       _isAdult = $v.isAdult;
       _externalLinks = $v.externalLinks?.toBuilder();
       _reviews = $v.reviews?.toBuilder();
+      _stats = $v.stats?.toBuilder();
       _$v = null;
     }
     return this;
@@ -4036,7 +4292,8 @@ class GMediaDetailQueryData_MediaBuilder
               studios: _studios?.build(),
               isAdult: isAdult,
               externalLinks: _externalLinks?.build(),
-              reviews: _reviews?.build());
+              reviews: _reviews?.build(),
+              stats: _stats?.build());
     } catch (_) {
       late String _$failedField;
       try {
@@ -4076,6 +4333,8 @@ class GMediaDetailQueryData_MediaBuilder
         _externalLinks?.build();
         _$failedField = 'reviews';
         _reviews?.build();
+        _$failedField = 'stats';
+        _stats?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
             r'GMediaDetailQueryData_Media', _$failedField, e.toString());
@@ -8278,6 +8537,417 @@ class GMediaDetailQueryData_Media_reviews_nodesBuilder
             rating: rating,
             ratingAmount: ratingAmount,
             userRating: userRating);
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GMediaDetailQueryData_Media_stats
+    extends GMediaDetailQueryData_Media_stats {
+  @override
+  final String G__typename;
+  @override
+  final BuiltList<GMediaDetailQueryData_Media_stats_scoreDistribution?>?
+      scoreDistribution;
+  @override
+  final BuiltList<GMediaDetailQueryData_Media_stats_statusDistribution?>?
+      statusDistribution;
+
+  factory _$GMediaDetailQueryData_Media_stats(
+          [void Function(GMediaDetailQueryData_Media_statsBuilder)? updates]) =>
+      (new GMediaDetailQueryData_Media_statsBuilder()..update(updates))
+          ._build();
+
+  _$GMediaDetailQueryData_Media_stats._(
+      {required this.G__typename,
+      this.scoreDistribution,
+      this.statusDistribution})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(
+        G__typename, r'GMediaDetailQueryData_Media_stats', 'G__typename');
+  }
+
+  @override
+  GMediaDetailQueryData_Media_stats rebuild(
+          void Function(GMediaDetailQueryData_Media_statsBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GMediaDetailQueryData_Media_statsBuilder toBuilder() =>
+      new GMediaDetailQueryData_Media_statsBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GMediaDetailQueryData_Media_stats &&
+        G__typename == other.G__typename &&
+        scoreDistribution == other.scoreDistribution &&
+        statusDistribution == other.statusDistribution;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, scoreDistribution.hashCode);
+    _$hash = $jc(_$hash, statusDistribution.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'GMediaDetailQueryData_Media_stats')
+          ..add('G__typename', G__typename)
+          ..add('scoreDistribution', scoreDistribution)
+          ..add('statusDistribution', statusDistribution))
+        .toString();
+  }
+}
+
+class GMediaDetailQueryData_Media_statsBuilder
+    implements
+        Builder<GMediaDetailQueryData_Media_stats,
+            GMediaDetailQueryData_Media_statsBuilder> {
+  _$GMediaDetailQueryData_Media_stats? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  ListBuilder<GMediaDetailQueryData_Media_stats_scoreDistribution?>?
+      _scoreDistribution;
+  ListBuilder<GMediaDetailQueryData_Media_stats_scoreDistribution?>
+      get scoreDistribution => _$this._scoreDistribution ??= new ListBuilder<
+          GMediaDetailQueryData_Media_stats_scoreDistribution?>();
+  set scoreDistribution(
+          ListBuilder<GMediaDetailQueryData_Media_stats_scoreDistribution?>?
+              scoreDistribution) =>
+      _$this._scoreDistribution = scoreDistribution;
+
+  ListBuilder<GMediaDetailQueryData_Media_stats_statusDistribution?>?
+      _statusDistribution;
+  ListBuilder<GMediaDetailQueryData_Media_stats_statusDistribution?>
+      get statusDistribution => _$this._statusDistribution ??= new ListBuilder<
+          GMediaDetailQueryData_Media_stats_statusDistribution?>();
+  set statusDistribution(
+          ListBuilder<GMediaDetailQueryData_Media_stats_statusDistribution?>?
+              statusDistribution) =>
+      _$this._statusDistribution = statusDistribution;
+
+  GMediaDetailQueryData_Media_statsBuilder() {
+    GMediaDetailQueryData_Media_stats._initializeBuilder(this);
+  }
+
+  GMediaDetailQueryData_Media_statsBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _scoreDistribution = $v.scoreDistribution?.toBuilder();
+      _statusDistribution = $v.statusDistribution?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GMediaDetailQueryData_Media_stats other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GMediaDetailQueryData_Media_stats;
+  }
+
+  @override
+  void update(
+      void Function(GMediaDetailQueryData_Media_statsBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GMediaDetailQueryData_Media_stats build() => _build();
+
+  _$GMediaDetailQueryData_Media_stats _build() {
+    _$GMediaDetailQueryData_Media_stats _$result;
+    try {
+      _$result = _$v ??
+          new _$GMediaDetailQueryData_Media_stats._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                  r'GMediaDetailQueryData_Media_stats', 'G__typename'),
+              scoreDistribution: _scoreDistribution?.build(),
+              statusDistribution: _statusDistribution?.build());
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'scoreDistribution';
+        _scoreDistribution?.build();
+        _$failedField = 'statusDistribution';
+        _statusDistribution?.build();
+      } catch (e) {
+        throw new BuiltValueNestedFieldError(
+            r'GMediaDetailQueryData_Media_stats', _$failedField, e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GMediaDetailQueryData_Media_stats_scoreDistribution
+    extends GMediaDetailQueryData_Media_stats_scoreDistribution {
+  @override
+  final String G__typename;
+  @override
+  final int? score;
+  @override
+  final int? amount;
+
+  factory _$GMediaDetailQueryData_Media_stats_scoreDistribution(
+          [void Function(
+                  GMediaDetailQueryData_Media_stats_scoreDistributionBuilder)?
+              updates]) =>
+      (new GMediaDetailQueryData_Media_stats_scoreDistributionBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GMediaDetailQueryData_Media_stats_scoreDistribution._(
+      {required this.G__typename, this.score, this.amount})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GMediaDetailQueryData_Media_stats_scoreDistribution', 'G__typename');
+  }
+
+  @override
+  GMediaDetailQueryData_Media_stats_scoreDistribution rebuild(
+          void Function(
+                  GMediaDetailQueryData_Media_stats_scoreDistributionBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GMediaDetailQueryData_Media_stats_scoreDistributionBuilder toBuilder() =>
+      new GMediaDetailQueryData_Media_stats_scoreDistributionBuilder()
+        ..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GMediaDetailQueryData_Media_stats_scoreDistribution &&
+        G__typename == other.G__typename &&
+        score == other.score &&
+        amount == other.amount;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, score.hashCode);
+    _$hash = $jc(_$hash, amount.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GMediaDetailQueryData_Media_stats_scoreDistribution')
+          ..add('G__typename', G__typename)
+          ..add('score', score)
+          ..add('amount', amount))
+        .toString();
+  }
+}
+
+class GMediaDetailQueryData_Media_stats_scoreDistributionBuilder
+    implements
+        Builder<GMediaDetailQueryData_Media_stats_scoreDistribution,
+            GMediaDetailQueryData_Media_stats_scoreDistributionBuilder> {
+  _$GMediaDetailQueryData_Media_stats_scoreDistribution? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  int? _score;
+  int? get score => _$this._score;
+  set score(int? score) => _$this._score = score;
+
+  int? _amount;
+  int? get amount => _$this._amount;
+  set amount(int? amount) => _$this._amount = amount;
+
+  GMediaDetailQueryData_Media_stats_scoreDistributionBuilder() {
+    GMediaDetailQueryData_Media_stats_scoreDistribution._initializeBuilder(
+        this);
+  }
+
+  GMediaDetailQueryData_Media_stats_scoreDistributionBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _score = $v.score;
+      _amount = $v.amount;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GMediaDetailQueryData_Media_stats_scoreDistribution other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GMediaDetailQueryData_Media_stats_scoreDistribution;
+  }
+
+  @override
+  void update(
+      void Function(GMediaDetailQueryData_Media_stats_scoreDistributionBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GMediaDetailQueryData_Media_stats_scoreDistribution build() => _build();
+
+  _$GMediaDetailQueryData_Media_stats_scoreDistribution _build() {
+    final _$result = _$v ??
+        new _$GMediaDetailQueryData_Media_stats_scoreDistribution._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename,
+                r'GMediaDetailQueryData_Media_stats_scoreDistribution',
+                'G__typename'),
+            score: score,
+            amount: amount);
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GMediaDetailQueryData_Media_stats_statusDistribution
+    extends GMediaDetailQueryData_Media_stats_statusDistribution {
+  @override
+  final String G__typename;
+  @override
+  final _i2.GMediaListStatus? status;
+  @override
+  final int? amount;
+
+  factory _$GMediaDetailQueryData_Media_stats_statusDistribution(
+          [void Function(
+                  GMediaDetailQueryData_Media_stats_statusDistributionBuilder)?
+              updates]) =>
+      (new GMediaDetailQueryData_Media_stats_statusDistributionBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GMediaDetailQueryData_Media_stats_statusDistribution._(
+      {required this.G__typename, this.status, this.amount})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GMediaDetailQueryData_Media_stats_statusDistribution', 'G__typename');
+  }
+
+  @override
+  GMediaDetailQueryData_Media_stats_statusDistribution rebuild(
+          void Function(
+                  GMediaDetailQueryData_Media_stats_statusDistributionBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GMediaDetailQueryData_Media_stats_statusDistributionBuilder toBuilder() =>
+      new GMediaDetailQueryData_Media_stats_statusDistributionBuilder()
+        ..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GMediaDetailQueryData_Media_stats_statusDistribution &&
+        G__typename == other.G__typename &&
+        status == other.status &&
+        amount == other.amount;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, status.hashCode);
+    _$hash = $jc(_$hash, amount.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GMediaDetailQueryData_Media_stats_statusDistribution')
+          ..add('G__typename', G__typename)
+          ..add('status', status)
+          ..add('amount', amount))
+        .toString();
+  }
+}
+
+class GMediaDetailQueryData_Media_stats_statusDistributionBuilder
+    implements
+        Builder<GMediaDetailQueryData_Media_stats_statusDistribution,
+            GMediaDetailQueryData_Media_stats_statusDistributionBuilder> {
+  _$GMediaDetailQueryData_Media_stats_statusDistribution? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  _i2.GMediaListStatus? _status;
+  _i2.GMediaListStatus? get status => _$this._status;
+  set status(_i2.GMediaListStatus? status) => _$this._status = status;
+
+  int? _amount;
+  int? get amount => _$this._amount;
+  set amount(int? amount) => _$this._amount = amount;
+
+  GMediaDetailQueryData_Media_stats_statusDistributionBuilder() {
+    GMediaDetailQueryData_Media_stats_statusDistribution._initializeBuilder(
+        this);
+  }
+
+  GMediaDetailQueryData_Media_stats_statusDistributionBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _status = $v.status;
+      _amount = $v.amount;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GMediaDetailQueryData_Media_stats_statusDistribution other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GMediaDetailQueryData_Media_stats_statusDistribution;
+  }
+
+  @override
+  void update(
+      void Function(
+              GMediaDetailQueryData_Media_stats_statusDistributionBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GMediaDetailQueryData_Media_stats_statusDistribution build() => _build();
+
+  _$GMediaDetailQueryData_Media_stats_statusDistribution _build() {
+    final _$result = _$v ??
+        new _$GMediaDetailQueryData_Media_stats_statusDistribution._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename,
+                r'GMediaDetailQueryData_Media_stats_statusDistribution',
+                'G__typename'),
+            status: status,
+            amount: amount);
     replace(_$result);
     return _$result;
   }

@@ -39,6 +39,7 @@ query DiscoverMedia(
         color
       }
       type
+      siteUrl
       mediaListEntry {
         status
       }

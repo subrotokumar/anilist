@@ -33,6 +33,7 @@ abstract class GMediaDetailQueryReq
       operationName: 'MediaDetailQuery',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GMediaDetailQueryVars get vars;
   @override
@@ -42,6 +43,7 @@ abstract class GMediaDetailQueryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -63,12 +65,15 @@ abstract class GMediaDetailQueryReq
   @override
   _i2.GMediaDetailQueryData? parseData(Map<String, dynamic> json) =>
       _i2.GMediaDetailQueryData.fromJson(json);
+
   static Serializer<GMediaDetailQueryReq> get serializer =>
       _$gMediaDetailQueryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GMediaDetailQueryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GMediaDetailQueryReq.serializer,

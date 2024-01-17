@@ -37,6 +37,17 @@ import 'package:anilist/src/graphql/generated/CharacterDetailQuery.req.gql.dart'
     show GCharacterDetailQueryReq;
 import 'package:anilist/src/graphql/generated/CharacterDetailQuery.var.gql.dart'
     show GCharacterDetailQueryVars;
+import 'package:anilist/src/graphql/generated/CharacterSearchQuery.data.gql.dart'
+    show
+        GCharacterSearchQueryData,
+        GCharacterSearchQueryData_Page,
+        GCharacterSearchQueryData_Page_characters,
+        GCharacterSearchQueryData_Page_characters_image,
+        GCharacterSearchQueryData_Page_characters_name;
+import 'package:anilist/src/graphql/generated/CharacterSearchQuery.req.gql.dart'
+    show GCharacterSearchQueryReq;
+import 'package:anilist/src/graphql/generated/CharacterSearchQuery.var.gql.dart'
+    show GCharacterSearchQueryVars;
 import 'package:anilist/src/graphql/generated/DeleteMediaListEntry.data.gql.dart'
     show
         GDeleteMediaListEntryData,
@@ -45,15 +56,15 @@ import 'package:anilist/src/graphql/generated/DeleteMediaListEntry.req.gql.dart'
     show GDeleteMediaListEntryReq;
 import 'package:anilist/src/graphql/generated/DeleteMediaListEntry.var.gql.dart'
     show GDeleteMediaListEntryVars;
-import 'package:anilist/src/graphql/generated/deleteMediaListMutation.data.gql.dart'
+import 'package:anilist/src/graphql/generated/DeleteMediaListEntryMutation.data.gql.dart'
     show
         GDeleteMediaListEntryMutationData,
         GDeleteMediaListEntryMutationData_DeleteMediaListEntry;
-import 'package:anilist/src/graphql/generated/deleteMediaListMutation.req.gql.dart'
+import 'package:anilist/src/graphql/generated/DeleteMediaListEntryMutation.req.gql.dart'
     show GDeleteMediaListEntryMutationReq;
-import 'package:anilist/src/graphql/generated/deleteMediaListMutation.var.gql.dart'
+import 'package:anilist/src/graphql/generated/DeleteMediaListEntryMutation.var.gql.dart'
     show GDeleteMediaListEntryMutationVars;
-import 'package:anilist/src/graphql/generated/discover_media.data.gql.dart'
+import 'package:anilist/src/graphql/generated/discover_media_query.data.gql.dart'
     show
         GDiscoverMediaData,
         GDiscoverMediaData_Page,
@@ -62,9 +73,9 @@ import 'package:anilist/src/graphql/generated/discover_media.data.gql.dart'
         GDiscoverMediaData_Page_media_mediaListEntry,
         GDiscoverMediaData_Page_media_title,
         GDiscoverMediaData_Page_pageInfo;
-import 'package:anilist/src/graphql/generated/discover_media.req.gql.dart'
+import 'package:anilist/src/graphql/generated/discover_media_query.req.gql.dart'
     show GDiscoverMediaReq;
-import 'package:anilist/src/graphql/generated/discover_media.var.gql.dart'
+import 'package:anilist/src/graphql/generated/discover_media_query.var.gql.dart'
     show GDiscoverMediaVars;
 import 'package:anilist/src/graphql/generated/FavAnimeQuery.data.gql.dart'
     show
@@ -134,6 +145,9 @@ import 'package:anilist/src/graphql/generated/media_detail_query.data.gql.dart'
         GMediaDetailQueryData_Media_reviews,
         GMediaDetailQueryData_Media_reviews_nodes,
         GMediaDetailQueryData_Media_startDate,
+        GMediaDetailQueryData_Media_stats,
+        GMediaDetailQueryData_Media_stats_scoreDistribution,
+        GMediaDetailQueryData_Media_stats_statusDistribution,
         GMediaDetailQueryData_Media_studios,
         GMediaDetailQueryData_Media_studios_nodes,
         GMediaDetailQueryData_Media_studios_pageInfo,
@@ -225,6 +239,34 @@ import 'package:anilist/src/graphql/generated/profile.req.gql.dart'
     show GProfileReq;
 import 'package:anilist/src/graphql/generated/profile.var.gql.dart'
     show GProfileVars;
+import 'package:anilist/src/graphql/generated/ProfileQuery.data.gql.dart'
+    show
+        GProfileQueryData,
+        GProfileQueryData_Viewer,
+        GProfileQueryData_Viewer_avatar,
+        GProfileQueryData_Viewer_favourites,
+        GProfileQueryData_Viewer_favourites_anime,
+        GProfileQueryData_Viewer_favourites_anime_nodes,
+        GProfileQueryData_Viewer_favourites_anime_nodes_coverImage,
+        GProfileQueryData_Viewer_favourites_anime_nodes_title,
+        GProfileQueryData_Viewer_favourites_anime_pageInfo,
+        GProfileQueryData_Viewer_favourites_characters,
+        GProfileQueryData_Viewer_favourites_characters_nodes,
+        GProfileQueryData_Viewer_favourites_characters_nodes_image,
+        GProfileQueryData_Viewer_favourites_characters_nodes_name,
+        GProfileQueryData_Viewer_favourites_characters_pageInfo,
+        GProfileQueryData_Viewer_favourites_manga,
+        GProfileQueryData_Viewer_favourites_manga_nodes,
+        GProfileQueryData_Viewer_favourites_manga_nodes_coverImage,
+        GProfileQueryData_Viewer_favourites_manga_nodes_title,
+        GProfileQueryData_Viewer_favourites_manga_pageInfo,
+        GProfileQueryData_Viewer_statistics,
+        GProfileQueryData_Viewer_statistics_anime,
+        GProfileQueryData_Viewer_statistics_manga;
+import 'package:anilist/src/graphql/generated/ProfileQuery.req.gql.dart'
+    show GProfileQueryReq;
+import 'package:anilist/src/graphql/generated/ProfileQuery.var.gql.dart'
+    show GProfileQueryVars;
 import 'package:anilist/src/graphql/generated/ReviewQuery.data.gql.dart'
     show
         GReviewQueryData,
@@ -347,6 +389,17 @@ import 'package:anilist/src/graphql/generated/StaffQuery.req.gql.dart'
     show GStaffQueryReq;
 import 'package:anilist/src/graphql/generated/StaffQuery.var.gql.dart'
     show GStaffQueryVars;
+import 'package:anilist/src/graphql/generated/StaffSearchQuery.data.gql.dart'
+    show
+        GStaffSearchQueryData,
+        GStaffSearchQueryData_Page,
+        GStaffSearchQueryData_Page_staff,
+        GStaffSearchQueryData_Page_staff_image,
+        GStaffSearchQueryData_Page_staff_name;
+import 'package:anilist/src/graphql/generated/StaffSearchQuery.req.gql.dart'
+    show GStaffSearchQueryReq;
+import 'package:anilist/src/graphql/generated/StaffSearchQuery.var.gql.dart'
+    show GStaffSearchQueryVars;
 import 'package:anilist/src/graphql/generated/ToggleFavourite.data.gql.dart'
     show
         GToggleFavouriteData,
@@ -374,11 +427,23 @@ import 'package:anilist/src/graphql/generated/trending_anime.req.gql.dart'
     show GtrendingAnimeReq;
 import 'package:anilist/src/graphql/generated/trending_anime.var.gql.dart'
     show GtrendingAnimeVars;
-import 'package:anilist/src/graphql/generated/userid.data.gql.dart'
+import 'package:anilist/src/graphql/generated/TrendingAnimeQuery.data.gql.dart'
+    show
+        GTrendingAnimeQueryData,
+        GTrendingAnimeQueryData_Page,
+        GTrendingAnimeQueryData_Page_media,
+        GTrendingAnimeQueryData_Page_media_coverImage,
+        GTrendingAnimeQueryData_Page_media_title,
+        GTrendingAnimeQueryData_Page_pageInfo;
+import 'package:anilist/src/graphql/generated/TrendingAnimeQuery.req.gql.dart'
+    show GTrendingAnimeQueryReq;
+import 'package:anilist/src/graphql/generated/TrendingAnimeQuery.var.gql.dart'
+    show GTrendingAnimeQueryVars;
+import 'package:anilist/src/graphql/generated/UserId.data.gql.dart'
     show GUserIDData, GUserIDData_Viewer;
-import 'package:anilist/src/graphql/generated/userid.req.gql.dart'
+import 'package:anilist/src/graphql/generated/UserId.req.gql.dart'
     show GUserIDReq;
-import 'package:anilist/src/graphql/generated/userid.var.gql.dart'
+import 'package:anilist/src/graphql/generated/UserId.var.gql.dart'
     show GUserIDVars;
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/serializer.dart';
@@ -429,6 +494,13 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GCharacterDetailQueryVars,
   GCharacterNameInput,
   GCharacterRole,
+  GCharacterSearchQueryData,
+  GCharacterSearchQueryData_Page,
+  GCharacterSearchQueryData_Page_characters,
+  GCharacterSearchQueryData_Page_characters_image,
+  GCharacterSearchQueryData_Page_characters_name,
+  GCharacterSearchQueryReq,
+  GCharacterSearchQueryVars,
   GCharacterSort,
   GCountryCode,
   GDeleteMediaListEntryData,
@@ -509,6 +581,9 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GMediaDetailQueryData_Media_reviews,
   GMediaDetailQueryData_Media_reviews_nodes,
   GMediaDetailQueryData_Media_startDate,
+  GMediaDetailQueryData_Media_stats,
+  GMediaDetailQueryData_Media_stats_scoreDistribution,
+  GMediaDetailQueryData_Media_stats_statusDistribution,
   GMediaDetailQueryData_Media_studios,
   GMediaDetailQueryData_Media_studios_nodes,
   GMediaDetailQueryData_Media_studios_pageInfo,
@@ -597,6 +672,30 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GProfileData_Viewer_statistics,
   GProfileData_Viewer_statistics_anime,
   GProfileData_Viewer_statistics_manga,
+  GProfileQueryData,
+  GProfileQueryData_Viewer,
+  GProfileQueryData_Viewer_avatar,
+  GProfileQueryData_Viewer_favourites,
+  GProfileQueryData_Viewer_favourites_anime,
+  GProfileQueryData_Viewer_favourites_anime_nodes,
+  GProfileQueryData_Viewer_favourites_anime_nodes_coverImage,
+  GProfileQueryData_Viewer_favourites_anime_nodes_title,
+  GProfileQueryData_Viewer_favourites_anime_pageInfo,
+  GProfileQueryData_Viewer_favourites_characters,
+  GProfileQueryData_Viewer_favourites_characters_nodes,
+  GProfileQueryData_Viewer_favourites_characters_nodes_image,
+  GProfileQueryData_Viewer_favourites_characters_nodes_name,
+  GProfileQueryData_Viewer_favourites_characters_pageInfo,
+  GProfileQueryData_Viewer_favourites_manga,
+  GProfileQueryData_Viewer_favourites_manga_nodes,
+  GProfileQueryData_Viewer_favourites_manga_nodes_coverImage,
+  GProfileQueryData_Viewer_favourites_manga_nodes_title,
+  GProfileQueryData_Viewer_favourites_manga_pageInfo,
+  GProfileQueryData_Viewer_statistics,
+  GProfileQueryData_Viewer_statistics_anime,
+  GProfileQueryData_Viewer_statistics_manga,
+  GProfileQueryReq,
+  GProfileQueryVars,
   GProfileReq,
   GProfileVars,
   GRecommendationRating,
@@ -659,6 +758,13 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GStaffQueryData_Staff_name,
   GStaffQueryReq,
   GStaffQueryVars,
+  GStaffSearchQueryData,
+  GStaffSearchQueryData_Page,
+  GStaffSearchQueryData_Page_staff,
+  GStaffSearchQueryData_Page_staff_image,
+  GStaffSearchQueryData_Page_staff_name,
+  GStaffSearchQueryReq,
+  GStaffSearchQueryVars,
   GStaffSort,
   GStudioSort,
   GSubmissionSort,
@@ -676,6 +782,14 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GToggleFavouriteData_ToggleFavourite_manga_nodes,
   GToggleFavouriteReq,
   GToggleFavouriteVars,
+  GTrendingAnimeQueryData,
+  GTrendingAnimeQueryData_Page,
+  GTrendingAnimeQueryData_Page_media,
+  GTrendingAnimeQueryData_Page_media_coverImage,
+  GTrendingAnimeQueryData_Page_media_title,
+  GTrendingAnimeQueryData_Page_pageInfo,
+  GTrendingAnimeQueryReq,
+  GTrendingAnimeQueryVars,
   GUserIDData,
   GUserIDData_Viewer,
   GUserIDReq,

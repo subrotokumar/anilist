@@ -46,10 +46,12 @@ abstract class GSearchMangaQueryVars
   int? get popularityLesser;
   static Serializer<GSearchMangaQueryVars> get serializer =>
       _$gSearchMangaQueryVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
         GSearchMangaQueryVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchMangaQueryVars? fromJson(Map<String, dynamic> json) =>
       _i2.serializers.deserializeWith(
         GSearchMangaQueryVars.serializer,

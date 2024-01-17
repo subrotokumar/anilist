@@ -28,6 +28,7 @@ abstract class GStaffQueryReq
       operationName: 'StaffQuery',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GStaffQueryVars get vars;
   @override
@@ -37,6 +38,7 @@ abstract class GStaffQueryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -58,12 +60,15 @@ abstract class GStaffQueryReq
   @override
   _i2.GStaffQueryData? parseData(Map<String, dynamic> json) =>
       _i2.GStaffQueryData.fromJson(json);
+
   static Serializer<GStaffQueryReq> get serializer =>
       _$gStaffQueryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GStaffQueryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GStaffQueryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GStaffQueryReq.serializer,

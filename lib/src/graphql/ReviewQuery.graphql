@@ -11,6 +11,7 @@ query ReviewQuery($page: Int, $perPage: Int, $type: MediaType!) {
       rating
       body(asHtml: false)
       media {
+        siteUrl
         id
         title {
           userPreferred

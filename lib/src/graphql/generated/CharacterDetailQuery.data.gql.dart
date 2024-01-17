@@ -21,15 +21,18 @@ abstract class GCharacterDetailQueryData
 
   static void _initializeBuilder(GCharacterDetailQueryDataBuilder b) =>
       b..G__typename = 'Query';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GCharacterDetailQueryData_Character? get Character;
   static Serializer<GCharacterDetailQueryData> get serializer =>
       _$gCharacterDetailQueryDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GCharacterDetailQueryData.serializer,
@@ -50,6 +53,7 @@ abstract class GCharacterDetailQueryData_Character
   static void _initializeBuilder(
           GCharacterDetailQueryData_CharacterBuilder b) =>
       b..G__typename = 'Character';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -66,10 +70,12 @@ abstract class GCharacterDetailQueryData_Character
   GCharacterDetailQueryData_Character_media? get media;
   static Serializer<GCharacterDetailQueryData_Character> get serializer =>
       _$gCharacterDetailQueryDataCharacterSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -91,16 +97,19 @@ abstract class GCharacterDetailQueryData_Character_name
   static void _initializeBuilder(
           GCharacterDetailQueryData_Character_nameBuilder b) =>
       b..G__typename = 'CharacterName';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get full;
   String? get userPreferred;
   static Serializer<GCharacterDetailQueryData_Character_name> get serializer =>
       _$gCharacterDetailQueryDataCharacterNameSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_name.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_name? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -122,16 +131,19 @@ abstract class GCharacterDetailQueryData_Character_image
   static void _initializeBuilder(
           GCharacterDetailQueryData_Character_imageBuilder b) =>
       b..G__typename = 'CharacterImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get large;
   String? get medium;
   static Serializer<GCharacterDetailQueryData_Character_image> get serializer =>
       _$gCharacterDetailQueryDataCharacterImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_image.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_image? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -153,6 +165,7 @@ abstract class GCharacterDetailQueryData_Character_dateOfBirth
   static void _initializeBuilder(
           GCharacterDetailQueryData_Character_dateOfBirthBuilder b) =>
       b..G__typename = 'FuzzyDate';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get day;
@@ -161,10 +174,12 @@ abstract class GCharacterDetailQueryData_Character_dateOfBirth
   static Serializer<GCharacterDetailQueryData_Character_dateOfBirth>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterDateOfBirthSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_dateOfBirth.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_dateOfBirth? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -186,16 +201,19 @@ abstract class GCharacterDetailQueryData_Character_media
   static void _initializeBuilder(
           GCharacterDetailQueryData_Character_mediaBuilder b) =>
       b..G__typename = 'MediaConnection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GCharacterDetailQueryData_Character_media_edges?>? get edges;
   GCharacterDetailQueryData_Character_media_pageInfo? get pageInfo;
   static Serializer<GCharacterDetailQueryData_Character_media> get serializer =>
       _$gCharacterDetailQueryDataCharacterMediaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -217,6 +235,7 @@ abstract class GCharacterDetailQueryData_Character_media_edges
   static void _initializeBuilder(
           GCharacterDetailQueryData_Character_media_edgesBuilder b) =>
       b..G__typename = 'MediaEdge';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GCharacterDetailQueryData_Character_media_edges_node? get node;
@@ -228,10 +247,12 @@ abstract class GCharacterDetailQueryData_Character_media_edges
   static Serializer<GCharacterDetailQueryData_Character_media_edges>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterMediaEdgesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media_edges.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media_edges? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -253,6 +274,7 @@ abstract class GCharacterDetailQueryData_Character_media_edges_node
   static void _initializeBuilder(
           GCharacterDetailQueryData_Character_media_edges_nodeBuilder b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -270,10 +292,12 @@ abstract class GCharacterDetailQueryData_Character_media_edges_node
   static Serializer<GCharacterDetailQueryData_Character_media_edges_node>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterMediaEdgesNodeSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media_edges_node.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media_edges_node? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -298,16 +322,19 @@ abstract class GCharacterDetailQueryData_Character_media_edges_node_title
           GCharacterDetailQueryData_Character_media_edges_node_titleBuilder
               b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get userPreferred;
   static Serializer<GCharacterDetailQueryData_Character_media_edges_node_title>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterMediaEdgesNodeTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media_edges_node_title.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media_edges_node_title? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -333,6 +360,7 @@ abstract class GCharacterDetailQueryData_Character_media_edges_node_coverImage
           GCharacterDetailQueryData_Character_media_edges_node_coverImageBuilder
               b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get large;
@@ -340,11 +368,13 @@ abstract class GCharacterDetailQueryData_Character_media_edges_node_coverImage
           GCharacterDetailQueryData_Character_media_edges_node_coverImage>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterMediaEdgesNodeCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media_edges_node_coverImage
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media_edges_node_coverImage?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GCharacterDetailQueryData_Character_media_edges_node_coverImage
@@ -370,6 +400,7 @@ abstract class GCharacterDetailQueryData_Character_media_edges_node_startDate
           GCharacterDetailQueryData_Character_media_edges_node_startDateBuilder
               b) =>
       b..G__typename = 'FuzzyDate';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get year;
@@ -379,11 +410,13 @@ abstract class GCharacterDetailQueryData_Character_media_edges_node_startDate
           GCharacterDetailQueryData_Character_media_edges_node_startDate>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterMediaEdgesNodeStartDateSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media_edges_node_startDate
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media_edges_node_startDate?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GCharacterDetailQueryData_Character_media_edges_node_startDate
@@ -410,6 +443,7 @@ abstract class GCharacterDetailQueryData_Character_media_edges_node_mediaListEnt
           GCharacterDetailQueryData_Character_media_edges_node_mediaListEntryBuilder
               b) =>
       b..G__typename = 'MediaList';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   _i2.GMediaListStatus? get status;
@@ -417,11 +451,13 @@ abstract class GCharacterDetailQueryData_Character_media_edges_node_mediaListEnt
           GCharacterDetailQueryData_Character_media_edges_node_mediaListEntry>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterMediaEdgesNodeMediaListEntrySerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media_edges_node_mediaListEntry
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media_edges_node_mediaListEntry?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GCharacterDetailQueryData_Character_media_edges_node_mediaListEntry
@@ -446,6 +482,7 @@ abstract class GCharacterDetailQueryData_Character_media_edges_voiceActors
           GCharacterDetailQueryData_Character_media_edges_voiceActorsBuilder
               b) =>
       b..G__typename = 'Staff';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -455,10 +492,12 @@ abstract class GCharacterDetailQueryData_Character_media_edges_voiceActors
   static Serializer<GCharacterDetailQueryData_Character_media_edges_voiceActors>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterMediaEdgesVoiceActorsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media_edges_voiceActors.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media_edges_voiceActors? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -484,6 +523,7 @@ abstract class GCharacterDetailQueryData_Character_media_edges_voiceActors_name
           GCharacterDetailQueryData_Character_media_edges_voiceActors_nameBuilder
               b) =>
       b..G__typename = 'StaffName';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get full;
@@ -491,11 +531,13 @@ abstract class GCharacterDetailQueryData_Character_media_edges_voiceActors_name
           GCharacterDetailQueryData_Character_media_edges_voiceActors_name>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterMediaEdgesVoiceActorsNameSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media_edges_voiceActors_name
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media_edges_voiceActors_name?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GCharacterDetailQueryData_Character_media_edges_voiceActors_name
@@ -521,6 +563,7 @@ abstract class GCharacterDetailQueryData_Character_media_edges_voiceActors_image
           GCharacterDetailQueryData_Character_media_edges_voiceActors_imageBuilder
               b) =>
       b..G__typename = 'StaffImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get large;
@@ -528,11 +571,13 @@ abstract class GCharacterDetailQueryData_Character_media_edges_voiceActors_image
           GCharacterDetailQueryData_Character_media_edges_voiceActors_image>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterMediaEdgesVoiceActorsImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media_edges_voiceActors_image
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media_edges_voiceActors_image?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GCharacterDetailQueryData_Character_media_edges_voiceActors_image
@@ -554,6 +599,7 @@ abstract class GCharacterDetailQueryData_Character_media_pageInfo
   static void _initializeBuilder(
           GCharacterDetailQueryData_Character_media_pageInfoBuilder b) =>
       b..G__typename = 'PageInfo';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get total;
@@ -564,10 +610,12 @@ abstract class GCharacterDetailQueryData_Character_media_pageInfo
   static Serializer<GCharacterDetailQueryData_Character_media_pageInfo>
       get serializer =>
           _$gCharacterDetailQueryDataCharacterMediaPageInfoSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GCharacterDetailQueryData_Character_media_pageInfo.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryData_Character_media_pageInfo? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(

@@ -33,6 +33,7 @@ abstract class GMediaListEntryMutationReq
       operationName: 'MediaListEntryMutation',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GMediaListEntryMutationVars get vars;
   @override
@@ -42,6 +43,7 @@ abstract class GMediaListEntryMutationReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -63,12 +65,15 @@ abstract class GMediaListEntryMutationReq
   @override
   _i2.GMediaListEntryMutationData? parseData(Map<String, dynamic> json) =>
       _i2.GMediaListEntryMutationData.fromJson(json);
+
   static Serializer<GMediaListEntryMutationReq> get serializer =>
       _$gMediaListEntryMutationReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GMediaListEntryMutationReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListEntryMutationReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GMediaListEntryMutationReq.serializer,

@@ -2,11 +2,11 @@
 // ignore_for_file: type=lint
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:anilist/src/graphql/generated/discover_media.ast.gql.dart'
+import 'package:anilist/src/graphql/generated/discover_media_query.ast.gql.dart'
     as _i5;
-import 'package:anilist/src/graphql/generated/discover_media.data.gql.dart'
+import 'package:anilist/src/graphql/generated/discover_media_query.data.gql.dart'
     as _i2;
-import 'package:anilist/src/graphql/generated/discover_media.var.gql.dart'
+import 'package:anilist/src/graphql/generated/discover_media_query.var.gql.dart'
     as _i3;
 import 'package:anilist/src/graphql/generated/serializers.gql.dart' as _i6;
 import 'package:built_value/built_value.dart';
@@ -14,7 +14,7 @@ import 'package:built_value/serializer.dart';
 import 'package:ferry_exec/ferry_exec.dart' as _i1;
 import 'package:gql_exec/gql_exec.dart' as _i4;
 
-part 'discover_media.req.gql.g.dart';
+part 'discover_media_query.req.gql.g.dart';
 
 abstract class GDiscoverMediaReq
     implements
@@ -31,6 +31,7 @@ abstract class GDiscoverMediaReq
       operationName: 'DiscoverMedia',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GDiscoverMediaVars get vars;
   @override
@@ -40,6 +41,7 @@ abstract class GDiscoverMediaReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -61,12 +63,15 @@ abstract class GDiscoverMediaReq
   @override
   _i2.GDiscoverMediaData? parseData(Map<String, dynamic> json) =>
       _i2.GDiscoverMediaData.fromJson(json);
+
   static Serializer<GDiscoverMediaReq> get serializer =>
       _$gDiscoverMediaReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GDiscoverMediaReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDiscoverMediaReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GDiscoverMediaReq.serializer,

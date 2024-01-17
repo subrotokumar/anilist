@@ -32,6 +32,7 @@ abstract class GToggleFavouriteReq
       operationName: 'ToggleFavourite',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GToggleFavouriteVars get vars;
   @override
@@ -41,6 +42,7 @@ abstract class GToggleFavouriteReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -62,12 +64,15 @@ abstract class GToggleFavouriteReq
   @override
   _i2.GToggleFavouriteData? parseData(Map<String, dynamic> json) =>
       _i2.GToggleFavouriteData.fromJson(json);
+
   static Serializer<GToggleFavouriteReq> get serializer =>
       _$gToggleFavouriteReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GToggleFavouriteReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GToggleFavouriteReq.serializer,

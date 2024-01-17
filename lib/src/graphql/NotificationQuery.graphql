@@ -37,6 +37,7 @@ query NotificationsQuery(
         context
         createdAt
         media {
+          siteUrl
           id
           title {
             userPreferred

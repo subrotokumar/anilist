@@ -19,15 +19,18 @@ abstract class GToggleFavouriteData
 
   static void _initializeBuilder(GToggleFavouriteDataBuilder b) =>
       b..G__typename = 'Mutation';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GToggleFavouriteData_ToggleFavourite? get ToggleFavourite;
   static Serializer<GToggleFavouriteData> get serializer =>
       _$gToggleFavouriteDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GToggleFavouriteData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GToggleFavouriteData.serializer,
@@ -48,6 +51,7 @@ abstract class GToggleFavouriteData_ToggleFavourite
   static void _initializeBuilder(
           GToggleFavouriteData_ToggleFavouriteBuilder b) =>
       b..G__typename = 'Favourites';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GToggleFavouriteData_ToggleFavourite_anime? get anime;
@@ -55,10 +59,12 @@ abstract class GToggleFavouriteData_ToggleFavourite
   GToggleFavouriteData_ToggleFavourite_characters? get characters;
   static Serializer<GToggleFavouriteData_ToggleFavourite> get serializer =>
       _$gToggleFavouriteDataToggleFavouriteSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GToggleFavouriteData_ToggleFavourite.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteData_ToggleFavourite? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -80,15 +86,18 @@ abstract class GToggleFavouriteData_ToggleFavourite_anime
   static void _initializeBuilder(
           GToggleFavouriteData_ToggleFavourite_animeBuilder b) =>
       b..G__typename = 'MediaConnection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GToggleFavouriteData_ToggleFavourite_anime_nodes?>? get nodes;
   static Serializer<GToggleFavouriteData_ToggleFavourite_anime>
       get serializer => _$gToggleFavouriteDataToggleFavouriteAnimeSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GToggleFavouriteData_ToggleFavourite_anime.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteData_ToggleFavourite_anime? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -110,6 +119,7 @@ abstract class GToggleFavouriteData_ToggleFavourite_anime_nodes
   static void _initializeBuilder(
           GToggleFavouriteData_ToggleFavourite_anime_nodesBuilder b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -117,10 +127,12 @@ abstract class GToggleFavouriteData_ToggleFavourite_anime_nodes
   static Serializer<GToggleFavouriteData_ToggleFavourite_anime_nodes>
       get serializer =>
           _$gToggleFavouriteDataToggleFavouriteAnimeNodesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GToggleFavouriteData_ToggleFavourite_anime_nodes.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteData_ToggleFavourite_anime_nodes? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -142,15 +154,18 @@ abstract class GToggleFavouriteData_ToggleFavourite_manga
   static void _initializeBuilder(
           GToggleFavouriteData_ToggleFavourite_mangaBuilder b) =>
       b..G__typename = 'MediaConnection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GToggleFavouriteData_ToggleFavourite_manga_nodes?>? get nodes;
   static Serializer<GToggleFavouriteData_ToggleFavourite_manga>
       get serializer => _$gToggleFavouriteDataToggleFavouriteMangaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GToggleFavouriteData_ToggleFavourite_manga.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteData_ToggleFavourite_manga? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -172,6 +187,7 @@ abstract class GToggleFavouriteData_ToggleFavourite_manga_nodes
   static void _initializeBuilder(
           GToggleFavouriteData_ToggleFavourite_manga_nodesBuilder b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -179,10 +195,12 @@ abstract class GToggleFavouriteData_ToggleFavourite_manga_nodes
   static Serializer<GToggleFavouriteData_ToggleFavourite_manga_nodes>
       get serializer =>
           _$gToggleFavouriteDataToggleFavouriteMangaNodesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GToggleFavouriteData_ToggleFavourite_manga_nodes.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteData_ToggleFavourite_manga_nodes? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -204,6 +222,7 @@ abstract class GToggleFavouriteData_ToggleFavourite_characters
   static void _initializeBuilder(
           GToggleFavouriteData_ToggleFavourite_charactersBuilder b) =>
       b..G__typename = 'CharacterConnection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GToggleFavouriteData_ToggleFavourite_characters_pageInfo? get pageInfo;
@@ -211,10 +230,12 @@ abstract class GToggleFavouriteData_ToggleFavourite_characters
   static Serializer<GToggleFavouriteData_ToggleFavourite_characters>
       get serializer =>
           _$gToggleFavouriteDataToggleFavouriteCharactersSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GToggleFavouriteData_ToggleFavourite_characters.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteData_ToggleFavourite_characters? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -237,6 +258,7 @@ abstract class GToggleFavouriteData_ToggleFavourite_characters_pageInfo
   static void _initializeBuilder(
           GToggleFavouriteData_ToggleFavourite_characters_pageInfoBuilder b) =>
       b..G__typename = 'PageInfo';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get total;
@@ -247,10 +269,12 @@ abstract class GToggleFavouriteData_ToggleFavourite_characters_pageInfo
   static Serializer<GToggleFavouriteData_ToggleFavourite_characters_pageInfo>
       get serializer =>
           _$gToggleFavouriteDataToggleFavouriteCharactersPageInfoSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GToggleFavouriteData_ToggleFavourite_characters_pageInfo.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteData_ToggleFavourite_characters_pageInfo? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -272,6 +296,7 @@ abstract class GToggleFavouriteData_ToggleFavourite_characters_edges
   static void _initializeBuilder(
           GToggleFavouriteData_ToggleFavourite_characters_edgesBuilder b) =>
       b..G__typename = 'CharacterEdge';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get id;
@@ -279,10 +304,12 @@ abstract class GToggleFavouriteData_ToggleFavourite_characters_edges
   static Serializer<GToggleFavouriteData_ToggleFavourite_characters_edges>
       get serializer =>
           _$gToggleFavouriteDataToggleFavouriteCharactersEdgesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GToggleFavouriteData_ToggleFavourite_characters_edges.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteData_ToggleFavourite_characters_edges? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(

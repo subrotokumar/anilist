@@ -35,10 +35,12 @@ abstract class GMediaListEntryMutationVars
   _i1.GFuzzyDateInput? get completedAt;
   static Serializer<GMediaListEntryMutationVars> get serializer =>
       _$gMediaListEntryMutationVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
         GMediaListEntryMutationVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListEntryMutationVars? fromJson(Map<String, dynamic> json) =>
       _i2.serializers.deserializeWith(
         GMediaListEntryMutationVars.serializer,

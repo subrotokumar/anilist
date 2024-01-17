@@ -7,7 +7,7 @@ import 'package:anilist/src/graphql/generated/serializers.gql.dart' as _i2;
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
-part 'discover_media.var.gql.g.dart';
+part 'discover_media_query.var.gql.g.dart';
 
 abstract class GDiscoverMediaVars
     implements Built<GDiscoverMediaVars, GDiscoverMediaVarsBuilder> {
@@ -26,10 +26,12 @@ abstract class GDiscoverMediaVars
   _i1.GCountryCode? get country;
   static Serializer<GDiscoverMediaVars> get serializer =>
       _$gDiscoverMediaVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
         GDiscoverMediaVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDiscoverMediaVars? fromJson(Map<String, dynamic> json) =>
       _i2.serializers.deserializeWith(
         GDiscoverMediaVars.serializer,

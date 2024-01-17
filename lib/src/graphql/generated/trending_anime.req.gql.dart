@@ -31,6 +31,7 @@ abstract class GtrendingAnimeReq
       operationName: 'trendingAnime',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GtrendingAnimeVars get vars;
   @override
@@ -40,6 +41,7 @@ abstract class GtrendingAnimeReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -61,12 +63,15 @@ abstract class GtrendingAnimeReq
   @override
   _i2.GtrendingAnimeData? parseData(Map<String, dynamic> json) =>
       _i2.GtrendingAnimeData.fromJson(json);
+
   static Serializer<GtrendingAnimeReq> get serializer =>
       _$gtrendingAnimeReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GtrendingAnimeReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GtrendingAnimeReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GtrendingAnimeReq.serializer,

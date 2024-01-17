@@ -3,15 +3,15 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:anilist/src/graphql/generated/serializers.gql.dart' as _i6;
-import 'package:anilist/src/graphql/generated/userid.ast.gql.dart' as _i5;
-import 'package:anilist/src/graphql/generated/userid.data.gql.dart' as _i2;
-import 'package:anilist/src/graphql/generated/userid.var.gql.dart' as _i3;
+import 'package:anilist/src/graphql/generated/UserId.ast.gql.dart' as _i5;
+import 'package:anilist/src/graphql/generated/UserId.data.gql.dart' as _i2;
+import 'package:anilist/src/graphql/generated/UserId.var.gql.dart' as _i3;
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 import 'package:ferry_exec/ferry_exec.dart' as _i1;
 import 'package:gql_exec/gql_exec.dart' as _i4;
 
-part 'userid.req.gql.g.dart';
+part 'UserId.req.gql.g.dart';
 
 abstract class GUserIDReq
     implements
@@ -27,6 +27,7 @@ abstract class GUserIDReq
       operationName: 'UserID',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GUserIDVars get vars;
   @override
@@ -36,6 +37,7 @@ abstract class GUserIDReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -57,11 +59,14 @@ abstract class GUserIDReq
   @override
   _i2.GUserIDData? parseData(Map<String, dynamic> json) =>
       _i2.GUserIDData.fromJson(json);
+
   static Serializer<GUserIDReq> get serializer => _$gUserIDReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GUserIDReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GUserIDReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GUserIDReq.serializer,

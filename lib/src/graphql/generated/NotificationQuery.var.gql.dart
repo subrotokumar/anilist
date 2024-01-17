@@ -23,10 +23,12 @@ abstract class GNotificationsQueryVars
   bool? get reset;
   static Serializer<GNotificationsQueryVars> get serializer =>
       _$gNotificationsQueryVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
         GNotificationsQueryVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryVars? fromJson(Map<String, dynamic> json) =>
       _i2.serializers.deserializeWith(
         GNotificationsQueryVars.serializer,

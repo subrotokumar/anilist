@@ -33,6 +33,7 @@ abstract class GSearchMangaQueryReq
       operationName: 'SearchMangaQuery',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GSearchMangaQueryVars get vars;
   @override
@@ -42,6 +43,7 @@ abstract class GSearchMangaQueryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -63,12 +65,15 @@ abstract class GSearchMangaQueryReq
   @override
   _i2.GSearchMangaQueryData? parseData(Map<String, dynamic> json) =>
       _i2.GSearchMangaQueryData.fromJson(json);
+
   static Serializer<GSearchMangaQueryReq> get serializer =>
       _$gSearchMangaQueryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GSearchMangaQueryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchMangaQueryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GSearchMangaQueryReq.serializer,

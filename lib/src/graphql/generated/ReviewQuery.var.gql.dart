@@ -21,10 +21,12 @@ abstract class GReviewQueryVars
   _i1.GMediaType get type;
   static Serializer<GReviewQueryVars> get serializer =>
       _$gReviewQueryVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
         GReviewQueryVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GReviewQueryVars? fromJson(Map<String, dynamic> json) =>
       _i2.serializers.deserializeWith(
         GReviewQueryVars.serializer,

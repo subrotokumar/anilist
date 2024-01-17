@@ -19,15 +19,18 @@ abstract class GDeleteMediaListEntryData
 
   static void _initializeBuilder(GDeleteMediaListEntryDataBuilder b) =>
       b..G__typename = 'Mutation';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GDeleteMediaListEntryData_DeleteMediaListEntry? get DeleteMediaListEntry;
   static Serializer<GDeleteMediaListEntryData> get serializer =>
       _$gDeleteMediaListEntryDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GDeleteMediaListEntryData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDeleteMediaListEntryData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GDeleteMediaListEntryData.serializer,
@@ -48,16 +51,19 @@ abstract class GDeleteMediaListEntryData_DeleteMediaListEntry
   static void _initializeBuilder(
           GDeleteMediaListEntryData_DeleteMediaListEntryBuilder b) =>
       b..G__typename = 'Deleted';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   bool? get deleted;
   static Serializer<GDeleteMediaListEntryData_DeleteMediaListEntry>
       get serializer =>
           _$gDeleteMediaListEntryDataDeleteMediaListEntrySerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GDeleteMediaListEntryData_DeleteMediaListEntry.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDeleteMediaListEntryData_DeleteMediaListEntry? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(

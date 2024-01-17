@@ -22,10 +22,12 @@ abstract class GMediaDetailQueryVars
   int? get perPage;
   static Serializer<GMediaDetailQueryVars> get serializer =>
       _$gMediaDetailQueryVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaDetailQueryVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaDetailQueryVars? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GMediaDetailQueryVars.serializer,

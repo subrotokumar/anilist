@@ -92,6 +92,13 @@ const MediaListCollection = _i1.OperationDefinitionNode(
                   directives: [],
                   selectionSet: _i1.SelectionSetNode(selections: [
                     _i1.FieldNode(
+                      name: _i1.NameNode(value: 'siteUrl'),
+                      alias: null,
+                      arguments: [],
+                      directives: [],
+                      selectionSet: null,
+                    ),
+                    _i1.FieldNode(
                       name: _i1.NameNode(value: 'mediaListEntry'),
                       alias: null,
                       arguments: [],
@@ -250,6 +257,13 @@ const MediaListCollection = _i1.OperationDefinitionNode(
                     ),
                     _i1.FieldNode(
                       name: _i1.NameNode(value: 'format'),
+                      alias: null,
+                      arguments: [],
+                      directives: [],
+                      selectionSet: null,
+                    ),
+                    _i1.FieldNode(
+                      name: _i1.NameNode(value: 'averageScore'),
                       alias: null,
                       arguments: [],
                       directives: [],

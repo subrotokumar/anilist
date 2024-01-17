@@ -4,12 +4,12 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:gql/ast.dart' as _i1;
 
-const DiscoverMedia = _i1.OperationDefinitionNode(
+const TrendingAnimeQuery = _i1.OperationDefinitionNode(
   type: _i1.OperationType.query,
-  name: _i1.NameNode(value: 'DiscoverMedia'),
+  name: _i1.NameNode(value: 'TrendingAnimeQuery'),
   variableDefinitions: [
     _i1.VariableDefinitionNode(
-      variable: _i1.VariableNode(name: _i1.NameNode(value: 'page')),
+      variable: _i1.VariableNode(name: _i1.NameNode(value: 'pageNum')),
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Int'),
         isNonNull: false,
@@ -26,60 +26,6 @@ const DiscoverMedia = _i1.OperationDefinitionNode(
       defaultValue: _i1.DefaultValueNode(value: null),
       directives: [],
     ),
-    _i1.VariableDefinitionNode(
-      variable: _i1.VariableNode(name: _i1.NameNode(value: 'status')),
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'MediaStatus'),
-        isNonNull: false,
-      ),
-      defaultValue: _i1.DefaultValueNode(value: null),
-      directives: [],
-    ),
-    _i1.VariableDefinitionNode(
-      variable: _i1.VariableNode(name: _i1.NameNode(value: 'type')),
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'MediaType'),
-        isNonNull: false,
-      ),
-      defaultValue: _i1.DefaultValueNode(value: null),
-      directives: [],
-    ),
-    _i1.VariableDefinitionNode(
-      variable: _i1.VariableNode(name: _i1.NameNode(value: 'sort')),
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'MediaSort'),
-        isNonNull: false,
-      ),
-      defaultValue: _i1.DefaultValueNode(value: null),
-      directives: [],
-    ),
-    _i1.VariableDefinitionNode(
-      variable: _i1.VariableNode(name: _i1.NameNode(value: 'season')),
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'MediaSeason'),
-        isNonNull: false,
-      ),
-      defaultValue: _i1.DefaultValueNode(value: null),
-      directives: [],
-    ),
-    _i1.VariableDefinitionNode(
-      variable: _i1.VariableNode(name: _i1.NameNode(value: 'seasonYear')),
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Int'),
-        isNonNull: false,
-      ),
-      defaultValue: _i1.DefaultValueNode(value: null),
-      directives: [],
-    ),
-    _i1.VariableDefinitionNode(
-      variable: _i1.VariableNode(name: _i1.NameNode(value: 'country')),
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'CountryCode'),
-        isNonNull: false,
-      ),
-      defaultValue: _i1.DefaultValueNode(value: null),
-      directives: [],
-    ),
   ],
   directives: [],
   selectionSet: _i1.SelectionSetNode(selections: [
@@ -89,7 +35,7 @@ const DiscoverMedia = _i1.OperationDefinitionNode(
       arguments: [
         _i1.ArgumentNode(
           name: _i1.NameNode(value: 'page'),
-          value: _i1.VariableNode(name: _i1.NameNode(value: 'page')),
+          value: _i1.VariableNode(name: _i1.NameNode(value: 'pageNum')),
         ),
         _i1.ArgumentNode(
           name: _i1.NameNode(value: 'perPage'),
@@ -147,29 +93,26 @@ const DiscoverMedia = _i1.OperationDefinitionNode(
           arguments: [
             _i1.ArgumentNode(
               name: _i1.NameNode(value: 'status'),
-              value: _i1.VariableNode(name: _i1.NameNode(value: 'status')),
+              value: _i1.EnumValueNode(name: _i1.NameNode(value: 'RELEASING')),
             ),
             _i1.ArgumentNode(
               name: _i1.NameNode(value: 'type'),
-              value: _i1.VariableNode(name: _i1.NameNode(value: 'type')),
+              value: _i1.EnumValueNode(name: _i1.NameNode(value: 'ANIME')),
+            ),
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'episodes_lesser'),
+              value: _i1.IntValueNode(value: '50'),
+            ),
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'countryOfOrigin'),
+              value: _i1.EnumValueNode(name: _i1.NameNode(value: 'JP')),
             ),
             _i1.ArgumentNode(
               name: _i1.NameNode(value: 'sort'),
               value: _i1.ListValueNode(values: [
-                _i1.VariableNode(name: _i1.NameNode(value: 'sort'))
+                _i1.EnumValueNode(name: _i1.NameNode(value: 'POPULARITY_DESC')),
+                _i1.EnumValueNode(name: _i1.NameNode(value: 'TRENDING')),
               ]),
-            ),
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'season'),
-              value: _i1.VariableNode(name: _i1.NameNode(value: 'season')),
-            ),
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'seasonYear'),
-              value: _i1.VariableNode(name: _i1.NameNode(value: 'seasonYear')),
-            ),
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'countryOfOrigin'),
-              value: _i1.VariableNode(name: _i1.NameNode(value: 'country')),
             ),
           ],
           directives: [],
@@ -195,14 +138,14 @@ const DiscoverMedia = _i1.OperationDefinitionNode(
               directives: [],
               selectionSet: _i1.SelectionSetNode(selections: [
                 _i1.FieldNode(
-                  name: _i1.NameNode(value: 'english'),
+                  name: _i1.NameNode(value: 'romaji'),
                   alias: null,
                   arguments: [],
                   directives: [],
                   selectionSet: null,
                 ),
                 _i1.FieldNode(
-                  name: _i1.NameNode(value: 'romaji'),
+                  name: _i1.NameNode(value: 'english'),
                   alias: null,
                   arguments: [],
                   directives: [],
@@ -260,32 +203,10 @@ const DiscoverMedia = _i1.OperationDefinitionNode(
                 ),
               ]),
             ),
-            _i1.FieldNode(
-              name: _i1.NameNode(value: 'type'),
-              alias: null,
-              arguments: [],
-              directives: [],
-              selectionSet: null,
-            ),
-            _i1.FieldNode(
-              name: _i1.NameNode(value: 'mediaListEntry'),
-              alias: null,
-              arguments: [],
-              directives: [],
-              selectionSet: _i1.SelectionSetNode(selections: [
-                _i1.FieldNode(
-                  name: _i1.NameNode(value: 'status'),
-                  alias: null,
-                  arguments: [],
-                  directives: [],
-                  selectionSet: null,
-                )
-              ]),
-            ),
           ]),
         ),
       ]),
     )
   ]),
 );
-const document = _i1.DocumentNode(definitions: [DiscoverMedia]);
+const document = _i1.DocumentNode(definitions: [TrendingAnimeQuery]);

@@ -824,6 +824,13 @@ class _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifi
       serializers.serialize(object.id, specifiedType: const FullType(int)),
     ];
     Object? value;
+    value = object.siteUrl;
+    if (value != null) {
+      result
+        ..add('siteUrl')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
     value = object.title;
     if (value != null) {
       result
@@ -866,6 +873,10 @@ class _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifi
         case '__typename':
           result.G__typename = serializers.deserialize(value,
               specifiedType: const FullType(String))! as String;
+          break;
+        case 'siteUrl':
+          result.siteUrl = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
           break;
         case 'id':
           result.id = serializers.deserialize(value,
@@ -2576,6 +2587,8 @@ class _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifi
   @override
   final String G__typename;
   @override
+  final String? siteUrl;
+  @override
   final int id;
   @override
   final GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_title?
@@ -2596,6 +2609,7 @@ class _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifi
 
   _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media._(
       {required this.G__typename,
+      this.siteUrl,
       required this.id,
       this.title,
       this.coverImage,
@@ -2631,6 +2645,7 @@ class _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifi
     return other
             is GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media &&
         G__typename == other.G__typename &&
+        siteUrl == other.siteUrl &&
         id == other.id &&
         title == other.title &&
         coverImage == other.coverImage &&
@@ -2641,6 +2656,7 @@ class _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifi
   int get hashCode {
     var _$hash = 0;
     _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, siteUrl.hashCode);
     _$hash = $jc(_$hash, id.hashCode);
     _$hash = $jc(_$hash, title.hashCode);
     _$hash = $jc(_$hash, coverImage.hashCode);
@@ -2654,6 +2670,7 @@ class _$GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifi
     return (newBuiltValueToStringHelper(
             r'GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media')
           ..add('G__typename', G__typename)
+          ..add('siteUrl', siteUrl)
           ..add('id', id)
           ..add('title', title)
           ..add('coverImage', coverImage)
@@ -2673,6 +2690,10 @@ class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifica
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  String? _siteUrl;
+  String? get siteUrl => _$this._siteUrl;
+  set siteUrl(String? siteUrl) => _$this._siteUrl = siteUrl;
 
   int? _id;
   int? get id => _$this._id;
@@ -2712,6 +2733,7 @@ class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifica
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
+      _siteUrl = $v.siteUrl;
       _id = $v.id;
       _title = $v.title?.toBuilder();
       _coverImage = $v.coverImage?.toBuilder();
@@ -2754,6 +2776,7 @@ class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotifica
                   G__typename,
                   r'GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media',
                   'G__typename'),
+              siteUrl: siteUrl,
               id: BuiltValueNullFieldError.checkNotNull(
                   id,
                   r'GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media',

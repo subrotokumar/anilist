@@ -27,6 +27,7 @@ abstract class GProfileReq
       operationName: 'Profile',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GProfileVars get vars;
   @override
@@ -36,6 +37,7 @@ abstract class GProfileReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -57,11 +59,14 @@ abstract class GProfileReq
   @override
   _i2.GProfileData? parseData(Map<String, dynamic> json) =>
       _i2.GProfileData.fromJson(json);
+
   static Serializer<GProfileReq> get serializer => _$gProfileReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GProfileReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GProfileReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GProfileReq.serializer,

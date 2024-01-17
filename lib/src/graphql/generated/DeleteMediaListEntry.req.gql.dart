@@ -33,6 +33,7 @@ abstract class GDeleteMediaListEntryReq
       operationName: 'DeleteMediaListEntry',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GDeleteMediaListEntryVars get vars;
   @override
@@ -42,6 +43,7 @@ abstract class GDeleteMediaListEntryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -63,12 +65,15 @@ abstract class GDeleteMediaListEntryReq
   @override
   _i2.GDeleteMediaListEntryData? parseData(Map<String, dynamic> json) =>
       _i2.GDeleteMediaListEntryData.fromJson(json);
+
   static Serializer<GDeleteMediaListEntryReq> get serializer =>
       _$gDeleteMediaListEntryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GDeleteMediaListEntryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDeleteMediaListEntryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GDeleteMediaListEntryReq.serializer,

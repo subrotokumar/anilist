@@ -22,10 +22,12 @@ abstract class GAiringScheduleQueryVars
   int? get airingAtLesser;
   static Serializer<GAiringScheduleQueryVars> get serializer =>
       _$gAiringScheduleQueryVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GAiringScheduleQueryVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GAiringScheduleQueryVars? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GAiringScheduleQueryVars.serializer,

@@ -20,10 +20,12 @@ abstract class GFavCharacterQueryVars
   int? get perPage;
   static Serializer<GFavCharacterQueryVars> get serializer =>
       _$gFavCharacterQueryVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GFavCharacterQueryVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavCharacterQueryVars? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GFavCharacterQueryVars.serializer,

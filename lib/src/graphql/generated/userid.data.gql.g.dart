@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'userid.data.gql.dart';
+part of 'UserId.data.gql.dart';
 
 // **************************************************************************
 // BuiltValueGenerator

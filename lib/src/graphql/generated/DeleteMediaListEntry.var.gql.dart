@@ -20,10 +20,12 @@ abstract class GDeleteMediaListEntryVars
   int? get id;
   static Serializer<GDeleteMediaListEntryVars> get serializer =>
       _$gDeleteMediaListEntryVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GDeleteMediaListEntryVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDeleteMediaListEntryVars? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GDeleteMediaListEntryVars.serializer,

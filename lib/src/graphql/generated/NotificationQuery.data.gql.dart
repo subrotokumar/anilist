@@ -22,16 +22,19 @@ abstract class GNotificationsQueryData
 
   static void _initializeBuilder(GNotificationsQueryDataBuilder b) =>
       b..G__typename = 'Query';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GNotificationsQueryData_Page? get Page;
   GNotificationsQueryData_Viewer? get Viewer;
   static Serializer<GNotificationsQueryData> get serializer =>
       _$gNotificationsQueryDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GNotificationsQueryData.serializer,
@@ -51,16 +54,19 @@ abstract class GNotificationsQueryData_Page
 
   static void _initializeBuilder(GNotificationsQueryData_PageBuilder b) =>
       b..G__typename = 'Page';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GNotificationsQueryData_Page_pageInfo? get pageInfo;
   BuiltList<GNotificationsQueryData_Page_notifications?>? get notifications;
   static Serializer<GNotificationsQueryData_Page> get serializer =>
       _$gNotificationsQueryDataPageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GNotificationsQueryData_Page.serializer,
@@ -81,6 +87,7 @@ abstract class GNotificationsQueryData_Page_pageInfo
   static void _initializeBuilder(
           GNotificationsQueryData_Page_pageInfoBuilder b) =>
       b..G__typename = 'PageInfo';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get total;
@@ -90,10 +97,12 @@ abstract class GNotificationsQueryData_Page_pageInfo
   bool? get hasNextPage;
   static Serializer<GNotificationsQueryData_Page_pageInfo> get serializer =>
       _$gNotificationsQueryDataPagePageInfoSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_pageInfo.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_pageInfo? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -117,10 +126,12 @@ abstract class GNotificationsQueryData_Page_notifications {
                   GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification,
             },
           );
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_notifications.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_notifications? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -143,17 +154,20 @@ abstract class GNotificationsQueryData_Page_notifications__base
   static void _initializeBuilder(
           GNotificationsQueryData_Page_notifications__baseBuilder b) =>
       b..G__typename = 'NotificationUnion';
+
   @override
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   static Serializer<GNotificationsQueryData_Page_notifications__base>
       get serializer =>
           _$gNotificationsQueryDataPageNotificationsBaseSerializer;
+
   @override
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_notifications__base.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_notifications__base? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -180,6 +194,7 @@ abstract class GNotificationsQueryData_Page_notifications__asAiringNotification
           GNotificationsQueryData_Page_notifications__asAiringNotificationBuilder
               b) =>
       b..G__typename = 'AiringNotification';
+
   @override
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
@@ -195,12 +210,14 @@ abstract class GNotificationsQueryData_Page_notifications__asAiringNotification
           GNotificationsQueryData_Page_notifications__asAiringNotification>
       get serializer =>
           _$gNotificationsQueryDataPageNotificationsAsAiringNotificationSerializer;
+
   @override
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_notifications__asAiringNotification
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_notifications__asAiringNotification?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GNotificationsQueryData_Page_notifications__asAiringNotification
@@ -227,6 +244,7 @@ abstract class GNotificationsQueryData_Page_notifications__asAiringNotification_
           GNotificationsQueryData_Page_notifications__asAiringNotification_mediaBuilder
               b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -239,11 +257,13 @@ abstract class GNotificationsQueryData_Page_notifications__asAiringNotification_
           GNotificationsQueryData_Page_notifications__asAiringNotification_media>
       get serializer =>
           _$gNotificationsQueryDataPageNotificationsAsAiringNotificationMediaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_notifications__asAiringNotification_media
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_notifications__asAiringNotification_media?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GNotificationsQueryData_Page_notifications__asAiringNotification_media
@@ -270,6 +290,7 @@ abstract class GNotificationsQueryData_Page_notifications__asAiringNotification_
           GNotificationsQueryData_Page_notifications__asAiringNotification_media_titleBuilder
               b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get userPreferred;
@@ -277,11 +298,13 @@ abstract class GNotificationsQueryData_Page_notifications__asAiringNotification_
           GNotificationsQueryData_Page_notifications__asAiringNotification_media_title>
       get serializer =>
           _$gNotificationsQueryDataPageNotificationsAsAiringNotificationMediaTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_notifications__asAiringNotification_media_title
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_notifications__asAiringNotification_media_title?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GNotificationsQueryData_Page_notifications__asAiringNotification_media_title
@@ -308,6 +331,7 @@ abstract class GNotificationsQueryData_Page_notifications__asAiringNotification_
           GNotificationsQueryData_Page_notifications__asAiringNotification_media_coverImageBuilder
               b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get large;
@@ -315,11 +339,13 @@ abstract class GNotificationsQueryData_Page_notifications__asAiringNotification_
           GNotificationsQueryData_Page_notifications__asAiringNotification_media_coverImage>
       get serializer =>
           _$gNotificationsQueryDataPageNotificationsAsAiringNotificationMediaCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_notifications__asAiringNotification_media_coverImage
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_notifications__asAiringNotification_media_coverImage?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GNotificationsQueryData_Page_notifications__asAiringNotification_media_coverImage
@@ -347,6 +373,7 @@ abstract class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditio
           GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotificationBuilder
               b) =>
       b..G__typename = 'RelatedMediaAdditionNotification';
+
   @override
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
@@ -361,12 +388,14 @@ abstract class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditio
           GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification>
       get serializer =>
           _$gNotificationsQueryDataPageNotificationsAsRelatedMediaAdditionNotificationSerializer;
+
   @override
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification
@@ -393,8 +422,10 @@ abstract class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditio
           GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_mediaBuilder
               b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
+  String? get siteUrl;
   int get id;
   GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_title?
       get title;
@@ -405,11 +436,13 @@ abstract class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditio
           GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media>
       get serializer =>
           _$gNotificationsQueryDataPageNotificationsAsRelatedMediaAdditionNotificationMediaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media
@@ -436,6 +469,7 @@ abstract class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditio
           GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_titleBuilder
               b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get userPreferred;
@@ -443,11 +477,13 @@ abstract class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditio
           GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_title>
       get serializer =>
           _$gNotificationsQueryDataPageNotificationsAsRelatedMediaAdditionNotificationMediaTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_title
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_title?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_title
@@ -474,6 +510,7 @@ abstract class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditio
           GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_coverImageBuilder
               b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get large;
@@ -481,11 +518,13 @@ abstract class GNotificationsQueryData_Page_notifications__asRelatedMediaAdditio
           GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_coverImage>
       get serializer =>
           _$gNotificationsQueryDataPageNotificationsAsRelatedMediaAdditionNotificationMediaCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_coverImage
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_coverImage?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GNotificationsQueryData_Page_notifications__asRelatedMediaAdditionNotification_media_coverImage
@@ -506,15 +545,18 @@ abstract class GNotificationsQueryData_Viewer
 
   static void _initializeBuilder(GNotificationsQueryData_ViewerBuilder b) =>
       b..G__typename = 'User';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get unreadNotificationCount;
   static Serializer<GNotificationsQueryData_Viewer> get serializer =>
       _$gNotificationsQueryDataViewerSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GNotificationsQueryData_Viewer.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryData_Viewer? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GNotificationsQueryData_Viewer.serializer,

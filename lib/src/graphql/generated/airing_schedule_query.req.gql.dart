@@ -33,6 +33,7 @@ abstract class GAiringScheduleQueryReq
       operationName: 'AiringScheduleQuery',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GAiringScheduleQueryVars get vars;
   @override
@@ -42,6 +43,7 @@ abstract class GAiringScheduleQueryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -63,12 +65,15 @@ abstract class GAiringScheduleQueryReq
   @override
   _i2.GAiringScheduleQueryData? parseData(Map<String, dynamic> json) =>
       _i2.GAiringScheduleQueryData.fromJson(json);
+
   static Serializer<GAiringScheduleQueryReq> get serializer =>
       _$gAiringScheduleQueryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GAiringScheduleQueryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GAiringScheduleQueryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GAiringScheduleQueryReq.serializer,

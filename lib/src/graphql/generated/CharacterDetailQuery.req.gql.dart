@@ -33,6 +33,7 @@ abstract class GCharacterDetailQueryReq
       operationName: 'CharacterDetailQuery',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GCharacterDetailQueryVars get vars;
   @override
@@ -42,6 +43,7 @@ abstract class GCharacterDetailQueryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -63,12 +65,15 @@ abstract class GCharacterDetailQueryReq
   @override
   _i2.GCharacterDetailQueryData? parseData(Map<String, dynamic> json) =>
       _i2.GCharacterDetailQueryData.fromJson(json);
+
   static Serializer<GCharacterDetailQueryReq> get serializer =>
       _$gCharacterDetailQueryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GCharacterDetailQueryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GCharacterDetailQueryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GCharacterDetailQueryReq.serializer,

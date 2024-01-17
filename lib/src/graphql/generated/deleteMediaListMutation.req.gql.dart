@@ -34,6 +34,7 @@ abstract class GDeleteMediaListEntryMutationReq
       operationName: 'DeleteMediaListEntryMutation',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GDeleteMediaListEntryMutationVars get vars;
   @override
@@ -43,6 +44,7 @@ abstract class GDeleteMediaListEntryMutationReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -64,12 +66,15 @@ abstract class GDeleteMediaListEntryMutationReq
   @override
   _i2.GDeleteMediaListEntryMutationData? parseData(Map<String, dynamic> json) =>
       _i2.GDeleteMediaListEntryMutationData.fromJson(json);
+
   static Serializer<GDeleteMediaListEntryMutationReq> get serializer =>
       _$gDeleteMediaListEntryMutationReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GDeleteMediaListEntryMutationReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDeleteMediaListEntryMutationReq? fromJson(
           Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(

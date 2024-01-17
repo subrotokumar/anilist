@@ -1,41 +1,42 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'discover_media.data.gql.dart';
+part of 'TrendingAnimeQuery.data.gql.dart';
 
 // **************************************************************************
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<GDiscoverMediaData> _$gDiscoverMediaDataSerializer =
-    new _$GDiscoverMediaDataSerializer();
-Serializer<GDiscoverMediaData_Page> _$gDiscoverMediaDataPageSerializer =
-    new _$GDiscoverMediaData_PageSerializer();
-Serializer<GDiscoverMediaData_Page_pageInfo>
-    _$gDiscoverMediaDataPagePageInfoSerializer =
-    new _$GDiscoverMediaData_Page_pageInfoSerializer();
-Serializer<GDiscoverMediaData_Page_media>
-    _$gDiscoverMediaDataPageMediaSerializer =
-    new _$GDiscoverMediaData_Page_mediaSerializer();
-Serializer<GDiscoverMediaData_Page_media_title>
-    _$gDiscoverMediaDataPageMediaTitleSerializer =
-    new _$GDiscoverMediaData_Page_media_titleSerializer();
-Serializer<GDiscoverMediaData_Page_media_coverImage>
-    _$gDiscoverMediaDataPageMediaCoverImageSerializer =
-    new _$GDiscoverMediaData_Page_media_coverImageSerializer();
-Serializer<GDiscoverMediaData_Page_media_mediaListEntry>
-    _$gDiscoverMediaDataPageMediaMediaListEntrySerializer =
-    new _$GDiscoverMediaData_Page_media_mediaListEntrySerializer();
+Serializer<GTrendingAnimeQueryData> _$gTrendingAnimeQueryDataSerializer =
+    new _$GTrendingAnimeQueryDataSerializer();
+Serializer<GTrendingAnimeQueryData_Page>
+    _$gTrendingAnimeQueryDataPageSerializer =
+    new _$GTrendingAnimeQueryData_PageSerializer();
+Serializer<GTrendingAnimeQueryData_Page_pageInfo>
+    _$gTrendingAnimeQueryDataPagePageInfoSerializer =
+    new _$GTrendingAnimeQueryData_Page_pageInfoSerializer();
+Serializer<GTrendingAnimeQueryData_Page_media>
+    _$gTrendingAnimeQueryDataPageMediaSerializer =
+    new _$GTrendingAnimeQueryData_Page_mediaSerializer();
+Serializer<GTrendingAnimeQueryData_Page_media_title>
+    _$gTrendingAnimeQueryDataPageMediaTitleSerializer =
+    new _$GTrendingAnimeQueryData_Page_media_titleSerializer();
+Serializer<GTrendingAnimeQueryData_Page_media_coverImage>
+    _$gTrendingAnimeQueryDataPageMediaCoverImageSerializer =
+    new _$GTrendingAnimeQueryData_Page_media_coverImageSerializer();
 
-class _$GDiscoverMediaDataSerializer
-    implements StructuredSerializer<GDiscoverMediaData> {
+class _$GTrendingAnimeQueryDataSerializer
+    implements StructuredSerializer<GTrendingAnimeQueryData> {
   @override
-  final Iterable<Type> types = const [GDiscoverMediaData, _$GDiscoverMediaData];
+  final Iterable<Type> types = const [
+    GTrendingAnimeQueryData,
+    _$GTrendingAnimeQueryData
+  ];
   @override
-  final String wireName = 'GDiscoverMediaData';
+  final String wireName = 'GTrendingAnimeQueryData';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GDiscoverMediaData object,
+      Serializers serializers, GTrendingAnimeQueryData object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -48,16 +49,16 @@ class _$GDiscoverMediaDataSerializer
       result
         ..add('Page')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GDiscoverMediaData_Page)));
+            specifiedType: const FullType(GTrendingAnimeQueryData_Page)));
     }
     return result;
   }
 
   @override
-  GDiscoverMediaData deserialize(
+  GTrendingAnimeQueryData deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GDiscoverMediaDataBuilder();
+    final result = new GTrendingAnimeQueryDataBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -71,8 +72,8 @@ class _$GDiscoverMediaDataSerializer
           break;
         case 'Page':
           result.Page.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GDiscoverMediaData_Page))!
-              as GDiscoverMediaData_Page);
+                  specifiedType: const FullType(GTrendingAnimeQueryData_Page))!
+              as GTrendingAnimeQueryData_Page);
           break;
       }
     }
@@ -81,19 +82,19 @@ class _$GDiscoverMediaDataSerializer
   }
 }
 
-class _$GDiscoverMediaData_PageSerializer
-    implements StructuredSerializer<GDiscoverMediaData_Page> {
+class _$GTrendingAnimeQueryData_PageSerializer
+    implements StructuredSerializer<GTrendingAnimeQueryData_Page> {
   @override
   final Iterable<Type> types = const [
-    GDiscoverMediaData_Page,
-    _$GDiscoverMediaData_Page
+    GTrendingAnimeQueryData_Page,
+    _$GTrendingAnimeQueryData_Page
   ];
   @override
-  final String wireName = 'GDiscoverMediaData_Page';
+  final String wireName = 'GTrendingAnimeQueryData_Page';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GDiscoverMediaData_Page object,
+      Serializers serializers, GTrendingAnimeQueryData_Page object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -106,7 +107,8 @@ class _$GDiscoverMediaData_PageSerializer
       result
         ..add('pageInfo')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GDiscoverMediaData_Page_pageInfo)));
+            specifiedType:
+                const FullType(GTrendingAnimeQueryData_Page_pageInfo)));
     }
     value = object.media;
     if (value != null) {
@@ -114,17 +116,17 @@ class _$GDiscoverMediaData_PageSerializer
         ..add('media')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GDiscoverMediaData_Page_media)
+              const FullType.nullable(GTrendingAnimeQueryData_Page_media)
             ])));
     }
     return result;
   }
 
   @override
-  GDiscoverMediaData_Page deserialize(
+  GTrendingAnimeQueryData_Page deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GDiscoverMediaData_PageBuilder();
+    final result = new GTrendingAnimeQueryData_PageBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -139,13 +141,13 @@ class _$GDiscoverMediaData_PageSerializer
         case 'pageInfo':
           result.pageInfo.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(GDiscoverMediaData_Page_pageInfo))!
-              as GDiscoverMediaData_Page_pageInfo);
+                      const FullType(GTrendingAnimeQueryData_Page_pageInfo))!
+              as GTrendingAnimeQueryData_Page_pageInfo);
           break;
         case 'media':
           result.media.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(GDiscoverMediaData_Page_media)
+                const FullType.nullable(GTrendingAnimeQueryData_Page_media)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -155,19 +157,19 @@ class _$GDiscoverMediaData_PageSerializer
   }
 }
 
-class _$GDiscoverMediaData_Page_pageInfoSerializer
-    implements StructuredSerializer<GDiscoverMediaData_Page_pageInfo> {
+class _$GTrendingAnimeQueryData_Page_pageInfoSerializer
+    implements StructuredSerializer<GTrendingAnimeQueryData_Page_pageInfo> {
   @override
   final Iterable<Type> types = const [
-    GDiscoverMediaData_Page_pageInfo,
-    _$GDiscoverMediaData_Page_pageInfo
+    GTrendingAnimeQueryData_Page_pageInfo,
+    _$GTrendingAnimeQueryData_Page_pageInfo
   ];
   @override
-  final String wireName = 'GDiscoverMediaData_Page_pageInfo';
+  final String wireName = 'GTrendingAnimeQueryData_Page_pageInfo';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GDiscoverMediaData_Page_pageInfo object,
+      Serializers serializers, GTrendingAnimeQueryData_Page_pageInfo object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -210,10 +212,10 @@ class _$GDiscoverMediaData_Page_pageInfoSerializer
   }
 
   @override
-  GDiscoverMediaData_Page_pageInfo deserialize(
+  GTrendingAnimeQueryData_Page_pageInfo deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GDiscoverMediaData_Page_pageInfoBuilder();
+    final result = new GTrendingAnimeQueryData_Page_pageInfoBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -252,19 +254,19 @@ class _$GDiscoverMediaData_Page_pageInfoSerializer
   }
 }
 
-class _$GDiscoverMediaData_Page_mediaSerializer
-    implements StructuredSerializer<GDiscoverMediaData_Page_media> {
+class _$GTrendingAnimeQueryData_Page_mediaSerializer
+    implements StructuredSerializer<GTrendingAnimeQueryData_Page_media> {
   @override
   final Iterable<Type> types = const [
-    GDiscoverMediaData_Page_media,
-    _$GDiscoverMediaData_Page_media
+    GTrendingAnimeQueryData_Page_media,
+    _$GTrendingAnimeQueryData_Page_media
   ];
   @override
-  final String wireName = 'GDiscoverMediaData_Page_media';
+  final String wireName = 'GTrendingAnimeQueryData_Page_media';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GDiscoverMediaData_Page_media object,
+      Serializers serializers, GTrendingAnimeQueryData_Page_media object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -286,7 +288,7 @@ class _$GDiscoverMediaData_Page_mediaSerializer
         ..add('title')
         ..add(serializers.serialize(value,
             specifiedType:
-                const FullType(GDiscoverMediaData_Page_media_title)));
+                const FullType(GTrendingAnimeQueryData_Page_media_title)));
     }
     value = object.bannerImage;
     if (value != null) {
@@ -301,31 +303,16 @@ class _$GDiscoverMediaData_Page_mediaSerializer
         ..add('coverImage')
         ..add(serializers.serialize(value,
             specifiedType:
-                const FullType(GDiscoverMediaData_Page_media_coverImage)));
-    }
-    value = object.type;
-    if (value != null) {
-      result
-        ..add('type')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GMediaType)));
-    }
-    value = object.mediaListEntry;
-    if (value != null) {
-      result
-        ..add('mediaListEntry')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(GDiscoverMediaData_Page_media_mediaListEntry)));
+                const FullType(GTrendingAnimeQueryData_Page_media_coverImage)));
     }
     return result;
   }
 
   @override
-  GDiscoverMediaData_Page_media deserialize(
+  GTrendingAnimeQueryData_Page_media deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GDiscoverMediaData_Page_mediaBuilder();
+    final result = new GTrendingAnimeQueryData_Page_mediaBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -348,8 +335,8 @@ class _$GDiscoverMediaData_Page_mediaSerializer
         case 'title':
           result.title.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(GDiscoverMediaData_Page_media_title))!
-              as GDiscoverMediaData_Page_media_title);
+                      const FullType(GTrendingAnimeQueryData_Page_media_title))!
+              as GTrendingAnimeQueryData_Page_media_title);
           break;
         case 'bannerImage':
           result.bannerImage = serializers.deserialize(value,
@@ -357,19 +344,9 @@ class _$GDiscoverMediaData_Page_mediaSerializer
           break;
         case 'coverImage':
           result.coverImage.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GDiscoverMediaData_Page_media_coverImage))!
-              as GDiscoverMediaData_Page_media_coverImage);
-          break;
-        case 'type':
-          result.type = serializers.deserialize(value,
-              specifiedType: const FullType(_i2.GMediaType)) as _i2.GMediaType?;
-          break;
-        case 'mediaListEntry':
-          result.mediaListEntry.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GDiscoverMediaData_Page_media_mediaListEntry))!
-              as GDiscoverMediaData_Page_media_mediaListEntry);
+                      GTrendingAnimeQueryData_Page_media_coverImage))!
+              as GTrendingAnimeQueryData_Page_media_coverImage);
           break;
       }
     }
@@ -378,19 +355,19 @@ class _$GDiscoverMediaData_Page_mediaSerializer
   }
 }
 
-class _$GDiscoverMediaData_Page_media_titleSerializer
-    implements StructuredSerializer<GDiscoverMediaData_Page_media_title> {
+class _$GTrendingAnimeQueryData_Page_media_titleSerializer
+    implements StructuredSerializer<GTrendingAnimeQueryData_Page_media_title> {
   @override
   final Iterable<Type> types = const [
-    GDiscoverMediaData_Page_media_title,
-    _$GDiscoverMediaData_Page_media_title
+    GTrendingAnimeQueryData_Page_media_title,
+    _$GTrendingAnimeQueryData_Page_media_title
   ];
   @override
-  final String wireName = 'GDiscoverMediaData_Page_media_title';
+  final String wireName = 'GTrendingAnimeQueryData_Page_media_title';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GDiscoverMediaData_Page_media_title object,
+      Serializers serializers, GTrendingAnimeQueryData_Page_media_title object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -398,17 +375,17 @@ class _$GDiscoverMediaData_Page_media_titleSerializer
           specifiedType: const FullType(String)),
     ];
     Object? value;
-    value = object.english;
-    if (value != null) {
-      result
-        ..add('english')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
-    }
     value = object.romaji;
     if (value != null) {
       result
         ..add('romaji')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
+    value = object.english;
+    if (value != null) {
+      result
+        ..add('english')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
@@ -423,10 +400,10 @@ class _$GDiscoverMediaData_Page_media_titleSerializer
   }
 
   @override
-  GDiscoverMediaData_Page_media_title deserialize(
+  GTrendingAnimeQueryData_Page_media_title deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GDiscoverMediaData_Page_media_titleBuilder();
+    final result = new GTrendingAnimeQueryData_Page_media_titleBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -438,12 +415,12 @@ class _$GDiscoverMediaData_Page_media_titleSerializer
           result.G__typename = serializers.deserialize(value,
               specifiedType: const FullType(String))! as String;
           break;
-        case 'english':
-          result.english = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
-          break;
         case 'romaji':
           result.romaji = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
+          break;
+        case 'english':
+          result.english = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
           break;
         case 'userPreferred':
@@ -457,19 +434,20 @@ class _$GDiscoverMediaData_Page_media_titleSerializer
   }
 }
 
-class _$GDiscoverMediaData_Page_media_coverImageSerializer
-    implements StructuredSerializer<GDiscoverMediaData_Page_media_coverImage> {
+class _$GTrendingAnimeQueryData_Page_media_coverImageSerializer
+    implements
+        StructuredSerializer<GTrendingAnimeQueryData_Page_media_coverImage> {
   @override
   final Iterable<Type> types = const [
-    GDiscoverMediaData_Page_media_coverImage,
-    _$GDiscoverMediaData_Page_media_coverImage
+    GTrendingAnimeQueryData_Page_media_coverImage,
+    _$GTrendingAnimeQueryData_Page_media_coverImage
   ];
   @override
-  final String wireName = 'GDiscoverMediaData_Page_media_coverImage';
+  final String wireName = 'GTrendingAnimeQueryData_Page_media_coverImage';
 
   @override
-  Iterable<Object?> serialize(
-      Serializers serializers, GDiscoverMediaData_Page_media_coverImage object,
+  Iterable<Object?> serialize(Serializers serializers,
+      GTrendingAnimeQueryData_Page_media_coverImage object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -509,10 +487,10 @@ class _$GDiscoverMediaData_Page_media_coverImageSerializer
   }
 
   @override
-  GDiscoverMediaData_Page_media_coverImage deserialize(
+  GTrendingAnimeQueryData_Page_media_coverImage deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GDiscoverMediaData_Page_media_coverImageBuilder();
+    final result = new GTrendingAnimeQueryData_Page_media_coverImageBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -547,93 +525,35 @@ class _$GDiscoverMediaData_Page_media_coverImageSerializer
   }
 }
 
-class _$GDiscoverMediaData_Page_media_mediaListEntrySerializer
-    implements
-        StructuredSerializer<GDiscoverMediaData_Page_media_mediaListEntry> {
-  @override
-  final Iterable<Type> types = const [
-    GDiscoverMediaData_Page_media_mediaListEntry,
-    _$GDiscoverMediaData_Page_media_mediaListEntry
-  ];
-  @override
-  final String wireName = 'GDiscoverMediaData_Page_media_mediaListEntry';
-
-  @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GDiscoverMediaData_Page_media_mediaListEntry object,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object?>[
-      '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
-    ];
-    Object? value;
-    value = object.status;
-    if (value != null) {
-      result
-        ..add('status')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GMediaListStatus)));
-    }
-    return result;
-  }
-
-  @override
-  GDiscoverMediaData_Page_media_mediaListEntry deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = new GDiscoverMediaData_Page_media_mediaListEntryBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current! as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
-          break;
-        case 'status':
-          result.status = serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GMediaListStatus))
-              as _i2.GMediaListStatus?;
-          break;
-      }
-    }
-
-    return result.build();
-  }
-}
-
-class _$GDiscoverMediaData extends GDiscoverMediaData {
+class _$GTrendingAnimeQueryData extends GTrendingAnimeQueryData {
   @override
   final String G__typename;
   @override
-  final GDiscoverMediaData_Page? Page;
+  final GTrendingAnimeQueryData_Page? Page;
 
-  factory _$GDiscoverMediaData(
-          [void Function(GDiscoverMediaDataBuilder)? updates]) =>
-      (new GDiscoverMediaDataBuilder()..update(updates))._build();
+  factory _$GTrendingAnimeQueryData(
+          [void Function(GTrendingAnimeQueryDataBuilder)? updates]) =>
+      (new GTrendingAnimeQueryDataBuilder()..update(updates))._build();
 
-  _$GDiscoverMediaData._({required this.G__typename, this.Page}) : super._() {
+  _$GTrendingAnimeQueryData._({required this.G__typename, this.Page})
+      : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GDiscoverMediaData', 'G__typename');
+        G__typename, r'GTrendingAnimeQueryData', 'G__typename');
   }
 
   @override
-  GDiscoverMediaData rebuild(
-          void Function(GDiscoverMediaDataBuilder) updates) =>
+  GTrendingAnimeQueryData rebuild(
+          void Function(GTrendingAnimeQueryDataBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GDiscoverMediaDataBuilder toBuilder() =>
-      new GDiscoverMediaDataBuilder()..replace(this);
+  GTrendingAnimeQueryDataBuilder toBuilder() =>
+      new GTrendingAnimeQueryDataBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GDiscoverMediaData &&
+    return other is GTrendingAnimeQueryData &&
         G__typename == other.G__typename &&
         Page == other.Page;
   }
@@ -649,31 +569,32 @@ class _$GDiscoverMediaData extends GDiscoverMediaData {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GDiscoverMediaData')
+    return (newBuiltValueToStringHelper(r'GTrendingAnimeQueryData')
           ..add('G__typename', G__typename)
           ..add('Page', Page))
         .toString();
   }
 }
 
-class GDiscoverMediaDataBuilder
-    implements Builder<GDiscoverMediaData, GDiscoverMediaDataBuilder> {
-  _$GDiscoverMediaData? _$v;
+class GTrendingAnimeQueryDataBuilder
+    implements
+        Builder<GTrendingAnimeQueryData, GTrendingAnimeQueryDataBuilder> {
+  _$GTrendingAnimeQueryData? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  GDiscoverMediaData_PageBuilder? _Page;
-  GDiscoverMediaData_PageBuilder get Page =>
-      _$this._Page ??= new GDiscoverMediaData_PageBuilder();
-  set Page(GDiscoverMediaData_PageBuilder? Page) => _$this._Page = Page;
+  GTrendingAnimeQueryData_PageBuilder? _Page;
+  GTrendingAnimeQueryData_PageBuilder get Page =>
+      _$this._Page ??= new GTrendingAnimeQueryData_PageBuilder();
+  set Page(GTrendingAnimeQueryData_PageBuilder? Page) => _$this._Page = Page;
 
-  GDiscoverMediaDataBuilder() {
-    GDiscoverMediaData._initializeBuilder(this);
+  GTrendingAnimeQueryDataBuilder() {
+    GTrendingAnimeQueryData._initializeBuilder(this);
   }
 
-  GDiscoverMediaDataBuilder get _$this {
+  GTrendingAnimeQueryDataBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -684,26 +605,26 @@ class GDiscoverMediaDataBuilder
   }
 
   @override
-  void replace(GDiscoverMediaData other) {
+  void replace(GTrendingAnimeQueryData other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GDiscoverMediaData;
+    _$v = other as _$GTrendingAnimeQueryData;
   }
 
   @override
-  void update(void Function(GDiscoverMediaDataBuilder)? updates) {
+  void update(void Function(GTrendingAnimeQueryDataBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GDiscoverMediaData build() => _build();
+  GTrendingAnimeQueryData build() => _build();
 
-  _$GDiscoverMediaData _build() {
-    _$GDiscoverMediaData _$result;
+  _$GTrendingAnimeQueryData _build() {
+    _$GTrendingAnimeQueryData _$result;
     try {
       _$result = _$v ??
-          new _$GDiscoverMediaData._(
+          new _$GTrendingAnimeQueryData._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GDiscoverMediaData', 'G__typename'),
+                  G__typename, r'GTrendingAnimeQueryData', 'G__typename'),
               Page: _Page?.build());
     } catch (_) {
       late String _$failedField;
@@ -712,7 +633,7 @@ class GDiscoverMediaDataBuilder
         _Page?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GDiscoverMediaData', _$failedField, e.toString());
+            r'GTrendingAnimeQueryData', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -721,38 +642,38 @@ class GDiscoverMediaDataBuilder
   }
 }
 
-class _$GDiscoverMediaData_Page extends GDiscoverMediaData_Page {
+class _$GTrendingAnimeQueryData_Page extends GTrendingAnimeQueryData_Page {
   @override
   final String G__typename;
   @override
-  final GDiscoverMediaData_Page_pageInfo? pageInfo;
+  final GTrendingAnimeQueryData_Page_pageInfo? pageInfo;
   @override
-  final BuiltList<GDiscoverMediaData_Page_media?>? media;
+  final BuiltList<GTrendingAnimeQueryData_Page_media?>? media;
 
-  factory _$GDiscoverMediaData_Page(
-          [void Function(GDiscoverMediaData_PageBuilder)? updates]) =>
-      (new GDiscoverMediaData_PageBuilder()..update(updates))._build();
+  factory _$GTrendingAnimeQueryData_Page(
+          [void Function(GTrendingAnimeQueryData_PageBuilder)? updates]) =>
+      (new GTrendingAnimeQueryData_PageBuilder()..update(updates))._build();
 
-  _$GDiscoverMediaData_Page._(
+  _$GTrendingAnimeQueryData_Page._(
       {required this.G__typename, this.pageInfo, this.media})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GDiscoverMediaData_Page', 'G__typename');
+        G__typename, r'GTrendingAnimeQueryData_Page', 'G__typename');
   }
 
   @override
-  GDiscoverMediaData_Page rebuild(
-          void Function(GDiscoverMediaData_PageBuilder) updates) =>
+  GTrendingAnimeQueryData_Page rebuild(
+          void Function(GTrendingAnimeQueryData_PageBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GDiscoverMediaData_PageBuilder toBuilder() =>
-      new GDiscoverMediaData_PageBuilder()..replace(this);
+  GTrendingAnimeQueryData_PageBuilder toBuilder() =>
+      new GTrendingAnimeQueryData_PageBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GDiscoverMediaData_Page &&
+    return other is GTrendingAnimeQueryData_Page &&
         G__typename == other.G__typename &&
         pageInfo == other.pageInfo &&
         media == other.media;
@@ -770,7 +691,7 @@ class _$GDiscoverMediaData_Page extends GDiscoverMediaData_Page {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GDiscoverMediaData_Page')
+    return (newBuiltValueToStringHelper(r'GTrendingAnimeQueryData_Page')
           ..add('G__typename', G__typename)
           ..add('pageInfo', pageInfo)
           ..add('media', media))
@@ -778,32 +699,33 @@ class _$GDiscoverMediaData_Page extends GDiscoverMediaData_Page {
   }
 }
 
-class GDiscoverMediaData_PageBuilder
+class GTrendingAnimeQueryData_PageBuilder
     implements
-        Builder<GDiscoverMediaData_Page, GDiscoverMediaData_PageBuilder> {
-  _$GDiscoverMediaData_Page? _$v;
+        Builder<GTrendingAnimeQueryData_Page,
+            GTrendingAnimeQueryData_PageBuilder> {
+  _$GTrendingAnimeQueryData_Page? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  GDiscoverMediaData_Page_pageInfoBuilder? _pageInfo;
-  GDiscoverMediaData_Page_pageInfoBuilder get pageInfo =>
-      _$this._pageInfo ??= new GDiscoverMediaData_Page_pageInfoBuilder();
-  set pageInfo(GDiscoverMediaData_Page_pageInfoBuilder? pageInfo) =>
+  GTrendingAnimeQueryData_Page_pageInfoBuilder? _pageInfo;
+  GTrendingAnimeQueryData_Page_pageInfoBuilder get pageInfo =>
+      _$this._pageInfo ??= new GTrendingAnimeQueryData_Page_pageInfoBuilder();
+  set pageInfo(GTrendingAnimeQueryData_Page_pageInfoBuilder? pageInfo) =>
       _$this._pageInfo = pageInfo;
 
-  ListBuilder<GDiscoverMediaData_Page_media?>? _media;
-  ListBuilder<GDiscoverMediaData_Page_media?> get media =>
-      _$this._media ??= new ListBuilder<GDiscoverMediaData_Page_media?>();
-  set media(ListBuilder<GDiscoverMediaData_Page_media?>? media) =>
+  ListBuilder<GTrendingAnimeQueryData_Page_media?>? _media;
+  ListBuilder<GTrendingAnimeQueryData_Page_media?> get media =>
+      _$this._media ??= new ListBuilder<GTrendingAnimeQueryData_Page_media?>();
+  set media(ListBuilder<GTrendingAnimeQueryData_Page_media?>? media) =>
       _$this._media = media;
 
-  GDiscoverMediaData_PageBuilder() {
-    GDiscoverMediaData_Page._initializeBuilder(this);
+  GTrendingAnimeQueryData_PageBuilder() {
+    GTrendingAnimeQueryData_Page._initializeBuilder(this);
   }
 
-  GDiscoverMediaData_PageBuilder get _$this {
+  GTrendingAnimeQueryData_PageBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -815,26 +737,26 @@ class GDiscoverMediaData_PageBuilder
   }
 
   @override
-  void replace(GDiscoverMediaData_Page other) {
+  void replace(GTrendingAnimeQueryData_Page other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GDiscoverMediaData_Page;
+    _$v = other as _$GTrendingAnimeQueryData_Page;
   }
 
   @override
-  void update(void Function(GDiscoverMediaData_PageBuilder)? updates) {
+  void update(void Function(GTrendingAnimeQueryData_PageBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GDiscoverMediaData_Page build() => _build();
+  GTrendingAnimeQueryData_Page build() => _build();
 
-  _$GDiscoverMediaData_Page _build() {
-    _$GDiscoverMediaData_Page _$result;
+  _$GTrendingAnimeQueryData_Page _build() {
+    _$GTrendingAnimeQueryData_Page _$result;
     try {
       _$result = _$v ??
-          new _$GDiscoverMediaData_Page._(
+          new _$GTrendingAnimeQueryData_Page._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GDiscoverMediaData_Page', 'G__typename'),
+                  G__typename, r'GTrendingAnimeQueryData_Page', 'G__typename'),
               pageInfo: _pageInfo?.build(),
               media: _media?.build());
     } catch (_) {
@@ -846,7 +768,7 @@ class GDiscoverMediaData_PageBuilder
         _media?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GDiscoverMediaData_Page', _$failedField, e.toString());
+            r'GTrendingAnimeQueryData_Page', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -855,8 +777,8 @@ class GDiscoverMediaData_PageBuilder
   }
 }
 
-class _$GDiscoverMediaData_Page_pageInfo
-    extends GDiscoverMediaData_Page_pageInfo {
+class _$GTrendingAnimeQueryData_Page_pageInfo
+    extends GTrendingAnimeQueryData_Page_pageInfo {
   @override
   final String G__typename;
   @override
@@ -870,11 +792,13 @@ class _$GDiscoverMediaData_Page_pageInfo
   @override
   final bool? hasNextPage;
 
-  factory _$GDiscoverMediaData_Page_pageInfo(
-          [void Function(GDiscoverMediaData_Page_pageInfoBuilder)? updates]) =>
-      (new GDiscoverMediaData_Page_pageInfoBuilder()..update(updates))._build();
+  factory _$GTrendingAnimeQueryData_Page_pageInfo(
+          [void Function(GTrendingAnimeQueryData_Page_pageInfoBuilder)?
+              updates]) =>
+      (new GTrendingAnimeQueryData_Page_pageInfoBuilder()..update(updates))
+          ._build();
 
-  _$GDiscoverMediaData_Page_pageInfo._(
+  _$GTrendingAnimeQueryData_Page_pageInfo._(
       {required this.G__typename,
       this.total,
       this.perPage,
@@ -883,22 +807,23 @@ class _$GDiscoverMediaData_Page_pageInfo
       this.hasNextPage})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GDiscoverMediaData_Page_pageInfo', 'G__typename');
+        G__typename, r'GTrendingAnimeQueryData_Page_pageInfo', 'G__typename');
   }
 
   @override
-  GDiscoverMediaData_Page_pageInfo rebuild(
-          void Function(GDiscoverMediaData_Page_pageInfoBuilder) updates) =>
+  GTrendingAnimeQueryData_Page_pageInfo rebuild(
+          void Function(GTrendingAnimeQueryData_Page_pageInfoBuilder)
+              updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GDiscoverMediaData_Page_pageInfoBuilder toBuilder() =>
-      new GDiscoverMediaData_Page_pageInfoBuilder()..replace(this);
+  GTrendingAnimeQueryData_Page_pageInfoBuilder toBuilder() =>
+      new GTrendingAnimeQueryData_Page_pageInfoBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GDiscoverMediaData_Page_pageInfo &&
+    return other is GTrendingAnimeQueryData_Page_pageInfo &&
         G__typename == other.G__typename &&
         total == other.total &&
         perPage == other.perPage &&
@@ -922,7 +847,8 @@ class _$GDiscoverMediaData_Page_pageInfo
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GDiscoverMediaData_Page_pageInfo')
+    return (newBuiltValueToStringHelper(
+            r'GTrendingAnimeQueryData_Page_pageInfo')
           ..add('G__typename', G__typename)
           ..add('total', total)
           ..add('perPage', perPage)
@@ -933,11 +859,11 @@ class _$GDiscoverMediaData_Page_pageInfo
   }
 }
 
-class GDiscoverMediaData_Page_pageInfoBuilder
+class GTrendingAnimeQueryData_Page_pageInfoBuilder
     implements
-        Builder<GDiscoverMediaData_Page_pageInfo,
-            GDiscoverMediaData_Page_pageInfoBuilder> {
-  _$GDiscoverMediaData_Page_pageInfo? _$v;
+        Builder<GTrendingAnimeQueryData_Page_pageInfo,
+            GTrendingAnimeQueryData_Page_pageInfoBuilder> {
+  _$GTrendingAnimeQueryData_Page_pageInfo? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -963,11 +889,11 @@ class GDiscoverMediaData_Page_pageInfoBuilder
   bool? get hasNextPage => _$this._hasNextPage;
   set hasNextPage(bool? hasNextPage) => _$this._hasNextPage = hasNextPage;
 
-  GDiscoverMediaData_Page_pageInfoBuilder() {
-    GDiscoverMediaData_Page_pageInfo._initializeBuilder(this);
+  GTrendingAnimeQueryData_Page_pageInfoBuilder() {
+    GTrendingAnimeQueryData_Page_pageInfo._initializeBuilder(this);
   }
 
-  GDiscoverMediaData_Page_pageInfoBuilder get _$this {
+  GTrendingAnimeQueryData_Page_pageInfoBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -982,24 +908,25 @@ class GDiscoverMediaData_Page_pageInfoBuilder
   }
 
   @override
-  void replace(GDiscoverMediaData_Page_pageInfo other) {
+  void replace(GTrendingAnimeQueryData_Page_pageInfo other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GDiscoverMediaData_Page_pageInfo;
+    _$v = other as _$GTrendingAnimeQueryData_Page_pageInfo;
   }
 
   @override
-  void update(void Function(GDiscoverMediaData_Page_pageInfoBuilder)? updates) {
+  void update(
+      void Function(GTrendingAnimeQueryData_Page_pageInfoBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GDiscoverMediaData_Page_pageInfo build() => _build();
+  GTrendingAnimeQueryData_Page_pageInfo build() => _build();
 
-  _$GDiscoverMediaData_Page_pageInfo _build() {
+  _$GTrendingAnimeQueryData_Page_pageInfo _build() {
     final _$result = _$v ??
-        new _$GDiscoverMediaData_Page_pageInfo._(
+        new _$GTrendingAnimeQueryData_Page_pageInfo._(
             G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GDiscoverMediaData_Page_pageInfo', 'G__typename'),
+                r'GTrendingAnimeQueryData_Page_pageInfo', 'G__typename'),
             total: total,
             perPage: perPage,
             currentPage: currentPage,
@@ -1010,7 +937,8 @@ class GDiscoverMediaData_Page_pageInfoBuilder
   }
 }
 
-class _$GDiscoverMediaData_Page_media extends GDiscoverMediaData_Page_media {
+class _$GTrendingAnimeQueryData_Page_media
+    extends GTrendingAnimeQueryData_Page_media {
   @override
   final String G__typename;
   @override
@@ -1018,57 +946,51 @@ class _$GDiscoverMediaData_Page_media extends GDiscoverMediaData_Page_media {
   @override
   final int? idMal;
   @override
-  final GDiscoverMediaData_Page_media_title? title;
+  final GTrendingAnimeQueryData_Page_media_title? title;
   @override
   final String? bannerImage;
   @override
-  final GDiscoverMediaData_Page_media_coverImage? coverImage;
-  @override
-  final _i2.GMediaType? type;
-  @override
-  final GDiscoverMediaData_Page_media_mediaListEntry? mediaListEntry;
+  final GTrendingAnimeQueryData_Page_media_coverImage? coverImage;
 
-  factory _$GDiscoverMediaData_Page_media(
-          [void Function(GDiscoverMediaData_Page_mediaBuilder)? updates]) =>
-      (new GDiscoverMediaData_Page_mediaBuilder()..update(updates))._build();
+  factory _$GTrendingAnimeQueryData_Page_media(
+          [void Function(GTrendingAnimeQueryData_Page_mediaBuilder)?
+              updates]) =>
+      (new GTrendingAnimeQueryData_Page_mediaBuilder()..update(updates))
+          ._build();
 
-  _$GDiscoverMediaData_Page_media._(
+  _$GTrendingAnimeQueryData_Page_media._(
       {required this.G__typename,
       required this.id,
       this.idMal,
       this.title,
       this.bannerImage,
-      this.coverImage,
-      this.type,
-      this.mediaListEntry})
+      this.coverImage})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GDiscoverMediaData_Page_media', 'G__typename');
+        G__typename, r'GTrendingAnimeQueryData_Page_media', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
-        id, r'GDiscoverMediaData_Page_media', 'id');
+        id, r'GTrendingAnimeQueryData_Page_media', 'id');
   }
 
   @override
-  GDiscoverMediaData_Page_media rebuild(
-          void Function(GDiscoverMediaData_Page_mediaBuilder) updates) =>
+  GTrendingAnimeQueryData_Page_media rebuild(
+          void Function(GTrendingAnimeQueryData_Page_mediaBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GDiscoverMediaData_Page_mediaBuilder toBuilder() =>
-      new GDiscoverMediaData_Page_mediaBuilder()..replace(this);
+  GTrendingAnimeQueryData_Page_mediaBuilder toBuilder() =>
+      new GTrendingAnimeQueryData_Page_mediaBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GDiscoverMediaData_Page_media &&
+    return other is GTrendingAnimeQueryData_Page_media &&
         G__typename == other.G__typename &&
         id == other.id &&
         idMal == other.idMal &&
         title == other.title &&
         bannerImage == other.bannerImage &&
-        coverImage == other.coverImage &&
-        type == other.type &&
-        mediaListEntry == other.mediaListEntry;
+        coverImage == other.coverImage;
   }
 
   @override
@@ -1080,32 +1002,28 @@ class _$GDiscoverMediaData_Page_media extends GDiscoverMediaData_Page_media {
     _$hash = $jc(_$hash, title.hashCode);
     _$hash = $jc(_$hash, bannerImage.hashCode);
     _$hash = $jc(_$hash, coverImage.hashCode);
-    _$hash = $jc(_$hash, type.hashCode);
-    _$hash = $jc(_$hash, mediaListEntry.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GDiscoverMediaData_Page_media')
+    return (newBuiltValueToStringHelper(r'GTrendingAnimeQueryData_Page_media')
           ..add('G__typename', G__typename)
           ..add('id', id)
           ..add('idMal', idMal)
           ..add('title', title)
           ..add('bannerImage', bannerImage)
-          ..add('coverImage', coverImage)
-          ..add('type', type)
-          ..add('mediaListEntry', mediaListEntry))
+          ..add('coverImage', coverImage))
         .toString();
   }
 }
 
-class GDiscoverMediaData_Page_mediaBuilder
+class GTrendingAnimeQueryData_Page_mediaBuilder
     implements
-        Builder<GDiscoverMediaData_Page_media,
-            GDiscoverMediaData_Page_mediaBuilder> {
-  _$GDiscoverMediaData_Page_media? _$v;
+        Builder<GTrendingAnimeQueryData_Page_media,
+            GTrendingAnimeQueryData_Page_mediaBuilder> {
+  _$GTrendingAnimeQueryData_Page_media? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -1119,41 +1037,29 @@ class GDiscoverMediaData_Page_mediaBuilder
   int? get idMal => _$this._idMal;
   set idMal(int? idMal) => _$this._idMal = idMal;
 
-  GDiscoverMediaData_Page_media_titleBuilder? _title;
-  GDiscoverMediaData_Page_media_titleBuilder get title =>
-      _$this._title ??= new GDiscoverMediaData_Page_media_titleBuilder();
-  set title(GDiscoverMediaData_Page_media_titleBuilder? title) =>
+  GTrendingAnimeQueryData_Page_media_titleBuilder? _title;
+  GTrendingAnimeQueryData_Page_media_titleBuilder get title =>
+      _$this._title ??= new GTrendingAnimeQueryData_Page_media_titleBuilder();
+  set title(GTrendingAnimeQueryData_Page_media_titleBuilder? title) =>
       _$this._title = title;
 
   String? _bannerImage;
   String? get bannerImage => _$this._bannerImage;
   set bannerImage(String? bannerImage) => _$this._bannerImage = bannerImage;
 
-  GDiscoverMediaData_Page_media_coverImageBuilder? _coverImage;
-  GDiscoverMediaData_Page_media_coverImageBuilder get coverImage =>
+  GTrendingAnimeQueryData_Page_media_coverImageBuilder? _coverImage;
+  GTrendingAnimeQueryData_Page_media_coverImageBuilder get coverImage =>
       _$this._coverImage ??=
-          new GDiscoverMediaData_Page_media_coverImageBuilder();
-  set coverImage(GDiscoverMediaData_Page_media_coverImageBuilder? coverImage) =>
+          new GTrendingAnimeQueryData_Page_media_coverImageBuilder();
+  set coverImage(
+          GTrendingAnimeQueryData_Page_media_coverImageBuilder? coverImage) =>
       _$this._coverImage = coverImage;
 
-  _i2.GMediaType? _type;
-  _i2.GMediaType? get type => _$this._type;
-  set type(_i2.GMediaType? type) => _$this._type = type;
-
-  GDiscoverMediaData_Page_media_mediaListEntryBuilder? _mediaListEntry;
-  GDiscoverMediaData_Page_media_mediaListEntryBuilder get mediaListEntry =>
-      _$this._mediaListEntry ??=
-          new GDiscoverMediaData_Page_media_mediaListEntryBuilder();
-  set mediaListEntry(
-          GDiscoverMediaData_Page_media_mediaListEntryBuilder?
-              mediaListEntry) =>
-      _$this._mediaListEntry = mediaListEntry;
-
-  GDiscoverMediaData_Page_mediaBuilder() {
-    GDiscoverMediaData_Page_media._initializeBuilder(this);
+  GTrendingAnimeQueryData_Page_mediaBuilder() {
+    GTrendingAnimeQueryData_Page_media._initializeBuilder(this);
   }
 
-  GDiscoverMediaData_Page_mediaBuilder get _$this {
+  GTrendingAnimeQueryData_Page_mediaBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -1162,42 +1068,39 @@ class GDiscoverMediaData_Page_mediaBuilder
       _title = $v.title?.toBuilder();
       _bannerImage = $v.bannerImage;
       _coverImage = $v.coverImage?.toBuilder();
-      _type = $v.type;
-      _mediaListEntry = $v.mediaListEntry?.toBuilder();
       _$v = null;
     }
     return this;
   }
 
   @override
-  void replace(GDiscoverMediaData_Page_media other) {
+  void replace(GTrendingAnimeQueryData_Page_media other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GDiscoverMediaData_Page_media;
+    _$v = other as _$GTrendingAnimeQueryData_Page_media;
   }
 
   @override
-  void update(void Function(GDiscoverMediaData_Page_mediaBuilder)? updates) {
+  void update(
+      void Function(GTrendingAnimeQueryData_Page_mediaBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GDiscoverMediaData_Page_media build() => _build();
+  GTrendingAnimeQueryData_Page_media build() => _build();
 
-  _$GDiscoverMediaData_Page_media _build() {
-    _$GDiscoverMediaData_Page_media _$result;
+  _$GTrendingAnimeQueryData_Page_media _build() {
+    _$GTrendingAnimeQueryData_Page_media _$result;
     try {
       _$result = _$v ??
-          new _$GDiscoverMediaData_Page_media._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GDiscoverMediaData_Page_media', 'G__typename'),
+          new _$GTrendingAnimeQueryData_Page_media._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                  r'GTrendingAnimeQueryData_Page_media', 'G__typename'),
               id: BuiltValueNullFieldError.checkNotNull(
-                  id, r'GDiscoverMediaData_Page_media', 'id'),
+                  id, r'GTrendingAnimeQueryData_Page_media', 'id'),
               idMal: idMal,
               title: _title?.build(),
               bannerImage: bannerImage,
-              coverImage: _coverImage?.build(),
-              type: type,
-              mediaListEntry: _mediaListEntry?.build());
+              coverImage: _coverImage?.build());
     } catch (_) {
       late String _$failedField;
       try {
@@ -1206,12 +1109,9 @@ class GDiscoverMediaData_Page_mediaBuilder
 
         _$failedField = 'coverImage';
         _coverImage?.build();
-
-        _$failedField = 'mediaListEntry';
-        _mediaListEntry?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GDiscoverMediaData_Page_media', _$failedField, e.toString());
+            r'GTrendingAnimeQueryData_Page_media', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -1220,49 +1120,50 @@ class GDiscoverMediaData_Page_mediaBuilder
   }
 }
 
-class _$GDiscoverMediaData_Page_media_title
-    extends GDiscoverMediaData_Page_media_title {
+class _$GTrendingAnimeQueryData_Page_media_title
+    extends GTrendingAnimeQueryData_Page_media_title {
   @override
   final String G__typename;
   @override
-  final String? english;
-  @override
   final String? romaji;
+  @override
+  final String? english;
   @override
   final String? userPreferred;
 
-  factory _$GDiscoverMediaData_Page_media_title(
-          [void Function(GDiscoverMediaData_Page_media_titleBuilder)?
+  factory _$GTrendingAnimeQueryData_Page_media_title(
+          [void Function(GTrendingAnimeQueryData_Page_media_titleBuilder)?
               updates]) =>
-      (new GDiscoverMediaData_Page_media_titleBuilder()..update(updates))
+      (new GTrendingAnimeQueryData_Page_media_titleBuilder()..update(updates))
           ._build();
 
-  _$GDiscoverMediaData_Page_media_title._(
+  _$GTrendingAnimeQueryData_Page_media_title._(
       {required this.G__typename,
-      this.english,
       this.romaji,
+      this.english,
       this.userPreferred})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GDiscoverMediaData_Page_media_title', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GTrendingAnimeQueryData_Page_media_title', 'G__typename');
   }
 
   @override
-  GDiscoverMediaData_Page_media_title rebuild(
-          void Function(GDiscoverMediaData_Page_media_titleBuilder) updates) =>
+  GTrendingAnimeQueryData_Page_media_title rebuild(
+          void Function(GTrendingAnimeQueryData_Page_media_titleBuilder)
+              updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GDiscoverMediaData_Page_media_titleBuilder toBuilder() =>
-      new GDiscoverMediaData_Page_media_titleBuilder()..replace(this);
+  GTrendingAnimeQueryData_Page_media_titleBuilder toBuilder() =>
+      new GTrendingAnimeQueryData_Page_media_titleBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GDiscoverMediaData_Page_media_title &&
+    return other is GTrendingAnimeQueryData_Page_media_title &&
         G__typename == other.G__typename &&
-        english == other.english &&
         romaji == other.romaji &&
+        english == other.english &&
         userPreferred == other.userPreferred;
   }
 
@@ -1270,8 +1171,8 @@ class _$GDiscoverMediaData_Page_media_title
   int get hashCode {
     var _$hash = 0;
     _$hash = $jc(_$hash, G__typename.hashCode);
-    _$hash = $jc(_$hash, english.hashCode);
     _$hash = $jc(_$hash, romaji.hashCode);
+    _$hash = $jc(_$hash, english.hashCode);
     _$hash = $jc(_$hash, userPreferred.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
@@ -1279,48 +1180,49 @@ class _$GDiscoverMediaData_Page_media_title
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GDiscoverMediaData_Page_media_title')
+    return (newBuiltValueToStringHelper(
+            r'GTrendingAnimeQueryData_Page_media_title')
           ..add('G__typename', G__typename)
-          ..add('english', english)
           ..add('romaji', romaji)
+          ..add('english', english)
           ..add('userPreferred', userPreferred))
         .toString();
   }
 }
 
-class GDiscoverMediaData_Page_media_titleBuilder
+class GTrendingAnimeQueryData_Page_media_titleBuilder
     implements
-        Builder<GDiscoverMediaData_Page_media_title,
-            GDiscoverMediaData_Page_media_titleBuilder> {
-  _$GDiscoverMediaData_Page_media_title? _$v;
+        Builder<GTrendingAnimeQueryData_Page_media_title,
+            GTrendingAnimeQueryData_Page_media_titleBuilder> {
+  _$GTrendingAnimeQueryData_Page_media_title? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  String? _english;
-  String? get english => _$this._english;
-  set english(String? english) => _$this._english = english;
-
   String? _romaji;
   String? get romaji => _$this._romaji;
   set romaji(String? romaji) => _$this._romaji = romaji;
+
+  String? _english;
+  String? get english => _$this._english;
+  set english(String? english) => _$this._english = english;
 
   String? _userPreferred;
   String? get userPreferred => _$this._userPreferred;
   set userPreferred(String? userPreferred) =>
       _$this._userPreferred = userPreferred;
 
-  GDiscoverMediaData_Page_media_titleBuilder() {
-    GDiscoverMediaData_Page_media_title._initializeBuilder(this);
+  GTrendingAnimeQueryData_Page_media_titleBuilder() {
+    GTrendingAnimeQueryData_Page_media_title._initializeBuilder(this);
   }
 
-  GDiscoverMediaData_Page_media_titleBuilder get _$this {
+  GTrendingAnimeQueryData_Page_media_titleBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
-      _english = $v.english;
       _romaji = $v.romaji;
+      _english = $v.english;
       _userPreferred = $v.userPreferred;
       _$v = null;
     }
@@ -1328,35 +1230,35 @@ class GDiscoverMediaData_Page_media_titleBuilder
   }
 
   @override
-  void replace(GDiscoverMediaData_Page_media_title other) {
+  void replace(GTrendingAnimeQueryData_Page_media_title other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GDiscoverMediaData_Page_media_title;
+    _$v = other as _$GTrendingAnimeQueryData_Page_media_title;
   }
 
   @override
   void update(
-      void Function(GDiscoverMediaData_Page_media_titleBuilder)? updates) {
+      void Function(GTrendingAnimeQueryData_Page_media_titleBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GDiscoverMediaData_Page_media_title build() => _build();
+  GTrendingAnimeQueryData_Page_media_title build() => _build();
 
-  _$GDiscoverMediaData_Page_media_title _build() {
+  _$GTrendingAnimeQueryData_Page_media_title _build() {
     final _$result = _$v ??
-        new _$GDiscoverMediaData_Page_media_title._(
+        new _$GTrendingAnimeQueryData_Page_media_title._(
             G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GDiscoverMediaData_Page_media_title', 'G__typename'),
-            english: english,
+                r'GTrendingAnimeQueryData_Page_media_title', 'G__typename'),
             romaji: romaji,
+            english: english,
             userPreferred: userPreferred);
     replace(_$result);
     return _$result;
   }
 }
 
-class _$GDiscoverMediaData_Page_media_coverImage
-    extends GDiscoverMediaData_Page_media_coverImage {
+class _$GTrendingAnimeQueryData_Page_media_coverImage
+    extends GTrendingAnimeQueryData_Page_media_coverImage {
   @override
   final String G__typename;
   @override
@@ -1368,13 +1270,14 @@ class _$GDiscoverMediaData_Page_media_coverImage
   @override
   final String? color;
 
-  factory _$GDiscoverMediaData_Page_media_coverImage(
-          [void Function(GDiscoverMediaData_Page_media_coverImageBuilder)?
+  factory _$GTrendingAnimeQueryData_Page_media_coverImage(
+          [void Function(GTrendingAnimeQueryData_Page_media_coverImageBuilder)?
               updates]) =>
-      (new GDiscoverMediaData_Page_media_coverImageBuilder()..update(updates))
+      (new GTrendingAnimeQueryData_Page_media_coverImageBuilder()
+            ..update(updates))
           ._build();
 
-  _$GDiscoverMediaData_Page_media_coverImage._(
+  _$GTrendingAnimeQueryData_Page_media_coverImage._(
       {required this.G__typename,
       this.extraLarge,
       this.large,
@@ -1382,23 +1285,23 @@ class _$GDiscoverMediaData_Page_media_coverImage
       this.color})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GDiscoverMediaData_Page_media_coverImage', 'G__typename');
+        r'GTrendingAnimeQueryData_Page_media_coverImage', 'G__typename');
   }
 
   @override
-  GDiscoverMediaData_Page_media_coverImage rebuild(
-          void Function(GDiscoverMediaData_Page_media_coverImageBuilder)
+  GTrendingAnimeQueryData_Page_media_coverImage rebuild(
+          void Function(GTrendingAnimeQueryData_Page_media_coverImageBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GDiscoverMediaData_Page_media_coverImageBuilder toBuilder() =>
-      new GDiscoverMediaData_Page_media_coverImageBuilder()..replace(this);
+  GTrendingAnimeQueryData_Page_media_coverImageBuilder toBuilder() =>
+      new GTrendingAnimeQueryData_Page_media_coverImageBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GDiscoverMediaData_Page_media_coverImage &&
+    return other is GTrendingAnimeQueryData_Page_media_coverImage &&
         G__typename == other.G__typename &&
         extraLarge == other.extraLarge &&
         large == other.large &&
@@ -1421,7 +1324,7 @@ class _$GDiscoverMediaData_Page_media_coverImage
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GDiscoverMediaData_Page_media_coverImage')
+            r'GTrendingAnimeQueryData_Page_media_coverImage')
           ..add('G__typename', G__typename)
           ..add('extraLarge', extraLarge)
           ..add('large', large)
@@ -1431,11 +1334,11 @@ class _$GDiscoverMediaData_Page_media_coverImage
   }
 }
 
-class GDiscoverMediaData_Page_media_coverImageBuilder
+class GTrendingAnimeQueryData_Page_media_coverImageBuilder
     implements
-        Builder<GDiscoverMediaData_Page_media_coverImage,
-            GDiscoverMediaData_Page_media_coverImageBuilder> {
-  _$GDiscoverMediaData_Page_media_coverImage? _$v;
+        Builder<GTrendingAnimeQueryData_Page_media_coverImage,
+            GTrendingAnimeQueryData_Page_media_coverImageBuilder> {
+  _$GTrendingAnimeQueryData_Page_media_coverImage? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -1457,11 +1360,11 @@ class GDiscoverMediaData_Page_media_coverImageBuilder
   String? get color => _$this._color;
   set color(String? color) => _$this._color = color;
 
-  GDiscoverMediaData_Page_media_coverImageBuilder() {
-    GDiscoverMediaData_Page_media_coverImage._initializeBuilder(this);
+  GTrendingAnimeQueryData_Page_media_coverImageBuilder() {
+    GTrendingAnimeQueryData_Page_media_coverImage._initializeBuilder(this);
   }
 
-  GDiscoverMediaData_Page_media_coverImageBuilder get _$this {
+  GTrendingAnimeQueryData_Page_media_coverImageBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -1475,142 +1378,32 @@ class GDiscoverMediaData_Page_media_coverImageBuilder
   }
 
   @override
-  void replace(GDiscoverMediaData_Page_media_coverImage other) {
+  void replace(GTrendingAnimeQueryData_Page_media_coverImage other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GDiscoverMediaData_Page_media_coverImage;
+    _$v = other as _$GTrendingAnimeQueryData_Page_media_coverImage;
   }
 
   @override
   void update(
-      void Function(GDiscoverMediaData_Page_media_coverImageBuilder)? updates) {
-    if (updates != null) updates(this);
-  }
-
-  @override
-  GDiscoverMediaData_Page_media_coverImage build() => _build();
-
-  _$GDiscoverMediaData_Page_media_coverImage _build() {
-    final _$result = _$v ??
-        new _$GDiscoverMediaData_Page_media_coverImage._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GDiscoverMediaData_Page_media_coverImage', 'G__typename'),
-            extraLarge: extraLarge,
-            large: large,
-            medium: medium,
-            color: color);
-    replace(_$result);
-    return _$result;
-  }
-}
-
-class _$GDiscoverMediaData_Page_media_mediaListEntry
-    extends GDiscoverMediaData_Page_media_mediaListEntry {
-  @override
-  final String G__typename;
-  @override
-  final _i2.GMediaListStatus? status;
-
-  factory _$GDiscoverMediaData_Page_media_mediaListEntry(
-          [void Function(GDiscoverMediaData_Page_media_mediaListEntryBuilder)?
-              updates]) =>
-      (new GDiscoverMediaData_Page_media_mediaListEntryBuilder()
-            ..update(updates))
-          ._build();
-
-  _$GDiscoverMediaData_Page_media_mediaListEntry._(
-      {required this.G__typename, this.status})
-      : super._() {
-    BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GDiscoverMediaData_Page_media_mediaListEntry', 'G__typename');
-  }
-
-  @override
-  GDiscoverMediaData_Page_media_mediaListEntry rebuild(
-          void Function(GDiscoverMediaData_Page_media_mediaListEntryBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
-
-  @override
-  GDiscoverMediaData_Page_media_mediaListEntryBuilder toBuilder() =>
-      new GDiscoverMediaData_Page_media_mediaListEntryBuilder()..replace(this);
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(other, this)) return true;
-    return other is GDiscoverMediaData_Page_media_mediaListEntry &&
-        G__typename == other.G__typename &&
-        status == other.status;
-  }
-
-  @override
-  int get hashCode {
-    var _$hash = 0;
-    _$hash = $jc(_$hash, G__typename.hashCode);
-    _$hash = $jc(_$hash, status.hashCode);
-    _$hash = $jf(_$hash);
-    return _$hash;
-  }
-
-  @override
-  String toString() {
-    return (newBuiltValueToStringHelper(
-            r'GDiscoverMediaData_Page_media_mediaListEntry')
-          ..add('G__typename', G__typename)
-          ..add('status', status))
-        .toString();
-  }
-}
-
-class GDiscoverMediaData_Page_media_mediaListEntryBuilder
-    implements
-        Builder<GDiscoverMediaData_Page_media_mediaListEntry,
-            GDiscoverMediaData_Page_media_mediaListEntryBuilder> {
-  _$GDiscoverMediaData_Page_media_mediaListEntry? _$v;
-
-  String? _G__typename;
-  String? get G__typename => _$this._G__typename;
-  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
-
-  _i2.GMediaListStatus? _status;
-  _i2.GMediaListStatus? get status => _$this._status;
-  set status(_i2.GMediaListStatus? status) => _$this._status = status;
-
-  GDiscoverMediaData_Page_media_mediaListEntryBuilder() {
-    GDiscoverMediaData_Page_media_mediaListEntry._initializeBuilder(this);
-  }
-
-  GDiscoverMediaData_Page_media_mediaListEntryBuilder get _$this {
-    final $v = _$v;
-    if ($v != null) {
-      _G__typename = $v.G__typename;
-      _status = $v.status;
-      _$v = null;
-    }
-    return this;
-  }
-
-  @override
-  void replace(GDiscoverMediaData_Page_media_mediaListEntry other) {
-    ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GDiscoverMediaData_Page_media_mediaListEntry;
-  }
-
-  @override
-  void update(
-      void Function(GDiscoverMediaData_Page_media_mediaListEntryBuilder)?
+      void Function(GTrendingAnimeQueryData_Page_media_coverImageBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GDiscoverMediaData_Page_media_mediaListEntry build() => _build();
+  GTrendingAnimeQueryData_Page_media_coverImage build() => _build();
 
-  _$GDiscoverMediaData_Page_media_mediaListEntry _build() {
+  _$GTrendingAnimeQueryData_Page_media_coverImage _build() {
     final _$result = _$v ??
-        new _$GDiscoverMediaData_Page_media_mediaListEntry._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GDiscoverMediaData_Page_media_mediaListEntry', 'G__typename'),
-            status: status);
+        new _$GTrendingAnimeQueryData_Page_media_coverImage._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename,
+                r'GTrendingAnimeQueryData_Page_media_coverImage',
+                'G__typename'),
+            extraLarge: extraLarge,
+            large: large,
+            medium: medium,
+            color: color);
     replace(_$result);
     return _$result;
   }

@@ -312,6 +312,13 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_mediaSerializ
       serializers.serialize(object.id, specifiedType: const FullType(int)),
     ];
     Object? value;
+    value = object.siteUrl;
+    if (value != null) {
+      result
+        ..add('siteUrl')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
     value = object.mediaListEntry;
     if (value != null) {
       result
@@ -375,6 +382,12 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_mediaSerializ
         ..add(serializers.serialize(value,
             specifiedType: const FullType(_i2.GMediaFormat)));
     }
+    value = object.averageScore;
+    if (value != null) {
+      result
+        ..add('averageScore')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
     return result;
   }
 
@@ -394,6 +407,10 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_mediaSerializ
         case '__typename':
           result.G__typename = serializers.deserialize(value,
               specifiedType: const FullType(String))! as String;
+          break;
+        case 'siteUrl':
+          result.siteUrl = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
           break;
         case 'mediaListEntry':
           result.mediaListEntry.replace(serializers.deserialize(value,
@@ -442,6 +459,10 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_mediaSerializ
           result.format = serializers.deserialize(value,
                   specifiedType: const FullType(_i2.GMediaFormat))
               as _i2.GMediaFormat?;
+          break;
+        case 'averageScore':
+          result.averageScore = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -1289,6 +1310,8 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
   @override
   final String G__typename;
   @override
+  final String? siteUrl;
+  @override
   final GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntry?
       mediaListEntry;
   @override
@@ -1311,6 +1334,8 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
   final int? volumes;
   @override
   final _i2.GMediaFormat? format;
+  @override
+  final int? averageScore;
 
   factory _$GMediaListCollectionData_MediaListCollection_lists_entries_media(
           [void Function(
@@ -1322,6 +1347,7 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
 
   _$GMediaListCollectionData_MediaListCollection_lists_entries_media._(
       {required this.G__typename,
+      this.siteUrl,
       this.mediaListEntry,
       required this.id,
       this.title,
@@ -1331,7 +1357,8 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
       this.episodes,
       this.chapters,
       this.volumes,
-      this.format})
+      this.format,
+      this.averageScore})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename,
@@ -1362,6 +1389,7 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
     return other
             is GMediaListCollectionData_MediaListCollection_lists_entries_media &&
         G__typename == other.G__typename &&
+        siteUrl == other.siteUrl &&
         mediaListEntry == other.mediaListEntry &&
         id == other.id &&
         title == other.title &&
@@ -1371,13 +1399,15 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
         episodes == other.episodes &&
         chapters == other.chapters &&
         volumes == other.volumes &&
-        format == other.format;
+        format == other.format &&
+        averageScore == other.averageScore;
   }
 
   @override
   int get hashCode {
     var _$hash = 0;
     _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, siteUrl.hashCode);
     _$hash = $jc(_$hash, mediaListEntry.hashCode);
     _$hash = $jc(_$hash, id.hashCode);
     _$hash = $jc(_$hash, title.hashCode);
@@ -1388,6 +1418,7 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
     _$hash = $jc(_$hash, chapters.hashCode);
     _$hash = $jc(_$hash, volumes.hashCode);
     _$hash = $jc(_$hash, format.hashCode);
+    _$hash = $jc(_$hash, averageScore.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -1397,6 +1428,7 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
     return (newBuiltValueToStringHelper(
             r'GMediaListCollectionData_MediaListCollection_lists_entries_media')
           ..add('G__typename', G__typename)
+          ..add('siteUrl', siteUrl)
           ..add('mediaListEntry', mediaListEntry)
           ..add('id', id)
           ..add('title', title)
@@ -1406,7 +1438,8 @@ class _$GMediaListCollectionData_MediaListCollection_lists_entries_media
           ..add('episodes', episodes)
           ..add('chapters', chapters)
           ..add('volumes', volumes)
-          ..add('format', format))
+          ..add('format', format)
+          ..add('averageScore', averageScore))
         .toString();
   }
 }
@@ -1421,6 +1454,10 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  String? _siteUrl;
+  String? get siteUrl => _$this._siteUrl;
+  set siteUrl(String? siteUrl) => _$this._siteUrl = siteUrl;
 
   GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntryBuilder?
       _mediaListEntry;
@@ -1480,6 +1517,10 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
   _i2.GMediaFormat? get format => _$this._format;
   set format(_i2.GMediaFormat? format) => _$this._format = format;
 
+  int? _averageScore;
+  int? get averageScore => _$this._averageScore;
+  set averageScore(int? averageScore) => _$this._averageScore = averageScore;
+
   GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder() {
     GMediaListCollectionData_MediaListCollection_lists_entries_media
         ._initializeBuilder(this);
@@ -1490,6 +1531,7 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
+      _siteUrl = $v.siteUrl;
       _mediaListEntry = $v.mediaListEntry?.toBuilder();
       _id = $v.id;
       _title = $v.title?.toBuilder();
@@ -1500,6 +1542,7 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
       _chapters = $v.chapters;
       _volumes = $v.volumes;
       _format = $v.format;
+      _averageScore = $v.averageScore;
       _$v = null;
     }
     return this;
@@ -1535,6 +1578,7 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
                   G__typename,
                   r'GMediaListCollectionData_MediaListCollection_lists_entries_media',
                   'G__typename'),
+              siteUrl: siteUrl,
               mediaListEntry: _mediaListEntry?.build(),
               id: BuiltValueNullFieldError.checkNotNull(
                   id,
@@ -1547,7 +1591,8 @@ class GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
               episodes: episodes,
               chapters: chapters,
               volumes: volumes,
-              format: format);
+              format: format,
+              averageScore: averageScore);
     } catch (_) {
       late String _$failedField;
       try {

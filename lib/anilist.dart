@@ -12,6 +12,7 @@ export 'src/discover_media.dart';
 export 'src/fav_anime_query.dart';
 export 'src/fav_char_query.dart';
 export 'src/fav_manga_query.dart';
+export 'src/search_query.dart';
 export 'src/graphql/generated/schema.schema.gql.dart';
 export 'src/media_detail_query.dart';
 export 'src/medialist_collection.dart';

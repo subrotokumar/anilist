@@ -18,10 +18,12 @@ abstract class GStaffQueryVars
   int? get id;
   static Serializer<GStaffQueryVars> get serializer =>
       _$gStaffQueryVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GStaffQueryVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GStaffQueryVars? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GStaffQueryVars.serializer,

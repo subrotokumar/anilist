@@ -21,15 +21,18 @@ abstract class GMediaListCollectionData
 
   static void _initializeBuilder(GMediaListCollectionDataBuilder b) =>
       b..G__typename = 'Query';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GMediaListCollectionData_MediaListCollection? get MediaListCollection;
   static Serializer<GMediaListCollectionData> get serializer =>
       _$gMediaListCollectionDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaListCollectionData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListCollectionData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GMediaListCollectionData.serializer,
@@ -50,15 +53,18 @@ abstract class GMediaListCollectionData_MediaListCollection
   static void _initializeBuilder(
           GMediaListCollectionData_MediaListCollectionBuilder b) =>
       b..G__typename = 'MediaListCollection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GMediaListCollectionData_MediaListCollection_lists?>? get lists;
   static Serializer<GMediaListCollectionData_MediaListCollection>
       get serializer => _$gMediaListCollectionDataMediaListCollectionSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaListCollectionData_MediaListCollection.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListCollectionData_MediaListCollection? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -80,6 +86,7 @@ abstract class GMediaListCollectionData_MediaListCollection_lists
   static void _initializeBuilder(
           GMediaListCollectionData_MediaListCollection_listsBuilder b) =>
       b..G__typename = 'MediaListGroup';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GMediaListCollectionData_MediaListCollection_lists_entries?>?
@@ -87,10 +94,12 @@ abstract class GMediaListCollectionData_MediaListCollection_lists
   static Serializer<GMediaListCollectionData_MediaListCollection_lists>
       get serializer =>
           _$gMediaListCollectionDataMediaListCollectionListsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaListCollectionData_MediaListCollection_lists.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListCollectionData_MediaListCollection_lists? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -115,16 +124,19 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries
           GMediaListCollectionData_MediaListCollection_lists_entriesBuilder
               b) =>
       b..G__typename = 'MediaList';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GMediaListCollectionData_MediaListCollection_lists_entries_media? get media;
   static Serializer<GMediaListCollectionData_MediaListCollection_lists_entries>
       get serializer =>
           _$gMediaListCollectionDataMediaListCollectionListsEntriesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaListCollectionData_MediaListCollection_lists_entries.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListCollectionData_MediaListCollection_lists_entries? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -150,8 +162,10 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media
           GMediaListCollectionData_MediaListCollection_lists_entries_mediaBuilder
               b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
+  String? get siteUrl;
   GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntry?
       get mediaListEntry;
   int get id;
@@ -165,15 +179,18 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media
   int? get chapters;
   int? get volumes;
   _i2.GMediaFormat? get format;
+  int? get averageScore;
   static Serializer<
           GMediaListCollectionData_MediaListCollection_lists_entries_media>
       get serializer =>
           _$gMediaListCollectionDataMediaListCollectionListsEntriesMediaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaListCollectionData_MediaListCollection_lists_entries_media
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListCollectionData_MediaListCollection_lists_entries_media?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GMediaListCollectionData_MediaListCollection_lists_entries_media
@@ -200,6 +217,7 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media_
           GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntryBuilder
               b) =>
       b..G__typename = 'MediaList';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -212,11 +230,13 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media_
           GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntry>
       get serializer =>
           _$gMediaListCollectionDataMediaListCollectionListsEntriesMediaMediaListEntrySerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntry
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntry?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntry
@@ -243,6 +263,7 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media_
           GMediaListCollectionData_MediaListCollection_lists_entries_media_titleBuilder
               b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get romaji;
@@ -252,11 +273,13 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media_
           GMediaListCollectionData_MediaListCollection_lists_entries_media_title>
       get serializer =>
           _$gMediaListCollectionDataMediaListCollectionListsEntriesMediaTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaListCollectionData_MediaListCollection_lists_entries_media_title
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListCollectionData_MediaListCollection_lists_entries_media_title?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GMediaListCollectionData_MediaListCollection_lists_entries_media_title
@@ -283,6 +306,7 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media_
           GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImageBuilder
               b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get medium;
@@ -293,11 +317,13 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media_
           GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage>
       get serializer =>
           _$gMediaListCollectionDataMediaListCollectionListsEntriesMediaCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage

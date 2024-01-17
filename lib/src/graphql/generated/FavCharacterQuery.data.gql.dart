@@ -19,15 +19,18 @@ abstract class GFavCharacterQueryData
 
   static void _initializeBuilder(GFavCharacterQueryDataBuilder b) =>
       b..G__typename = 'Query';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GFavCharacterQueryData_Viewer? get Viewer;
   static Serializer<GFavCharacterQueryData> get serializer =>
       _$gFavCharacterQueryDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GFavCharacterQueryData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavCharacterQueryData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GFavCharacterQueryData.serializer,
@@ -47,16 +50,19 @@ abstract class GFavCharacterQueryData_Viewer
 
   static void _initializeBuilder(GFavCharacterQueryData_ViewerBuilder b) =>
       b..G__typename = 'User';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
   GFavCharacterQueryData_Viewer_favourites? get favourites;
   static Serializer<GFavCharacterQueryData_Viewer> get serializer =>
       _$gFavCharacterQueryDataViewerSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GFavCharacterQueryData_Viewer.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavCharacterQueryData_Viewer? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GFavCharacterQueryData_Viewer.serializer,
@@ -77,15 +83,18 @@ abstract class GFavCharacterQueryData_Viewer_favourites
   static void _initializeBuilder(
           GFavCharacterQueryData_Viewer_favouritesBuilder b) =>
       b..G__typename = 'Favourites';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GFavCharacterQueryData_Viewer_favourites_characters? get characters;
   static Serializer<GFavCharacterQueryData_Viewer_favourites> get serializer =>
       _$gFavCharacterQueryDataViewerFavouritesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GFavCharacterQueryData_Viewer_favourites.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavCharacterQueryData_Viewer_favourites? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -107,6 +116,7 @@ abstract class GFavCharacterQueryData_Viewer_favourites_characters
   static void _initializeBuilder(
           GFavCharacterQueryData_Viewer_favourites_charactersBuilder b) =>
       b..G__typename = 'CharacterConnection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GFavCharacterQueryData_Viewer_favourites_characters_pageInfo? get pageInfo;
@@ -115,10 +125,12 @@ abstract class GFavCharacterQueryData_Viewer_favourites_characters
   static Serializer<GFavCharacterQueryData_Viewer_favourites_characters>
       get serializer =>
           _$gFavCharacterQueryDataViewerFavouritesCharactersSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GFavCharacterQueryData_Viewer_favourites_characters.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavCharacterQueryData_Viewer_favourites_characters? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -144,6 +156,7 @@ abstract class GFavCharacterQueryData_Viewer_favourites_characters_pageInfo
           GFavCharacterQueryData_Viewer_favourites_characters_pageInfoBuilder
               b) =>
       b..G__typename = 'PageInfo';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get total;
@@ -155,10 +168,12 @@ abstract class GFavCharacterQueryData_Viewer_favourites_characters_pageInfo
           GFavCharacterQueryData_Viewer_favourites_characters_pageInfo>
       get serializer =>
           _$gFavCharacterQueryDataViewerFavouritesCharactersPageInfoSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GFavCharacterQueryData_Viewer_favourites_characters_pageInfo.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavCharacterQueryData_Viewer_favourites_characters_pageInfo? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -182,6 +197,7 @@ abstract class GFavCharacterQueryData_Viewer_favourites_characters_nodes
   static void _initializeBuilder(
           GFavCharacterQueryData_Viewer_favourites_characters_nodesBuilder b) =>
       b..G__typename = 'Character';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -190,10 +206,12 @@ abstract class GFavCharacterQueryData_Viewer_favourites_characters_nodes
   static Serializer<GFavCharacterQueryData_Viewer_favourites_characters_nodes>
       get serializer =>
           _$gFavCharacterQueryDataViewerFavouritesCharactersNodesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GFavCharacterQueryData_Viewer_favourites_characters_nodes.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavCharacterQueryData_Viewer_favourites_characters_nodes? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -219,6 +237,7 @@ abstract class GFavCharacterQueryData_Viewer_favourites_characters_nodes_name
           GFavCharacterQueryData_Viewer_favourites_characters_nodes_nameBuilder
               b) =>
       b..G__typename = 'CharacterName';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get full;
@@ -226,11 +245,13 @@ abstract class GFavCharacterQueryData_Viewer_favourites_characters_nodes_name
           GFavCharacterQueryData_Viewer_favourites_characters_nodes_name>
       get serializer =>
           _$gFavCharacterQueryDataViewerFavouritesCharactersNodesNameSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GFavCharacterQueryData_Viewer_favourites_characters_nodes_name
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavCharacterQueryData_Viewer_favourites_characters_nodes_name?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GFavCharacterQueryData_Viewer_favourites_characters_nodes_name
@@ -256,6 +277,7 @@ abstract class GFavCharacterQueryData_Viewer_favourites_characters_nodes_image
           GFavCharacterQueryData_Viewer_favourites_characters_nodes_imageBuilder
               b) =>
       b..G__typename = 'CharacterImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get medium;
@@ -264,11 +286,13 @@ abstract class GFavCharacterQueryData_Viewer_favourites_characters_nodes_image
           GFavCharacterQueryData_Viewer_favourites_characters_nodes_image>
       get serializer =>
           _$gFavCharacterQueryDataViewerFavouritesCharactersNodesImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GFavCharacterQueryData_Viewer_favourites_characters_nodes_image
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GFavCharacterQueryData_Viewer_favourites_characters_nodes_image?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GFavCharacterQueryData_Viewer_favourites_characters_nodes_image

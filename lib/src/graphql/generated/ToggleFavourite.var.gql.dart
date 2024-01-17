@@ -23,10 +23,12 @@ abstract class GToggleFavouriteVars
   int? get studioId;
   static Serializer<GToggleFavouriteVars> get serializer =>
       _$gToggleFavouriteVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GToggleFavouriteVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GToggleFavouriteVars? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GToggleFavouriteVars.serializer,

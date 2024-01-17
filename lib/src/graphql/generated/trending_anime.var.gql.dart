@@ -19,10 +19,12 @@ abstract class GtrendingAnimeVars
   int? get perPage;
   static Serializer<GtrendingAnimeVars> get serializer =>
       _$gtrendingAnimeVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GtrendingAnimeVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GtrendingAnimeVars? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GtrendingAnimeVars.serializer,

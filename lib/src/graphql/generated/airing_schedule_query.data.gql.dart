@@ -21,15 +21,18 @@ abstract class GAiringScheduleQueryData
 
   static void _initializeBuilder(GAiringScheduleQueryDataBuilder b) =>
       b..G__typename = 'Query';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GAiringScheduleQueryData_Page? get Page;
   static Serializer<GAiringScheduleQueryData> get serializer =>
       _$gAiringScheduleQueryDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GAiringScheduleQueryData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GAiringScheduleQueryData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GAiringScheduleQueryData.serializer,
@@ -49,6 +52,7 @@ abstract class GAiringScheduleQueryData_Page
 
   static void _initializeBuilder(GAiringScheduleQueryData_PageBuilder b) =>
       b..G__typename = 'Page';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GAiringScheduleQueryData_Page_pageInfo? get pageInfo;
@@ -56,10 +60,12 @@ abstract class GAiringScheduleQueryData_Page
       get airingSchedules;
   static Serializer<GAiringScheduleQueryData_Page> get serializer =>
       _$gAiringScheduleQueryDataPageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GAiringScheduleQueryData_Page.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GAiringScheduleQueryData_Page? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GAiringScheduleQueryData_Page.serializer,
@@ -80,6 +86,7 @@ abstract class GAiringScheduleQueryData_Page_pageInfo
   static void _initializeBuilder(
           GAiringScheduleQueryData_Page_pageInfoBuilder b) =>
       b..G__typename = 'PageInfo';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get total;
@@ -89,10 +96,12 @@ abstract class GAiringScheduleQueryData_Page_pageInfo
   bool? get hasNextPage;
   static Serializer<GAiringScheduleQueryData_Page_pageInfo> get serializer =>
       _$gAiringScheduleQueryDataPagePageInfoSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GAiringScheduleQueryData_Page_pageInfo.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GAiringScheduleQueryData_Page_pageInfo? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -114,6 +123,7 @@ abstract class GAiringScheduleQueryData_Page_airingSchedules
   static void _initializeBuilder(
           GAiringScheduleQueryData_Page_airingSchedulesBuilder b) =>
       b..G__typename = 'AiringSchedule';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -123,10 +133,12 @@ abstract class GAiringScheduleQueryData_Page_airingSchedules
   GAiringScheduleQueryData_Page_airingSchedules_media? get media;
   static Serializer<GAiringScheduleQueryData_Page_airingSchedules>
       get serializer => _$gAiringScheduleQueryDataPageAiringSchedulesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GAiringScheduleQueryData_Page_airingSchedules.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GAiringScheduleQueryData_Page_airingSchedules? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -148,6 +160,7 @@ abstract class GAiringScheduleQueryData_Page_airingSchedules_media
   static void _initializeBuilder(
           GAiringScheduleQueryData_Page_airingSchedules_mediaBuilder b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   _i2.GCountryCode? get countryOfOrigin;
@@ -164,10 +177,12 @@ abstract class GAiringScheduleQueryData_Page_airingSchedules_media
   static Serializer<GAiringScheduleQueryData_Page_airingSchedules_media>
       get serializer =>
           _$gAiringScheduleQueryDataPageAiringSchedulesMediaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GAiringScheduleQueryData_Page_airingSchedules_media.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GAiringScheduleQueryData_Page_airingSchedules_media? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -191,6 +206,7 @@ abstract class GAiringScheduleQueryData_Page_airingSchedules_media_title
   static void _initializeBuilder(
           GAiringScheduleQueryData_Page_airingSchedules_media_titleBuilder b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get userPreferred;
@@ -199,10 +215,12 @@ abstract class GAiringScheduleQueryData_Page_airingSchedules_media_title
   static Serializer<GAiringScheduleQueryData_Page_airingSchedules_media_title>
       get serializer =>
           _$gAiringScheduleQueryDataPageAiringSchedulesMediaTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GAiringScheduleQueryData_Page_airingSchedules_media_title.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GAiringScheduleQueryData_Page_airingSchedules_media_title? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -228,6 +246,7 @@ abstract class GAiringScheduleQueryData_Page_airingSchedules_media_coverImage
           GAiringScheduleQueryData_Page_airingSchedules_media_coverImageBuilder
               b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get large;
@@ -237,11 +256,13 @@ abstract class GAiringScheduleQueryData_Page_airingSchedules_media_coverImage
           GAiringScheduleQueryData_Page_airingSchedules_media_coverImage>
       get serializer =>
           _$gAiringScheduleQueryDataPageAiringSchedulesMediaCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GAiringScheduleQueryData_Page_airingSchedules_media_coverImage
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GAiringScheduleQueryData_Page_airingSchedules_media_coverImage?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GAiringScheduleQueryData_Page_airingSchedules_media_coverImage
@@ -268,6 +289,7 @@ abstract class GAiringScheduleQueryData_Page_airingSchedules_media_mediaListEntr
           GAiringScheduleQueryData_Page_airingSchedules_media_mediaListEntryBuilder
               b) =>
       b..G__typename = 'MediaList';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   _i2.GMediaListStatus? get status;
@@ -275,11 +297,13 @@ abstract class GAiringScheduleQueryData_Page_airingSchedules_media_mediaListEntr
           GAiringScheduleQueryData_Page_airingSchedules_media_mediaListEntry>
       get serializer =>
           _$gAiringScheduleQueryDataPageAiringSchedulesMediaMediaListEntrySerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GAiringScheduleQueryData_Page_airingSchedules_media_mediaListEntry
             .serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GAiringScheduleQueryData_Page_airingSchedules_media_mediaListEntry?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GAiringScheduleQueryData_Page_airingSchedules_media_mediaListEntry

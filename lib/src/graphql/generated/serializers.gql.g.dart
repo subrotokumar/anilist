@@ -53,6 +53,13 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GCharacterDetailQueryVars.serializer)
       ..add(GCharacterNameInput.serializer)
       ..add(GCharacterRole.serializer)
+      ..add(GCharacterSearchQueryData.serializer)
+      ..add(GCharacterSearchQueryData_Page.serializer)
+      ..add(GCharacterSearchQueryData_Page_characters.serializer)
+      ..add(GCharacterSearchQueryData_Page_characters_image.serializer)
+      ..add(GCharacterSearchQueryData_Page_characters_name.serializer)
+      ..add(GCharacterSearchQueryReq.serializer)
+      ..add(GCharacterSearchQueryVars.serializer)
       ..add(GCharacterSort.serializer)
       ..add(GCountryCode.serializer)
       ..add(GDeleteMediaListEntryData.serializer)
@@ -141,6 +148,9 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GMediaDetailQueryData_Media_reviews.serializer)
       ..add(GMediaDetailQueryData_Media_reviews_nodes.serializer)
       ..add(GMediaDetailQueryData_Media_startDate.serializer)
+      ..add(GMediaDetailQueryData_Media_stats.serializer)
+      ..add(GMediaDetailQueryData_Media_stats_scoreDistribution.serializer)
+      ..add(GMediaDetailQueryData_Media_stats_statusDistribution.serializer)
       ..add(GMediaDetailQueryData_Media_studios.serializer)
       ..add(GMediaDetailQueryData_Media_studios_nodes.serializer)
       ..add(GMediaDetailQueryData_Media_studios_pageInfo.serializer)
@@ -262,6 +272,34 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GProfileData_Viewer_statistics.serializer)
       ..add(GProfileData_Viewer_statistics_anime.serializer)
       ..add(GProfileData_Viewer_statistics_manga.serializer)
+      ..add(GProfileQueryData.serializer)
+      ..add(GProfileQueryData_Viewer.serializer)
+      ..add(GProfileQueryData_Viewer_avatar.serializer)
+      ..add(GProfileQueryData_Viewer_favourites.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_anime.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_anime_nodes.serializer)
+      ..add(
+          GProfileQueryData_Viewer_favourites_anime_nodes_coverImage.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_anime_nodes_title.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_anime_pageInfo.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_characters.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_characters_nodes.serializer)
+      ..add(
+          GProfileQueryData_Viewer_favourites_characters_nodes_image.serializer)
+      ..add(
+          GProfileQueryData_Viewer_favourites_characters_nodes_name.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_characters_pageInfo.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_manga.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_manga_nodes.serializer)
+      ..add(
+          GProfileQueryData_Viewer_favourites_manga_nodes_coverImage.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_manga_nodes_title.serializer)
+      ..add(GProfileQueryData_Viewer_favourites_manga_pageInfo.serializer)
+      ..add(GProfileQueryData_Viewer_statistics.serializer)
+      ..add(GProfileQueryData_Viewer_statistics_anime.serializer)
+      ..add(GProfileQueryData_Viewer_statistics_manga.serializer)
+      ..add(GProfileQueryReq.serializer)
+      ..add(GProfileQueryVars.serializer)
       ..add(GProfileReq.serializer)
       ..add(GProfileVars.serializer)
       ..add(GRecommendationRating.serializer)
@@ -324,6 +362,13 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GStaffQueryData_Staff_name.serializer)
       ..add(GStaffQueryReq.serializer)
       ..add(GStaffQueryVars.serializer)
+      ..add(GStaffSearchQueryData.serializer)
+      ..add(GStaffSearchQueryData_Page.serializer)
+      ..add(GStaffSearchQueryData_Page_staff.serializer)
+      ..add(GStaffSearchQueryData_Page_staff_image.serializer)
+      ..add(GStaffSearchQueryData_Page_staff_name.serializer)
+      ..add(GStaffSearchQueryReq.serializer)
+      ..add(GStaffSearchQueryVars.serializer)
       ..add(GStaffSort.serializer)
       ..add(GStudioSort.serializer)
       ..add(GSubmissionSort.serializer)
@@ -341,6 +386,14 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GToggleFavouriteData_ToggleFavourite_manga_nodes.serializer)
       ..add(GToggleFavouriteReq.serializer)
       ..add(GToggleFavouriteVars.serializer)
+      ..add(GTrendingAnimeQueryData.serializer)
+      ..add(GTrendingAnimeQueryData_Page.serializer)
+      ..add(GTrendingAnimeQueryData_Page_media.serializer)
+      ..add(GTrendingAnimeQueryData_Page_media_coverImage.serializer)
+      ..add(GTrendingAnimeQueryData_Page_media_title.serializer)
+      ..add(GTrendingAnimeQueryData_Page_pageInfo.serializer)
+      ..add(GTrendingAnimeQueryReq.serializer)
+      ..add(GTrendingAnimeQueryVars.serializer)
       ..add(GUserIDData.serializer)
       ..add(GUserIDData_Viewer.serializer)
       ..add(GUserIDReq.serializer)
@@ -378,6 +431,11 @@ Serializers _$serializers = (new Serializers().toBuilder()
           ]),
           () => new ListBuilder<
               GCharacterDetailQueryData_Character_media_edges_voiceActors?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GCharacterSearchQueryData_Page_characters)
+          ]),
+          () => new ListBuilder<GCharacterSearchQueryData_Page_characters?>())
       ..addBuilderFactory(
           const FullType(BuiltList,
               const [const FullType.nullable(GDiscoverMediaData_Page_media)]),
@@ -427,6 +485,20 @@ Serializers _$serializers = (new Serializers().toBuilder()
             const FullType.nullable(GMediaDetailQueryData_Media_reviews_nodes)
           ]),
           () => new ListBuilder<GMediaDetailQueryData_Media_reviews_nodes?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GMediaDetailQueryData_Media_stats_scoreDistribution)
+          ]),
+          () => new ListBuilder<
+              GMediaDetailQueryData_Media_stats_scoreDistribution?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GMediaDetailQueryData_Media_stats_statusDistribution)
+          ]),
+          () => new ListBuilder<
+              GMediaDetailQueryData_Media_stats_statusDistribution?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
             const FullType.nullable(GMediaDetailQueryData_Media_studios_nodes)
@@ -544,6 +616,27 @@ Serializers _$serializers = (new Serializers().toBuilder()
           ]),
           () => new ListBuilder<GProfileData_Viewer_favourites_manga_nodes?>())
       ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GProfileQueryData_Viewer_favourites_anime_nodes)
+          ]),
+          () => new ListBuilder<
+              GProfileQueryData_Viewer_favourites_anime_nodes?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GProfileQueryData_Viewer_favourites_characters_nodes)
+          ]),
+          () => new ListBuilder<
+              GProfileQueryData_Viewer_favourites_characters_nodes?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GProfileQueryData_Viewer_favourites_manga_nodes)
+          ]),
+          () => new ListBuilder<
+              GProfileQueryData_Viewer_favourites_manga_nodes?>())
+      ..addBuilderFactory(
           const FullType(BuiltList,
               const [const FullType.nullable(GReviewQueryData_Page_reviews)]),
           () => new ListBuilder<GReviewQueryData_Page_reviews?>())
@@ -583,6 +676,11 @@ Serializers _$serializers = (new Serializers().toBuilder()
           () => new ListBuilder<GStaffQueryData_Staff_characters_nodes?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
+            const FullType.nullable(GStaffSearchQueryData_Page_staff)
+          ]),
+          () => new ListBuilder<GStaffSearchQueryData_Page_staff?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
             const FullType.nullable(
                 GToggleFavouriteData_ToggleFavourite_anime_nodes)
           ]),
@@ -602,6 +700,11 @@ Serializers _$serializers = (new Serializers().toBuilder()
           ]),
           () => new ListBuilder<
               GToggleFavouriteData_ToggleFavourite_manga_nodes?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GTrendingAnimeQueryData_Page_media)
+          ]),
+          () => new ListBuilder<GTrendingAnimeQueryData_Page_media?>())
       ..addBuilderFactory(
           const FullType(BuiltList,
               const [const FullType.nullable(GtrendingAnimeData_Page_media)]),

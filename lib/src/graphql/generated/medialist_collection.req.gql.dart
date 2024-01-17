@@ -33,6 +33,7 @@ abstract class GMediaListCollectionReq
       operationName: 'MediaListCollection',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GMediaListCollectionVars get vars;
   @override
@@ -42,6 +43,7 @@ abstract class GMediaListCollectionReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -63,12 +65,15 @@ abstract class GMediaListCollectionReq
   @override
   _i2.GMediaListCollectionData? parseData(Map<String, dynamic> json) =>
       _i2.GMediaListCollectionData.fromJson(json);
+
   static Serializer<GMediaListCollectionReq> get serializer =>
       _$gMediaListCollectionReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GMediaListCollectionReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListCollectionReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GMediaListCollectionReq.serializer,

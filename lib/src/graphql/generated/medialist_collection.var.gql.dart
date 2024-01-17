@@ -25,10 +25,12 @@ abstract class GMediaListCollectionVars
   BuiltList<_i1.GMediaListSort?>? get sort;
   static Serializer<GMediaListCollectionVars> get serializer =>
       _$gMediaListCollectionVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
         GMediaListCollectionVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GMediaListCollectionVars? fromJson(Map<String, dynamic> json) =>
       _i2.serializers.deserializeWith(
         GMediaListCollectionVars.serializer,

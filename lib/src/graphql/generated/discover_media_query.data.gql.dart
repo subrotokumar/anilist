@@ -8,7 +8,7 @@ import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
-part 'discover_media.data.gql.g.dart';
+part 'discover_media_query.data.gql.g.dart';
 
 abstract class GDiscoverMediaData
     implements Built<GDiscoverMediaData, GDiscoverMediaDataBuilder> {
@@ -19,15 +19,18 @@ abstract class GDiscoverMediaData
 
   static void _initializeBuilder(GDiscoverMediaDataBuilder b) =>
       b..G__typename = 'Query';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GDiscoverMediaData_Page? get Page;
   static Serializer<GDiscoverMediaData> get serializer =>
       _$gDiscoverMediaDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GDiscoverMediaData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDiscoverMediaData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GDiscoverMediaData.serializer,
@@ -45,16 +48,19 @@ abstract class GDiscoverMediaData_Page
 
   static void _initializeBuilder(GDiscoverMediaData_PageBuilder b) =>
       b..G__typename = 'Page';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GDiscoverMediaData_Page_pageInfo? get pageInfo;
   BuiltList<GDiscoverMediaData_Page_media?>? get media;
   static Serializer<GDiscoverMediaData_Page> get serializer =>
       _$gDiscoverMediaDataPageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GDiscoverMediaData_Page.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDiscoverMediaData_Page? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GDiscoverMediaData_Page.serializer,
@@ -74,6 +80,7 @@ abstract class GDiscoverMediaData_Page_pageInfo
 
   static void _initializeBuilder(GDiscoverMediaData_Page_pageInfoBuilder b) =>
       b..G__typename = 'PageInfo';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get total;
@@ -83,10 +90,12 @@ abstract class GDiscoverMediaData_Page_pageInfo
   bool? get hasNextPage;
   static Serializer<GDiscoverMediaData_Page_pageInfo> get serializer =>
       _$gDiscoverMediaDataPagePageInfoSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GDiscoverMediaData_Page_pageInfo.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDiscoverMediaData_Page_pageInfo? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -107,6 +116,7 @@ abstract class GDiscoverMediaData_Page_media
 
   static void _initializeBuilder(GDiscoverMediaData_Page_mediaBuilder b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -115,13 +125,16 @@ abstract class GDiscoverMediaData_Page_media
   String? get bannerImage;
   GDiscoverMediaData_Page_media_coverImage? get coverImage;
   _i2.GMediaType? get type;
+  String? get siteUrl;
   GDiscoverMediaData_Page_media_mediaListEntry? get mediaListEntry;
   static Serializer<GDiscoverMediaData_Page_media> get serializer =>
       _$gDiscoverMediaDataPageMediaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GDiscoverMediaData_Page_media.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDiscoverMediaData_Page_media? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GDiscoverMediaData_Page_media.serializer,
@@ -142,6 +155,7 @@ abstract class GDiscoverMediaData_Page_media_title
   static void _initializeBuilder(
           GDiscoverMediaData_Page_media_titleBuilder b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get english;
@@ -149,10 +163,12 @@ abstract class GDiscoverMediaData_Page_media_title
   String? get userPreferred;
   static Serializer<GDiscoverMediaData_Page_media_title> get serializer =>
       _$gDiscoverMediaDataPageMediaTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GDiscoverMediaData_Page_media_title.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDiscoverMediaData_Page_media_title? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -174,6 +190,7 @@ abstract class GDiscoverMediaData_Page_media_coverImage
   static void _initializeBuilder(
           GDiscoverMediaData_Page_media_coverImageBuilder b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get extraLarge;
@@ -182,10 +199,12 @@ abstract class GDiscoverMediaData_Page_media_coverImage
   String? get color;
   static Serializer<GDiscoverMediaData_Page_media_coverImage> get serializer =>
       _$gDiscoverMediaDataPageMediaCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GDiscoverMediaData_Page_media_coverImage.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDiscoverMediaData_Page_media_coverImage? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -207,15 +226,18 @@ abstract class GDiscoverMediaData_Page_media_mediaListEntry
   static void _initializeBuilder(
           GDiscoverMediaData_Page_media_mediaListEntryBuilder b) =>
       b..G__typename = 'MediaList';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   _i2.GMediaListStatus? get status;
   static Serializer<GDiscoverMediaData_Page_media_mediaListEntry>
       get serializer => _$gDiscoverMediaDataPageMediaMediaListEntrySerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GDiscoverMediaData_Page_media_mediaListEntry.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GDiscoverMediaData_Page_media_mediaListEntry? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(

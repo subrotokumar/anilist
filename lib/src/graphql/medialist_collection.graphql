@@ -13,6 +13,7 @@ query MediaListCollection(
     lists {
       entries {
         media {
+          siteUrl
           mediaListEntry {
             id
             userId
@@ -39,6 +40,7 @@ query MediaListCollection(
           chapters
           volumes
           format
+          averageScore
         }
       }
     }

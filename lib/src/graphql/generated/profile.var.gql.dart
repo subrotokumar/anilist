@@ -16,10 +16,12 @@ abstract class GProfileVars
       _$GProfileVars;
 
   static Serializer<GProfileVars> get serializer => _$gProfileVarsSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GProfileVars.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GProfileVars? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GProfileVars.serializer,

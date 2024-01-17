@@ -1,0 +1,16 @@
+query CharacterSearchQuery($search: String) {
+  Page(page: 1, perPage: 50) {
+    characters(search: $search) {
+      id
+      name {
+        userPreferred
+      }
+      favourites
+      image {
+        large
+        medium
+      }
+      siteUrl
+    }
+  }
+}

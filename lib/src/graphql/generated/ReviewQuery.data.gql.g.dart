@@ -346,6 +346,13 @@ class _$GReviewQueryData_Page_reviews_mediaSerializer
       serializers.serialize(object.id, specifiedType: const FullType(int)),
     ];
     Object? value;
+    value = object.siteUrl;
+    if (value != null) {
+      result
+        ..add('siteUrl')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
     value = object.title;
     if (value != null) {
       result
@@ -387,6 +394,10 @@ class _$GReviewQueryData_Page_reviews_mediaSerializer
         case '__typename':
           result.G__typename = serializers.deserialize(value,
               specifiedType: const FullType(String))! as String;
+          break;
+        case 'siteUrl':
+          result.siteUrl = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
           break;
         case 'id':
           result.id = serializers.deserialize(value,
@@ -1113,6 +1124,8 @@ class _$GReviewQueryData_Page_reviews_media
   @override
   final String G__typename;
   @override
+  final String? siteUrl;
+  @override
   final int id;
   @override
   final GReviewQueryData_Page_reviews_media_title? title;
@@ -1129,6 +1142,7 @@ class _$GReviewQueryData_Page_reviews_media
 
   _$GReviewQueryData_Page_reviews_media._(
       {required this.G__typename,
+      this.siteUrl,
       required this.id,
       this.title,
       this.bannerImage,
@@ -1154,6 +1168,7 @@ class _$GReviewQueryData_Page_reviews_media
     if (identical(other, this)) return true;
     return other is GReviewQueryData_Page_reviews_media &&
         G__typename == other.G__typename &&
+        siteUrl == other.siteUrl &&
         id == other.id &&
         title == other.title &&
         bannerImage == other.bannerImage &&
@@ -1164,6 +1179,7 @@ class _$GReviewQueryData_Page_reviews_media
   int get hashCode {
     var _$hash = 0;
     _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, siteUrl.hashCode);
     _$hash = $jc(_$hash, id.hashCode);
     _$hash = $jc(_$hash, title.hashCode);
     _$hash = $jc(_$hash, bannerImage.hashCode);
@@ -1176,6 +1192,7 @@ class _$GReviewQueryData_Page_reviews_media
   String toString() {
     return (newBuiltValueToStringHelper(r'GReviewQueryData_Page_reviews_media')
           ..add('G__typename', G__typename)
+          ..add('siteUrl', siteUrl)
           ..add('id', id)
           ..add('title', title)
           ..add('bannerImage', bannerImage)
@@ -1193,6 +1210,10 @@ class GReviewQueryData_Page_reviews_mediaBuilder
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  String? _siteUrl;
+  String? get siteUrl => _$this._siteUrl;
+  set siteUrl(String? siteUrl) => _$this._siteUrl = siteUrl;
 
   int? _id;
   int? get id => _$this._id;
@@ -1224,6 +1245,7 @@ class GReviewQueryData_Page_reviews_mediaBuilder
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
+      _siteUrl = $v.siteUrl;
       _id = $v.id;
       _title = $v.title?.toBuilder();
       _bannerImage = $v.bannerImage;
@@ -1255,6 +1277,7 @@ class GReviewQueryData_Page_reviews_mediaBuilder
           new _$GReviewQueryData_Page_reviews_media._(
               G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
                   r'GReviewQueryData_Page_reviews_media', 'G__typename'),
+              siteUrl: siteUrl,
               id: BuiltValueNullFieldError.checkNotNull(
                   id, r'GReviewQueryData_Page_reviews_media', 'id'),
               title: _title?.build(),

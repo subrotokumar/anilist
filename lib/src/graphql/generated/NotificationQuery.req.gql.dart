@@ -33,6 +33,7 @@ abstract class GNotificationsQueryReq
       operationName: 'NotificationsQuery',
     )
     ..executeOnListen = true;
+
   @override
   _i3.GNotificationsQueryVars get vars;
   @override
@@ -42,6 +43,7 @@ abstract class GNotificationsQueryReq
         operation: operation,
         variables: vars.toJson(),
       );
+
   @override
   String? get requestId;
   @override
@@ -63,12 +65,15 @@ abstract class GNotificationsQueryReq
   @override
   _i2.GNotificationsQueryData? parseData(Map<String, dynamic> json) =>
       _i2.GNotificationsQueryData.fromJson(json);
+
   static Serializer<GNotificationsQueryReq> get serializer =>
       _$gNotificationsQueryReqSerializer;
+
   Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
         GNotificationsQueryReq.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GNotificationsQueryReq? fromJson(Map<String, dynamic> json) =>
       _i6.serializers.deserializeWith(
         GNotificationsQueryReq.serializer,

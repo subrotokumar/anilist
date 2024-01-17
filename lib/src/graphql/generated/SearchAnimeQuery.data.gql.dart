@@ -20,15 +20,18 @@ abstract class GSearchAnimeQueryData
 
   static void _initializeBuilder(GSearchAnimeQueryDataBuilder b) =>
       b..G__typename = 'Query';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GSearchAnimeQueryData_Page? get Page;
   static Serializer<GSearchAnimeQueryData> get serializer =>
       _$gSearchAnimeQueryDataSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GSearchAnimeQueryData.serializer,
@@ -47,16 +50,19 @@ abstract class GSearchAnimeQueryData_Page
 
   static void _initializeBuilder(GSearchAnimeQueryData_PageBuilder b) =>
       b..G__typename = 'Page';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GSearchAnimeQueryData_Page_pageInfo? get pageInfo;
   BuiltList<GSearchAnimeQueryData_Page_media?>? get media;
   static Serializer<GSearchAnimeQueryData_Page> get serializer =>
       _$gSearchAnimeQueryDataPageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData_Page.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData_Page? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GSearchAnimeQueryData_Page.serializer,
@@ -77,6 +83,7 @@ abstract class GSearchAnimeQueryData_Page_pageInfo
   static void _initializeBuilder(
           GSearchAnimeQueryData_Page_pageInfoBuilder b) =>
       b..G__typename = 'PageInfo';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get total;
@@ -86,10 +93,12 @@ abstract class GSearchAnimeQueryData_Page_pageInfo
   bool? get hasNextPage;
   static Serializer<GSearchAnimeQueryData_Page_pageInfo> get serializer =>
       _$gSearchAnimeQueryDataPagePageInfoSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData_Page_pageInfo.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData_Page_pageInfo? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -110,6 +119,7 @@ abstract class GSearchAnimeQueryData_Page_media
 
   static void _initializeBuilder(GSearchAnimeQueryData_Page_mediaBuilder b) =>
       b..G__typename = 'Media';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -127,10 +137,12 @@ abstract class GSearchAnimeQueryData_Page_media
   GSearchAnimeQueryData_Page_media_mediaListEntry? get mediaListEntry;
   static Serializer<GSearchAnimeQueryData_Page_media> get serializer =>
       _$gSearchAnimeQueryDataPageMediaSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData_Page_media.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData_Page_media? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -152,15 +164,18 @@ abstract class GSearchAnimeQueryData_Page_media_title
   static void _initializeBuilder(
           GSearchAnimeQueryData_Page_media_titleBuilder b) =>
       b..G__typename = 'MediaTitle';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get userPreferred;
   static Serializer<GSearchAnimeQueryData_Page_media_title> get serializer =>
       _$gSearchAnimeQueryDataPageMediaTitleSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData_Page_media_title.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData_Page_media_title? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -182,16 +197,19 @@ abstract class GSearchAnimeQueryData_Page_media_coverImage
   static void _initializeBuilder(
           GSearchAnimeQueryData_Page_media_coverImageBuilder b) =>
       b..G__typename = 'MediaCoverImage';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get large;
   String? get color;
   static Serializer<GSearchAnimeQueryData_Page_media_coverImage>
       get serializer => _$gSearchAnimeQueryDataPageMediaCoverImageSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData_Page_media_coverImage.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData_Page_media_coverImage? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -213,6 +231,7 @@ abstract class GSearchAnimeQueryData_Page_media_startDate
   static void _initializeBuilder(
           GSearchAnimeQueryData_Page_media_startDateBuilder b) =>
       b..G__typename = 'FuzzyDate';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int? get year;
@@ -220,10 +239,12 @@ abstract class GSearchAnimeQueryData_Page_media_startDate
   int? get day;
   static Serializer<GSearchAnimeQueryData_Page_media_startDate>
       get serializer => _$gSearchAnimeQueryDataPageMediaStartDateSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData_Page_media_startDate.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData_Page_media_startDate? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -245,15 +266,18 @@ abstract class GSearchAnimeQueryData_Page_media_studios
   static void _initializeBuilder(
           GSearchAnimeQueryData_Page_media_studiosBuilder b) =>
       b..G__typename = 'StudioConnection';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   BuiltList<GSearchAnimeQueryData_Page_media_studios_edges?>? get edges;
   static Serializer<GSearchAnimeQueryData_Page_media_studios> get serializer =>
       _$gSearchAnimeQueryDataPageMediaStudiosSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData_Page_media_studios.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData_Page_media_studios? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -275,15 +299,18 @@ abstract class GSearchAnimeQueryData_Page_media_studios_edges
   static void _initializeBuilder(
           GSearchAnimeQueryData_Page_media_studios_edgesBuilder b) =>
       b..G__typename = 'StudioEdge';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   GSearchAnimeQueryData_Page_media_studios_edges_node? get node;
   static Serializer<GSearchAnimeQueryData_Page_media_studios_edges>
       get serializer => _$gSearchAnimeQueryDataPageMediaStudiosEdgesSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData_Page_media_studios_edges.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData_Page_media_studios_edges? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -305,6 +332,7 @@ abstract class GSearchAnimeQueryData_Page_media_studios_edges_node
   static void _initializeBuilder(
           GSearchAnimeQueryData_Page_media_studios_edges_nodeBuilder b) =>
       b..G__typename = 'Studio';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -312,10 +340,12 @@ abstract class GSearchAnimeQueryData_Page_media_studios_edges_node
   static Serializer<GSearchAnimeQueryData_Page_media_studios_edges_node>
       get serializer =>
           _$gSearchAnimeQueryDataPageMediaStudiosEdgesNodeSerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData_Page_media_studios_edges_node.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData_Page_media_studios_edges_node? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -337,6 +367,7 @@ abstract class GSearchAnimeQueryData_Page_media_mediaListEntry
   static void _initializeBuilder(
           GSearchAnimeQueryData_Page_media_mediaListEntryBuilder b) =>
       b..G__typename = 'MediaList';
+
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get id;
@@ -344,10 +375,12 @@ abstract class GSearchAnimeQueryData_Page_media_mediaListEntry
   static Serializer<GSearchAnimeQueryData_Page_media_mediaListEntry>
       get serializer =>
           _$gSearchAnimeQueryDataPageMediaMediaListEntrySerializer;
+
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
         GSearchAnimeQueryData_Page_media_mediaListEntry.serializer,
         this,
       ) as Map<String, dynamic>);
+
   static GSearchAnimeQueryData_Page_media_mediaListEntry? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
