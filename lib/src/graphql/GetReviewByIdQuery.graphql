@@ -1,0 +1,27 @@
+query GetReviewById($id: Int!) {
+  Review(id: $id) {
+    id
+    userId
+    user {
+      name
+    }
+    score
+    summary
+    ratingAmount
+    rating
+    body(asHtml: false)
+    media {
+      siteUrl
+      id
+      title {
+        userPreferred
+      }
+      bannerImage
+      coverImage {
+        extraLarge
+        large
+        color
+      }
+    }
+  }
+}

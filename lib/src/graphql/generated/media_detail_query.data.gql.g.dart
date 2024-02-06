@@ -94,6 +94,9 @@ Serializer<GMediaDetailQueryData_Media_reviews>
 Serializer<GMediaDetailQueryData_Media_reviews_nodes>
     _$gMediaDetailQueryDataMediaReviewsNodesSerializer =
     new _$GMediaDetailQueryData_Media_reviews_nodesSerializer();
+Serializer<GMediaDetailQueryData_Media_reviews_nodes_user>
+    _$gMediaDetailQueryDataMediaReviewsNodesUserSerializer =
+    new _$GMediaDetailQueryData_Media_reviews_nodes_userSerializer();
 Serializer<GMediaDetailQueryData_Media_stats>
     _$gMediaDetailQueryDataMediaStatsSerializer =
     new _$GMediaDetailQueryData_Media_statsSerializer();
@@ -2879,8 +2882,25 @@ class _$GMediaDetailQueryData_Media_reviews_nodesSerializer
       '__typename',
       serializers.serialize(object.G__typename,
           specifiedType: const FullType(String)),
+      'id',
+      serializers.serialize(object.id, specifiedType: const FullType(int)),
+      'userId',
+      serializers.serialize(object.userId, specifiedType: const FullType(int)),
     ];
     Object? value;
+    value = object.score;
+    if (value != null) {
+      result
+        ..add('score')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    value = object.mediaType;
+    if (value != null) {
+      result
+        ..add('mediaType')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i2.GMediaType)));
+    }
     value = object.summary;
     if (value != null) {
       result
@@ -2888,31 +2908,13 @@ class _$GMediaDetailQueryData_Media_reviews_nodesSerializer
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    value = object.body;
+    value = object.user;
     if (value != null) {
       result
-        ..add('body')
+        ..add('user')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
-    }
-    value = object.rating;
-    if (value != null) {
-      result
-        ..add('rating')
-        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
-    }
-    value = object.ratingAmount;
-    if (value != null) {
-      result
-        ..add('ratingAmount')
-        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
-    }
-    value = object.userRating;
-    if (value != null) {
-      result
-        ..add('userRating')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GReviewRating)));
+            specifiedType: const FullType(
+                GMediaDetailQueryData_Media_reviews_nodes_user)));
     }
     return result;
   }
@@ -2933,26 +2935,84 @@ class _$GMediaDetailQueryData_Media_reviews_nodesSerializer
           result.G__typename = serializers.deserialize(value,
               specifiedType: const FullType(String))! as String;
           break;
+        case 'id':
+          result.id = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'score':
+          result.score = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+        case 'userId':
+          result.userId = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'mediaType':
+          result.mediaType = serializers.deserialize(value,
+              specifiedType: const FullType(_i2.GMediaType)) as _i2.GMediaType?;
+          break;
         case 'summary':
           result.summary = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
           break;
-        case 'body':
-          result.body = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+        case 'user':
+          result.user.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(
+                      GMediaDetailQueryData_Media_reviews_nodes_user))!
+              as GMediaDetailQueryData_Media_reviews_nodes_user);
           break;
-        case 'rating':
-          result.rating = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GMediaDetailQueryData_Media_reviews_nodes_userSerializer
+    implements
+        StructuredSerializer<GMediaDetailQueryData_Media_reviews_nodes_user> {
+  @override
+  final Iterable<Type> types = const [
+    GMediaDetailQueryData_Media_reviews_nodes_user,
+    _$GMediaDetailQueryData_Media_reviews_nodes_user
+  ];
+  @override
+  final String wireName = 'GMediaDetailQueryData_Media_reviews_nodes_user';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GMediaDetailQueryData_Media_reviews_nodes_user object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+      'name',
+      serializers.serialize(object.name, specifiedType: const FullType(String)),
+    ];
+
+    return result;
+  }
+
+  @override
+  GMediaDetailQueryData_Media_reviews_nodes_user deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GMediaDetailQueryData_Media_reviews_nodes_userBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
           break;
-        case 'ratingAmount':
-          result.ratingAmount = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
-          break;
-        case 'userRating':
-          result.userRating = serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GReviewRating))
-              as _i2.GReviewRating?;
+        case 'name':
+          result.name = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
           break;
       }
     }
@@ -8385,15 +8445,17 @@ class _$GMediaDetailQueryData_Media_reviews_nodes
   @override
   final String G__typename;
   @override
+  final int id;
+  @override
+  final int? score;
+  @override
+  final int userId;
+  @override
+  final _i2.GMediaType? mediaType;
+  @override
   final String? summary;
   @override
-  final String? body;
-  @override
-  final int? rating;
-  @override
-  final int? ratingAmount;
-  @override
-  final _i2.GReviewRating? userRating;
+  final GMediaDetailQueryData_Media_reviews_nodes_user? user;
 
   factory _$GMediaDetailQueryData_Media_reviews_nodes(
           [void Function(GMediaDetailQueryData_Media_reviews_nodesBuilder)?
@@ -8403,14 +8465,19 @@ class _$GMediaDetailQueryData_Media_reviews_nodes
 
   _$GMediaDetailQueryData_Media_reviews_nodes._(
       {required this.G__typename,
+      required this.id,
+      this.score,
+      required this.userId,
+      this.mediaType,
       this.summary,
-      this.body,
-      this.rating,
-      this.ratingAmount,
-      this.userRating})
+      this.user})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
         r'GMediaDetailQueryData_Media_reviews_nodes', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        id, r'GMediaDetailQueryData_Media_reviews_nodes', 'id');
+    BuiltValueNullFieldError.checkNotNull(
+        userId, r'GMediaDetailQueryData_Media_reviews_nodes', 'userId');
   }
 
   @override
@@ -8428,22 +8495,24 @@ class _$GMediaDetailQueryData_Media_reviews_nodes
     if (identical(other, this)) return true;
     return other is GMediaDetailQueryData_Media_reviews_nodes &&
         G__typename == other.G__typename &&
+        id == other.id &&
+        score == other.score &&
+        userId == other.userId &&
+        mediaType == other.mediaType &&
         summary == other.summary &&
-        body == other.body &&
-        rating == other.rating &&
-        ratingAmount == other.ratingAmount &&
-        userRating == other.userRating;
+        user == other.user;
   }
 
   @override
   int get hashCode {
     var _$hash = 0;
     _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, id.hashCode);
+    _$hash = $jc(_$hash, score.hashCode);
+    _$hash = $jc(_$hash, userId.hashCode);
+    _$hash = $jc(_$hash, mediaType.hashCode);
     _$hash = $jc(_$hash, summary.hashCode);
-    _$hash = $jc(_$hash, body.hashCode);
-    _$hash = $jc(_$hash, rating.hashCode);
-    _$hash = $jc(_$hash, ratingAmount.hashCode);
-    _$hash = $jc(_$hash, userRating.hashCode);
+    _$hash = $jc(_$hash, user.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -8453,11 +8522,12 @@ class _$GMediaDetailQueryData_Media_reviews_nodes
     return (newBuiltValueToStringHelper(
             r'GMediaDetailQueryData_Media_reviews_nodes')
           ..add('G__typename', G__typename)
+          ..add('id', id)
+          ..add('score', score)
+          ..add('userId', userId)
+          ..add('mediaType', mediaType)
           ..add('summary', summary)
-          ..add('body', body)
-          ..add('rating', rating)
-          ..add('ratingAmount', ratingAmount)
-          ..add('userRating', userRating))
+          ..add('user', user))
         .toString();
   }
 }
@@ -8472,26 +8542,32 @@ class GMediaDetailQueryData_Media_reviews_nodesBuilder
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
+  int? _id;
+  int? get id => _$this._id;
+  set id(int? id) => _$this._id = id;
+
+  int? _score;
+  int? get score => _$this._score;
+  set score(int? score) => _$this._score = score;
+
+  int? _userId;
+  int? get userId => _$this._userId;
+  set userId(int? userId) => _$this._userId = userId;
+
+  _i2.GMediaType? _mediaType;
+  _i2.GMediaType? get mediaType => _$this._mediaType;
+  set mediaType(_i2.GMediaType? mediaType) => _$this._mediaType = mediaType;
+
   String? _summary;
   String? get summary => _$this._summary;
   set summary(String? summary) => _$this._summary = summary;
 
-  String? _body;
-  String? get body => _$this._body;
-  set body(String? body) => _$this._body = body;
-
-  int? _rating;
-  int? get rating => _$this._rating;
-  set rating(int? rating) => _$this._rating = rating;
-
-  int? _ratingAmount;
-  int? get ratingAmount => _$this._ratingAmount;
-  set ratingAmount(int? ratingAmount) => _$this._ratingAmount = ratingAmount;
-
-  _i2.GReviewRating? _userRating;
-  _i2.GReviewRating? get userRating => _$this._userRating;
-  set userRating(_i2.GReviewRating? userRating) =>
-      _$this._userRating = userRating;
+  GMediaDetailQueryData_Media_reviews_nodes_userBuilder? _user;
+  GMediaDetailQueryData_Media_reviews_nodes_userBuilder get user =>
+      _$this._user ??=
+          new GMediaDetailQueryData_Media_reviews_nodes_userBuilder();
+  set user(GMediaDetailQueryData_Media_reviews_nodes_userBuilder? user) =>
+      _$this._user = user;
 
   GMediaDetailQueryData_Media_reviews_nodesBuilder() {
     GMediaDetailQueryData_Media_reviews_nodes._initializeBuilder(this);
@@ -8501,11 +8577,12 @@ class GMediaDetailQueryData_Media_reviews_nodesBuilder
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
+      _id = $v.id;
+      _score = $v.score;
+      _userId = $v.userId;
+      _mediaType = $v.mediaType;
       _summary = $v.summary;
-      _body = $v.body;
-      _rating = $v.rating;
-      _ratingAmount = $v.ratingAmount;
-      _userRating = $v.userRating;
+      _user = $v.user?.toBuilder();
       _$v = null;
     }
     return this;
@@ -8528,15 +8605,152 @@ class GMediaDetailQueryData_Media_reviews_nodesBuilder
   GMediaDetailQueryData_Media_reviews_nodes build() => _build();
 
   _$GMediaDetailQueryData_Media_reviews_nodes _build() {
+    _$GMediaDetailQueryData_Media_reviews_nodes _$result;
+    try {
+      _$result = _$v ??
+          new _$GMediaDetailQueryData_Media_reviews_nodes._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                  r'GMediaDetailQueryData_Media_reviews_nodes', 'G__typename'),
+              id: BuiltValueNullFieldError.checkNotNull(
+                  id, r'GMediaDetailQueryData_Media_reviews_nodes', 'id'),
+              score: score,
+              userId: BuiltValueNullFieldError.checkNotNull(userId,
+                  r'GMediaDetailQueryData_Media_reviews_nodes', 'userId'),
+              mediaType: mediaType,
+              summary: summary,
+              user: _user?.build());
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'user';
+        _user?.build();
+      } catch (e) {
+        throw new BuiltValueNestedFieldError(
+            r'GMediaDetailQueryData_Media_reviews_nodes',
+            _$failedField,
+            e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GMediaDetailQueryData_Media_reviews_nodes_user
+    extends GMediaDetailQueryData_Media_reviews_nodes_user {
+  @override
+  final String G__typename;
+  @override
+  final String name;
+
+  factory _$GMediaDetailQueryData_Media_reviews_nodes_user(
+          [void Function(GMediaDetailQueryData_Media_reviews_nodes_userBuilder)?
+              updates]) =>
+      (new GMediaDetailQueryData_Media_reviews_nodes_userBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GMediaDetailQueryData_Media_reviews_nodes_user._(
+      {required this.G__typename, required this.name})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GMediaDetailQueryData_Media_reviews_nodes_user', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        name, r'GMediaDetailQueryData_Media_reviews_nodes_user', 'name');
+  }
+
+  @override
+  GMediaDetailQueryData_Media_reviews_nodes_user rebuild(
+          void Function(GMediaDetailQueryData_Media_reviews_nodes_userBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GMediaDetailQueryData_Media_reviews_nodes_userBuilder toBuilder() =>
+      new GMediaDetailQueryData_Media_reviews_nodes_userBuilder()
+        ..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GMediaDetailQueryData_Media_reviews_nodes_user &&
+        G__typename == other.G__typename &&
+        name == other.name;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GMediaDetailQueryData_Media_reviews_nodes_user')
+          ..add('G__typename', G__typename)
+          ..add('name', name))
+        .toString();
+  }
+}
+
+class GMediaDetailQueryData_Media_reviews_nodes_userBuilder
+    implements
+        Builder<GMediaDetailQueryData_Media_reviews_nodes_user,
+            GMediaDetailQueryData_Media_reviews_nodes_userBuilder> {
+  _$GMediaDetailQueryData_Media_reviews_nodes_user? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  String? _name;
+  String? get name => _$this._name;
+  set name(String? name) => _$this._name = name;
+
+  GMediaDetailQueryData_Media_reviews_nodes_userBuilder() {
+    GMediaDetailQueryData_Media_reviews_nodes_user._initializeBuilder(this);
+  }
+
+  GMediaDetailQueryData_Media_reviews_nodes_userBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _name = $v.name;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GMediaDetailQueryData_Media_reviews_nodes_user other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GMediaDetailQueryData_Media_reviews_nodes_user;
+  }
+
+  @override
+  void update(
+      void Function(GMediaDetailQueryData_Media_reviews_nodes_userBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GMediaDetailQueryData_Media_reviews_nodes_user build() => _build();
+
+  _$GMediaDetailQueryData_Media_reviews_nodes_user _build() {
     final _$result = _$v ??
-        new _$GMediaDetailQueryData_Media_reviews_nodes._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GMediaDetailQueryData_Media_reviews_nodes', 'G__typename'),
-            summary: summary,
-            body: body,
-            rating: rating,
-            ratingAmount: ratingAmount,
-            userRating: userRating);
+        new _$GMediaDetailQueryData_Media_reviews_nodes_user._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename,
+                r'GMediaDetailQueryData_Media_reviews_nodes_user',
+                'G__typename'),
+            name: BuiltValueNullFieldError.checkNotNull(name,
+                r'GMediaDetailQueryData_Media_reviews_nodes_user', 'name'));
     replace(_$result);
     return _$result;
   }

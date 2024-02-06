@@ -938,6 +938,34 @@ const MediaDetailQuery = _i1.OperationDefinitionNode(
               directives: [],
               selectionSet: _i1.SelectionSetNode(selections: [
                 _i1.FieldNode(
+                  name: _i1.NameNode(value: 'id'),
+                  alias: null,
+                  arguments: [],
+                  directives: [],
+                  selectionSet: null,
+                ),
+                _i1.FieldNode(
+                  name: _i1.NameNode(value: 'score'),
+                  alias: null,
+                  arguments: [],
+                  directives: [],
+                  selectionSet: null,
+                ),
+                _i1.FieldNode(
+                  name: _i1.NameNode(value: 'userId'),
+                  alias: null,
+                  arguments: [],
+                  directives: [],
+                  selectionSet: null,
+                ),
+                _i1.FieldNode(
+                  name: _i1.NameNode(value: 'mediaType'),
+                  alias: null,
+                  arguments: [],
+                  directives: [],
+                  selectionSet: null,
+                ),
+                _i1.FieldNode(
                   name: _i1.NameNode(value: 'summary'),
                   alias: null,
                   arguments: [],
@@ -945,32 +973,19 @@ const MediaDetailQuery = _i1.OperationDefinitionNode(
                   selectionSet: null,
                 ),
                 _i1.FieldNode(
-                  name: _i1.NameNode(value: 'body'),
+                  name: _i1.NameNode(value: 'user'),
                   alias: null,
                   arguments: [],
                   directives: [],
-                  selectionSet: null,
-                ),
-                _i1.FieldNode(
-                  name: _i1.NameNode(value: 'rating'),
-                  alias: null,
-                  arguments: [],
-                  directives: [],
-                  selectionSet: null,
-                ),
-                _i1.FieldNode(
-                  name: _i1.NameNode(value: 'ratingAmount'),
-                  alias: null,
-                  arguments: [],
-                  directives: [],
-                  selectionSet: null,
-                ),
-                _i1.FieldNode(
-                  name: _i1.NameNode(value: 'userRating'),
-                  alias: null,
-                  arguments: [],
-                  directives: [],
-                  selectionSet: null,
+                  selectionSet: _i1.SelectionSetNode(selections: [
+                    _i1.FieldNode(
+                      name: _i1.NameNode(value: 'name'),
+                      alias: null,
+                      arguments: [],
+                      directives: [],
+                      selectionSet: null,
+                    )
+                  ]),
                 ),
               ]),
             )

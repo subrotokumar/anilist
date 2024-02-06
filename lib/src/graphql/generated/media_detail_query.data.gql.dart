@@ -1093,11 +1093,12 @@ abstract class GMediaDetailQueryData_Media_reviews_nodes
 
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
+  int get id;
+  int? get score;
+  int get userId;
+  _i2.GMediaType? get mediaType;
   String? get summary;
-  String? get body;
-  int? get rating;
-  int? get ratingAmount;
-  _i2.GReviewRating? get userRating;
+  GMediaDetailQueryData_Media_reviews_nodes_user? get user;
   static Serializer<GMediaDetailQueryData_Media_reviews_nodes> get serializer =>
       _$gMediaDetailQueryDataMediaReviewsNodesSerializer;
 
@@ -1110,6 +1111,39 @@ abstract class GMediaDetailQueryData_Media_reviews_nodes
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GMediaDetailQueryData_Media_reviews_nodes.serializer,
+        json,
+      );
+}
+
+abstract class GMediaDetailQueryData_Media_reviews_nodes_user
+    implements
+        Built<GMediaDetailQueryData_Media_reviews_nodes_user,
+            GMediaDetailQueryData_Media_reviews_nodes_userBuilder> {
+  GMediaDetailQueryData_Media_reviews_nodes_user._();
+
+  factory GMediaDetailQueryData_Media_reviews_nodes_user(
+      [Function(GMediaDetailQueryData_Media_reviews_nodes_userBuilder b)
+          updates]) = _$GMediaDetailQueryData_Media_reviews_nodes_user;
+
+  static void _initializeBuilder(
+          GMediaDetailQueryData_Media_reviews_nodes_userBuilder b) =>
+      b..G__typename = 'User';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  String get name;
+  static Serializer<GMediaDetailQueryData_Media_reviews_nodes_user>
+      get serializer => _$gMediaDetailQueryDataMediaReviewsNodesUserSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMediaDetailQueryData_Media_reviews_nodes_user.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GMediaDetailQueryData_Media_reviews_nodes_user? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMediaDetailQueryData_Media_reviews_nodes_user.serializer,
         json,
       );
 }

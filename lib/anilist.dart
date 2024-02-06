@@ -25,6 +25,8 @@ export 'src/staff_query.dart';
 export 'src/toggle_favourite.dart';
 export 'src/tranding_anime.dart';
 export 'src/userid.dart';
+export 'src/get_review_by_id.dart';
+export 'src/search_studio_query.dart';
 
 Client initClient({String? accessToken}) {
   late HttpLink httpLink;

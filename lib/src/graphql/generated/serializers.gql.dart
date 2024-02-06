@@ -119,6 +119,18 @@ import 'package:anilist/src/graphql/generated/FavMangaQuery.req.gql.dart'
     show GFavMangaQueryReq;
 import 'package:anilist/src/graphql/generated/FavMangaQuery.var.gql.dart'
     show GFavMangaQueryVars;
+import 'package:anilist/src/graphql/generated/GetReviewByIdQuery.data.gql.dart'
+    show
+        GGetReviewByIdData,
+        GGetReviewByIdData_Review,
+        GGetReviewByIdData_Review_media,
+        GGetReviewByIdData_Review_media_coverImage,
+        GGetReviewByIdData_Review_media_title,
+        GGetReviewByIdData_Review_user;
+import 'package:anilist/src/graphql/generated/GetReviewByIdQuery.req.gql.dart'
+    show GGetReviewByIdReq;
+import 'package:anilist/src/graphql/generated/GetReviewByIdQuery.var.gql.dart'
+    show GGetReviewByIdVars;
 import 'package:anilist/src/graphql/generated/media_detail_query.data.gql.dart'
     show
         GMediaDetailQueryData,
@@ -144,6 +156,7 @@ import 'package:anilist/src/graphql/generated/media_detail_query.data.gql.dart'
         GMediaDetailQueryData_Media_relations_nodes_title,
         GMediaDetailQueryData_Media_reviews,
         GMediaDetailQueryData_Media_reviews_nodes,
+        GMediaDetailQueryData_Media_reviews_nodes_user,
         GMediaDetailQueryData_Media_startDate,
         GMediaDetailQueryData_Media_stats,
         GMediaDetailQueryData_Media_stats_scoreDistribution,
@@ -370,6 +383,15 @@ import 'package:anilist/src/graphql/generated/SearchMangaQuery.req.gql.dart'
     show GSearchMangaQueryReq;
 import 'package:anilist/src/graphql/generated/SearchMangaQuery.var.gql.dart'
     show GSearchMangaQueryVars;
+import 'package:anilist/src/graphql/generated/SearchStudioQuery.data.gql.dart'
+    show
+        GSearchstudiosQueryData,
+        GSearchstudiosQueryData_Page,
+        GSearchstudiosQueryData_Page_studios;
+import 'package:anilist/src/graphql/generated/SearchStudioQuery.req.gql.dart'
+    show GSearchstudiosQueryReq;
+import 'package:anilist/src/graphql/generated/SearchStudioQuery.var.gql.dart'
+    show GSearchstudiosQueryVars;
 import 'package:anilist/src/graphql/generated/StaffQuery.data.gql.dart'
     show
         GStaffQueryData,
@@ -554,6 +576,14 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GFavMangaQueryVars,
   GFuzzyDateInput,
   GFuzzyDateInt,
+  GGetReviewByIdData,
+  GGetReviewByIdData_Review,
+  GGetReviewByIdData_Review_media,
+  GGetReviewByIdData_Review_media_coverImage,
+  GGetReviewByIdData_Review_media_title,
+  GGetReviewByIdData_Review_user,
+  GGetReviewByIdReq,
+  GGetReviewByIdVars,
   GJson,
   GLikeableType,
   GListActivityOptionInput,
@@ -580,6 +610,7 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GMediaDetailQueryData_Media_relations_nodes_title,
   GMediaDetailQueryData_Media_reviews,
   GMediaDetailQueryData_Media_reviews_nodes,
+  GMediaDetailQueryData_Media_reviews_nodes_user,
   GMediaDetailQueryData_Media_startDate,
   GMediaDetailQueryData_Media_stats,
   GMediaDetailQueryData_Media_stats_scoreDistribution,
@@ -740,6 +771,11 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GSearchMangaQueryData_Page_pageInfo,
   GSearchMangaQueryReq,
   GSearchMangaQueryVars,
+  GSearchstudiosQueryData,
+  GSearchstudiosQueryData_Page,
+  GSearchstudiosQueryData_Page_studios,
+  GSearchstudiosQueryReq,
+  GSearchstudiosQueryVars,
   GSiteTrendSort,
   GStaffLanguage,
   GStaffNameInput,
