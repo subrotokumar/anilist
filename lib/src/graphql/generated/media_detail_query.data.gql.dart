@@ -74,6 +74,7 @@ abstract class GMediaDetailQueryData_Media
   _i2.GMediaSource? get source;
   String? get hashtag;
   GMediaDetailQueryData_Media_trailer? get trailer;
+  BuiltList<GMediaDetailQueryData_Media_rankings?>? get rankings;
   int? get updatedAt;
   BuiltList<String?>? get genres;
   BuiltList<String?>? get synonyms;
@@ -312,6 +313,44 @@ abstract class GMediaDetailQueryData_Media_trailer
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GMediaDetailQueryData_Media_trailer.serializer,
+        json,
+      );
+}
+
+abstract class GMediaDetailQueryData_Media_rankings
+    implements
+        Built<GMediaDetailQueryData_Media_rankings,
+            GMediaDetailQueryData_Media_rankingsBuilder> {
+  GMediaDetailQueryData_Media_rankings._();
+
+  factory GMediaDetailQueryData_Media_rankings(
+          [Function(GMediaDetailQueryData_Media_rankingsBuilder b) updates]) =
+      _$GMediaDetailQueryData_Media_rankings;
+
+  static void _initializeBuilder(
+          GMediaDetailQueryData_Media_rankingsBuilder b) =>
+      b..G__typename = 'MediaRank';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  int get id;
+  int get rank;
+  _i2.GMediaRankType get type;
+  _i2.GMediaSeason? get season;
+  int? get year;
+  bool? get allTime;
+  static Serializer<GMediaDetailQueryData_Media_rankings> get serializer =>
+      _$gMediaDetailQueryDataMediaRankingsSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMediaDetailQueryData_Media_rankings.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GMediaDetailQueryData_Media_rankings? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMediaDetailQueryData_Media_rankings.serializer,
         json,
       );
 }

@@ -28,6 +28,9 @@ Serializer<GMediaDetailQueryData_Media_endDate>
 Serializer<GMediaDetailQueryData_Media_trailer>
     _$gMediaDetailQueryDataMediaTrailerSerializer =
     new _$GMediaDetailQueryData_Media_trailerSerializer();
+Serializer<GMediaDetailQueryData_Media_rankings>
+    _$gMediaDetailQueryDataMediaRankingsSerializer =
+    new _$GMediaDetailQueryData_Media_rankingsSerializer();
 Serializer<GMediaDetailQueryData_Media_tags>
     _$gMediaDetailQueryDataMediaTagsSerializer =
     new _$GMediaDetailQueryData_Media_tagsSerializer();
@@ -349,6 +352,15 @@ class _$GMediaDetailQueryData_MediaSerializer
             specifiedType:
                 const FullType(GMediaDetailQueryData_Media_trailer)));
     }
+    value = object.rankings;
+    if (value != null) {
+      result
+        ..add('rankings')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(GMediaDetailQueryData_Media_rankings)
+            ])));
+    }
     value = object.updatedAt;
     if (value != null) {
       result
@@ -587,6 +599,12 @@ class _$GMediaDetailQueryData_MediaSerializer
                   specifiedType:
                       const FullType(GMediaDetailQueryData_Media_trailer))!
               as GMediaDetailQueryData_Media_trailer);
+          break;
+        case 'rankings':
+          result.rankings.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(GMediaDetailQueryData_Media_rankings)
+              ]))! as BuiltList<Object?>);
           break;
         case 'updatedAt':
           result.updatedAt = serializers.deserialize(value,
@@ -1141,6 +1159,105 @@ class _$GMediaDetailQueryData_Media_trailerSerializer
         case 'thumbnail':
           result.thumbnail = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GMediaDetailQueryData_Media_rankingsSerializer
+    implements StructuredSerializer<GMediaDetailQueryData_Media_rankings> {
+  @override
+  final Iterable<Type> types = const [
+    GMediaDetailQueryData_Media_rankings,
+    _$GMediaDetailQueryData_Media_rankings
+  ];
+  @override
+  final String wireName = 'GMediaDetailQueryData_Media_rankings';
+
+  @override
+  Iterable<Object?> serialize(
+      Serializers serializers, GMediaDetailQueryData_Media_rankings object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+      'id',
+      serializers.serialize(object.id, specifiedType: const FullType(int)),
+      'rank',
+      serializers.serialize(object.rank, specifiedType: const FullType(int)),
+      'type',
+      serializers.serialize(object.type,
+          specifiedType: const FullType(_i2.GMediaRankType)),
+    ];
+    Object? value;
+    value = object.season;
+    if (value != null) {
+      result
+        ..add('season')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i2.GMediaSeason)));
+    }
+    value = object.year;
+    if (value != null) {
+      result
+        ..add('year')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    value = object.allTime;
+    if (value != null) {
+      result
+        ..add('allTime')
+        ..add(
+            serializers.serialize(value, specifiedType: const FullType(bool)));
+    }
+    return result;
+  }
+
+  @override
+  GMediaDetailQueryData_Media_rankings deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GMediaDetailQueryData_Media_rankingsBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'id':
+          result.id = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'rank':
+          result.rank = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'type':
+          result.type = serializers.deserialize(value,
+                  specifiedType: const FullType(_i2.GMediaRankType))!
+              as _i2.GMediaRankType;
+          break;
+        case 'season':
+          result.season = serializers.deserialize(value,
+                  specifiedType: const FullType(_i2.GMediaSeason))
+              as _i2.GMediaSeason?;
+          break;
+        case 'year':
+          result.year = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+        case 'allTime':
+          result.allTime = serializers.deserialize(value,
+              specifiedType: const FullType(bool)) as bool?;
           break;
       }
     }
@@ -3805,6 +3922,8 @@ class _$GMediaDetailQueryData_Media extends GMediaDetailQueryData_Media {
   @override
   final GMediaDetailQueryData_Media_trailer? trailer;
   @override
+  final BuiltList<GMediaDetailQueryData_Media_rankings?>? rankings;
+  @override
   final int? updatedAt;
   @override
   final BuiltList<String?>? genres;
@@ -3867,6 +3986,7 @@ class _$GMediaDetailQueryData_Media extends GMediaDetailQueryData_Media {
       this.source,
       this.hashtag,
       this.trailer,
+      this.rankings,
       this.updatedAt,
       this.genres,
       this.synonyms,
@@ -3928,6 +4048,7 @@ class _$GMediaDetailQueryData_Media extends GMediaDetailQueryData_Media {
         source == other.source &&
         hashtag == other.hashtag &&
         trailer == other.trailer &&
+        rankings == other.rankings &&
         updatedAt == other.updatedAt &&
         genres == other.genres &&
         synonyms == other.synonyms &&
@@ -3972,6 +4093,7 @@ class _$GMediaDetailQueryData_Media extends GMediaDetailQueryData_Media {
     _$hash = $jc(_$hash, source.hashCode);
     _$hash = $jc(_$hash, hashtag.hashCode);
     _$hash = $jc(_$hash, trailer.hashCode);
+    _$hash = $jc(_$hash, rankings.hashCode);
     _$hash = $jc(_$hash, updatedAt.hashCode);
     _$hash = $jc(_$hash, genres.hashCode);
     _$hash = $jc(_$hash, synonyms.hashCode);
@@ -4018,6 +4140,7 @@ class _$GMediaDetailQueryData_Media extends GMediaDetailQueryData_Media {
           ..add('source', source)
           ..add('hashtag', hashtag)
           ..add('trailer', trailer)
+          ..add('rankings', rankings)
           ..add('updatedAt', updatedAt)
           ..add('genres', genres)
           ..add('synonyms', synonyms)
@@ -4146,6 +4269,13 @@ class GMediaDetailQueryData_MediaBuilder
   set trailer(GMediaDetailQueryData_Media_trailerBuilder? trailer) =>
       _$this._trailer = trailer;
 
+  ListBuilder<GMediaDetailQueryData_Media_rankings?>? _rankings;
+  ListBuilder<GMediaDetailQueryData_Media_rankings?> get rankings =>
+      _$this._rankings ??=
+          new ListBuilder<GMediaDetailQueryData_Media_rankings?>();
+  set rankings(ListBuilder<GMediaDetailQueryData_Media_rankings?>? rankings) =>
+      _$this._rankings = rankings;
+
   int? _updatedAt;
   int? get updatedAt => _$this._updatedAt;
   set updatedAt(int? updatedAt) => _$this._updatedAt = updatedAt;
@@ -4270,6 +4400,7 @@ class GMediaDetailQueryData_MediaBuilder
       _source = $v.source;
       _hashtag = $v.hashtag;
       _trailer = $v.trailer?.toBuilder();
+      _rankings = $v.rankings?.toBuilder();
       _updatedAt = $v.updatedAt;
       _genres = $v.genres?.toBuilder();
       _synonyms = $v.synonyms?.toBuilder();
@@ -4335,6 +4466,7 @@ class GMediaDetailQueryData_MediaBuilder
               source: source,
               hashtag: hashtag,
               trailer: _trailer?.build(),
+              rankings: _rankings?.build(),
               updatedAt: updatedAt,
               genres: _genres?.build(),
               synonyms: _synonyms?.build(),
@@ -4372,6 +4504,8 @@ class GMediaDetailQueryData_MediaBuilder
 
         _$failedField = 'trailer';
         _trailer?.build();
+        _$failedField = 'rankings';
+        _rankings?.build();
 
         _$failedField = 'genres';
         _genres?.build();
@@ -5212,6 +5346,185 @@ class GMediaDetailQueryData_Media_trailerBuilder
             id: id,
             site: site,
             thumbnail: thumbnail);
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GMediaDetailQueryData_Media_rankings
+    extends GMediaDetailQueryData_Media_rankings {
+  @override
+  final String G__typename;
+  @override
+  final int id;
+  @override
+  final int rank;
+  @override
+  final _i2.GMediaRankType type;
+  @override
+  final _i2.GMediaSeason? season;
+  @override
+  final int? year;
+  @override
+  final bool? allTime;
+
+  factory _$GMediaDetailQueryData_Media_rankings(
+          [void Function(GMediaDetailQueryData_Media_rankingsBuilder)?
+              updates]) =>
+      (new GMediaDetailQueryData_Media_rankingsBuilder()..update(updates))
+          ._build();
+
+  _$GMediaDetailQueryData_Media_rankings._(
+      {required this.G__typename,
+      required this.id,
+      required this.rank,
+      required this.type,
+      this.season,
+      this.year,
+      this.allTime})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(
+        G__typename, r'GMediaDetailQueryData_Media_rankings', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        id, r'GMediaDetailQueryData_Media_rankings', 'id');
+    BuiltValueNullFieldError.checkNotNull(
+        rank, r'GMediaDetailQueryData_Media_rankings', 'rank');
+    BuiltValueNullFieldError.checkNotNull(
+        type, r'GMediaDetailQueryData_Media_rankings', 'type');
+  }
+
+  @override
+  GMediaDetailQueryData_Media_rankings rebuild(
+          void Function(GMediaDetailQueryData_Media_rankingsBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GMediaDetailQueryData_Media_rankingsBuilder toBuilder() =>
+      new GMediaDetailQueryData_Media_rankingsBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GMediaDetailQueryData_Media_rankings &&
+        G__typename == other.G__typename &&
+        id == other.id &&
+        rank == other.rank &&
+        type == other.type &&
+        season == other.season &&
+        year == other.year &&
+        allTime == other.allTime;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, id.hashCode);
+    _$hash = $jc(_$hash, rank.hashCode);
+    _$hash = $jc(_$hash, type.hashCode);
+    _$hash = $jc(_$hash, season.hashCode);
+    _$hash = $jc(_$hash, year.hashCode);
+    _$hash = $jc(_$hash, allTime.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'GMediaDetailQueryData_Media_rankings')
+          ..add('G__typename', G__typename)
+          ..add('id', id)
+          ..add('rank', rank)
+          ..add('type', type)
+          ..add('season', season)
+          ..add('year', year)
+          ..add('allTime', allTime))
+        .toString();
+  }
+}
+
+class GMediaDetailQueryData_Media_rankingsBuilder
+    implements
+        Builder<GMediaDetailQueryData_Media_rankings,
+            GMediaDetailQueryData_Media_rankingsBuilder> {
+  _$GMediaDetailQueryData_Media_rankings? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  int? _id;
+  int? get id => _$this._id;
+  set id(int? id) => _$this._id = id;
+
+  int? _rank;
+  int? get rank => _$this._rank;
+  set rank(int? rank) => _$this._rank = rank;
+
+  _i2.GMediaRankType? _type;
+  _i2.GMediaRankType? get type => _$this._type;
+  set type(_i2.GMediaRankType? type) => _$this._type = type;
+
+  _i2.GMediaSeason? _season;
+  _i2.GMediaSeason? get season => _$this._season;
+  set season(_i2.GMediaSeason? season) => _$this._season = season;
+
+  int? _year;
+  int? get year => _$this._year;
+  set year(int? year) => _$this._year = year;
+
+  bool? _allTime;
+  bool? get allTime => _$this._allTime;
+  set allTime(bool? allTime) => _$this._allTime = allTime;
+
+  GMediaDetailQueryData_Media_rankingsBuilder() {
+    GMediaDetailQueryData_Media_rankings._initializeBuilder(this);
+  }
+
+  GMediaDetailQueryData_Media_rankingsBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _id = $v.id;
+      _rank = $v.rank;
+      _type = $v.type;
+      _season = $v.season;
+      _year = $v.year;
+      _allTime = $v.allTime;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GMediaDetailQueryData_Media_rankings other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GMediaDetailQueryData_Media_rankings;
+  }
+
+  @override
+  void update(
+      void Function(GMediaDetailQueryData_Media_rankingsBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GMediaDetailQueryData_Media_rankings build() => _build();
+
+  _$GMediaDetailQueryData_Media_rankings _build() {
+    final _$result = _$v ??
+        new _$GMediaDetailQueryData_Media_rankings._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                r'GMediaDetailQueryData_Media_rankings', 'G__typename'),
+            id: BuiltValueNullFieldError.checkNotNull(
+                id, r'GMediaDetailQueryData_Media_rankings', 'id'),
+            rank: BuiltValueNullFieldError.checkNotNull(
+                rank, r'GMediaDetailQueryData_Media_rankings', 'rank'),
+            type: BuiltValueNullFieldError.checkNotNull(
+                type, r'GMediaDetailQueryData_Media_rankings', 'type'),
+            season: season,
+            year: year,
+            allTime: allTime);
     replace(_$result);
     return _$result;
   }

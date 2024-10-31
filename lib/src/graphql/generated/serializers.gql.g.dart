@@ -149,6 +149,7 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GMediaDetailQueryData_Media_mediaListEntry_completedAt.serializer)
       ..add(GMediaDetailQueryData_Media_mediaListEntry_startedAt.serializer)
       ..add(GMediaDetailQueryData_Media_nextAiringEpisode.serializer)
+      ..add(GMediaDetailQueryData_Media_rankings.serializer)
       ..add(GMediaDetailQueryData_Media_relations.serializer)
       ..add(GMediaDetailQueryData_Media_relations_nodes.serializer)
       ..add(GMediaDetailQueryData_Media_relations_nodes_coverImage.serializer)
@@ -491,6 +492,27 @@ Serializers _$serializers = (new Serializers().toBuilder()
               GMediaDetailQueryData_Media_characters_edges_voiceActors?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
+            const FullType.nullable(GMediaDetailQueryData_Media_rankings)
+          ]),
+          () => new ListBuilder<GMediaDetailQueryData_Media_rankings?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType.nullable(String)]),
+          () => new ListBuilder<String?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType.nullable(String)]),
+          () => new ListBuilder<String?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GMediaDetailQueryData_Media_tags)
+          ]),
+          () => new ListBuilder<GMediaDetailQueryData_Media_tags?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GMediaDetailQueryData_Media_externalLinks)
+          ]),
+          () => new ListBuilder<GMediaDetailQueryData_Media_externalLinks?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
             const FullType.nullable(GMediaDetailQueryData_Media_relations_nodes)
           ]),
           () => new ListBuilder<GMediaDetailQueryData_Media_relations_nodes?>())
@@ -746,22 +768,6 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType.nullable(String)]),
           () => new ListBuilder<String?>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [const FullType.nullable(String)]),
-          () => new ListBuilder<String?>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [const FullType.nullable(String)]),
-          () => new ListBuilder<String?>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [
-            const FullType.nullable(GMediaDetailQueryData_Media_tags)
-          ]),
-          () => new ListBuilder<GMediaDetailQueryData_Media_tags?>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [
-            const FullType.nullable(GMediaDetailQueryData_Media_externalLinks)
-          ]),
-          () => new ListBuilder<GMediaDetailQueryData_Media_externalLinks?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType.nullable(String)]),
           () => new ListBuilder<String?>())

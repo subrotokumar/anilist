@@ -45,6 +45,14 @@ query MediaDetailQuery($id: Int!, $limit: Int, $page: Int, $perPage: Int) {
       site
       thumbnail
     }
+    rankings{
+      id
+      rank
+      type
+      season
+      year
+      allTime
+    }
     updatedAt
     genres
     synonyms
