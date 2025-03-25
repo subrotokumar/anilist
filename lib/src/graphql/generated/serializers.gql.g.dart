@@ -409,14 +409,55 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GTrendingAnimeQueryData_Page_pageInfo.serializer)
       ..add(GTrendingAnimeQueryReq.serializer)
       ..add(GTrendingAnimeQueryVars.serializer)
+      ..add(GUserData.serializer)
+      ..add(GUserData_Viewer.serializer)
+      ..add(GUserData_Viewer_avatar.serializer)
+      ..add(GUserData_Viewer_favourites.serializer)
+      ..add(GUserData_Viewer_favourites_anime.serializer)
+      ..add(GUserData_Viewer_favourites_anime_edges.serializer)
+      ..add(GUserData_Viewer_favourites_anime_edges_node.serializer)
+      ..add(GUserData_Viewer_favourites_anime_edges_node_coverImage.serializer)
+      ..add(GUserData_Viewer_favourites_anime_edges_node_startDate.serializer)
+      ..add(GUserData_Viewer_favourites_anime_edges_node_title.serializer)
+      ..add(GUserData_Viewer_favourites_characters.serializer)
+      ..add(GUserData_Viewer_favourites_characters_edges.serializer)
+      ..add(GUserData_Viewer_favourites_characters_edges_node.serializer)
+      ..add(GUserData_Viewer_favourites_characters_edges_node_image.serializer)
+      ..add(GUserData_Viewer_favourites_characters_edges_node_name.serializer)
+      ..add(GUserData_Viewer_favourites_manga.serializer)
+      ..add(GUserData_Viewer_favourites_manga_edges.serializer)
+      ..add(GUserData_Viewer_favourites_manga_edges_node.serializer)
+      ..add(GUserData_Viewer_favourites_manga_edges_node_coverImage.serializer)
+      ..add(GUserData_Viewer_favourites_manga_edges_node_startDate.serializer)
+      ..add(GUserData_Viewer_favourites_manga_edges_node_title.serializer)
+      ..add(GUserData_Viewer_favourites_staff.serializer)
+      ..add(GUserData_Viewer_favourites_staff_edges.serializer)
+      ..add(GUserData_Viewer_favourites_staff_edges_node.serializer)
+      ..add(GUserData_Viewer_favourites_staff_edges_node_image.serializer)
+      ..add(GUserData_Viewer_favourites_staff_edges_node_name.serializer)
+      ..add(GUserData_Viewer_favourites_studios.serializer)
+      ..add(GUserData_Viewer_favourites_studios_edges.serializer)
+      ..add(GUserData_Viewer_favourites_studios_edges_node.serializer)
+      ..add(GUserData_Viewer_mediaListOptions.serializer)
+      ..add(GUserData_Viewer_options.serializer)
+      ..add(GUserData_Viewer_previousNames.serializer)
+      ..add(GUserData_Viewer_statistics.serializer)
+      ..add(GUserData_Viewer_statistics_anime.serializer)
+      ..add(GUserData_Viewer_statistics_anime_genrePreview.serializer)
+      ..add(GUserData_Viewer_statistics_manga.serializer)
+      ..add(GUserData_Viewer_statistics_manga_genrePreview.serializer)
+      ..add(GUserData_Viewer_stats.serializer)
+      ..add(GUserData_Viewer_stats_activityHistory.serializer)
       ..add(GUserIDData.serializer)
       ..add(GUserIDData_Viewer.serializer)
       ..add(GUserIDReq.serializer)
       ..add(GUserIDVars.serializer)
+      ..add(GUserReq.serializer)
       ..add(GUserSort.serializer)
       ..add(GUserStaffNameLanguage.serializer)
       ..add(GUserStatisticsSort.serializer)
       ..add(GUserTitleLanguage.serializer)
+      ..add(GUserVars.serializer)
       ..add(GtrendingAnimeData.serializer)
       ..add(GtrendingAnimeData_Page.serializer)
       ..add(GtrendingAnimeData_Page_media.serializer)
@@ -746,6 +787,59 @@ Serializers _$serializers = (new Serializers().toBuilder()
             const FullType.nullable(GTrendingAnimeQueryData_Page_media)
           ]),
           () => new ListBuilder<GTrendingAnimeQueryData_Page_media?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GUserData_Viewer_favourites_anime_edges)
+          ]),
+          () => new ListBuilder<GUserData_Viewer_favourites_anime_edges?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GUserData_Viewer_favourites_characters_edges)
+          ]),
+          () =>
+              new ListBuilder<GUserData_Viewer_favourites_characters_edges?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GUserData_Viewer_favourites_manga_edges)
+          ]),
+          () => new ListBuilder<GUserData_Viewer_favourites_manga_edges?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GUserData_Viewer_favourites_staff_edges)
+          ]),
+          () => new ListBuilder<GUserData_Viewer_favourites_staff_edges?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GUserData_Viewer_favourites_studios_edges)
+          ]),
+          () => new ListBuilder<GUserData_Viewer_favourites_studios_edges?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList,
+              const [const FullType.nullable(GUserData_Viewer_previousNames)]),
+          () => new ListBuilder<GUserData_Viewer_previousNames?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType.nullable(GModRole)]),
+          () => new ListBuilder<GModRole?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GUserData_Viewer_statistics_anime_genrePreview)
+          ]),
+          () => new ListBuilder<
+              GUserData_Viewer_statistics_anime_genrePreview?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GUserData_Viewer_statistics_manga_genrePreview)
+          ]),
+          () => new ListBuilder<
+              GUserData_Viewer_statistics_manga_genrePreview?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GUserData_Viewer_stats_activityHistory)
+          ]),
+          () => new ListBuilder<GUserData_Viewer_stats_activityHistory?>())
       ..addBuilderFactory(
           const FullType(BuiltList,
               const [const FullType.nullable(GtrendingAnimeData_Page_media)]),
