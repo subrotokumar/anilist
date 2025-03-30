@@ -7,114 +7,114 @@ part of 'User.data.gql.dart';
 // **************************************************************************
 
 Serializer<GUserData> _$gUserDataSerializer = new _$GUserDataSerializer();
-Serializer<GUserData_Viewer> _$gUserDataViewerSerializer =
-    new _$GUserData_ViewerSerializer();
-Serializer<GUserData_Viewer_previousNames>
-    _$gUserDataViewerPreviousNamesSerializer =
-    new _$GUserData_Viewer_previousNamesSerializer();
-Serializer<GUserData_Viewer_avatar> _$gUserDataViewerAvatarSerializer =
-    new _$GUserData_Viewer_avatarSerializer();
-Serializer<GUserData_Viewer_options> _$gUserDataViewerOptionsSerializer =
-    new _$GUserData_Viewer_optionsSerializer();
-Serializer<GUserData_Viewer_mediaListOptions>
-    _$gUserDataViewerMediaListOptionsSerializer =
-    new _$GUserData_Viewer_mediaListOptionsSerializer();
-Serializer<GUserData_Viewer_statistics> _$gUserDataViewerStatisticsSerializer =
-    new _$GUserData_Viewer_statisticsSerializer();
-Serializer<GUserData_Viewer_statistics_anime>
-    _$gUserDataViewerStatisticsAnimeSerializer =
-    new _$GUserData_Viewer_statistics_animeSerializer();
-Serializer<GUserData_Viewer_statistics_anime_genrePreview>
-    _$gUserDataViewerStatisticsAnimeGenrePreviewSerializer =
-    new _$GUserData_Viewer_statistics_anime_genrePreviewSerializer();
-Serializer<GUserData_Viewer_statistics_manga>
-    _$gUserDataViewerStatisticsMangaSerializer =
-    new _$GUserData_Viewer_statistics_mangaSerializer();
-Serializer<GUserData_Viewer_statistics_manga_genrePreview>
-    _$gUserDataViewerStatisticsMangaGenrePreviewSerializer =
-    new _$GUserData_Viewer_statistics_manga_genrePreviewSerializer();
-Serializer<GUserData_Viewer_stats> _$gUserDataViewerStatsSerializer =
-    new _$GUserData_Viewer_statsSerializer();
-Serializer<GUserData_Viewer_stats_activityHistory>
-    _$gUserDataViewerStatsActivityHistorySerializer =
-    new _$GUserData_Viewer_stats_activityHistorySerializer();
-Serializer<GUserData_Viewer_favourites> _$gUserDataViewerFavouritesSerializer =
-    new _$GUserData_Viewer_favouritesSerializer();
-Serializer<GUserData_Viewer_favourites_anime>
-    _$gUserDataViewerFavouritesAnimeSerializer =
-    new _$GUserData_Viewer_favourites_animeSerializer();
-Serializer<GUserData_Viewer_favourites_anime_edges>
-    _$gUserDataViewerFavouritesAnimeEdgesSerializer =
-    new _$GUserData_Viewer_favourites_anime_edgesSerializer();
-Serializer<GUserData_Viewer_favourites_anime_edges_node>
-    _$gUserDataViewerFavouritesAnimeEdgesNodeSerializer =
-    new _$GUserData_Viewer_favourites_anime_edges_nodeSerializer();
-Serializer<GUserData_Viewer_favourites_anime_edges_node_title>
-    _$gUserDataViewerFavouritesAnimeEdgesNodeTitleSerializer =
-    new _$GUserData_Viewer_favourites_anime_edges_node_titleSerializer();
-Serializer<GUserData_Viewer_favourites_anime_edges_node_coverImage>
-    _$gUserDataViewerFavouritesAnimeEdgesNodeCoverImageSerializer =
-    new _$GUserData_Viewer_favourites_anime_edges_node_coverImageSerializer();
-Serializer<GUserData_Viewer_favourites_anime_edges_node_startDate>
-    _$gUserDataViewerFavouritesAnimeEdgesNodeStartDateSerializer =
-    new _$GUserData_Viewer_favourites_anime_edges_node_startDateSerializer();
-Serializer<GUserData_Viewer_favourites_manga>
-    _$gUserDataViewerFavouritesMangaSerializer =
-    new _$GUserData_Viewer_favourites_mangaSerializer();
-Serializer<GUserData_Viewer_favourites_manga_edges>
-    _$gUserDataViewerFavouritesMangaEdgesSerializer =
-    new _$GUserData_Viewer_favourites_manga_edgesSerializer();
-Serializer<GUserData_Viewer_favourites_manga_edges_node>
-    _$gUserDataViewerFavouritesMangaEdgesNodeSerializer =
-    new _$GUserData_Viewer_favourites_manga_edges_nodeSerializer();
-Serializer<GUserData_Viewer_favourites_manga_edges_node_title>
-    _$gUserDataViewerFavouritesMangaEdgesNodeTitleSerializer =
-    new _$GUserData_Viewer_favourites_manga_edges_node_titleSerializer();
-Serializer<GUserData_Viewer_favourites_manga_edges_node_coverImage>
-    _$gUserDataViewerFavouritesMangaEdgesNodeCoverImageSerializer =
-    new _$GUserData_Viewer_favourites_manga_edges_node_coverImageSerializer();
-Serializer<GUserData_Viewer_favourites_manga_edges_node_startDate>
-    _$gUserDataViewerFavouritesMangaEdgesNodeStartDateSerializer =
-    new _$GUserData_Viewer_favourites_manga_edges_node_startDateSerializer();
-Serializer<GUserData_Viewer_favourites_characters>
-    _$gUserDataViewerFavouritesCharactersSerializer =
-    new _$GUserData_Viewer_favourites_charactersSerializer();
-Serializer<GUserData_Viewer_favourites_characters_edges>
-    _$gUserDataViewerFavouritesCharactersEdgesSerializer =
-    new _$GUserData_Viewer_favourites_characters_edgesSerializer();
-Serializer<GUserData_Viewer_favourites_characters_edges_node>
-    _$gUserDataViewerFavouritesCharactersEdgesNodeSerializer =
-    new _$GUserData_Viewer_favourites_characters_edges_nodeSerializer();
-Serializer<GUserData_Viewer_favourites_characters_edges_node_name>
-    _$gUserDataViewerFavouritesCharactersEdgesNodeNameSerializer =
-    new _$GUserData_Viewer_favourites_characters_edges_node_nameSerializer();
-Serializer<GUserData_Viewer_favourites_characters_edges_node_image>
-    _$gUserDataViewerFavouritesCharactersEdgesNodeImageSerializer =
-    new _$GUserData_Viewer_favourites_characters_edges_node_imageSerializer();
-Serializer<GUserData_Viewer_favourites_staff>
-    _$gUserDataViewerFavouritesStaffSerializer =
-    new _$GUserData_Viewer_favourites_staffSerializer();
-Serializer<GUserData_Viewer_favourites_staff_edges>
-    _$gUserDataViewerFavouritesStaffEdgesSerializer =
-    new _$GUserData_Viewer_favourites_staff_edgesSerializer();
-Serializer<GUserData_Viewer_favourites_staff_edges_node>
-    _$gUserDataViewerFavouritesStaffEdgesNodeSerializer =
-    new _$GUserData_Viewer_favourites_staff_edges_nodeSerializer();
-Serializer<GUserData_Viewer_favourites_staff_edges_node_name>
-    _$gUserDataViewerFavouritesStaffEdgesNodeNameSerializer =
-    new _$GUserData_Viewer_favourites_staff_edges_node_nameSerializer();
-Serializer<GUserData_Viewer_favourites_staff_edges_node_image>
-    _$gUserDataViewerFavouritesStaffEdgesNodeImageSerializer =
-    new _$GUserData_Viewer_favourites_staff_edges_node_imageSerializer();
-Serializer<GUserData_Viewer_favourites_studios>
-    _$gUserDataViewerFavouritesStudiosSerializer =
-    new _$GUserData_Viewer_favourites_studiosSerializer();
-Serializer<GUserData_Viewer_favourites_studios_edges>
-    _$gUserDataViewerFavouritesStudiosEdgesSerializer =
-    new _$GUserData_Viewer_favourites_studios_edgesSerializer();
-Serializer<GUserData_Viewer_favourites_studios_edges_node>
-    _$gUserDataViewerFavouritesStudiosEdgesNodeSerializer =
-    new _$GUserData_Viewer_favourites_studios_edges_nodeSerializer();
+Serializer<GUserData_User> _$gUserDataUserSerializer =
+    new _$GUserData_UserSerializer();
+Serializer<GUserData_User_previousNames>
+    _$gUserDataUserPreviousNamesSerializer =
+    new _$GUserData_User_previousNamesSerializer();
+Serializer<GUserData_User_avatar> _$gUserDataUserAvatarSerializer =
+    new _$GUserData_User_avatarSerializer();
+Serializer<GUserData_User_options> _$gUserDataUserOptionsSerializer =
+    new _$GUserData_User_optionsSerializer();
+Serializer<GUserData_User_mediaListOptions>
+    _$gUserDataUserMediaListOptionsSerializer =
+    new _$GUserData_User_mediaListOptionsSerializer();
+Serializer<GUserData_User_statistics> _$gUserDataUserStatisticsSerializer =
+    new _$GUserData_User_statisticsSerializer();
+Serializer<GUserData_User_statistics_anime>
+    _$gUserDataUserStatisticsAnimeSerializer =
+    new _$GUserData_User_statistics_animeSerializer();
+Serializer<GUserData_User_statistics_anime_genrePreview>
+    _$gUserDataUserStatisticsAnimeGenrePreviewSerializer =
+    new _$GUserData_User_statistics_anime_genrePreviewSerializer();
+Serializer<GUserData_User_statistics_manga>
+    _$gUserDataUserStatisticsMangaSerializer =
+    new _$GUserData_User_statistics_mangaSerializer();
+Serializer<GUserData_User_statistics_manga_genrePreview>
+    _$gUserDataUserStatisticsMangaGenrePreviewSerializer =
+    new _$GUserData_User_statistics_manga_genrePreviewSerializer();
+Serializer<GUserData_User_stats> _$gUserDataUserStatsSerializer =
+    new _$GUserData_User_statsSerializer();
+Serializer<GUserData_User_stats_activityHistory>
+    _$gUserDataUserStatsActivityHistorySerializer =
+    new _$GUserData_User_stats_activityHistorySerializer();
+Serializer<GUserData_User_favourites> _$gUserDataUserFavouritesSerializer =
+    new _$GUserData_User_favouritesSerializer();
+Serializer<GUserData_User_favourites_anime>
+    _$gUserDataUserFavouritesAnimeSerializer =
+    new _$GUserData_User_favourites_animeSerializer();
+Serializer<GUserData_User_favourites_anime_edges>
+    _$gUserDataUserFavouritesAnimeEdgesSerializer =
+    new _$GUserData_User_favourites_anime_edgesSerializer();
+Serializer<GUserData_User_favourites_anime_edges_node>
+    _$gUserDataUserFavouritesAnimeEdgesNodeSerializer =
+    new _$GUserData_User_favourites_anime_edges_nodeSerializer();
+Serializer<GUserData_User_favourites_anime_edges_node_title>
+    _$gUserDataUserFavouritesAnimeEdgesNodeTitleSerializer =
+    new _$GUserData_User_favourites_anime_edges_node_titleSerializer();
+Serializer<GUserData_User_favourites_anime_edges_node_coverImage>
+    _$gUserDataUserFavouritesAnimeEdgesNodeCoverImageSerializer =
+    new _$GUserData_User_favourites_anime_edges_node_coverImageSerializer();
+Serializer<GUserData_User_favourites_anime_edges_node_startDate>
+    _$gUserDataUserFavouritesAnimeEdgesNodeStartDateSerializer =
+    new _$GUserData_User_favourites_anime_edges_node_startDateSerializer();
+Serializer<GUserData_User_favourites_manga>
+    _$gUserDataUserFavouritesMangaSerializer =
+    new _$GUserData_User_favourites_mangaSerializer();
+Serializer<GUserData_User_favourites_manga_edges>
+    _$gUserDataUserFavouritesMangaEdgesSerializer =
+    new _$GUserData_User_favourites_manga_edgesSerializer();
+Serializer<GUserData_User_favourites_manga_edges_node>
+    _$gUserDataUserFavouritesMangaEdgesNodeSerializer =
+    new _$GUserData_User_favourites_manga_edges_nodeSerializer();
+Serializer<GUserData_User_favourites_manga_edges_node_title>
+    _$gUserDataUserFavouritesMangaEdgesNodeTitleSerializer =
+    new _$GUserData_User_favourites_manga_edges_node_titleSerializer();
+Serializer<GUserData_User_favourites_manga_edges_node_coverImage>
+    _$gUserDataUserFavouritesMangaEdgesNodeCoverImageSerializer =
+    new _$GUserData_User_favourites_manga_edges_node_coverImageSerializer();
+Serializer<GUserData_User_favourites_manga_edges_node_startDate>
+    _$gUserDataUserFavouritesMangaEdgesNodeStartDateSerializer =
+    new _$GUserData_User_favourites_manga_edges_node_startDateSerializer();
+Serializer<GUserData_User_favourites_characters>
+    _$gUserDataUserFavouritesCharactersSerializer =
+    new _$GUserData_User_favourites_charactersSerializer();
+Serializer<GUserData_User_favourites_characters_edges>
+    _$gUserDataUserFavouritesCharactersEdgesSerializer =
+    new _$GUserData_User_favourites_characters_edgesSerializer();
+Serializer<GUserData_User_favourites_characters_edges_node>
+    _$gUserDataUserFavouritesCharactersEdgesNodeSerializer =
+    new _$GUserData_User_favourites_characters_edges_nodeSerializer();
+Serializer<GUserData_User_favourites_characters_edges_node_name>
+    _$gUserDataUserFavouritesCharactersEdgesNodeNameSerializer =
+    new _$GUserData_User_favourites_characters_edges_node_nameSerializer();
+Serializer<GUserData_User_favourites_characters_edges_node_image>
+    _$gUserDataUserFavouritesCharactersEdgesNodeImageSerializer =
+    new _$GUserData_User_favourites_characters_edges_node_imageSerializer();
+Serializer<GUserData_User_favourites_staff>
+    _$gUserDataUserFavouritesStaffSerializer =
+    new _$GUserData_User_favourites_staffSerializer();
+Serializer<GUserData_User_favourites_staff_edges>
+    _$gUserDataUserFavouritesStaffEdgesSerializer =
+    new _$GUserData_User_favourites_staff_edgesSerializer();
+Serializer<GUserData_User_favourites_staff_edges_node>
+    _$gUserDataUserFavouritesStaffEdgesNodeSerializer =
+    new _$GUserData_User_favourites_staff_edges_nodeSerializer();
+Serializer<GUserData_User_favourites_staff_edges_node_name>
+    _$gUserDataUserFavouritesStaffEdgesNodeNameSerializer =
+    new _$GUserData_User_favourites_staff_edges_node_nameSerializer();
+Serializer<GUserData_User_favourites_staff_edges_node_image>
+    _$gUserDataUserFavouritesStaffEdgesNodeImageSerializer =
+    new _$GUserData_User_favourites_staff_edges_node_imageSerializer();
+Serializer<GUserData_User_favourites_studios>
+    _$gUserDataUserFavouritesStudiosSerializer =
+    new _$GUserData_User_favourites_studiosSerializer();
+Serializer<GUserData_User_favourites_studios_edges>
+    _$gUserDataUserFavouritesStudiosEdgesSerializer =
+    new _$GUserData_User_favourites_studios_edgesSerializer();
+Serializer<GUserData_User_favourites_studios_edges_node>
+    _$gUserDataUserFavouritesStudiosEdgesNodeSerializer =
+    new _$GUserData_User_favourites_studios_edges_nodeSerializer();
 
 class _$GUserDataSerializer implements StructuredSerializer<GUserData> {
   @override
@@ -131,12 +131,12 @@ class _$GUserDataSerializer implements StructuredSerializer<GUserData> {
           specifiedType: const FullType(String)),
     ];
     Object? value;
-    value = object.Viewer;
+    value = object.User;
     if (value != null) {
       result
-        ..add('Viewer')
+        ..add('User')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer)));
+            specifiedType: const FullType(GUserData_User)));
     }
     return result;
   }
@@ -156,10 +156,10 @@ class _$GUserDataSerializer implements StructuredSerializer<GUserData> {
           result.G__typename = serializers.deserialize(value,
               specifiedType: const FullType(String))! as String;
           break;
-        case 'Viewer':
-          result.Viewer.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUserData_Viewer))!
-              as GUserData_Viewer);
+        case 'User':
+          result.User.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(GUserData_User))!
+              as GUserData_User);
           break;
       }
     }
@@ -168,15 +168,15 @@ class _$GUserDataSerializer implements StructuredSerializer<GUserData> {
   }
 }
 
-class _$GUserData_ViewerSerializer
-    implements StructuredSerializer<GUserData_Viewer> {
+class _$GUserData_UserSerializer
+    implements StructuredSerializer<GUserData_User> {
   @override
-  final Iterable<Type> types = const [GUserData_Viewer, _$GUserData_Viewer];
+  final Iterable<Type> types = const [GUserData_User, _$GUserData_User];
   @override
-  final String wireName = 'GUserData_Viewer';
+  final String wireName = 'GUserData_User';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GUserData_Viewer object,
+  Iterable<Object?> serialize(Serializers serializers, GUserData_User object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -194,7 +194,7 @@ class _$GUserData_ViewerSerializer
         ..add('previousNames')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GUserData_Viewer_previousNames)
+              const FullType.nullable(GUserData_User_previousNames)
             ])));
     }
     value = object.avatar;
@@ -202,7 +202,7 @@ class _$GUserData_ViewerSerializer
       result
         ..add('avatar')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_avatar)));
+            specifiedType: const FullType(GUserData_User_avatar)));
     }
     value = object.bannerImage;
     if (value != null) {
@@ -278,44 +278,44 @@ class _$GUserData_ViewerSerializer
       result
         ..add('options')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_options)));
+            specifiedType: const FullType(GUserData_User_options)));
     }
     value = object.mediaListOptions;
     if (value != null) {
       result
         ..add('mediaListOptions')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_mediaListOptions)));
+            specifiedType: const FullType(GUserData_User_mediaListOptions)));
     }
     value = object.statistics;
     if (value != null) {
       result
         ..add('statistics')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_statistics)));
+            specifiedType: const FullType(GUserData_User_statistics)));
     }
     value = object.stats;
     if (value != null) {
       result
         ..add('stats')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_stats)));
+            specifiedType: const FullType(GUserData_User_stats)));
     }
     value = object.favourites;
     if (value != null) {
       result
         ..add('favourites')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_favourites)));
+            specifiedType: const FullType(GUserData_User_favourites)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer deserialize(
+  GUserData_User deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_ViewerBuilder();
+    final result = new GUserData_UserBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -338,13 +338,13 @@ class _$GUserData_ViewerSerializer
         case 'previousNames':
           result.previousNames.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(GUserData_Viewer_previousNames)
+                const FullType.nullable(GUserData_User_previousNames)
               ]))! as BuiltList<Object?>);
           break;
         case 'avatar':
           result.avatar.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUserData_Viewer_avatar))!
-              as GUserData_Viewer_avatar);
+                  specifiedType: const FullType(GUserData_User_avatar))!
+              as GUserData_User_avatar);
           break;
         case 'bannerImage':
           result.bannerImage = serializers.deserialize(value,
@@ -390,29 +390,29 @@ class _$GUserData_ViewerSerializer
           break;
         case 'options':
           result.options.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUserData_Viewer_options))!
-              as GUserData_Viewer_options);
+                  specifiedType: const FullType(GUserData_User_options))!
+              as GUserData_User_options);
           break;
         case 'mediaListOptions':
           result.mediaListOptions.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(GUserData_Viewer_mediaListOptions))!
-              as GUserData_Viewer_mediaListOptions);
+                      const FullType(GUserData_User_mediaListOptions))!
+              as GUserData_User_mediaListOptions);
           break;
         case 'statistics':
           result.statistics.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUserData_Viewer_statistics))!
-              as GUserData_Viewer_statistics);
+                  specifiedType: const FullType(GUserData_User_statistics))!
+              as GUserData_User_statistics);
           break;
         case 'stats':
           result.stats.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUserData_Viewer_stats))!
-              as GUserData_Viewer_stats);
+                  specifiedType: const FullType(GUserData_User_stats))!
+              as GUserData_User_stats);
           break;
         case 'favourites':
           result.favourites.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUserData_Viewer_favourites))!
-              as GUserData_Viewer_favourites);
+                  specifiedType: const FullType(GUserData_User_favourites))!
+              as GUserData_User_favourites);
           break;
       }
     }
@@ -421,19 +421,19 @@ class _$GUserData_ViewerSerializer
   }
 }
 
-class _$GUserData_Viewer_previousNamesSerializer
-    implements StructuredSerializer<GUserData_Viewer_previousNames> {
+class _$GUserData_User_previousNamesSerializer
+    implements StructuredSerializer<GUserData_User_previousNames> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_previousNames,
-    _$GUserData_Viewer_previousNames
+    GUserData_User_previousNames,
+    _$GUserData_User_previousNames
   ];
   @override
-  final String wireName = 'GUserData_Viewer_previousNames';
+  final String wireName = 'GUserData_User_previousNames';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_previousNames object,
+      Serializers serializers, GUserData_User_previousNames object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -458,10 +458,10 @@ class _$GUserData_Viewer_previousNamesSerializer
   }
 
   @override
-  GUserData_Viewer_previousNames deserialize(
+  GUserData_User_previousNames deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_previousNamesBuilder();
+    final result = new GUserData_User_previousNamesBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -488,19 +488,19 @@ class _$GUserData_Viewer_previousNamesSerializer
   }
 }
 
-class _$GUserData_Viewer_avatarSerializer
-    implements StructuredSerializer<GUserData_Viewer_avatar> {
+class _$GUserData_User_avatarSerializer
+    implements StructuredSerializer<GUserData_User_avatar> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_avatar,
-    _$GUserData_Viewer_avatar
+    GUserData_User_avatar,
+    _$GUserData_User_avatar
   ];
   @override
-  final String wireName = 'GUserData_Viewer_avatar';
+  final String wireName = 'GUserData_User_avatar';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_avatar object,
+      Serializers serializers, GUserData_User_avatar object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -519,10 +519,10 @@ class _$GUserData_Viewer_avatarSerializer
   }
 
   @override
-  GUserData_Viewer_avatar deserialize(
+  GUserData_User_avatar deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_avatarBuilder();
+    final result = new GUserData_User_avatarBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -545,19 +545,19 @@ class _$GUserData_Viewer_avatarSerializer
   }
 }
 
-class _$GUserData_Viewer_optionsSerializer
-    implements StructuredSerializer<GUserData_Viewer_options> {
+class _$GUserData_User_optionsSerializer
+    implements StructuredSerializer<GUserData_User_options> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_options,
-    _$GUserData_Viewer_options
+    GUserData_User_options,
+    _$GUserData_User_options
   ];
   @override
-  final String wireName = 'GUserData_Viewer_options';
+  final String wireName = 'GUserData_User_options';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_options object,
+      Serializers serializers, GUserData_User_options object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -583,10 +583,10 @@ class _$GUserData_Viewer_optionsSerializer
   }
 
   @override
-  GUserData_Viewer_options deserialize(
+  GUserData_User_options deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_optionsBuilder();
+    final result = new GUserData_User_optionsBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -613,19 +613,19 @@ class _$GUserData_Viewer_optionsSerializer
   }
 }
 
-class _$GUserData_Viewer_mediaListOptionsSerializer
-    implements StructuredSerializer<GUserData_Viewer_mediaListOptions> {
+class _$GUserData_User_mediaListOptionsSerializer
+    implements StructuredSerializer<GUserData_User_mediaListOptions> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_mediaListOptions,
-    _$GUserData_Viewer_mediaListOptions
+    GUserData_User_mediaListOptions,
+    _$GUserData_User_mediaListOptions
   ];
   @override
-  final String wireName = 'GUserData_Viewer_mediaListOptions';
+  final String wireName = 'GUserData_User_mediaListOptions';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_mediaListOptions object,
+      Serializers serializers, GUserData_User_mediaListOptions object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -644,10 +644,10 @@ class _$GUserData_Viewer_mediaListOptionsSerializer
   }
 
   @override
-  GUserData_Viewer_mediaListOptions deserialize(
+  GUserData_User_mediaListOptions deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_mediaListOptionsBuilder();
+    final result = new GUserData_User_mediaListOptionsBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -671,19 +671,19 @@ class _$GUserData_Viewer_mediaListOptionsSerializer
   }
 }
 
-class _$GUserData_Viewer_statisticsSerializer
-    implements StructuredSerializer<GUserData_Viewer_statistics> {
+class _$GUserData_User_statisticsSerializer
+    implements StructuredSerializer<GUserData_User_statistics> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_statistics,
-    _$GUserData_Viewer_statistics
+    GUserData_User_statistics,
+    _$GUserData_User_statistics
   ];
   @override
-  final String wireName = 'GUserData_Viewer_statistics';
+  final String wireName = 'GUserData_User_statistics';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_statistics object,
+      Serializers serializers, GUserData_User_statistics object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -696,23 +696,23 @@ class _$GUserData_Viewer_statisticsSerializer
       result
         ..add('anime')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_statistics_anime)));
+            specifiedType: const FullType(GUserData_User_statistics_anime)));
     }
     value = object.manga;
     if (value != null) {
       result
         ..add('manga')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_statistics_manga)));
+            specifiedType: const FullType(GUserData_User_statistics_manga)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_statistics deserialize(
+  GUserData_User_statistics deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_statisticsBuilder();
+    final result = new GUserData_User_statisticsBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -727,14 +727,14 @@ class _$GUserData_Viewer_statisticsSerializer
         case 'anime':
           result.anime.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(GUserData_Viewer_statistics_anime))!
-              as GUserData_Viewer_statistics_anime);
+                      const FullType(GUserData_User_statistics_anime))!
+              as GUserData_User_statistics_anime);
           break;
         case 'manga':
           result.manga.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(GUserData_Viewer_statistics_manga))!
-              as GUserData_Viewer_statistics_manga);
+                      const FullType(GUserData_User_statistics_manga))!
+              as GUserData_User_statistics_manga);
           break;
       }
     }
@@ -743,19 +743,19 @@ class _$GUserData_Viewer_statisticsSerializer
   }
 }
 
-class _$GUserData_Viewer_statistics_animeSerializer
-    implements StructuredSerializer<GUserData_Viewer_statistics_anime> {
+class _$GUserData_User_statistics_animeSerializer
+    implements StructuredSerializer<GUserData_User_statistics_anime> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_statistics_anime,
-    _$GUserData_Viewer_statistics_anime
+    GUserData_User_statistics_anime,
+    _$GUserData_User_statistics_anime
   ];
   @override
-  final String wireName = 'GUserData_Viewer_statistics_anime';
+  final String wireName = 'GUserData_User_statistics_anime';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_statistics_anime object,
+      Serializers serializers, GUserData_User_statistics_anime object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -784,17 +784,17 @@ class _$GUserData_Viewer_statistics_animeSerializer
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
               const FullType.nullable(
-                  GUserData_Viewer_statistics_anime_genrePreview)
+                  GUserData_User_statistics_anime_genrePreview)
             ])));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_statistics_anime deserialize(
+  GUserData_User_statistics_anime deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_statistics_animeBuilder();
+    final result = new GUserData_User_statistics_animeBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -830,7 +830,7 @@ class _$GUserData_Viewer_statistics_animeSerializer
           result.genrePreview.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
                 const FullType.nullable(
-                    GUserData_Viewer_statistics_anime_genrePreview)
+                    GUserData_User_statistics_anime_genrePreview)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -840,20 +840,20 @@ class _$GUserData_Viewer_statistics_animeSerializer
   }
 }
 
-class _$GUserData_Viewer_statistics_anime_genrePreviewSerializer
+class _$GUserData_User_statistics_anime_genrePreviewSerializer
     implements
-        StructuredSerializer<GUserData_Viewer_statistics_anime_genrePreview> {
+        StructuredSerializer<GUserData_User_statistics_anime_genrePreview> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_statistics_anime_genrePreview,
-    _$GUserData_Viewer_statistics_anime_genrePreview
+    GUserData_User_statistics_anime_genrePreview,
+    _$GUserData_User_statistics_anime_genrePreview
   ];
   @override
-  final String wireName = 'GUserData_Viewer_statistics_anime_genrePreview';
+  final String wireName = 'GUserData_User_statistics_anime_genrePreview';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_statistics_anime_genrePreview object,
+      GUserData_User_statistics_anime_genrePreview object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -874,10 +874,10 @@ class _$GUserData_Viewer_statistics_anime_genrePreviewSerializer
   }
 
   @override
-  GUserData_Viewer_statistics_anime_genrePreview deserialize(
+  GUserData_User_statistics_anime_genrePreview deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_statistics_anime_genrePreviewBuilder();
+    final result = new GUserData_User_statistics_anime_genrePreviewBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -904,19 +904,19 @@ class _$GUserData_Viewer_statistics_anime_genrePreviewSerializer
   }
 }
 
-class _$GUserData_Viewer_statistics_mangaSerializer
-    implements StructuredSerializer<GUserData_Viewer_statistics_manga> {
+class _$GUserData_User_statistics_mangaSerializer
+    implements StructuredSerializer<GUserData_User_statistics_manga> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_statistics_manga,
-    _$GUserData_Viewer_statistics_manga
+    GUserData_User_statistics_manga,
+    _$GUserData_User_statistics_manga
   ];
   @override
-  final String wireName = 'GUserData_Viewer_statistics_manga';
+  final String wireName = 'GUserData_User_statistics_manga';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_statistics_manga object,
+      Serializers serializers, GUserData_User_statistics_manga object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -945,17 +945,17 @@ class _$GUserData_Viewer_statistics_mangaSerializer
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
               const FullType.nullable(
-                  GUserData_Viewer_statistics_manga_genrePreview)
+                  GUserData_User_statistics_manga_genrePreview)
             ])));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_statistics_manga deserialize(
+  GUserData_User_statistics_manga deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_statistics_mangaBuilder();
+    final result = new GUserData_User_statistics_mangaBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -991,7 +991,7 @@ class _$GUserData_Viewer_statistics_mangaSerializer
           result.genrePreview.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
                 const FullType.nullable(
-                    GUserData_Viewer_statistics_manga_genrePreview)
+                    GUserData_User_statistics_manga_genrePreview)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -1001,20 +1001,20 @@ class _$GUserData_Viewer_statistics_mangaSerializer
   }
 }
 
-class _$GUserData_Viewer_statistics_manga_genrePreviewSerializer
+class _$GUserData_User_statistics_manga_genrePreviewSerializer
     implements
-        StructuredSerializer<GUserData_Viewer_statistics_manga_genrePreview> {
+        StructuredSerializer<GUserData_User_statistics_manga_genrePreview> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_statistics_manga_genrePreview,
-    _$GUserData_Viewer_statistics_manga_genrePreview
+    GUserData_User_statistics_manga_genrePreview,
+    _$GUserData_User_statistics_manga_genrePreview
   ];
   @override
-  final String wireName = 'GUserData_Viewer_statistics_manga_genrePreview';
+  final String wireName = 'GUserData_User_statistics_manga_genrePreview';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_statistics_manga_genrePreview object,
+      GUserData_User_statistics_manga_genrePreview object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1035,10 +1035,10 @@ class _$GUserData_Viewer_statistics_manga_genrePreviewSerializer
   }
 
   @override
-  GUserData_Viewer_statistics_manga_genrePreview deserialize(
+  GUserData_User_statistics_manga_genrePreview deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_statistics_manga_genrePreviewBuilder();
+    final result = new GUserData_User_statistics_manga_genrePreviewBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1065,19 +1065,19 @@ class _$GUserData_Viewer_statistics_manga_genrePreviewSerializer
   }
 }
 
-class _$GUserData_Viewer_statsSerializer
-    implements StructuredSerializer<GUserData_Viewer_stats> {
+class _$GUserData_User_statsSerializer
+    implements StructuredSerializer<GUserData_User_stats> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_stats,
-    _$GUserData_Viewer_stats
+    GUserData_User_stats,
+    _$GUserData_User_stats
   ];
   @override
-  final String wireName = 'GUserData_Viewer_stats';
+  final String wireName = 'GUserData_User_stats';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_stats object,
+      Serializers serializers, GUserData_User_stats object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1091,17 +1091,17 @@ class _$GUserData_Viewer_statsSerializer
         ..add('activityHistory')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GUserData_Viewer_stats_activityHistory)
+              const FullType.nullable(GUserData_User_stats_activityHistory)
             ])));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_stats deserialize(
+  GUserData_User_stats deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_statsBuilder();
+    final result = new GUserData_User_statsBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1116,7 +1116,7 @@ class _$GUserData_Viewer_statsSerializer
         case 'activityHistory':
           result.activityHistory.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(GUserData_Viewer_stats_activityHistory)
+                const FullType.nullable(GUserData_User_stats_activityHistory)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -1126,19 +1126,19 @@ class _$GUserData_Viewer_statsSerializer
   }
 }
 
-class _$GUserData_Viewer_stats_activityHistorySerializer
-    implements StructuredSerializer<GUserData_Viewer_stats_activityHistory> {
+class _$GUserData_User_stats_activityHistorySerializer
+    implements StructuredSerializer<GUserData_User_stats_activityHistory> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_stats_activityHistory,
-    _$GUserData_Viewer_stats_activityHistory
+    GUserData_User_stats_activityHistory,
+    _$GUserData_User_stats_activityHistory
   ];
   @override
-  final String wireName = 'GUserData_Viewer_stats_activityHistory';
+  final String wireName = 'GUserData_User_stats_activityHistory';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_stats_activityHistory object,
+      Serializers serializers, GUserData_User_stats_activityHistory object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1168,10 +1168,10 @@ class _$GUserData_Viewer_stats_activityHistorySerializer
   }
 
   @override
-  GUserData_Viewer_stats_activityHistory deserialize(
+  GUserData_User_stats_activityHistory deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_stats_activityHistoryBuilder();
+    final result = new GUserData_User_stats_activityHistoryBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1202,19 +1202,19 @@ class _$GUserData_Viewer_stats_activityHistorySerializer
   }
 }
 
-class _$GUserData_Viewer_favouritesSerializer
-    implements StructuredSerializer<GUserData_Viewer_favourites> {
+class _$GUserData_User_favouritesSerializer
+    implements StructuredSerializer<GUserData_User_favourites> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites,
-    _$GUserData_Viewer_favourites
+    GUserData_User_favourites,
+    _$GUserData_User_favourites
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites';
+  final String wireName = 'GUserData_User_favourites';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_favourites object,
+      Serializers serializers, GUserData_User_favourites object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1227,14 +1227,14 @@ class _$GUserData_Viewer_favouritesSerializer
       result
         ..add('anime')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_favourites_anime)));
+            specifiedType: const FullType(GUserData_User_favourites_anime)));
     }
     value = object.manga;
     if (value != null) {
       result
         ..add('manga')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_favourites_manga)));
+            specifiedType: const FullType(GUserData_User_favourites_manga)));
     }
     value = object.characters;
     if (value != null) {
@@ -1242,31 +1242,30 @@ class _$GUserData_Viewer_favouritesSerializer
         ..add('characters')
         ..add(serializers.serialize(value,
             specifiedType:
-                const FullType(GUserData_Viewer_favourites_characters)));
+                const FullType(GUserData_User_favourites_characters)));
     }
     value = object.staff;
     if (value != null) {
       result
         ..add('staff')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserData_Viewer_favourites_staff)));
+            specifiedType: const FullType(GUserData_User_favourites_staff)));
     }
     value = object.studios;
     if (value != null) {
       result
         ..add('studios')
         ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(GUserData_Viewer_favourites_studios)));
+            specifiedType: const FullType(GUserData_User_favourites_studios)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites deserialize(
+  GUserData_User_favourites deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favouritesBuilder();
+    final result = new GUserData_User_favouritesBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1281,32 +1280,32 @@ class _$GUserData_Viewer_favouritesSerializer
         case 'anime':
           result.anime.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(GUserData_Viewer_favourites_anime))!
-              as GUserData_Viewer_favourites_anime);
+                      const FullType(GUserData_User_favourites_anime))!
+              as GUserData_User_favourites_anime);
           break;
         case 'manga':
           result.manga.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(GUserData_Viewer_favourites_manga))!
-              as GUserData_Viewer_favourites_manga);
+                      const FullType(GUserData_User_favourites_manga))!
+              as GUserData_User_favourites_manga);
           break;
         case 'characters':
           result.characters.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(GUserData_Viewer_favourites_characters))!
-              as GUserData_Viewer_favourites_characters);
+                      const FullType(GUserData_User_favourites_characters))!
+              as GUserData_User_favourites_characters);
           break;
         case 'staff':
           result.staff.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(GUserData_Viewer_favourites_staff))!
-              as GUserData_Viewer_favourites_staff);
+                      const FullType(GUserData_User_favourites_staff))!
+              as GUserData_User_favourites_staff);
           break;
         case 'studios':
           result.studios.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(GUserData_Viewer_favourites_studios))!
-              as GUserData_Viewer_favourites_studios);
+                      const FullType(GUserData_User_favourites_studios))!
+              as GUserData_User_favourites_studios);
           break;
       }
     }
@@ -1315,19 +1314,19 @@ class _$GUserData_Viewer_favouritesSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_animeSerializer
-    implements StructuredSerializer<GUserData_Viewer_favourites_anime> {
+class _$GUserData_User_favourites_animeSerializer
+    implements StructuredSerializer<GUserData_User_favourites_anime> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_anime,
-    _$GUserData_Viewer_favourites_anime
+    GUserData_User_favourites_anime,
+    _$GUserData_User_favourites_anime
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_anime';
+  final String wireName = 'GUserData_User_favourites_anime';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_favourites_anime object,
+      Serializers serializers, GUserData_User_favourites_anime object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1341,17 +1340,17 @@ class _$GUserData_Viewer_favourites_animeSerializer
         ..add('edges')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GUserData_Viewer_favourites_anime_edges)
+              const FullType.nullable(GUserData_User_favourites_anime_edges)
             ])));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_anime deserialize(
+  GUserData_User_favourites_anime deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_animeBuilder();
+    final result = new GUserData_User_favourites_animeBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1366,7 +1365,7 @@ class _$GUserData_Viewer_favourites_animeSerializer
         case 'edges':
           result.edges.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(GUserData_Viewer_favourites_anime_edges)
+                const FullType.nullable(GUserData_User_favourites_anime_edges)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -1376,19 +1375,19 @@ class _$GUserData_Viewer_favourites_animeSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_anime_edgesSerializer
-    implements StructuredSerializer<GUserData_Viewer_favourites_anime_edges> {
+class _$GUserData_User_favourites_anime_edgesSerializer
+    implements StructuredSerializer<GUserData_User_favourites_anime_edges> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_anime_edges,
-    _$GUserData_Viewer_favourites_anime_edges
+    GUserData_User_favourites_anime_edges,
+    _$GUserData_User_favourites_anime_edges
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_anime_edges';
+  final String wireName = 'GUserData_User_favourites_anime_edges';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_favourites_anime_edges object,
+      Serializers serializers, GUserData_User_favourites_anime_edges object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1408,16 +1407,16 @@ class _$GUserData_Viewer_favourites_anime_edgesSerializer
         ..add('node')
         ..add(serializers.serialize(value,
             specifiedType:
-                const FullType(GUserData_Viewer_favourites_anime_edges_node)));
+                const FullType(GUserData_User_favourites_anime_edges_node)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges deserialize(
+  GUserData_User_favourites_anime_edges deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_anime_edgesBuilder();
+    final result = new GUserData_User_favourites_anime_edgesBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1436,8 +1435,8 @@ class _$GUserData_Viewer_favourites_anime_edgesSerializer
         case 'node':
           result.node.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_anime_edges_node))!
-              as GUserData_Viewer_favourites_anime_edges_node);
+                      GUserData_User_favourites_anime_edges_node))!
+              as GUserData_User_favourites_anime_edges_node);
           break;
       }
     }
@@ -1446,20 +1445,20 @@ class _$GUserData_Viewer_favourites_anime_edgesSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_anime_edges_nodeSerializer
+class _$GUserData_User_favourites_anime_edges_nodeSerializer
     implements
-        StructuredSerializer<GUserData_Viewer_favourites_anime_edges_node> {
+        StructuredSerializer<GUserData_User_favourites_anime_edges_node> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_anime_edges_node,
-    _$GUserData_Viewer_favourites_anime_edges_node
+    GUserData_User_favourites_anime_edges_node,
+    _$GUserData_User_favourites_anime_edges_node
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_anime_edges_node';
+  final String wireName = 'GUserData_User_favourites_anime_edges_node';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_anime_edges_node object,
+      GUserData_User_favourites_anime_edges_node object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1510,7 +1509,7 @@ class _$GUserData_Viewer_favourites_anime_edges_nodeSerializer
         ..add('title')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_anime_edges_node_title)));
+                GUserData_User_favourites_anime_edges_node_title)));
     }
     value = object.coverImage;
     if (value != null) {
@@ -1518,7 +1517,7 @@ class _$GUserData_Viewer_favourites_anime_edges_nodeSerializer
         ..add('coverImage')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_anime_edges_node_coverImage)));
+                GUserData_User_favourites_anime_edges_node_coverImage)));
     }
     value = object.startDate;
     if (value != null) {
@@ -1526,16 +1525,16 @@ class _$GUserData_Viewer_favourites_anime_edges_nodeSerializer
         ..add('startDate')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_anime_edges_node_startDate)));
+                GUserData_User_favourites_anime_edges_node_startDate)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node deserialize(
+  GUserData_User_favourites_anime_edges_node deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_anime_edges_nodeBuilder();
+    final result = new GUserData_User_favourites_anime_edges_nodeBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1576,20 +1575,20 @@ class _$GUserData_Viewer_favourites_anime_edges_nodeSerializer
         case 'title':
           result.title.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_anime_edges_node_title))!
-              as GUserData_Viewer_favourites_anime_edges_node_title);
+                      GUserData_User_favourites_anime_edges_node_title))!
+              as GUserData_User_favourites_anime_edges_node_title);
           break;
         case 'coverImage':
           result.coverImage.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_anime_edges_node_coverImage))!
-              as GUserData_Viewer_favourites_anime_edges_node_coverImage);
+                      GUserData_User_favourites_anime_edges_node_coverImage))!
+              as GUserData_User_favourites_anime_edges_node_coverImage);
           break;
         case 'startDate':
           result.startDate.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_anime_edges_node_startDate))!
-              as GUserData_Viewer_favourites_anime_edges_node_startDate);
+                      GUserData_User_favourites_anime_edges_node_startDate))!
+              as GUserData_User_favourites_anime_edges_node_startDate);
           break;
       }
     }
@@ -1598,21 +1597,20 @@ class _$GUserData_Viewer_favourites_anime_edges_nodeSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_anime_edges_node_titleSerializer
+class _$GUserData_User_favourites_anime_edges_node_titleSerializer
     implements
-        StructuredSerializer<
-            GUserData_Viewer_favourites_anime_edges_node_title> {
+        StructuredSerializer<GUserData_User_favourites_anime_edges_node_title> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_anime_edges_node_title,
-    _$GUserData_Viewer_favourites_anime_edges_node_title
+    GUserData_User_favourites_anime_edges_node_title,
+    _$GUserData_User_favourites_anime_edges_node_title
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_anime_edges_node_title';
+  final String wireName = 'GUserData_User_favourites_anime_edges_node_title';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_anime_edges_node_title object,
+      GUserData_User_favourites_anime_edges_node_title object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1631,11 +1629,11 @@ class _$GUserData_Viewer_favourites_anime_edges_node_titleSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_title deserialize(
+  GUserData_User_favourites_anime_edges_node_title deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result =
-        new GUserData_Viewer_favourites_anime_edges_node_titleBuilder();
+        new GUserData_User_favourites_anime_edges_node_titleBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1658,22 +1656,22 @@ class _$GUserData_Viewer_favourites_anime_edges_node_titleSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_anime_edges_node_coverImageSerializer
+class _$GUserData_User_favourites_anime_edges_node_coverImageSerializer
     implements
         StructuredSerializer<
-            GUserData_Viewer_favourites_anime_edges_node_coverImage> {
+            GUserData_User_favourites_anime_edges_node_coverImage> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_anime_edges_node_coverImage,
-    _$GUserData_Viewer_favourites_anime_edges_node_coverImage
+    GUserData_User_favourites_anime_edges_node_coverImage,
+    _$GUserData_User_favourites_anime_edges_node_coverImage
   ];
   @override
   final String wireName =
-      'GUserData_Viewer_favourites_anime_edges_node_coverImage';
+      'GUserData_User_favourites_anime_edges_node_coverImage';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_anime_edges_node_coverImage object,
+      GUserData_User_favourites_anime_edges_node_coverImage object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1692,11 +1690,11 @@ class _$GUserData_Viewer_favourites_anime_edges_node_coverImageSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_coverImage deserialize(
+  GUserData_User_favourites_anime_edges_node_coverImage deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result =
-        new GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder();
+        new GUserData_User_favourites_anime_edges_node_coverImageBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1719,22 +1717,22 @@ class _$GUserData_Viewer_favourites_anime_edges_node_coverImageSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_anime_edges_node_startDateSerializer
+class _$GUserData_User_favourites_anime_edges_node_startDateSerializer
     implements
         StructuredSerializer<
-            GUserData_Viewer_favourites_anime_edges_node_startDate> {
+            GUserData_User_favourites_anime_edges_node_startDate> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_anime_edges_node_startDate,
-    _$GUserData_Viewer_favourites_anime_edges_node_startDate
+    GUserData_User_favourites_anime_edges_node_startDate,
+    _$GUserData_User_favourites_anime_edges_node_startDate
   ];
   @override
   final String wireName =
-      'GUserData_Viewer_favourites_anime_edges_node_startDate';
+      'GUserData_User_favourites_anime_edges_node_startDate';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_anime_edges_node_startDate object,
+      GUserData_User_favourites_anime_edges_node_startDate object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1752,11 +1750,11 @@ class _$GUserData_Viewer_favourites_anime_edges_node_startDateSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_startDate deserialize(
+  GUserData_User_favourites_anime_edges_node_startDate deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result =
-        new GUserData_Viewer_favourites_anime_edges_node_startDateBuilder();
+        new GUserData_User_favourites_anime_edges_node_startDateBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1779,19 +1777,19 @@ class _$GUserData_Viewer_favourites_anime_edges_node_startDateSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_mangaSerializer
-    implements StructuredSerializer<GUserData_Viewer_favourites_manga> {
+class _$GUserData_User_favourites_mangaSerializer
+    implements StructuredSerializer<GUserData_User_favourites_manga> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_manga,
-    _$GUserData_Viewer_favourites_manga
+    GUserData_User_favourites_manga,
+    _$GUserData_User_favourites_manga
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_manga';
+  final String wireName = 'GUserData_User_favourites_manga';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_favourites_manga object,
+      Serializers serializers, GUserData_User_favourites_manga object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1805,17 +1803,17 @@ class _$GUserData_Viewer_favourites_mangaSerializer
         ..add('edges')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GUserData_Viewer_favourites_manga_edges)
+              const FullType.nullable(GUserData_User_favourites_manga_edges)
             ])));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_manga deserialize(
+  GUserData_User_favourites_manga deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_mangaBuilder();
+    final result = new GUserData_User_favourites_mangaBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1830,7 +1828,7 @@ class _$GUserData_Viewer_favourites_mangaSerializer
         case 'edges':
           result.edges.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(GUserData_Viewer_favourites_manga_edges)
+                const FullType.nullable(GUserData_User_favourites_manga_edges)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -1840,19 +1838,19 @@ class _$GUserData_Viewer_favourites_mangaSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_manga_edgesSerializer
-    implements StructuredSerializer<GUserData_Viewer_favourites_manga_edges> {
+class _$GUserData_User_favourites_manga_edgesSerializer
+    implements StructuredSerializer<GUserData_User_favourites_manga_edges> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_manga_edges,
-    _$GUserData_Viewer_favourites_manga_edges
+    GUserData_User_favourites_manga_edges,
+    _$GUserData_User_favourites_manga_edges
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_manga_edges';
+  final String wireName = 'GUserData_User_favourites_manga_edges';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_favourites_manga_edges object,
+      Serializers serializers, GUserData_User_favourites_manga_edges object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1872,16 +1870,16 @@ class _$GUserData_Viewer_favourites_manga_edgesSerializer
         ..add('node')
         ..add(serializers.serialize(value,
             specifiedType:
-                const FullType(GUserData_Viewer_favourites_manga_edges_node)));
+                const FullType(GUserData_User_favourites_manga_edges_node)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges deserialize(
+  GUserData_User_favourites_manga_edges deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_manga_edgesBuilder();
+    final result = new GUserData_User_favourites_manga_edgesBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -1900,8 +1898,8 @@ class _$GUserData_Viewer_favourites_manga_edgesSerializer
         case 'node':
           result.node.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_manga_edges_node))!
-              as GUserData_Viewer_favourites_manga_edges_node);
+                      GUserData_User_favourites_manga_edges_node))!
+              as GUserData_User_favourites_manga_edges_node);
           break;
       }
     }
@@ -1910,20 +1908,20 @@ class _$GUserData_Viewer_favourites_manga_edgesSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_manga_edges_nodeSerializer
+class _$GUserData_User_favourites_manga_edges_nodeSerializer
     implements
-        StructuredSerializer<GUserData_Viewer_favourites_manga_edges_node> {
+        StructuredSerializer<GUserData_User_favourites_manga_edges_node> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_manga_edges_node,
-    _$GUserData_Viewer_favourites_manga_edges_node
+    GUserData_User_favourites_manga_edges_node,
+    _$GUserData_User_favourites_manga_edges_node
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_manga_edges_node';
+  final String wireName = 'GUserData_User_favourites_manga_edges_node';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_manga_edges_node object,
+      GUserData_User_favourites_manga_edges_node object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -1974,7 +1972,7 @@ class _$GUserData_Viewer_favourites_manga_edges_nodeSerializer
         ..add('title')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_manga_edges_node_title)));
+                GUserData_User_favourites_manga_edges_node_title)));
     }
     value = object.coverImage;
     if (value != null) {
@@ -1982,7 +1980,7 @@ class _$GUserData_Viewer_favourites_manga_edges_nodeSerializer
         ..add('coverImage')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_manga_edges_node_coverImage)));
+                GUserData_User_favourites_manga_edges_node_coverImage)));
     }
     value = object.startDate;
     if (value != null) {
@@ -1990,16 +1988,16 @@ class _$GUserData_Viewer_favourites_manga_edges_nodeSerializer
         ..add('startDate')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_manga_edges_node_startDate)));
+                GUserData_User_favourites_manga_edges_node_startDate)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node deserialize(
+  GUserData_User_favourites_manga_edges_node deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_manga_edges_nodeBuilder();
+    final result = new GUserData_User_favourites_manga_edges_nodeBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2040,20 +2038,20 @@ class _$GUserData_Viewer_favourites_manga_edges_nodeSerializer
         case 'title':
           result.title.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_manga_edges_node_title))!
-              as GUserData_Viewer_favourites_manga_edges_node_title);
+                      GUserData_User_favourites_manga_edges_node_title))!
+              as GUserData_User_favourites_manga_edges_node_title);
           break;
         case 'coverImage':
           result.coverImage.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_manga_edges_node_coverImage))!
-              as GUserData_Viewer_favourites_manga_edges_node_coverImage);
+                      GUserData_User_favourites_manga_edges_node_coverImage))!
+              as GUserData_User_favourites_manga_edges_node_coverImage);
           break;
         case 'startDate':
           result.startDate.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_manga_edges_node_startDate))!
-              as GUserData_Viewer_favourites_manga_edges_node_startDate);
+                      GUserData_User_favourites_manga_edges_node_startDate))!
+              as GUserData_User_favourites_manga_edges_node_startDate);
           break;
       }
     }
@@ -2062,21 +2060,20 @@ class _$GUserData_Viewer_favourites_manga_edges_nodeSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_manga_edges_node_titleSerializer
+class _$GUserData_User_favourites_manga_edges_node_titleSerializer
     implements
-        StructuredSerializer<
-            GUserData_Viewer_favourites_manga_edges_node_title> {
+        StructuredSerializer<GUserData_User_favourites_manga_edges_node_title> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_manga_edges_node_title,
-    _$GUserData_Viewer_favourites_manga_edges_node_title
+    GUserData_User_favourites_manga_edges_node_title,
+    _$GUserData_User_favourites_manga_edges_node_title
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_manga_edges_node_title';
+  final String wireName = 'GUserData_User_favourites_manga_edges_node_title';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_manga_edges_node_title object,
+      GUserData_User_favourites_manga_edges_node_title object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2095,11 +2092,11 @@ class _$GUserData_Viewer_favourites_manga_edges_node_titleSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_title deserialize(
+  GUserData_User_favourites_manga_edges_node_title deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result =
-        new GUserData_Viewer_favourites_manga_edges_node_titleBuilder();
+        new GUserData_User_favourites_manga_edges_node_titleBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2122,22 +2119,22 @@ class _$GUserData_Viewer_favourites_manga_edges_node_titleSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_manga_edges_node_coverImageSerializer
+class _$GUserData_User_favourites_manga_edges_node_coverImageSerializer
     implements
         StructuredSerializer<
-            GUserData_Viewer_favourites_manga_edges_node_coverImage> {
+            GUserData_User_favourites_manga_edges_node_coverImage> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_manga_edges_node_coverImage,
-    _$GUserData_Viewer_favourites_manga_edges_node_coverImage
+    GUserData_User_favourites_manga_edges_node_coverImage,
+    _$GUserData_User_favourites_manga_edges_node_coverImage
   ];
   @override
   final String wireName =
-      'GUserData_Viewer_favourites_manga_edges_node_coverImage';
+      'GUserData_User_favourites_manga_edges_node_coverImage';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_manga_edges_node_coverImage object,
+      GUserData_User_favourites_manga_edges_node_coverImage object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2156,11 +2153,11 @@ class _$GUserData_Viewer_favourites_manga_edges_node_coverImageSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_coverImage deserialize(
+  GUserData_User_favourites_manga_edges_node_coverImage deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result =
-        new GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder();
+        new GUserData_User_favourites_manga_edges_node_coverImageBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2183,22 +2180,22 @@ class _$GUserData_Viewer_favourites_manga_edges_node_coverImageSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_manga_edges_node_startDateSerializer
+class _$GUserData_User_favourites_manga_edges_node_startDateSerializer
     implements
         StructuredSerializer<
-            GUserData_Viewer_favourites_manga_edges_node_startDate> {
+            GUserData_User_favourites_manga_edges_node_startDate> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_manga_edges_node_startDate,
-    _$GUserData_Viewer_favourites_manga_edges_node_startDate
+    GUserData_User_favourites_manga_edges_node_startDate,
+    _$GUserData_User_favourites_manga_edges_node_startDate
   ];
   @override
   final String wireName =
-      'GUserData_Viewer_favourites_manga_edges_node_startDate';
+      'GUserData_User_favourites_manga_edges_node_startDate';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_manga_edges_node_startDate object,
+      GUserData_User_favourites_manga_edges_node_startDate object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2216,11 +2213,11 @@ class _$GUserData_Viewer_favourites_manga_edges_node_startDateSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_startDate deserialize(
+  GUserData_User_favourites_manga_edges_node_startDate deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result =
-        new GUserData_Viewer_favourites_manga_edges_node_startDateBuilder();
+        new GUserData_User_favourites_manga_edges_node_startDateBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2243,19 +2240,19 @@ class _$GUserData_Viewer_favourites_manga_edges_node_startDateSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_charactersSerializer
-    implements StructuredSerializer<GUserData_Viewer_favourites_characters> {
+class _$GUserData_User_favourites_charactersSerializer
+    implements StructuredSerializer<GUserData_User_favourites_characters> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_characters,
-    _$GUserData_Viewer_favourites_characters
+    GUserData_User_favourites_characters,
+    _$GUserData_User_favourites_characters
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_characters';
+  final String wireName = 'GUserData_User_favourites_characters';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_favourites_characters object,
+      Serializers serializers, GUserData_User_favourites_characters object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2270,17 +2267,17 @@ class _$GUserData_Viewer_favourites_charactersSerializer
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
               const FullType.nullable(
-                  GUserData_Viewer_favourites_characters_edges)
+                  GUserData_User_favourites_characters_edges)
             ])));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_characters deserialize(
+  GUserData_User_favourites_characters deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_charactersBuilder();
+    final result = new GUserData_User_favourites_charactersBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2296,7 +2293,7 @@ class _$GUserData_Viewer_favourites_charactersSerializer
           result.edges.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
                 const FullType.nullable(
-                    GUserData_Viewer_favourites_characters_edges)
+                    GUserData_User_favourites_characters_edges)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -2306,20 +2303,20 @@ class _$GUserData_Viewer_favourites_charactersSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_characters_edgesSerializer
+class _$GUserData_User_favourites_characters_edgesSerializer
     implements
-        StructuredSerializer<GUserData_Viewer_favourites_characters_edges> {
+        StructuredSerializer<GUserData_User_favourites_characters_edges> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_characters_edges,
-    _$GUserData_Viewer_favourites_characters_edges
+    GUserData_User_favourites_characters_edges,
+    _$GUserData_User_favourites_characters_edges
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_characters_edges';
+  final String wireName = 'GUserData_User_favourites_characters_edges';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_characters_edges object,
+      GUserData_User_favourites_characters_edges object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2339,16 +2336,16 @@ class _$GUserData_Viewer_favourites_characters_edgesSerializer
         ..add('node')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_characters_edges_node)));
+                GUserData_User_favourites_characters_edges_node)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges deserialize(
+  GUserData_User_favourites_characters_edges deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_characters_edgesBuilder();
+    final result = new GUserData_User_favourites_characters_edgesBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2367,8 +2364,8 @@ class _$GUserData_Viewer_favourites_characters_edgesSerializer
         case 'node':
           result.node.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_characters_edges_node))!
-              as GUserData_Viewer_favourites_characters_edges_node);
+                      GUserData_User_favourites_characters_edges_node))!
+              as GUserData_User_favourites_characters_edges_node);
           break;
       }
     }
@@ -2377,21 +2374,20 @@ class _$GUserData_Viewer_favourites_characters_edgesSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_characters_edges_nodeSerializer
+class _$GUserData_User_favourites_characters_edges_nodeSerializer
     implements
-        StructuredSerializer<
-            GUserData_Viewer_favourites_characters_edges_node> {
+        StructuredSerializer<GUserData_User_favourites_characters_edges_node> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_characters_edges_node,
-    _$GUserData_Viewer_favourites_characters_edges_node
+    GUserData_User_favourites_characters_edges_node,
+    _$GUserData_User_favourites_characters_edges_node
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_characters_edges_node';
+  final String wireName = 'GUserData_User_favourites_characters_edges_node';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_characters_edges_node object,
+      GUserData_User_favourites_characters_edges_node object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2407,7 +2403,7 @@ class _$GUserData_Viewer_favourites_characters_edges_nodeSerializer
         ..add('name')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_characters_edges_node_name)));
+                GUserData_User_favourites_characters_edges_node_name)));
     }
     value = object.image;
     if (value != null) {
@@ -2415,17 +2411,16 @@ class _$GUserData_Viewer_favourites_characters_edges_nodeSerializer
         ..add('image')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_characters_edges_node_image)));
+                GUserData_User_favourites_characters_edges_node_image)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node deserialize(
+  GUserData_User_favourites_characters_edges_node deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result =
-        new GUserData_Viewer_favourites_characters_edges_nodeBuilder();
+    final result = new GUserData_User_favourites_characters_edges_nodeBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2444,14 +2439,14 @@ class _$GUserData_Viewer_favourites_characters_edges_nodeSerializer
         case 'name':
           result.name.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_characters_edges_node_name))!
-              as GUserData_Viewer_favourites_characters_edges_node_name);
+                      GUserData_User_favourites_characters_edges_node_name))!
+              as GUserData_User_favourites_characters_edges_node_name);
           break;
         case 'image':
           result.image.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_characters_edges_node_image))!
-              as GUserData_Viewer_favourites_characters_edges_node_image);
+                      GUserData_User_favourites_characters_edges_node_image))!
+              as GUserData_User_favourites_characters_edges_node_image);
           break;
       }
     }
@@ -2460,22 +2455,22 @@ class _$GUserData_Viewer_favourites_characters_edges_nodeSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_characters_edges_node_nameSerializer
+class _$GUserData_User_favourites_characters_edges_node_nameSerializer
     implements
         StructuredSerializer<
-            GUserData_Viewer_favourites_characters_edges_node_name> {
+            GUserData_User_favourites_characters_edges_node_name> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_characters_edges_node_name,
-    _$GUserData_Viewer_favourites_characters_edges_node_name
+    GUserData_User_favourites_characters_edges_node_name,
+    _$GUserData_User_favourites_characters_edges_node_name
   ];
   @override
   final String wireName =
-      'GUserData_Viewer_favourites_characters_edges_node_name';
+      'GUserData_User_favourites_characters_edges_node_name';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_characters_edges_node_name object,
+      GUserData_User_favourites_characters_edges_node_name object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2494,11 +2489,11 @@ class _$GUserData_Viewer_favourites_characters_edges_node_nameSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node_name deserialize(
+  GUserData_User_favourites_characters_edges_node_name deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result =
-        new GUserData_Viewer_favourites_characters_edges_node_nameBuilder();
+        new GUserData_User_favourites_characters_edges_node_nameBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2521,22 +2516,22 @@ class _$GUserData_Viewer_favourites_characters_edges_node_nameSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_characters_edges_node_imageSerializer
+class _$GUserData_User_favourites_characters_edges_node_imageSerializer
     implements
         StructuredSerializer<
-            GUserData_Viewer_favourites_characters_edges_node_image> {
+            GUserData_User_favourites_characters_edges_node_image> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_characters_edges_node_image,
-    _$GUserData_Viewer_favourites_characters_edges_node_image
+    GUserData_User_favourites_characters_edges_node_image,
+    _$GUserData_User_favourites_characters_edges_node_image
   ];
   @override
   final String wireName =
-      'GUserData_Viewer_favourites_characters_edges_node_image';
+      'GUserData_User_favourites_characters_edges_node_image';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_characters_edges_node_image object,
+      GUserData_User_favourites_characters_edges_node_image object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2555,11 +2550,11 @@ class _$GUserData_Viewer_favourites_characters_edges_node_imageSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node_image deserialize(
+  GUserData_User_favourites_characters_edges_node_image deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result =
-        new GUserData_Viewer_favourites_characters_edges_node_imageBuilder();
+        new GUserData_User_favourites_characters_edges_node_imageBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2582,19 +2577,19 @@ class _$GUserData_Viewer_favourites_characters_edges_node_imageSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_staffSerializer
-    implements StructuredSerializer<GUserData_Viewer_favourites_staff> {
+class _$GUserData_User_favourites_staffSerializer
+    implements StructuredSerializer<GUserData_User_favourites_staff> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_staff,
-    _$GUserData_Viewer_favourites_staff
+    GUserData_User_favourites_staff,
+    _$GUserData_User_favourites_staff
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_staff';
+  final String wireName = 'GUserData_User_favourites_staff';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_favourites_staff object,
+      Serializers serializers, GUserData_User_favourites_staff object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2608,17 +2603,17 @@ class _$GUserData_Viewer_favourites_staffSerializer
         ..add('edges')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GUserData_Viewer_favourites_staff_edges)
+              const FullType.nullable(GUserData_User_favourites_staff_edges)
             ])));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_staff deserialize(
+  GUserData_User_favourites_staff deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_staffBuilder();
+    final result = new GUserData_User_favourites_staffBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2633,7 +2628,7 @@ class _$GUserData_Viewer_favourites_staffSerializer
         case 'edges':
           result.edges.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(GUserData_Viewer_favourites_staff_edges)
+                const FullType.nullable(GUserData_User_favourites_staff_edges)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -2643,19 +2638,19 @@ class _$GUserData_Viewer_favourites_staffSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_staff_edgesSerializer
-    implements StructuredSerializer<GUserData_Viewer_favourites_staff_edges> {
+class _$GUserData_User_favourites_staff_edgesSerializer
+    implements StructuredSerializer<GUserData_User_favourites_staff_edges> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_staff_edges,
-    _$GUserData_Viewer_favourites_staff_edges
+    GUserData_User_favourites_staff_edges,
+    _$GUserData_User_favourites_staff_edges
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_staff_edges';
+  final String wireName = 'GUserData_User_favourites_staff_edges';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_favourites_staff_edges object,
+      Serializers serializers, GUserData_User_favourites_staff_edges object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2675,16 +2670,16 @@ class _$GUserData_Viewer_favourites_staff_edgesSerializer
         ..add('node')
         ..add(serializers.serialize(value,
             specifiedType:
-                const FullType(GUserData_Viewer_favourites_staff_edges_node)));
+                const FullType(GUserData_User_favourites_staff_edges_node)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges deserialize(
+  GUserData_User_favourites_staff_edges deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_staff_edgesBuilder();
+    final result = new GUserData_User_favourites_staff_edgesBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2703,8 +2698,8 @@ class _$GUserData_Viewer_favourites_staff_edgesSerializer
         case 'node':
           result.node.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_staff_edges_node))!
-              as GUserData_Viewer_favourites_staff_edges_node);
+                      GUserData_User_favourites_staff_edges_node))!
+              as GUserData_User_favourites_staff_edges_node);
           break;
       }
     }
@@ -2713,20 +2708,20 @@ class _$GUserData_Viewer_favourites_staff_edgesSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_staff_edges_nodeSerializer
+class _$GUserData_User_favourites_staff_edges_nodeSerializer
     implements
-        StructuredSerializer<GUserData_Viewer_favourites_staff_edges_node> {
+        StructuredSerializer<GUserData_User_favourites_staff_edges_node> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_staff_edges_node,
-    _$GUserData_Viewer_favourites_staff_edges_node
+    GUserData_User_favourites_staff_edges_node,
+    _$GUserData_User_favourites_staff_edges_node
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_staff_edges_node';
+  final String wireName = 'GUserData_User_favourites_staff_edges_node';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_staff_edges_node object,
+      GUserData_User_favourites_staff_edges_node object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2742,7 +2737,7 @@ class _$GUserData_Viewer_favourites_staff_edges_nodeSerializer
         ..add('name')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_staff_edges_node_name)));
+                GUserData_User_favourites_staff_edges_node_name)));
     }
     value = object.image;
     if (value != null) {
@@ -2750,16 +2745,16 @@ class _$GUserData_Viewer_favourites_staff_edges_nodeSerializer
         ..add('image')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(
-                GUserData_Viewer_favourites_staff_edges_node_image)));
+                GUserData_User_favourites_staff_edges_node_image)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node deserialize(
+  GUserData_User_favourites_staff_edges_node deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_staff_edges_nodeBuilder();
+    final result = new GUserData_User_favourites_staff_edges_nodeBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2778,14 +2773,14 @@ class _$GUserData_Viewer_favourites_staff_edges_nodeSerializer
         case 'name':
           result.name.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_staff_edges_node_name))!
-              as GUserData_Viewer_favourites_staff_edges_node_name);
+                      GUserData_User_favourites_staff_edges_node_name))!
+              as GUserData_User_favourites_staff_edges_node_name);
           break;
         case 'image':
           result.image.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_staff_edges_node_image))!
-              as GUserData_Viewer_favourites_staff_edges_node_image);
+                      GUserData_User_favourites_staff_edges_node_image))!
+              as GUserData_User_favourites_staff_edges_node_image);
           break;
       }
     }
@@ -2794,21 +2789,20 @@ class _$GUserData_Viewer_favourites_staff_edges_nodeSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_staff_edges_node_nameSerializer
+class _$GUserData_User_favourites_staff_edges_node_nameSerializer
     implements
-        StructuredSerializer<
-            GUserData_Viewer_favourites_staff_edges_node_name> {
+        StructuredSerializer<GUserData_User_favourites_staff_edges_node_name> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_staff_edges_node_name,
-    _$GUserData_Viewer_favourites_staff_edges_node_name
+    GUserData_User_favourites_staff_edges_node_name,
+    _$GUserData_User_favourites_staff_edges_node_name
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_staff_edges_node_name';
+  final String wireName = 'GUserData_User_favourites_staff_edges_node_name';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_staff_edges_node_name object,
+      GUserData_User_favourites_staff_edges_node_name object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2827,11 +2821,10 @@ class _$GUserData_Viewer_favourites_staff_edges_node_nameSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node_name deserialize(
+  GUserData_User_favourites_staff_edges_node_name deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result =
-        new GUserData_Viewer_favourites_staff_edges_node_nameBuilder();
+    final result = new GUserData_User_favourites_staff_edges_node_nameBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2854,21 +2847,20 @@ class _$GUserData_Viewer_favourites_staff_edges_node_nameSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_staff_edges_node_imageSerializer
+class _$GUserData_User_favourites_staff_edges_node_imageSerializer
     implements
-        StructuredSerializer<
-            GUserData_Viewer_favourites_staff_edges_node_image> {
+        StructuredSerializer<GUserData_User_favourites_staff_edges_node_image> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_staff_edges_node_image,
-    _$GUserData_Viewer_favourites_staff_edges_node_image
+    GUserData_User_favourites_staff_edges_node_image,
+    _$GUserData_User_favourites_staff_edges_node_image
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_staff_edges_node_image';
+  final String wireName = 'GUserData_User_favourites_staff_edges_node_image';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_staff_edges_node_image object,
+      GUserData_User_favourites_staff_edges_node_image object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2887,11 +2879,11 @@ class _$GUserData_Viewer_favourites_staff_edges_node_imageSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node_image deserialize(
+  GUserData_User_favourites_staff_edges_node_image deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result =
-        new GUserData_Viewer_favourites_staff_edges_node_imageBuilder();
+        new GUserData_User_favourites_staff_edges_node_imageBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2914,19 +2906,19 @@ class _$GUserData_Viewer_favourites_staff_edges_node_imageSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_studiosSerializer
-    implements StructuredSerializer<GUserData_Viewer_favourites_studios> {
+class _$GUserData_User_favourites_studiosSerializer
+    implements StructuredSerializer<GUserData_User_favourites_studios> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_studios,
-    _$GUserData_Viewer_favourites_studios
+    GUserData_User_favourites_studios,
+    _$GUserData_User_favourites_studios
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_studios';
+  final String wireName = 'GUserData_User_favourites_studios';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_favourites_studios object,
+      Serializers serializers, GUserData_User_favourites_studios object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -2940,17 +2932,17 @@ class _$GUserData_Viewer_favourites_studiosSerializer
         ..add('edges')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GUserData_Viewer_favourites_studios_edges)
+              const FullType.nullable(GUserData_User_favourites_studios_edges)
             ])));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_studios deserialize(
+  GUserData_User_favourites_studios deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_studiosBuilder();
+    final result = new GUserData_User_favourites_studiosBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -2965,8 +2957,7 @@ class _$GUserData_Viewer_favourites_studiosSerializer
         case 'edges':
           result.edges.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(
-                    GUserData_Viewer_favourites_studios_edges)
+                const FullType.nullable(GUserData_User_favourites_studios_edges)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -2976,19 +2967,19 @@ class _$GUserData_Viewer_favourites_studiosSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_studios_edgesSerializer
-    implements StructuredSerializer<GUserData_Viewer_favourites_studios_edges> {
+class _$GUserData_User_favourites_studios_edgesSerializer
+    implements StructuredSerializer<GUserData_User_favourites_studios_edges> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_studios_edges,
-    _$GUserData_Viewer_favourites_studios_edges
+    GUserData_User_favourites_studios_edges,
+    _$GUserData_User_favourites_studios_edges
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_studios_edges';
+  final String wireName = 'GUserData_User_favourites_studios_edges';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserData_Viewer_favourites_studios_edges object,
+      Serializers serializers, GUserData_User_favourites_studios_edges object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -3007,17 +2998,17 @@ class _$GUserData_Viewer_favourites_studios_edgesSerializer
       result
         ..add('node')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                GUserData_Viewer_favourites_studios_edges_node)));
+            specifiedType:
+                const FullType(GUserData_User_favourites_studios_edges_node)));
     }
     return result;
   }
 
   @override
-  GUserData_Viewer_favourites_studios_edges deserialize(
+  GUserData_User_favourites_studios_edges deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_studios_edgesBuilder();
+    final result = new GUserData_User_favourites_studios_edgesBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -3036,8 +3027,8 @@ class _$GUserData_Viewer_favourites_studios_edgesSerializer
         case 'node':
           result.node.replace(serializers.deserialize(value,
                   specifiedType: const FullType(
-                      GUserData_Viewer_favourites_studios_edges_node))!
-              as GUserData_Viewer_favourites_studios_edges_node);
+                      GUserData_User_favourites_studios_edges_node))!
+              as GUserData_User_favourites_studios_edges_node);
           break;
       }
     }
@@ -3046,20 +3037,20 @@ class _$GUserData_Viewer_favourites_studios_edgesSerializer
   }
 }
 
-class _$GUserData_Viewer_favourites_studios_edges_nodeSerializer
+class _$GUserData_User_favourites_studios_edges_nodeSerializer
     implements
-        StructuredSerializer<GUserData_Viewer_favourites_studios_edges_node> {
+        StructuredSerializer<GUserData_User_favourites_studios_edges_node> {
   @override
   final Iterable<Type> types = const [
-    GUserData_Viewer_favourites_studios_edges_node,
-    _$GUserData_Viewer_favourites_studios_edges_node
+    GUserData_User_favourites_studios_edges_node,
+    _$GUserData_User_favourites_studios_edges_node
   ];
   @override
-  final String wireName = 'GUserData_Viewer_favourites_studios_edges_node';
+  final String wireName = 'GUserData_User_favourites_studios_edges_node';
 
   @override
   Iterable<Object?> serialize(Serializers serializers,
-      GUserData_Viewer_favourites_studios_edges_node object,
+      GUserData_User_favourites_studios_edges_node object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       '__typename',
@@ -3075,10 +3066,10 @@ class _$GUserData_Viewer_favourites_studios_edges_nodeSerializer
   }
 
   @override
-  GUserData_Viewer_favourites_studios_edges_node deserialize(
+  GUserData_User_favourites_studios_edges_node deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserData_Viewer_favourites_studios_edges_nodeBuilder();
+    final result = new GUserData_User_favourites_studios_edges_nodeBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -3109,12 +3100,12 @@ class _$GUserData extends GUserData {
   @override
   final String G__typename;
   @override
-  final GUserData_Viewer? Viewer;
+  final GUserData_User? User;
 
   factory _$GUserData([void Function(GUserDataBuilder)? updates]) =>
       (new GUserDataBuilder()..update(updates))._build();
 
-  _$GUserData._({required this.G__typename, this.Viewer}) : super._() {
+  _$GUserData._({required this.G__typename, this.User}) : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename, r'GUserData', 'G__typename');
   }
@@ -3131,14 +3122,14 @@ class _$GUserData extends GUserData {
     if (identical(other, this)) return true;
     return other is GUserData &&
         G__typename == other.G__typename &&
-        Viewer == other.Viewer;
+        User == other.User;
   }
 
   @override
   int get hashCode {
     var _$hash = 0;
     _$hash = $jc(_$hash, G__typename.hashCode);
-    _$hash = $jc(_$hash, Viewer.hashCode);
+    _$hash = $jc(_$hash, User.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -3147,7 +3138,7 @@ class _$GUserData extends GUserData {
   String toString() {
     return (newBuiltValueToStringHelper(r'GUserData')
           ..add('G__typename', G__typename)
-          ..add('Viewer', Viewer))
+          ..add('User', User))
         .toString();
   }
 }
@@ -3159,10 +3150,10 @@ class GUserDataBuilder implements Builder<GUserData, GUserDataBuilder> {
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  GUserData_ViewerBuilder? _Viewer;
-  GUserData_ViewerBuilder get Viewer =>
-      _$this._Viewer ??= new GUserData_ViewerBuilder();
-  set Viewer(GUserData_ViewerBuilder? Viewer) => _$this._Viewer = Viewer;
+  GUserData_UserBuilder? _User;
+  GUserData_UserBuilder get User =>
+      _$this._User ??= new GUserData_UserBuilder();
+  set User(GUserData_UserBuilder? User) => _$this._User = User;
 
   GUserDataBuilder() {
     GUserData._initializeBuilder(this);
@@ -3172,7 +3163,7 @@ class GUserDataBuilder implements Builder<GUserData, GUserDataBuilder> {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
-      _Viewer = $v.Viewer?.toBuilder();
+      _User = $v.User?.toBuilder();
       _$v = null;
     }
     return this;
@@ -3199,12 +3190,12 @@ class GUserDataBuilder implements Builder<GUserData, GUserDataBuilder> {
           new _$GUserData._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
                   G__typename, r'GUserData', 'G__typename'),
-              Viewer: _Viewer?.build());
+              User: _User?.build());
     } catch (_) {
       late String _$failedField;
       try {
-        _$failedField = 'Viewer';
-        _Viewer?.build();
+        _$failedField = 'User';
+        _User?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
             r'GUserData', _$failedField, e.toString());
@@ -3216,7 +3207,7 @@ class GUserDataBuilder implements Builder<GUserData, GUserDataBuilder> {
   }
 }
 
-class _$GUserData_Viewer extends GUserData_Viewer {
+class _$GUserData_User extends GUserData_User {
   @override
   final String G__typename;
   @override
@@ -3224,9 +3215,9 @@ class _$GUserData_Viewer extends GUserData_Viewer {
   @override
   final String name;
   @override
-  final BuiltList<GUserData_Viewer_previousNames?>? previousNames;
+  final BuiltList<GUserData_User_previousNames?>? previousNames;
   @override
-  final GUserData_Viewer_avatar? avatar;
+  final GUserData_User_avatar? avatar;
   @override
   final String? bannerImage;
   @override
@@ -3248,21 +3239,20 @@ class _$GUserData_Viewer extends GUserData_Viewer {
   @override
   final _i2.GJson? bans;
   @override
-  final GUserData_Viewer_options? options;
+  final GUserData_User_options? options;
   @override
-  final GUserData_Viewer_mediaListOptions? mediaListOptions;
+  final GUserData_User_mediaListOptions? mediaListOptions;
   @override
-  final GUserData_Viewer_statistics? statistics;
+  final GUserData_User_statistics? statistics;
   @override
-  final GUserData_Viewer_stats? stats;
+  final GUserData_User_stats? stats;
   @override
-  final GUserData_Viewer_favourites? favourites;
+  final GUserData_User_favourites? favourites;
 
-  factory _$GUserData_Viewer(
-          [void Function(GUserData_ViewerBuilder)? updates]) =>
-      (new GUserData_ViewerBuilder()..update(updates))._build();
+  factory _$GUserData_User([void Function(GUserData_UserBuilder)? updates]) =>
+      (new GUserData_UserBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer._(
+  _$GUserData_User._(
       {required this.G__typename,
       required this.id,
       required this.name,
@@ -3285,23 +3275,23 @@ class _$GUserData_Viewer extends GUserData_Viewer {
       this.favourites})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer', 'G__typename');
-    BuiltValueNullFieldError.checkNotNull(id, r'GUserData_Viewer', 'id');
-    BuiltValueNullFieldError.checkNotNull(name, r'GUserData_Viewer', 'name');
+        G__typename, r'GUserData_User', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(id, r'GUserData_User', 'id');
+    BuiltValueNullFieldError.checkNotNull(name, r'GUserData_User', 'name');
   }
 
   @override
-  GUserData_Viewer rebuild(void Function(GUserData_ViewerBuilder) updates) =>
+  GUserData_User rebuild(void Function(GUserData_UserBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_ViewerBuilder toBuilder() =>
-      new GUserData_ViewerBuilder()..replace(this);
+  GUserData_UserBuilder toBuilder() =>
+      new GUserData_UserBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer &&
+    return other is GUserData_User &&
         G__typename == other.G__typename &&
         id == other.id &&
         name == other.name &&
@@ -3353,7 +3343,7 @@ class _$GUserData_Viewer extends GUserData_Viewer {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer')
+    return (newBuiltValueToStringHelper(r'GUserData_User')
           ..add('G__typename', G__typename)
           ..add('id', id)
           ..add('name', name)
@@ -3378,9 +3368,9 @@ class _$GUserData_Viewer extends GUserData_Viewer {
   }
 }
 
-class GUserData_ViewerBuilder
-    implements Builder<GUserData_Viewer, GUserData_ViewerBuilder> {
-  _$GUserData_Viewer? _$v;
+class GUserData_UserBuilder
+    implements Builder<GUserData_User, GUserData_UserBuilder> {
+  _$GUserData_User? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -3394,18 +3384,18 @@ class GUserData_ViewerBuilder
   String? get name => _$this._name;
   set name(String? name) => _$this._name = name;
 
-  ListBuilder<GUserData_Viewer_previousNames?>? _previousNames;
-  ListBuilder<GUserData_Viewer_previousNames?> get previousNames =>
+  ListBuilder<GUserData_User_previousNames?>? _previousNames;
+  ListBuilder<GUserData_User_previousNames?> get previousNames =>
       _$this._previousNames ??=
-          new ListBuilder<GUserData_Viewer_previousNames?>();
+          new ListBuilder<GUserData_User_previousNames?>();
   set previousNames(
-          ListBuilder<GUserData_Viewer_previousNames?>? previousNames) =>
+          ListBuilder<GUserData_User_previousNames?>? previousNames) =>
       _$this._previousNames = previousNames;
 
-  GUserData_Viewer_avatarBuilder? _avatar;
-  GUserData_Viewer_avatarBuilder get avatar =>
-      _$this._avatar ??= new GUserData_Viewer_avatarBuilder();
-  set avatar(GUserData_Viewer_avatarBuilder? avatar) => _$this._avatar = avatar;
+  GUserData_User_avatarBuilder? _avatar;
+  GUserData_User_avatarBuilder get avatar =>
+      _$this._avatar ??= new GUserData_User_avatarBuilder();
+  set avatar(GUserData_User_avatarBuilder? avatar) => _$this._avatar = avatar;
 
   String? _bannerImage;
   String? get bannerImage => _$this._bannerImage;
@@ -3449,42 +3439,41 @@ class GUserData_ViewerBuilder
   _i2.GJsonBuilder get bans => _$this._bans ??= new _i2.GJsonBuilder();
   set bans(_i2.GJsonBuilder? bans) => _$this._bans = bans;
 
-  GUserData_Viewer_optionsBuilder? _options;
-  GUserData_Viewer_optionsBuilder get options =>
-      _$this._options ??= new GUserData_Viewer_optionsBuilder();
-  set options(GUserData_Viewer_optionsBuilder? options) =>
+  GUserData_User_optionsBuilder? _options;
+  GUserData_User_optionsBuilder get options =>
+      _$this._options ??= new GUserData_User_optionsBuilder();
+  set options(GUserData_User_optionsBuilder? options) =>
       _$this._options = options;
 
-  GUserData_Viewer_mediaListOptionsBuilder? _mediaListOptions;
-  GUserData_Viewer_mediaListOptionsBuilder get mediaListOptions =>
-      _$this._mediaListOptions ??=
-          new GUserData_Viewer_mediaListOptionsBuilder();
+  GUserData_User_mediaListOptionsBuilder? _mediaListOptions;
+  GUserData_User_mediaListOptionsBuilder get mediaListOptions =>
+      _$this._mediaListOptions ??= new GUserData_User_mediaListOptionsBuilder();
   set mediaListOptions(
-          GUserData_Viewer_mediaListOptionsBuilder? mediaListOptions) =>
+          GUserData_User_mediaListOptionsBuilder? mediaListOptions) =>
       _$this._mediaListOptions = mediaListOptions;
 
-  GUserData_Viewer_statisticsBuilder? _statistics;
-  GUserData_Viewer_statisticsBuilder get statistics =>
-      _$this._statistics ??= new GUserData_Viewer_statisticsBuilder();
-  set statistics(GUserData_Viewer_statisticsBuilder? statistics) =>
+  GUserData_User_statisticsBuilder? _statistics;
+  GUserData_User_statisticsBuilder get statistics =>
+      _$this._statistics ??= new GUserData_User_statisticsBuilder();
+  set statistics(GUserData_User_statisticsBuilder? statistics) =>
       _$this._statistics = statistics;
 
-  GUserData_Viewer_statsBuilder? _stats;
-  GUserData_Viewer_statsBuilder get stats =>
-      _$this._stats ??= new GUserData_Viewer_statsBuilder();
-  set stats(GUserData_Viewer_statsBuilder? stats) => _$this._stats = stats;
+  GUserData_User_statsBuilder? _stats;
+  GUserData_User_statsBuilder get stats =>
+      _$this._stats ??= new GUserData_User_statsBuilder();
+  set stats(GUserData_User_statsBuilder? stats) => _$this._stats = stats;
 
-  GUserData_Viewer_favouritesBuilder? _favourites;
-  GUserData_Viewer_favouritesBuilder get favourites =>
-      _$this._favourites ??= new GUserData_Viewer_favouritesBuilder();
-  set favourites(GUserData_Viewer_favouritesBuilder? favourites) =>
+  GUserData_User_favouritesBuilder? _favourites;
+  GUserData_User_favouritesBuilder get favourites =>
+      _$this._favourites ??= new GUserData_User_favouritesBuilder();
+  set favourites(GUserData_User_favouritesBuilder? favourites) =>
       _$this._favourites = favourites;
 
-  GUserData_ViewerBuilder() {
-    GUserData_Viewer._initializeBuilder(this);
+  GUserData_UserBuilder() {
+    GUserData_User._initializeBuilder(this);
   }
 
-  GUserData_ViewerBuilder get _$this {
+  GUserData_UserBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -3513,30 +3502,30 @@ class GUserData_ViewerBuilder
   }
 
   @override
-  void replace(GUserData_Viewer other) {
+  void replace(GUserData_User other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer;
+    _$v = other as _$GUserData_User;
   }
 
   @override
-  void update(void Function(GUserData_ViewerBuilder)? updates) {
+  void update(void Function(GUserData_UserBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer build() => _build();
+  GUserData_User build() => _build();
 
-  _$GUserData_Viewer _build() {
-    _$GUserData_Viewer _$result;
+  _$GUserData_User _build() {
+    _$GUserData_User _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer._(
+          new _$GUserData_User._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GUserData_Viewer', 'G__typename'),
+                  G__typename, r'GUserData_User', 'G__typename'),
               id: BuiltValueNullFieldError.checkNotNull(
-                  id, r'GUserData_Viewer', 'id'),
+                  id, r'GUserData_User', 'id'),
               name: BuiltValueNullFieldError.checkNotNull(
-                  name, r'GUserData_Viewer', 'name'),
+                  name, r'GUserData_User', 'name'),
               previousNames: _previousNames?.build(),
               avatar: _avatar?.build(),
               bannerImage: bannerImage,
@@ -3579,7 +3568,7 @@ class GUserData_ViewerBuilder
         _favourites?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer', _$failedField, e.toString());
+            r'GUserData_User', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -3588,7 +3577,7 @@ class GUserData_ViewerBuilder
   }
 }
 
-class _$GUserData_Viewer_previousNames extends GUserData_Viewer_previousNames {
+class _$GUserData_User_previousNames extends GUserData_User_previousNames {
   @override
   final String G__typename;
   @override
@@ -3596,30 +3585,30 @@ class _$GUserData_Viewer_previousNames extends GUserData_Viewer_previousNames {
   @override
   final int? updatedAt;
 
-  factory _$GUserData_Viewer_previousNames(
-          [void Function(GUserData_Viewer_previousNamesBuilder)? updates]) =>
-      (new GUserData_Viewer_previousNamesBuilder()..update(updates))._build();
+  factory _$GUserData_User_previousNames(
+          [void Function(GUserData_User_previousNamesBuilder)? updates]) =>
+      (new GUserData_User_previousNamesBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_previousNames._(
+  _$GUserData_User_previousNames._(
       {required this.G__typename, this.name, this.updatedAt})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_previousNames', 'G__typename');
+        G__typename, r'GUserData_User_previousNames', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_previousNames rebuild(
-          void Function(GUserData_Viewer_previousNamesBuilder) updates) =>
+  GUserData_User_previousNames rebuild(
+          void Function(GUserData_User_previousNamesBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_previousNamesBuilder toBuilder() =>
-      new GUserData_Viewer_previousNamesBuilder()..replace(this);
+  GUserData_User_previousNamesBuilder toBuilder() =>
+      new GUserData_User_previousNamesBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_previousNames &&
+    return other is GUserData_User_previousNames &&
         G__typename == other.G__typename &&
         name == other.name &&
         updatedAt == other.updatedAt;
@@ -3637,7 +3626,7 @@ class _$GUserData_Viewer_previousNames extends GUserData_Viewer_previousNames {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_previousNames')
+    return (newBuiltValueToStringHelper(r'GUserData_User_previousNames')
           ..add('G__typename', G__typename)
           ..add('name', name)
           ..add('updatedAt', updatedAt))
@@ -3645,11 +3634,11 @@ class _$GUserData_Viewer_previousNames extends GUserData_Viewer_previousNames {
   }
 }
 
-class GUserData_Viewer_previousNamesBuilder
+class GUserData_User_previousNamesBuilder
     implements
-        Builder<GUserData_Viewer_previousNames,
-            GUserData_Viewer_previousNamesBuilder> {
-  _$GUserData_Viewer_previousNames? _$v;
+        Builder<GUserData_User_previousNames,
+            GUserData_User_previousNamesBuilder> {
+  _$GUserData_User_previousNames? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -3663,11 +3652,11 @@ class GUserData_Viewer_previousNamesBuilder
   int? get updatedAt => _$this._updatedAt;
   set updatedAt(int? updatedAt) => _$this._updatedAt = updatedAt;
 
-  GUserData_Viewer_previousNamesBuilder() {
-    GUserData_Viewer_previousNames._initializeBuilder(this);
+  GUserData_User_previousNamesBuilder() {
+    GUserData_User_previousNames._initializeBuilder(this);
   }
 
-  GUserData_Viewer_previousNamesBuilder get _$this {
+  GUserData_User_previousNamesBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -3679,24 +3668,24 @@ class GUserData_Viewer_previousNamesBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_previousNames other) {
+  void replace(GUserData_User_previousNames other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_previousNames;
+    _$v = other as _$GUserData_User_previousNames;
   }
 
   @override
-  void update(void Function(GUserData_Viewer_previousNamesBuilder)? updates) {
+  void update(void Function(GUserData_User_previousNamesBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_previousNames build() => _build();
+  GUserData_User_previousNames build() => _build();
 
-  _$GUserData_Viewer_previousNames _build() {
+  _$GUserData_User_previousNames _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_previousNames._(
+        new _$GUserData_User_previousNames._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GUserData_Viewer_previousNames', 'G__typename'),
+                G__typename, r'GUserData_User_previousNames', 'G__typename'),
             name: name,
             updatedAt: updatedAt);
     replace(_$result);
@@ -3704,35 +3693,35 @@ class GUserData_Viewer_previousNamesBuilder
   }
 }
 
-class _$GUserData_Viewer_avatar extends GUserData_Viewer_avatar {
+class _$GUserData_User_avatar extends GUserData_User_avatar {
   @override
   final String G__typename;
   @override
   final String? large;
 
-  factory _$GUserData_Viewer_avatar(
-          [void Function(GUserData_Viewer_avatarBuilder)? updates]) =>
-      (new GUserData_Viewer_avatarBuilder()..update(updates))._build();
+  factory _$GUserData_User_avatar(
+          [void Function(GUserData_User_avatarBuilder)? updates]) =>
+      (new GUserData_User_avatarBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_avatar._({required this.G__typename, this.large})
+  _$GUserData_User_avatar._({required this.G__typename, this.large})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_avatar', 'G__typename');
+        G__typename, r'GUserData_User_avatar', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_avatar rebuild(
-          void Function(GUserData_Viewer_avatarBuilder) updates) =>
+  GUserData_User_avatar rebuild(
+          void Function(GUserData_User_avatarBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_avatarBuilder toBuilder() =>
-      new GUserData_Viewer_avatarBuilder()..replace(this);
+  GUserData_User_avatarBuilder toBuilder() =>
+      new GUserData_User_avatarBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_avatar &&
+    return other is GUserData_User_avatar &&
         G__typename == other.G__typename &&
         large == other.large;
   }
@@ -3748,17 +3737,16 @@ class _$GUserData_Viewer_avatar extends GUserData_Viewer_avatar {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_avatar')
+    return (newBuiltValueToStringHelper(r'GUserData_User_avatar')
           ..add('G__typename', G__typename)
           ..add('large', large))
         .toString();
   }
 }
 
-class GUserData_Viewer_avatarBuilder
-    implements
-        Builder<GUserData_Viewer_avatar, GUserData_Viewer_avatarBuilder> {
-  _$GUserData_Viewer_avatar? _$v;
+class GUserData_User_avatarBuilder
+    implements Builder<GUserData_User_avatar, GUserData_User_avatarBuilder> {
+  _$GUserData_User_avatar? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -3768,11 +3756,11 @@ class GUserData_Viewer_avatarBuilder
   String? get large => _$this._large;
   set large(String? large) => _$this._large = large;
 
-  GUserData_Viewer_avatarBuilder() {
-    GUserData_Viewer_avatar._initializeBuilder(this);
+  GUserData_User_avatarBuilder() {
+    GUserData_User_avatar._initializeBuilder(this);
   }
 
-  GUserData_Viewer_avatarBuilder get _$this {
+  GUserData_User_avatarBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -3783,31 +3771,31 @@ class GUserData_Viewer_avatarBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_avatar other) {
+  void replace(GUserData_User_avatar other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_avatar;
+    _$v = other as _$GUserData_User_avatar;
   }
 
   @override
-  void update(void Function(GUserData_Viewer_avatarBuilder)? updates) {
+  void update(void Function(GUserData_User_avatarBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_avatar build() => _build();
+  GUserData_User_avatar build() => _build();
 
-  _$GUserData_Viewer_avatar _build() {
+  _$GUserData_User_avatar _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_avatar._(
+        new _$GUserData_User_avatar._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GUserData_Viewer_avatar', 'G__typename'),
+                G__typename, r'GUserData_User_avatar', 'G__typename'),
             large: large);
     replace(_$result);
     return _$result;
   }
 }
 
-class _$GUserData_Viewer_options extends GUserData_Viewer_options {
+class _$GUserData_User_options extends GUserData_User_options {
   @override
   final String G__typename;
   @override
@@ -3815,32 +3803,32 @@ class _$GUserData_Viewer_options extends GUserData_Viewer_options {
   @override
   final bool? restrictMessagesToFollowing;
 
-  factory _$GUserData_Viewer_options(
-          [void Function(GUserData_Viewer_optionsBuilder)? updates]) =>
-      (new GUserData_Viewer_optionsBuilder()..update(updates))._build();
+  factory _$GUserData_User_options(
+          [void Function(GUserData_User_optionsBuilder)? updates]) =>
+      (new GUserData_User_optionsBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_options._(
+  _$GUserData_User_options._(
       {required this.G__typename,
       this.profileColor,
       this.restrictMessagesToFollowing})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_options', 'G__typename');
+        G__typename, r'GUserData_User_options', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_options rebuild(
-          void Function(GUserData_Viewer_optionsBuilder) updates) =>
+  GUserData_User_options rebuild(
+          void Function(GUserData_User_optionsBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_optionsBuilder toBuilder() =>
-      new GUserData_Viewer_optionsBuilder()..replace(this);
+  GUserData_User_optionsBuilder toBuilder() =>
+      new GUserData_User_optionsBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_options &&
+    return other is GUserData_User_options &&
         G__typename == other.G__typename &&
         profileColor == other.profileColor &&
         restrictMessagesToFollowing == other.restrictMessagesToFollowing;
@@ -3858,7 +3846,7 @@ class _$GUserData_Viewer_options extends GUserData_Viewer_options {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_options')
+    return (newBuiltValueToStringHelper(r'GUserData_User_options')
           ..add('G__typename', G__typename)
           ..add('profileColor', profileColor)
           ..add('restrictMessagesToFollowing', restrictMessagesToFollowing))
@@ -3866,10 +3854,9 @@ class _$GUserData_Viewer_options extends GUserData_Viewer_options {
   }
 }
 
-class GUserData_Viewer_optionsBuilder
-    implements
-        Builder<GUserData_Viewer_options, GUserData_Viewer_optionsBuilder> {
-  _$GUserData_Viewer_options? _$v;
+class GUserData_User_optionsBuilder
+    implements Builder<GUserData_User_options, GUserData_User_optionsBuilder> {
+  _$GUserData_User_options? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -3884,11 +3871,11 @@ class GUserData_Viewer_optionsBuilder
   set restrictMessagesToFollowing(bool? restrictMessagesToFollowing) =>
       _$this._restrictMessagesToFollowing = restrictMessagesToFollowing;
 
-  GUserData_Viewer_optionsBuilder() {
-    GUserData_Viewer_options._initializeBuilder(this);
+  GUserData_User_optionsBuilder() {
+    GUserData_User_options._initializeBuilder(this);
   }
 
-  GUserData_Viewer_optionsBuilder get _$this {
+  GUserData_User_optionsBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -3900,24 +3887,24 @@ class GUserData_Viewer_optionsBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_options other) {
+  void replace(GUserData_User_options other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_options;
+    _$v = other as _$GUserData_User_options;
   }
 
   @override
-  void update(void Function(GUserData_Viewer_optionsBuilder)? updates) {
+  void update(void Function(GUserData_User_optionsBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_options build() => _build();
+  GUserData_User_options build() => _build();
 
-  _$GUserData_Viewer_options _build() {
+  _$GUserData_User_options _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_options._(
+        new _$GUserData_User_options._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GUserData_Viewer_options', 'G__typename'),
+                G__typename, r'GUserData_User_options', 'G__typename'),
             profileColor: profileColor,
             restrictMessagesToFollowing: restrictMessagesToFollowing);
     replace(_$result);
@@ -3925,38 +3912,37 @@ class GUserData_Viewer_optionsBuilder
   }
 }
 
-class _$GUserData_Viewer_mediaListOptions
-    extends GUserData_Viewer_mediaListOptions {
+class _$GUserData_User_mediaListOptions
+    extends GUserData_User_mediaListOptions {
   @override
   final String G__typename;
   @override
   final _i2.GScoreFormat? scoreFormat;
 
-  factory _$GUserData_Viewer_mediaListOptions(
-          [void Function(GUserData_Viewer_mediaListOptionsBuilder)? updates]) =>
-      (new GUserData_Viewer_mediaListOptionsBuilder()..update(updates))
-          ._build();
+  factory _$GUserData_User_mediaListOptions(
+          [void Function(GUserData_User_mediaListOptionsBuilder)? updates]) =>
+      (new GUserData_User_mediaListOptionsBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_mediaListOptions._(
+  _$GUserData_User_mediaListOptions._(
       {required this.G__typename, this.scoreFormat})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_mediaListOptions', 'G__typename');
+        G__typename, r'GUserData_User_mediaListOptions', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_mediaListOptions rebuild(
-          void Function(GUserData_Viewer_mediaListOptionsBuilder) updates) =>
+  GUserData_User_mediaListOptions rebuild(
+          void Function(GUserData_User_mediaListOptionsBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_mediaListOptionsBuilder toBuilder() =>
-      new GUserData_Viewer_mediaListOptionsBuilder()..replace(this);
+  GUserData_User_mediaListOptionsBuilder toBuilder() =>
+      new GUserData_User_mediaListOptionsBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_mediaListOptions &&
+    return other is GUserData_User_mediaListOptions &&
         G__typename == other.G__typename &&
         scoreFormat == other.scoreFormat;
   }
@@ -3972,18 +3958,18 @@ class _$GUserData_Viewer_mediaListOptions
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_mediaListOptions')
+    return (newBuiltValueToStringHelper(r'GUserData_User_mediaListOptions')
           ..add('G__typename', G__typename)
           ..add('scoreFormat', scoreFormat))
         .toString();
   }
 }
 
-class GUserData_Viewer_mediaListOptionsBuilder
+class GUserData_User_mediaListOptionsBuilder
     implements
-        Builder<GUserData_Viewer_mediaListOptions,
-            GUserData_Viewer_mediaListOptionsBuilder> {
-  _$GUserData_Viewer_mediaListOptions? _$v;
+        Builder<GUserData_User_mediaListOptions,
+            GUserData_User_mediaListOptionsBuilder> {
+  _$GUserData_User_mediaListOptions? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -3994,11 +3980,11 @@ class GUserData_Viewer_mediaListOptionsBuilder
   set scoreFormat(_i2.GScoreFormat? scoreFormat) =>
       _$this._scoreFormat = scoreFormat;
 
-  GUserData_Viewer_mediaListOptionsBuilder() {
-    GUserData_Viewer_mediaListOptions._initializeBuilder(this);
+  GUserData_User_mediaListOptionsBuilder() {
+    GUserData_User_mediaListOptions._initializeBuilder(this);
   }
 
-  GUserData_Viewer_mediaListOptionsBuilder get _$this {
+  GUserData_User_mediaListOptionsBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -4009,63 +3995,62 @@ class GUserData_Viewer_mediaListOptionsBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_mediaListOptions other) {
+  void replace(GUserData_User_mediaListOptions other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_mediaListOptions;
+    _$v = other as _$GUserData_User_mediaListOptions;
   }
 
   @override
-  void update(
-      void Function(GUserData_Viewer_mediaListOptionsBuilder)? updates) {
+  void update(void Function(GUserData_User_mediaListOptionsBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_mediaListOptions build() => _build();
+  GUserData_User_mediaListOptions build() => _build();
 
-  _$GUserData_Viewer_mediaListOptions _build() {
+  _$GUserData_User_mediaListOptions _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_mediaListOptions._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GUserData_Viewer_mediaListOptions', 'G__typename'),
+        new _$GUserData_User_mediaListOptions._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename, r'GUserData_User_mediaListOptions', 'G__typename'),
             scoreFormat: scoreFormat);
     replace(_$result);
     return _$result;
   }
 }
 
-class _$GUserData_Viewer_statistics extends GUserData_Viewer_statistics {
+class _$GUserData_User_statistics extends GUserData_User_statistics {
   @override
   final String G__typename;
   @override
-  final GUserData_Viewer_statistics_anime? anime;
+  final GUserData_User_statistics_anime? anime;
   @override
-  final GUserData_Viewer_statistics_manga? manga;
+  final GUserData_User_statistics_manga? manga;
 
-  factory _$GUserData_Viewer_statistics(
-          [void Function(GUserData_Viewer_statisticsBuilder)? updates]) =>
-      (new GUserData_Viewer_statisticsBuilder()..update(updates))._build();
+  factory _$GUserData_User_statistics(
+          [void Function(GUserData_User_statisticsBuilder)? updates]) =>
+      (new GUserData_User_statisticsBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_statistics._(
+  _$GUserData_User_statistics._(
       {required this.G__typename, this.anime, this.manga})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_statistics', 'G__typename');
+        G__typename, r'GUserData_User_statistics', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_statistics rebuild(
-          void Function(GUserData_Viewer_statisticsBuilder) updates) =>
+  GUserData_User_statistics rebuild(
+          void Function(GUserData_User_statisticsBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_statisticsBuilder toBuilder() =>
-      new GUserData_Viewer_statisticsBuilder()..replace(this);
+  GUserData_User_statisticsBuilder toBuilder() =>
+      new GUserData_User_statisticsBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_statistics &&
+    return other is GUserData_User_statistics &&
         G__typename == other.G__typename &&
         anime == other.anime &&
         manga == other.manga;
@@ -4083,7 +4068,7 @@ class _$GUserData_Viewer_statistics extends GUserData_Viewer_statistics {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_statistics')
+    return (newBuiltValueToStringHelper(r'GUserData_User_statistics')
           ..add('G__typename', G__typename)
           ..add('anime', anime)
           ..add('manga', manga))
@@ -4091,33 +4076,32 @@ class _$GUserData_Viewer_statistics extends GUserData_Viewer_statistics {
   }
 }
 
-class GUserData_Viewer_statisticsBuilder
+class GUserData_User_statisticsBuilder
     implements
-        Builder<GUserData_Viewer_statistics,
-            GUserData_Viewer_statisticsBuilder> {
-  _$GUserData_Viewer_statistics? _$v;
+        Builder<GUserData_User_statistics, GUserData_User_statisticsBuilder> {
+  _$GUserData_User_statistics? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  GUserData_Viewer_statistics_animeBuilder? _anime;
-  GUserData_Viewer_statistics_animeBuilder get anime =>
-      _$this._anime ??= new GUserData_Viewer_statistics_animeBuilder();
-  set anime(GUserData_Viewer_statistics_animeBuilder? anime) =>
+  GUserData_User_statistics_animeBuilder? _anime;
+  GUserData_User_statistics_animeBuilder get anime =>
+      _$this._anime ??= new GUserData_User_statistics_animeBuilder();
+  set anime(GUserData_User_statistics_animeBuilder? anime) =>
       _$this._anime = anime;
 
-  GUserData_Viewer_statistics_mangaBuilder? _manga;
-  GUserData_Viewer_statistics_mangaBuilder get manga =>
-      _$this._manga ??= new GUserData_Viewer_statistics_mangaBuilder();
-  set manga(GUserData_Viewer_statistics_mangaBuilder? manga) =>
+  GUserData_User_statistics_mangaBuilder? _manga;
+  GUserData_User_statistics_mangaBuilder get manga =>
+      _$this._manga ??= new GUserData_User_statistics_mangaBuilder();
+  set manga(GUserData_User_statistics_mangaBuilder? manga) =>
       _$this._manga = manga;
 
-  GUserData_Viewer_statisticsBuilder() {
-    GUserData_Viewer_statistics._initializeBuilder(this);
+  GUserData_User_statisticsBuilder() {
+    GUserData_User_statistics._initializeBuilder(this);
   }
 
-  GUserData_Viewer_statisticsBuilder get _$this {
+  GUserData_User_statisticsBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -4129,26 +4113,26 @@ class GUserData_Viewer_statisticsBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_statistics other) {
+  void replace(GUserData_User_statistics other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_statistics;
+    _$v = other as _$GUserData_User_statistics;
   }
 
   @override
-  void update(void Function(GUserData_Viewer_statisticsBuilder)? updates) {
+  void update(void Function(GUserData_User_statisticsBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_statistics build() => _build();
+  GUserData_User_statistics build() => _build();
 
-  _$GUserData_Viewer_statistics _build() {
-    _$GUserData_Viewer_statistics _$result;
+  _$GUserData_User_statistics _build() {
+    _$GUserData_User_statistics _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_statistics._(
+          new _$GUserData_User_statistics._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GUserData_Viewer_statistics', 'G__typename'),
+                  G__typename, r'GUserData_User_statistics', 'G__typename'),
               anime: _anime?.build(),
               manga: _manga?.build());
     } catch (_) {
@@ -4160,7 +4144,7 @@ class GUserData_Viewer_statisticsBuilder
         _manga?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_statistics', _$failedField, e.toString());
+            r'GUserData_User_statistics', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -4169,8 +4153,8 @@ class GUserData_Viewer_statisticsBuilder
   }
 }
 
-class _$GUserData_Viewer_statistics_anime
-    extends GUserData_Viewer_statistics_anime {
+class _$GUserData_User_statistics_anime
+    extends GUserData_User_statistics_anime {
   @override
   final String G__typename;
   @override
@@ -4184,15 +4168,13 @@ class _$GUserData_Viewer_statistics_anime
   @override
   final int episodesWatched;
   @override
-  final BuiltList<GUserData_Viewer_statistics_anime_genrePreview?>?
-      genrePreview;
+  final BuiltList<GUserData_User_statistics_anime_genrePreview?>? genrePreview;
 
-  factory _$GUserData_Viewer_statistics_anime(
-          [void Function(GUserData_Viewer_statistics_animeBuilder)? updates]) =>
-      (new GUserData_Viewer_statistics_animeBuilder()..update(updates))
-          ._build();
+  factory _$GUserData_User_statistics_anime(
+          [void Function(GUserData_User_statistics_animeBuilder)? updates]) =>
+      (new GUserData_User_statistics_animeBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_statistics_anime._(
+  _$GUserData_User_statistics_anime._(
       {required this.G__typename,
       required this.count,
       required this.meanScore,
@@ -4202,32 +4184,32 @@ class _$GUserData_Viewer_statistics_anime
       this.genrePreview})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_statistics_anime', 'G__typename');
+        G__typename, r'GUserData_User_statistics_anime', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
-        count, r'GUserData_Viewer_statistics_anime', 'count');
+        count, r'GUserData_User_statistics_anime', 'count');
     BuiltValueNullFieldError.checkNotNull(
-        meanScore, r'GUserData_Viewer_statistics_anime', 'meanScore');
+        meanScore, r'GUserData_User_statistics_anime', 'meanScore');
     BuiltValueNullFieldError.checkNotNull(standardDeviation,
-        r'GUserData_Viewer_statistics_anime', 'standardDeviation');
+        r'GUserData_User_statistics_anime', 'standardDeviation');
     BuiltValueNullFieldError.checkNotNull(
-        minutesWatched, r'GUserData_Viewer_statistics_anime', 'minutesWatched');
-    BuiltValueNullFieldError.checkNotNull(episodesWatched,
-        r'GUserData_Viewer_statistics_anime', 'episodesWatched');
+        minutesWatched, r'GUserData_User_statistics_anime', 'minutesWatched');
+    BuiltValueNullFieldError.checkNotNull(
+        episodesWatched, r'GUserData_User_statistics_anime', 'episodesWatched');
   }
 
   @override
-  GUserData_Viewer_statistics_anime rebuild(
-          void Function(GUserData_Viewer_statistics_animeBuilder) updates) =>
+  GUserData_User_statistics_anime rebuild(
+          void Function(GUserData_User_statistics_animeBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_statistics_animeBuilder toBuilder() =>
-      new GUserData_Viewer_statistics_animeBuilder()..replace(this);
+  GUserData_User_statistics_animeBuilder toBuilder() =>
+      new GUserData_User_statistics_animeBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_statistics_anime &&
+    return other is GUserData_User_statistics_anime &&
         G__typename == other.G__typename &&
         count == other.count &&
         meanScore == other.meanScore &&
@@ -4253,7 +4235,7 @@ class _$GUserData_Viewer_statistics_anime
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_statistics_anime')
+    return (newBuiltValueToStringHelper(r'GUserData_User_statistics_anime')
           ..add('G__typename', G__typename)
           ..add('count', count)
           ..add('meanScore', meanScore)
@@ -4265,11 +4247,11 @@ class _$GUserData_Viewer_statistics_anime
   }
 }
 
-class GUserData_Viewer_statistics_animeBuilder
+class GUserData_User_statistics_animeBuilder
     implements
-        Builder<GUserData_Viewer_statistics_anime,
-            GUserData_Viewer_statistics_animeBuilder> {
-  _$GUserData_Viewer_statistics_anime? _$v;
+        Builder<GUserData_User_statistics_anime,
+            GUserData_User_statistics_animeBuilder> {
+  _$GUserData_User_statistics_anime? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -4298,20 +4280,20 @@ class GUserData_Viewer_statistics_animeBuilder
   set episodesWatched(int? episodesWatched) =>
       _$this._episodesWatched = episodesWatched;
 
-  ListBuilder<GUserData_Viewer_statistics_anime_genrePreview?>? _genrePreview;
-  ListBuilder<GUserData_Viewer_statistics_anime_genrePreview?>
-      get genrePreview => _$this._genrePreview ??=
-          new ListBuilder<GUserData_Viewer_statistics_anime_genrePreview?>();
+  ListBuilder<GUserData_User_statistics_anime_genrePreview?>? _genrePreview;
+  ListBuilder<GUserData_User_statistics_anime_genrePreview?> get genrePreview =>
+      _$this._genrePreview ??=
+          new ListBuilder<GUserData_User_statistics_anime_genrePreview?>();
   set genrePreview(
-          ListBuilder<GUserData_Viewer_statistics_anime_genrePreview?>?
+          ListBuilder<GUserData_User_statistics_anime_genrePreview?>?
               genrePreview) =>
       _$this._genrePreview = genrePreview;
 
-  GUserData_Viewer_statistics_animeBuilder() {
-    GUserData_Viewer_statistics_anime._initializeBuilder(this);
+  GUserData_User_statistics_animeBuilder() {
+    GUserData_User_statistics_anime._initializeBuilder(this);
   }
 
-  GUserData_Viewer_statistics_animeBuilder get _$this {
+  GUserData_User_statistics_animeBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -4327,40 +4309,39 @@ class GUserData_Viewer_statistics_animeBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_statistics_anime other) {
+  void replace(GUserData_User_statistics_anime other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_statistics_anime;
+    _$v = other as _$GUserData_User_statistics_anime;
   }
 
   @override
-  void update(
-      void Function(GUserData_Viewer_statistics_animeBuilder)? updates) {
+  void update(void Function(GUserData_User_statistics_animeBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_statistics_anime build() => _build();
+  GUserData_User_statistics_anime build() => _build();
 
-  _$GUserData_Viewer_statistics_anime _build() {
-    _$GUserData_Viewer_statistics_anime _$result;
+  _$GUserData_User_statistics_anime _build() {
+    _$GUserData_User_statistics_anime _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_statistics_anime._(
+          new _$GUserData_User_statistics_anime._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GUserData_Viewer_statistics_anime', 'G__typename'),
+                  G__typename, r'GUserData_User_statistics_anime', 'G__typename'),
               count: BuiltValueNullFieldError.checkNotNull(
-                  count, r'GUserData_Viewer_statistics_anime', 'count'),
+                  count, r'GUserData_User_statistics_anime', 'count'),
               meanScore: BuiltValueNullFieldError.checkNotNull(
-                  meanScore, r'GUserData_Viewer_statistics_anime', 'meanScore'),
+                  meanScore, r'GUserData_User_statistics_anime', 'meanScore'),
               standardDeviation: BuiltValueNullFieldError.checkNotNull(
                   standardDeviation,
-                  r'GUserData_Viewer_statistics_anime',
+                  r'GUserData_User_statistics_anime',
                   'standardDeviation'),
               minutesWatched: BuiltValueNullFieldError.checkNotNull(
-                  minutesWatched, r'GUserData_Viewer_statistics_anime', 'minutesWatched'),
+                  minutesWatched, r'GUserData_User_statistics_anime', 'minutesWatched'),
               episodesWatched: BuiltValueNullFieldError.checkNotNull(
                   episodesWatched,
-                  r'GUserData_Viewer_statistics_anime',
+                  r'GUserData_User_statistics_anime',
                   'episodesWatched'),
               genrePreview: _genrePreview?.build());
     } catch (_) {
@@ -4370,7 +4351,7 @@ class GUserData_Viewer_statistics_animeBuilder
         _genrePreview?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_statistics_anime', _$failedField, e.toString());
+            r'GUserData_User_statistics_anime', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -4379,8 +4360,8 @@ class GUserData_Viewer_statistics_animeBuilder
   }
 }
 
-class _$GUserData_Viewer_statistics_anime_genrePreview
-    extends GUserData_Viewer_statistics_anime_genrePreview {
+class _$GUserData_User_statistics_anime_genrePreview
+    extends GUserData_User_statistics_anime_genrePreview {
   @override
   final String G__typename;
   @override
@@ -4388,37 +4369,36 @@ class _$GUserData_Viewer_statistics_anime_genrePreview
   @override
   final int count;
 
-  factory _$GUserData_Viewer_statistics_anime_genrePreview(
-          [void Function(GUserData_Viewer_statistics_anime_genrePreviewBuilder)?
+  factory _$GUserData_User_statistics_anime_genrePreview(
+          [void Function(GUserData_User_statistics_anime_genrePreviewBuilder)?
               updates]) =>
-      (new GUserData_Viewer_statistics_anime_genrePreviewBuilder()
+      (new GUserData_User_statistics_anime_genrePreviewBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_statistics_anime_genrePreview._(
+  _$GUserData_User_statistics_anime_genrePreview._(
       {required this.G__typename, this.genre, required this.count})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_statistics_anime_genrePreview', 'G__typename');
+        r'GUserData_User_statistics_anime_genrePreview', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
-        count, r'GUserData_Viewer_statistics_anime_genrePreview', 'count');
+        count, r'GUserData_User_statistics_anime_genrePreview', 'count');
   }
 
   @override
-  GUserData_Viewer_statistics_anime_genrePreview rebuild(
-          void Function(GUserData_Viewer_statistics_anime_genrePreviewBuilder)
+  GUserData_User_statistics_anime_genrePreview rebuild(
+          void Function(GUserData_User_statistics_anime_genrePreviewBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_statistics_anime_genrePreviewBuilder toBuilder() =>
-      new GUserData_Viewer_statistics_anime_genrePreviewBuilder()
-        ..replace(this);
+  GUserData_User_statistics_anime_genrePreviewBuilder toBuilder() =>
+      new GUserData_User_statistics_anime_genrePreviewBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_statistics_anime_genrePreview &&
+    return other is GUserData_User_statistics_anime_genrePreview &&
         G__typename == other.G__typename &&
         genre == other.genre &&
         count == other.count;
@@ -4437,7 +4417,7 @@ class _$GUserData_Viewer_statistics_anime_genrePreview
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_statistics_anime_genrePreview')
+            r'GUserData_User_statistics_anime_genrePreview')
           ..add('G__typename', G__typename)
           ..add('genre', genre)
           ..add('count', count))
@@ -4445,11 +4425,11 @@ class _$GUserData_Viewer_statistics_anime_genrePreview
   }
 }
 
-class GUserData_Viewer_statistics_anime_genrePreviewBuilder
+class GUserData_User_statistics_anime_genrePreviewBuilder
     implements
-        Builder<GUserData_Viewer_statistics_anime_genrePreview,
-            GUserData_Viewer_statistics_anime_genrePreviewBuilder> {
-  _$GUserData_Viewer_statistics_anime_genrePreview? _$v;
+        Builder<GUserData_User_statistics_anime_genrePreview,
+            GUserData_User_statistics_anime_genrePreviewBuilder> {
+  _$GUserData_User_statistics_anime_genrePreview? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -4463,11 +4443,11 @@ class GUserData_Viewer_statistics_anime_genrePreviewBuilder
   int? get count => _$this._count;
   set count(int? count) => _$this._count = count;
 
-  GUserData_Viewer_statistics_anime_genrePreviewBuilder() {
-    GUserData_Viewer_statistics_anime_genrePreview._initializeBuilder(this);
+  GUserData_User_statistics_anime_genrePreviewBuilder() {
+    GUserData_User_statistics_anime_genrePreview._initializeBuilder(this);
   }
 
-  GUserData_Viewer_statistics_anime_genrePreviewBuilder get _$this {
+  GUserData_User_statistics_anime_genrePreviewBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -4479,38 +4459,36 @@ class GUserData_Viewer_statistics_anime_genrePreviewBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_statistics_anime_genrePreview other) {
+  void replace(GUserData_User_statistics_anime_genrePreview other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_statistics_anime_genrePreview;
+    _$v = other as _$GUserData_User_statistics_anime_genrePreview;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_statistics_anime_genrePreviewBuilder)?
+      void Function(GUserData_User_statistics_anime_genrePreviewBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_statistics_anime_genrePreview build() => _build();
+  GUserData_User_statistics_anime_genrePreview build() => _build();
 
-  _$GUserData_Viewer_statistics_anime_genrePreview _build() {
+  _$GUserData_User_statistics_anime_genrePreview _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_statistics_anime_genrePreview._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GUserData_Viewer_statistics_anime_genrePreview',
-                'G__typename'),
+        new _$GUserData_User_statistics_anime_genrePreview._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                r'GUserData_User_statistics_anime_genrePreview', 'G__typename'),
             genre: genre,
             count: BuiltValueNullFieldError.checkNotNull(count,
-                r'GUserData_Viewer_statistics_anime_genrePreview', 'count'));
+                r'GUserData_User_statistics_anime_genrePreview', 'count'));
     replace(_$result);
     return _$result;
   }
 }
 
-class _$GUserData_Viewer_statistics_manga
-    extends GUserData_Viewer_statistics_manga {
+class _$GUserData_User_statistics_manga
+    extends GUserData_User_statistics_manga {
   @override
   final String G__typename;
   @override
@@ -4524,15 +4502,13 @@ class _$GUserData_Viewer_statistics_manga
   @override
   final int volumesRead;
   @override
-  final BuiltList<GUserData_Viewer_statistics_manga_genrePreview?>?
-      genrePreview;
+  final BuiltList<GUserData_User_statistics_manga_genrePreview?>? genrePreview;
 
-  factory _$GUserData_Viewer_statistics_manga(
-          [void Function(GUserData_Viewer_statistics_mangaBuilder)? updates]) =>
-      (new GUserData_Viewer_statistics_mangaBuilder()..update(updates))
-          ._build();
+  factory _$GUserData_User_statistics_manga(
+          [void Function(GUserData_User_statistics_mangaBuilder)? updates]) =>
+      (new GUserData_User_statistics_mangaBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_statistics_manga._(
+  _$GUserData_User_statistics_manga._(
       {required this.G__typename,
       required this.count,
       required this.meanScore,
@@ -4542,32 +4518,32 @@ class _$GUserData_Viewer_statistics_manga
       this.genrePreview})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_statistics_manga', 'G__typename');
+        G__typename, r'GUserData_User_statistics_manga', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
-        count, r'GUserData_Viewer_statistics_manga', 'count');
+        count, r'GUserData_User_statistics_manga', 'count');
     BuiltValueNullFieldError.checkNotNull(
-        meanScore, r'GUserData_Viewer_statistics_manga', 'meanScore');
+        meanScore, r'GUserData_User_statistics_manga', 'meanScore');
     BuiltValueNullFieldError.checkNotNull(standardDeviation,
-        r'GUserData_Viewer_statistics_manga', 'standardDeviation');
+        r'GUserData_User_statistics_manga', 'standardDeviation');
     BuiltValueNullFieldError.checkNotNull(
-        chaptersRead, r'GUserData_Viewer_statistics_manga', 'chaptersRead');
+        chaptersRead, r'GUserData_User_statistics_manga', 'chaptersRead');
     BuiltValueNullFieldError.checkNotNull(
-        volumesRead, r'GUserData_Viewer_statistics_manga', 'volumesRead');
+        volumesRead, r'GUserData_User_statistics_manga', 'volumesRead');
   }
 
   @override
-  GUserData_Viewer_statistics_manga rebuild(
-          void Function(GUserData_Viewer_statistics_mangaBuilder) updates) =>
+  GUserData_User_statistics_manga rebuild(
+          void Function(GUserData_User_statistics_mangaBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_statistics_mangaBuilder toBuilder() =>
-      new GUserData_Viewer_statistics_mangaBuilder()..replace(this);
+  GUserData_User_statistics_mangaBuilder toBuilder() =>
+      new GUserData_User_statistics_mangaBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_statistics_manga &&
+    return other is GUserData_User_statistics_manga &&
         G__typename == other.G__typename &&
         count == other.count &&
         meanScore == other.meanScore &&
@@ -4593,7 +4569,7 @@ class _$GUserData_Viewer_statistics_manga
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_statistics_manga')
+    return (newBuiltValueToStringHelper(r'GUserData_User_statistics_manga')
           ..add('G__typename', G__typename)
           ..add('count', count)
           ..add('meanScore', meanScore)
@@ -4605,11 +4581,11 @@ class _$GUserData_Viewer_statistics_manga
   }
 }
 
-class GUserData_Viewer_statistics_mangaBuilder
+class GUserData_User_statistics_mangaBuilder
     implements
-        Builder<GUserData_Viewer_statistics_manga,
-            GUserData_Viewer_statistics_mangaBuilder> {
-  _$GUserData_Viewer_statistics_manga? _$v;
+        Builder<GUserData_User_statistics_manga,
+            GUserData_User_statistics_mangaBuilder> {
+  _$GUserData_User_statistics_manga? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -4636,20 +4612,20 @@ class GUserData_Viewer_statistics_mangaBuilder
   int? get volumesRead => _$this._volumesRead;
   set volumesRead(int? volumesRead) => _$this._volumesRead = volumesRead;
 
-  ListBuilder<GUserData_Viewer_statistics_manga_genrePreview?>? _genrePreview;
-  ListBuilder<GUserData_Viewer_statistics_manga_genrePreview?>
-      get genrePreview => _$this._genrePreview ??=
-          new ListBuilder<GUserData_Viewer_statistics_manga_genrePreview?>();
+  ListBuilder<GUserData_User_statistics_manga_genrePreview?>? _genrePreview;
+  ListBuilder<GUserData_User_statistics_manga_genrePreview?> get genrePreview =>
+      _$this._genrePreview ??=
+          new ListBuilder<GUserData_User_statistics_manga_genrePreview?>();
   set genrePreview(
-          ListBuilder<GUserData_Viewer_statistics_manga_genrePreview?>?
+          ListBuilder<GUserData_User_statistics_manga_genrePreview?>?
               genrePreview) =>
       _$this._genrePreview = genrePreview;
 
-  GUserData_Viewer_statistics_mangaBuilder() {
-    GUserData_Viewer_statistics_manga._initializeBuilder(this);
+  GUserData_User_statistics_mangaBuilder() {
+    GUserData_User_statistics_manga._initializeBuilder(this);
   }
 
-  GUserData_Viewer_statistics_mangaBuilder get _$this {
+  GUserData_User_statistics_mangaBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -4665,39 +4641,38 @@ class GUserData_Viewer_statistics_mangaBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_statistics_manga other) {
+  void replace(GUserData_User_statistics_manga other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_statistics_manga;
+    _$v = other as _$GUserData_User_statistics_manga;
   }
 
   @override
-  void update(
-      void Function(GUserData_Viewer_statistics_mangaBuilder)? updates) {
+  void update(void Function(GUserData_User_statistics_mangaBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_statistics_manga build() => _build();
+  GUserData_User_statistics_manga build() => _build();
 
-  _$GUserData_Viewer_statistics_manga _build() {
-    _$GUserData_Viewer_statistics_manga _$result;
+  _$GUserData_User_statistics_manga _build() {
+    _$GUserData_User_statistics_manga _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_statistics_manga._(
+          new _$GUserData_User_statistics_manga._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GUserData_Viewer_statistics_manga', 'G__typename'),
+                  G__typename, r'GUserData_User_statistics_manga', 'G__typename'),
               count: BuiltValueNullFieldError.checkNotNull(
-                  count, r'GUserData_Viewer_statistics_manga', 'count'),
+                  count, r'GUserData_User_statistics_manga', 'count'),
               meanScore: BuiltValueNullFieldError.checkNotNull(
-                  meanScore, r'GUserData_Viewer_statistics_manga', 'meanScore'),
+                  meanScore, r'GUserData_User_statistics_manga', 'meanScore'),
               standardDeviation: BuiltValueNullFieldError.checkNotNull(
                   standardDeviation,
-                  r'GUserData_Viewer_statistics_manga',
+                  r'GUserData_User_statistics_manga',
                   'standardDeviation'),
               chaptersRead: BuiltValueNullFieldError.checkNotNull(chaptersRead,
-                  r'GUserData_Viewer_statistics_manga', 'chaptersRead'),
+                  r'GUserData_User_statistics_manga', 'chaptersRead'),
               volumesRead: BuiltValueNullFieldError.checkNotNull(
-                  volumesRead, r'GUserData_Viewer_statistics_manga', 'volumesRead'),
+                  volumesRead, r'GUserData_User_statistics_manga', 'volumesRead'),
               genrePreview: _genrePreview?.build());
     } catch (_) {
       late String _$failedField;
@@ -4706,7 +4681,7 @@ class GUserData_Viewer_statistics_mangaBuilder
         _genrePreview?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_statistics_manga', _$failedField, e.toString());
+            r'GUserData_User_statistics_manga', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -4715,8 +4690,8 @@ class GUserData_Viewer_statistics_mangaBuilder
   }
 }
 
-class _$GUserData_Viewer_statistics_manga_genrePreview
-    extends GUserData_Viewer_statistics_manga_genrePreview {
+class _$GUserData_User_statistics_manga_genrePreview
+    extends GUserData_User_statistics_manga_genrePreview {
   @override
   final String G__typename;
   @override
@@ -4724,37 +4699,36 @@ class _$GUserData_Viewer_statistics_manga_genrePreview
   @override
   final int count;
 
-  factory _$GUserData_Viewer_statistics_manga_genrePreview(
-          [void Function(GUserData_Viewer_statistics_manga_genrePreviewBuilder)?
+  factory _$GUserData_User_statistics_manga_genrePreview(
+          [void Function(GUserData_User_statistics_manga_genrePreviewBuilder)?
               updates]) =>
-      (new GUserData_Viewer_statistics_manga_genrePreviewBuilder()
+      (new GUserData_User_statistics_manga_genrePreviewBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_statistics_manga_genrePreview._(
+  _$GUserData_User_statistics_manga_genrePreview._(
       {required this.G__typename, this.genre, required this.count})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_statistics_manga_genrePreview', 'G__typename');
+        r'GUserData_User_statistics_manga_genrePreview', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
-        count, r'GUserData_Viewer_statistics_manga_genrePreview', 'count');
+        count, r'GUserData_User_statistics_manga_genrePreview', 'count');
   }
 
   @override
-  GUserData_Viewer_statistics_manga_genrePreview rebuild(
-          void Function(GUserData_Viewer_statistics_manga_genrePreviewBuilder)
+  GUserData_User_statistics_manga_genrePreview rebuild(
+          void Function(GUserData_User_statistics_manga_genrePreviewBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_statistics_manga_genrePreviewBuilder toBuilder() =>
-      new GUserData_Viewer_statistics_manga_genrePreviewBuilder()
-        ..replace(this);
+  GUserData_User_statistics_manga_genrePreviewBuilder toBuilder() =>
+      new GUserData_User_statistics_manga_genrePreviewBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_statistics_manga_genrePreview &&
+    return other is GUserData_User_statistics_manga_genrePreview &&
         G__typename == other.G__typename &&
         genre == other.genre &&
         count == other.count;
@@ -4773,7 +4747,7 @@ class _$GUserData_Viewer_statistics_manga_genrePreview
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_statistics_manga_genrePreview')
+            r'GUserData_User_statistics_manga_genrePreview')
           ..add('G__typename', G__typename)
           ..add('genre', genre)
           ..add('count', count))
@@ -4781,11 +4755,11 @@ class _$GUserData_Viewer_statistics_manga_genrePreview
   }
 }
 
-class GUserData_Viewer_statistics_manga_genrePreviewBuilder
+class GUserData_User_statistics_manga_genrePreviewBuilder
     implements
-        Builder<GUserData_Viewer_statistics_manga_genrePreview,
-            GUserData_Viewer_statistics_manga_genrePreviewBuilder> {
-  _$GUserData_Viewer_statistics_manga_genrePreview? _$v;
+        Builder<GUserData_User_statistics_manga_genrePreview,
+            GUserData_User_statistics_manga_genrePreviewBuilder> {
+  _$GUserData_User_statistics_manga_genrePreview? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -4799,11 +4773,11 @@ class GUserData_Viewer_statistics_manga_genrePreviewBuilder
   int? get count => _$this._count;
   set count(int? count) => _$this._count = count;
 
-  GUserData_Viewer_statistics_manga_genrePreviewBuilder() {
-    GUserData_Viewer_statistics_manga_genrePreview._initializeBuilder(this);
+  GUserData_User_statistics_manga_genrePreviewBuilder() {
+    GUserData_User_statistics_manga_genrePreview._initializeBuilder(this);
   }
 
-  GUserData_Viewer_statistics_manga_genrePreviewBuilder get _$this {
+  GUserData_User_statistics_manga_genrePreviewBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -4815,65 +4789,63 @@ class GUserData_Viewer_statistics_manga_genrePreviewBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_statistics_manga_genrePreview other) {
+  void replace(GUserData_User_statistics_manga_genrePreview other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_statistics_manga_genrePreview;
+    _$v = other as _$GUserData_User_statistics_manga_genrePreview;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_statistics_manga_genrePreviewBuilder)?
+      void Function(GUserData_User_statistics_manga_genrePreviewBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_statistics_manga_genrePreview build() => _build();
+  GUserData_User_statistics_manga_genrePreview build() => _build();
 
-  _$GUserData_Viewer_statistics_manga_genrePreview _build() {
+  _$GUserData_User_statistics_manga_genrePreview _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_statistics_manga_genrePreview._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GUserData_Viewer_statistics_manga_genrePreview',
-                'G__typename'),
+        new _$GUserData_User_statistics_manga_genrePreview._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                r'GUserData_User_statistics_manga_genrePreview', 'G__typename'),
             genre: genre,
             count: BuiltValueNullFieldError.checkNotNull(count,
-                r'GUserData_Viewer_statistics_manga_genrePreview', 'count'));
+                r'GUserData_User_statistics_manga_genrePreview', 'count'));
     replace(_$result);
     return _$result;
   }
 }
 
-class _$GUserData_Viewer_stats extends GUserData_Viewer_stats {
+class _$GUserData_User_stats extends GUserData_User_stats {
   @override
   final String G__typename;
   @override
-  final BuiltList<GUserData_Viewer_stats_activityHistory?>? activityHistory;
+  final BuiltList<GUserData_User_stats_activityHistory?>? activityHistory;
 
-  factory _$GUserData_Viewer_stats(
-          [void Function(GUserData_Viewer_statsBuilder)? updates]) =>
-      (new GUserData_Viewer_statsBuilder()..update(updates))._build();
+  factory _$GUserData_User_stats(
+          [void Function(GUserData_User_statsBuilder)? updates]) =>
+      (new GUserData_User_statsBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_stats._({required this.G__typename, this.activityHistory})
+  _$GUserData_User_stats._({required this.G__typename, this.activityHistory})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_stats', 'G__typename');
+        G__typename, r'GUserData_User_stats', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_stats rebuild(
-          void Function(GUserData_Viewer_statsBuilder) updates) =>
+  GUserData_User_stats rebuild(
+          void Function(GUserData_User_statsBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_statsBuilder toBuilder() =>
-      new GUserData_Viewer_statsBuilder()..replace(this);
+  GUserData_User_statsBuilder toBuilder() =>
+      new GUserData_User_statsBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_stats &&
+    return other is GUserData_User_stats &&
         G__typename == other.G__typename &&
         activityHistory == other.activityHistory;
   }
@@ -4889,35 +4861,35 @@ class _$GUserData_Viewer_stats extends GUserData_Viewer_stats {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_stats')
+    return (newBuiltValueToStringHelper(r'GUserData_User_stats')
           ..add('G__typename', G__typename)
           ..add('activityHistory', activityHistory))
         .toString();
   }
 }
 
-class GUserData_Viewer_statsBuilder
-    implements Builder<GUserData_Viewer_stats, GUserData_Viewer_statsBuilder> {
-  _$GUserData_Viewer_stats? _$v;
+class GUserData_User_statsBuilder
+    implements Builder<GUserData_User_stats, GUserData_User_statsBuilder> {
+  _$GUserData_User_stats? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  ListBuilder<GUserData_Viewer_stats_activityHistory?>? _activityHistory;
-  ListBuilder<GUserData_Viewer_stats_activityHistory?> get activityHistory =>
+  ListBuilder<GUserData_User_stats_activityHistory?>? _activityHistory;
+  ListBuilder<GUserData_User_stats_activityHistory?> get activityHistory =>
       _$this._activityHistory ??=
-          new ListBuilder<GUserData_Viewer_stats_activityHistory?>();
+          new ListBuilder<GUserData_User_stats_activityHistory?>();
   set activityHistory(
-          ListBuilder<GUserData_Viewer_stats_activityHistory?>?
+          ListBuilder<GUserData_User_stats_activityHistory?>?
               activityHistory) =>
       _$this._activityHistory = activityHistory;
 
-  GUserData_Viewer_statsBuilder() {
-    GUserData_Viewer_stats._initializeBuilder(this);
+  GUserData_User_statsBuilder() {
+    GUserData_User_stats._initializeBuilder(this);
   }
 
-  GUserData_Viewer_statsBuilder get _$this {
+  GUserData_User_statsBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -4928,26 +4900,26 @@ class GUserData_Viewer_statsBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_stats other) {
+  void replace(GUserData_User_stats other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_stats;
+    _$v = other as _$GUserData_User_stats;
   }
 
   @override
-  void update(void Function(GUserData_Viewer_statsBuilder)? updates) {
+  void update(void Function(GUserData_User_statsBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_stats build() => _build();
+  GUserData_User_stats build() => _build();
 
-  _$GUserData_Viewer_stats _build() {
-    _$GUserData_Viewer_stats _$result;
+  _$GUserData_User_stats _build() {
+    _$GUserData_User_stats _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_stats._(
+          new _$GUserData_User_stats._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GUserData_Viewer_stats', 'G__typename'),
+                  G__typename, r'GUserData_User_stats', 'G__typename'),
               activityHistory: _activityHistory?.build());
     } catch (_) {
       late String _$failedField;
@@ -4956,7 +4928,7 @@ class GUserData_Viewer_statsBuilder
         _activityHistory?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_stats', _$failedField, e.toString());
+            r'GUserData_User_stats', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -4965,8 +4937,8 @@ class GUserData_Viewer_statsBuilder
   }
 }
 
-class _$GUserData_Viewer_stats_activityHistory
-    extends GUserData_Viewer_stats_activityHistory {
+class _$GUserData_User_stats_activityHistory
+    extends GUserData_User_stats_activityHistory {
   @override
   final String G__typename;
   @override
@@ -4976,33 +4948,32 @@ class _$GUserData_Viewer_stats_activityHistory
   @override
   final int? level;
 
-  factory _$GUserData_Viewer_stats_activityHistory(
-          [void Function(GUserData_Viewer_stats_activityHistoryBuilder)?
+  factory _$GUserData_User_stats_activityHistory(
+          [void Function(GUserData_User_stats_activityHistoryBuilder)?
               updates]) =>
-      (new GUserData_Viewer_stats_activityHistoryBuilder()..update(updates))
+      (new GUserData_User_stats_activityHistoryBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_stats_activityHistory._(
+  _$GUserData_User_stats_activityHistory._(
       {required this.G__typename, this.date, this.amount, this.level})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_stats_activityHistory', 'G__typename');
+        G__typename, r'GUserData_User_stats_activityHistory', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_stats_activityHistory rebuild(
-          void Function(GUserData_Viewer_stats_activityHistoryBuilder)
-              updates) =>
+  GUserData_User_stats_activityHistory rebuild(
+          void Function(GUserData_User_stats_activityHistoryBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_stats_activityHistoryBuilder toBuilder() =>
-      new GUserData_Viewer_stats_activityHistoryBuilder()..replace(this);
+  GUserData_User_stats_activityHistoryBuilder toBuilder() =>
+      new GUserData_User_stats_activityHistoryBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_stats_activityHistory &&
+    return other is GUserData_User_stats_activityHistory &&
         G__typename == other.G__typename &&
         date == other.date &&
         amount == other.amount &&
@@ -5022,8 +4993,7 @@ class _$GUserData_Viewer_stats_activityHistory
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_stats_activityHistory')
+    return (newBuiltValueToStringHelper(r'GUserData_User_stats_activityHistory')
           ..add('G__typename', G__typename)
           ..add('date', date)
           ..add('amount', amount)
@@ -5032,11 +5002,11 @@ class _$GUserData_Viewer_stats_activityHistory
   }
 }
 
-class GUserData_Viewer_stats_activityHistoryBuilder
+class GUserData_User_stats_activityHistoryBuilder
     implements
-        Builder<GUserData_Viewer_stats_activityHistory,
-            GUserData_Viewer_stats_activityHistoryBuilder> {
-  _$GUserData_Viewer_stats_activityHistory? _$v;
+        Builder<GUserData_User_stats_activityHistory,
+            GUserData_User_stats_activityHistoryBuilder> {
+  _$GUserData_User_stats_activityHistory? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -5054,11 +5024,11 @@ class GUserData_Viewer_stats_activityHistoryBuilder
   int? get level => _$this._level;
   set level(int? level) => _$this._level = level;
 
-  GUserData_Viewer_stats_activityHistoryBuilder() {
-    GUserData_Viewer_stats_activityHistory._initializeBuilder(this);
+  GUserData_User_stats_activityHistoryBuilder() {
+    GUserData_User_stats_activityHistory._initializeBuilder(this);
   }
 
-  GUserData_Viewer_stats_activityHistoryBuilder get _$this {
+  GUserData_User_stats_activityHistoryBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -5071,25 +5041,25 @@ class GUserData_Viewer_stats_activityHistoryBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_stats_activityHistory other) {
+  void replace(GUserData_User_stats_activityHistory other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_stats_activityHistory;
+    _$v = other as _$GUserData_User_stats_activityHistory;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_stats_activityHistoryBuilder)? updates) {
+      void Function(GUserData_User_stats_activityHistoryBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_stats_activityHistory build() => _build();
+  GUserData_User_stats_activityHistory build() => _build();
 
-  _$GUserData_Viewer_stats_activityHistory _build() {
+  _$GUserData_User_stats_activityHistory _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_stats_activityHistory._(
+        new _$GUserData_User_stats_activityHistory._(
             G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GUserData_Viewer_stats_activityHistory', 'G__typename'),
+                r'GUserData_User_stats_activityHistory', 'G__typename'),
             date: date,
             amount: amount,
             level: level);
@@ -5098,25 +5068,25 @@ class GUserData_Viewer_stats_activityHistoryBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites extends GUserData_Viewer_favourites {
+class _$GUserData_User_favourites extends GUserData_User_favourites {
   @override
   final String G__typename;
   @override
-  final GUserData_Viewer_favourites_anime? anime;
+  final GUserData_User_favourites_anime? anime;
   @override
-  final GUserData_Viewer_favourites_manga? manga;
+  final GUserData_User_favourites_manga? manga;
   @override
-  final GUserData_Viewer_favourites_characters? characters;
+  final GUserData_User_favourites_characters? characters;
   @override
-  final GUserData_Viewer_favourites_staff? staff;
+  final GUserData_User_favourites_staff? staff;
   @override
-  final GUserData_Viewer_favourites_studios? studios;
+  final GUserData_User_favourites_studios? studios;
 
-  factory _$GUserData_Viewer_favourites(
-          [void Function(GUserData_Viewer_favouritesBuilder)? updates]) =>
-      (new GUserData_Viewer_favouritesBuilder()..update(updates))._build();
+  factory _$GUserData_User_favourites(
+          [void Function(GUserData_User_favouritesBuilder)? updates]) =>
+      (new GUserData_User_favouritesBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_favourites._(
+  _$GUserData_User_favourites._(
       {required this.G__typename,
       this.anime,
       this.manga,
@@ -5125,22 +5095,22 @@ class _$GUserData_Viewer_favourites extends GUserData_Viewer_favourites {
       this.studios})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_favourites', 'G__typename');
+        G__typename, r'GUserData_User_favourites', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites rebuild(
-          void Function(GUserData_Viewer_favouritesBuilder) updates) =>
+  GUserData_User_favourites rebuild(
+          void Function(GUserData_User_favouritesBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favouritesBuilder toBuilder() =>
-      new GUserData_Viewer_favouritesBuilder()..replace(this);
+  GUserData_User_favouritesBuilder toBuilder() =>
+      new GUserData_User_favouritesBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites &&
+    return other is GUserData_User_favourites &&
         G__typename == other.G__typename &&
         anime == other.anime &&
         manga == other.manga &&
@@ -5164,7 +5134,7 @@ class _$GUserData_Viewer_favourites extends GUserData_Viewer_favourites {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_favourites')
+    return (newBuiltValueToStringHelper(r'GUserData_User_favourites')
           ..add('G__typename', G__typename)
           ..add('anime', anime)
           ..add('manga', manga)
@@ -5175,52 +5145,50 @@ class _$GUserData_Viewer_favourites extends GUserData_Viewer_favourites {
   }
 }
 
-class GUserData_Viewer_favouritesBuilder
+class GUserData_User_favouritesBuilder
     implements
-        Builder<GUserData_Viewer_favourites,
-            GUserData_Viewer_favouritesBuilder> {
-  _$GUserData_Viewer_favourites? _$v;
+        Builder<GUserData_User_favourites, GUserData_User_favouritesBuilder> {
+  _$GUserData_User_favourites? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  GUserData_Viewer_favourites_animeBuilder? _anime;
-  GUserData_Viewer_favourites_animeBuilder get anime =>
-      _$this._anime ??= new GUserData_Viewer_favourites_animeBuilder();
-  set anime(GUserData_Viewer_favourites_animeBuilder? anime) =>
+  GUserData_User_favourites_animeBuilder? _anime;
+  GUserData_User_favourites_animeBuilder get anime =>
+      _$this._anime ??= new GUserData_User_favourites_animeBuilder();
+  set anime(GUserData_User_favourites_animeBuilder? anime) =>
       _$this._anime = anime;
 
-  GUserData_Viewer_favourites_mangaBuilder? _manga;
-  GUserData_Viewer_favourites_mangaBuilder get manga =>
-      _$this._manga ??= new GUserData_Viewer_favourites_mangaBuilder();
-  set manga(GUserData_Viewer_favourites_mangaBuilder? manga) =>
+  GUserData_User_favourites_mangaBuilder? _manga;
+  GUserData_User_favourites_mangaBuilder get manga =>
+      _$this._manga ??= new GUserData_User_favourites_mangaBuilder();
+  set manga(GUserData_User_favourites_mangaBuilder? manga) =>
       _$this._manga = manga;
 
-  GUserData_Viewer_favourites_charactersBuilder? _characters;
-  GUserData_Viewer_favourites_charactersBuilder get characters =>
-      _$this._characters ??=
-          new GUserData_Viewer_favourites_charactersBuilder();
-  set characters(GUserData_Viewer_favourites_charactersBuilder? characters) =>
+  GUserData_User_favourites_charactersBuilder? _characters;
+  GUserData_User_favourites_charactersBuilder get characters =>
+      _$this._characters ??= new GUserData_User_favourites_charactersBuilder();
+  set characters(GUserData_User_favourites_charactersBuilder? characters) =>
       _$this._characters = characters;
 
-  GUserData_Viewer_favourites_staffBuilder? _staff;
-  GUserData_Viewer_favourites_staffBuilder get staff =>
-      _$this._staff ??= new GUserData_Viewer_favourites_staffBuilder();
-  set staff(GUserData_Viewer_favourites_staffBuilder? staff) =>
+  GUserData_User_favourites_staffBuilder? _staff;
+  GUserData_User_favourites_staffBuilder get staff =>
+      _$this._staff ??= new GUserData_User_favourites_staffBuilder();
+  set staff(GUserData_User_favourites_staffBuilder? staff) =>
       _$this._staff = staff;
 
-  GUserData_Viewer_favourites_studiosBuilder? _studios;
-  GUserData_Viewer_favourites_studiosBuilder get studios =>
-      _$this._studios ??= new GUserData_Viewer_favourites_studiosBuilder();
-  set studios(GUserData_Viewer_favourites_studiosBuilder? studios) =>
+  GUserData_User_favourites_studiosBuilder? _studios;
+  GUserData_User_favourites_studiosBuilder get studios =>
+      _$this._studios ??= new GUserData_User_favourites_studiosBuilder();
+  set studios(GUserData_User_favourites_studiosBuilder? studios) =>
       _$this._studios = studios;
 
-  GUserData_Viewer_favouritesBuilder() {
-    GUserData_Viewer_favourites._initializeBuilder(this);
+  GUserData_User_favouritesBuilder() {
+    GUserData_User_favourites._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favouritesBuilder get _$this {
+  GUserData_User_favouritesBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -5235,26 +5203,26 @@ class GUserData_Viewer_favouritesBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites other) {
+  void replace(GUserData_User_favourites other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites;
+    _$v = other as _$GUserData_User_favourites;
   }
 
   @override
-  void update(void Function(GUserData_Viewer_favouritesBuilder)? updates) {
+  void update(void Function(GUserData_User_favouritesBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites build() => _build();
+  GUserData_User_favourites build() => _build();
 
-  _$GUserData_Viewer_favourites _build() {
-    _$GUserData_Viewer_favourites _$result;
+  _$GUserData_User_favourites _build() {
+    _$GUserData_User_favourites _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites._(
+          new _$GUserData_User_favourites._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GUserData_Viewer_favourites', 'G__typename'),
+                  G__typename, r'GUserData_User_favourites', 'G__typename'),
               anime: _anime?.build(),
               manga: _manga?.build(),
               characters: _characters?.build(),
@@ -5275,7 +5243,7 @@ class GUserData_Viewer_favouritesBuilder
         _studios?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites', _$failedField, e.toString());
+            r'GUserData_User_favourites', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -5284,37 +5252,36 @@ class GUserData_Viewer_favouritesBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_anime
-    extends GUserData_Viewer_favourites_anime {
+class _$GUserData_User_favourites_anime
+    extends GUserData_User_favourites_anime {
   @override
   final String G__typename;
   @override
-  final BuiltList<GUserData_Viewer_favourites_anime_edges?>? edges;
+  final BuiltList<GUserData_User_favourites_anime_edges?>? edges;
 
-  factory _$GUserData_Viewer_favourites_anime(
-          [void Function(GUserData_Viewer_favourites_animeBuilder)? updates]) =>
-      (new GUserData_Viewer_favourites_animeBuilder()..update(updates))
-          ._build();
+  factory _$GUserData_User_favourites_anime(
+          [void Function(GUserData_User_favourites_animeBuilder)? updates]) =>
+      (new GUserData_User_favourites_animeBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_favourites_anime._({required this.G__typename, this.edges})
+  _$GUserData_User_favourites_anime._({required this.G__typename, this.edges})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_favourites_anime', 'G__typename');
+        G__typename, r'GUserData_User_favourites_anime', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_anime rebuild(
-          void Function(GUserData_Viewer_favourites_animeBuilder) updates) =>
+  GUserData_User_favourites_anime rebuild(
+          void Function(GUserData_User_favourites_animeBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_animeBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_animeBuilder()..replace(this);
+  GUserData_User_favourites_animeBuilder toBuilder() =>
+      new GUserData_User_favourites_animeBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_anime &&
+    return other is GUserData_User_favourites_anime &&
         G__typename == other.G__typename &&
         edges == other.edges;
   }
@@ -5330,35 +5297,35 @@ class _$GUserData_Viewer_favourites_anime
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_favourites_anime')
+    return (newBuiltValueToStringHelper(r'GUserData_User_favourites_anime')
           ..add('G__typename', G__typename)
           ..add('edges', edges))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_animeBuilder
+class GUserData_User_favourites_animeBuilder
     implements
-        Builder<GUserData_Viewer_favourites_anime,
-            GUserData_Viewer_favourites_animeBuilder> {
-  _$GUserData_Viewer_favourites_anime? _$v;
+        Builder<GUserData_User_favourites_anime,
+            GUserData_User_favourites_animeBuilder> {
+  _$GUserData_User_favourites_anime? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  ListBuilder<GUserData_Viewer_favourites_anime_edges?>? _edges;
-  ListBuilder<GUserData_Viewer_favourites_anime_edges?> get edges =>
+  ListBuilder<GUserData_User_favourites_anime_edges?>? _edges;
+  ListBuilder<GUserData_User_favourites_anime_edges?> get edges =>
       _$this._edges ??=
-          new ListBuilder<GUserData_Viewer_favourites_anime_edges?>();
-  set edges(ListBuilder<GUserData_Viewer_favourites_anime_edges?>? edges) =>
+          new ListBuilder<GUserData_User_favourites_anime_edges?>();
+  set edges(ListBuilder<GUserData_User_favourites_anime_edges?>? edges) =>
       _$this._edges = edges;
 
-  GUserData_Viewer_favourites_animeBuilder() {
-    GUserData_Viewer_favourites_anime._initializeBuilder(this);
+  GUserData_User_favourites_animeBuilder() {
+    GUserData_User_favourites_anime._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_animeBuilder get _$this {
+  GUserData_User_favourites_animeBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -5369,27 +5336,26 @@ class GUserData_Viewer_favourites_animeBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_anime other) {
+  void replace(GUserData_User_favourites_anime other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_anime;
+    _$v = other as _$GUserData_User_favourites_anime;
   }
 
   @override
-  void update(
-      void Function(GUserData_Viewer_favourites_animeBuilder)? updates) {
+  void update(void Function(GUserData_User_favourites_animeBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_anime build() => _build();
+  GUserData_User_favourites_anime build() => _build();
 
-  _$GUserData_Viewer_favourites_anime _build() {
-    _$GUserData_Viewer_favourites_anime _$result;
+  _$GUserData_User_favourites_anime _build() {
+    _$GUserData_User_favourites_anime _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_anime._(
+          new _$GUserData_User_favourites_anime._(
               G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  r'GUserData_Viewer_favourites_anime', 'G__typename'),
+                  r'GUserData_User_favourites_anime', 'G__typename'),
               edges: _edges?.build());
     } catch (_) {
       late String _$failedField;
@@ -5398,7 +5364,7 @@ class GUserData_Viewer_favourites_animeBuilder
         _edges?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_anime', _$failedField, e.toString());
+            r'GUserData_User_favourites_anime', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -5407,42 +5373,42 @@ class GUserData_Viewer_favourites_animeBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_anime_edges
-    extends GUserData_Viewer_favourites_anime_edges {
+class _$GUserData_User_favourites_anime_edges
+    extends GUserData_User_favourites_anime_edges {
   @override
   final String G__typename;
   @override
   final int? favouriteOrder;
   @override
-  final GUserData_Viewer_favourites_anime_edges_node? node;
+  final GUserData_User_favourites_anime_edges_node? node;
 
-  factory _$GUserData_Viewer_favourites_anime_edges(
-          [void Function(GUserData_Viewer_favourites_anime_edgesBuilder)?
+  factory _$GUserData_User_favourites_anime_edges(
+          [void Function(GUserData_User_favourites_anime_edgesBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_anime_edgesBuilder()..update(updates))
+      (new GUserData_User_favourites_anime_edgesBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_anime_edges._(
+  _$GUserData_User_favourites_anime_edges._(
       {required this.G__typename, this.favouriteOrder, this.node})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_favourites_anime_edges', 'G__typename');
+        G__typename, r'GUserData_User_favourites_anime_edges', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges rebuild(
-          void Function(GUserData_Viewer_favourites_anime_edgesBuilder)
+  GUserData_User_favourites_anime_edges rebuild(
+          void Function(GUserData_User_favourites_anime_edgesBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_anime_edgesBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_anime_edgesBuilder()..replace(this);
+  GUserData_User_favourites_anime_edgesBuilder toBuilder() =>
+      new GUserData_User_favourites_anime_edgesBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_anime_edges &&
+    return other is GUserData_User_favourites_anime_edges &&
         G__typename == other.G__typename &&
         favouriteOrder == other.favouriteOrder &&
         node == other.node;
@@ -5461,7 +5427,7 @@ class _$GUserData_Viewer_favourites_anime_edges
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_anime_edges')
+            r'GUserData_User_favourites_anime_edges')
           ..add('G__typename', G__typename)
           ..add('favouriteOrder', favouriteOrder)
           ..add('node', node))
@@ -5469,11 +5435,11 @@ class _$GUserData_Viewer_favourites_anime_edges
   }
 }
 
-class GUserData_Viewer_favourites_anime_edgesBuilder
+class GUserData_User_favourites_anime_edgesBuilder
     implements
-        Builder<GUserData_Viewer_favourites_anime_edges,
-            GUserData_Viewer_favourites_anime_edgesBuilder> {
-  _$GUserData_Viewer_favourites_anime_edges? _$v;
+        Builder<GUserData_User_favourites_anime_edges,
+            GUserData_User_favourites_anime_edgesBuilder> {
+  _$GUserData_User_favourites_anime_edges? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -5484,18 +5450,17 @@ class GUserData_Viewer_favourites_anime_edgesBuilder
   set favouriteOrder(int? favouriteOrder) =>
       _$this._favouriteOrder = favouriteOrder;
 
-  GUserData_Viewer_favourites_anime_edges_nodeBuilder? _node;
-  GUserData_Viewer_favourites_anime_edges_nodeBuilder get node =>
-      _$this._node ??=
-          new GUserData_Viewer_favourites_anime_edges_nodeBuilder();
-  set node(GUserData_Viewer_favourites_anime_edges_nodeBuilder? node) =>
+  GUserData_User_favourites_anime_edges_nodeBuilder? _node;
+  GUserData_User_favourites_anime_edges_nodeBuilder get node =>
+      _$this._node ??= new GUserData_User_favourites_anime_edges_nodeBuilder();
+  set node(GUserData_User_favourites_anime_edges_nodeBuilder? node) =>
       _$this._node = node;
 
-  GUserData_Viewer_favourites_anime_edgesBuilder() {
-    GUserData_Viewer_favourites_anime_edges._initializeBuilder(this);
+  GUserData_User_favourites_anime_edgesBuilder() {
+    GUserData_User_favourites_anime_edges._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_anime_edgesBuilder get _$this {
+  GUserData_User_favourites_anime_edgesBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -5507,27 +5472,27 @@ class GUserData_Viewer_favourites_anime_edgesBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_anime_edges other) {
+  void replace(GUserData_User_favourites_anime_edges other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_anime_edges;
+    _$v = other as _$GUserData_User_favourites_anime_edges;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_anime_edgesBuilder)? updates) {
+      void Function(GUserData_User_favourites_anime_edgesBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges build() => _build();
+  GUserData_User_favourites_anime_edges build() => _build();
 
-  _$GUserData_Viewer_favourites_anime_edges _build() {
-    _$GUserData_Viewer_favourites_anime_edges _$result;
+  _$GUserData_User_favourites_anime_edges _build() {
+    _$GUserData_User_favourites_anime_edges _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_anime_edges._(
+          new _$GUserData_User_favourites_anime_edges._(
               G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  r'GUserData_Viewer_favourites_anime_edges', 'G__typename'),
+                  r'GUserData_User_favourites_anime_edges', 'G__typename'),
               favouriteOrder: favouriteOrder,
               node: _node?.build());
     } catch (_) {
@@ -5537,7 +5502,7 @@ class GUserData_Viewer_favourites_anime_edgesBuilder
         _node?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_anime_edges',
+            r'GUserData_User_favourites_anime_edges',
             _$failedField,
             e.toString());
       }
@@ -5548,8 +5513,8 @@ class GUserData_Viewer_favourites_anime_edgesBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_anime_edges_node
-    extends GUserData_Viewer_favourites_anime_edges_node {
+class _$GUserData_User_favourites_anime_edges_node
+    extends GUserData_User_favourites_anime_edges_node {
   @override
   final String G__typename;
   @override
@@ -5565,20 +5530,19 @@ class _$GUserData_Viewer_favourites_anime_edges_node
   @override
   final String? bannerImage;
   @override
-  final GUserData_Viewer_favourites_anime_edges_node_title? title;
+  final GUserData_User_favourites_anime_edges_node_title? title;
   @override
-  final GUserData_Viewer_favourites_anime_edges_node_coverImage? coverImage;
+  final GUserData_User_favourites_anime_edges_node_coverImage? coverImage;
   @override
-  final GUserData_Viewer_favourites_anime_edges_node_startDate? startDate;
+  final GUserData_User_favourites_anime_edges_node_startDate? startDate;
 
-  factory _$GUserData_Viewer_favourites_anime_edges_node(
-          [void Function(GUserData_Viewer_favourites_anime_edges_nodeBuilder)?
+  factory _$GUserData_User_favourites_anime_edges_node(
+          [void Function(GUserData_User_favourites_anime_edges_nodeBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_anime_edges_nodeBuilder()
-            ..update(updates))
+      (new GUserData_User_favourites_anime_edges_nodeBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_anime_edges_node._(
+  _$GUserData_User_favourites_anime_edges_node._(
       {required this.G__typename,
       required this.id,
       this.type,
@@ -5591,25 +5555,25 @@ class _$GUserData_Viewer_favourites_anime_edges_node
       this.startDate})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_anime_edges_node', 'G__typename');
+        r'GUserData_User_favourites_anime_edges_node', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
-        id, r'GUserData_Viewer_favourites_anime_edges_node', 'id');
+        id, r'GUserData_User_favourites_anime_edges_node', 'id');
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node rebuild(
-          void Function(GUserData_Viewer_favourites_anime_edges_nodeBuilder)
+  GUserData_User_favourites_anime_edges_node rebuild(
+          void Function(GUserData_User_favourites_anime_edges_nodeBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_anime_edges_nodeBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_anime_edges_nodeBuilder()..replace(this);
+  GUserData_User_favourites_anime_edges_nodeBuilder toBuilder() =>
+      new GUserData_User_favourites_anime_edges_nodeBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_anime_edges_node &&
+    return other is GUserData_User_favourites_anime_edges_node &&
         G__typename == other.G__typename &&
         id == other.id &&
         type == other.type &&
@@ -5642,7 +5606,7 @@ class _$GUserData_Viewer_favourites_anime_edges_node
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_anime_edges_node')
+            r'GUserData_User_favourites_anime_edges_node')
           ..add('G__typename', G__typename)
           ..add('id', id)
           ..add('type', type)
@@ -5657,11 +5621,11 @@ class _$GUserData_Viewer_favourites_anime_edges_node
   }
 }
 
-class GUserData_Viewer_favourites_anime_edges_nodeBuilder
+class GUserData_User_favourites_anime_edges_nodeBuilder
     implements
-        Builder<GUserData_Viewer_favourites_anime_edges_node,
-            GUserData_Viewer_favourites_anime_edges_nodeBuilder> {
-  _$GUserData_Viewer_favourites_anime_edges_node? _$v;
+        Builder<GUserData_User_favourites_anime_edges_node,
+            GUserData_User_favourites_anime_edges_nodeBuilder> {
+  _$GUserData_User_favourites_anime_edges_node? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -5691,36 +5655,36 @@ class GUserData_Viewer_favourites_anime_edges_nodeBuilder
   String? get bannerImage => _$this._bannerImage;
   set bannerImage(String? bannerImage) => _$this._bannerImage = bannerImage;
 
-  GUserData_Viewer_favourites_anime_edges_node_titleBuilder? _title;
-  GUserData_Viewer_favourites_anime_edges_node_titleBuilder get title =>
+  GUserData_User_favourites_anime_edges_node_titleBuilder? _title;
+  GUserData_User_favourites_anime_edges_node_titleBuilder get title =>
       _$this._title ??=
-          new GUserData_Viewer_favourites_anime_edges_node_titleBuilder();
-  set title(GUserData_Viewer_favourites_anime_edges_node_titleBuilder? title) =>
+          new GUserData_User_favourites_anime_edges_node_titleBuilder();
+  set title(GUserData_User_favourites_anime_edges_node_titleBuilder? title) =>
       _$this._title = title;
 
-  GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder? _coverImage;
-  GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder
-      get coverImage => _$this._coverImage ??=
-          new GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder();
+  GUserData_User_favourites_anime_edges_node_coverImageBuilder? _coverImage;
+  GUserData_User_favourites_anime_edges_node_coverImageBuilder get coverImage =>
+      _$this._coverImage ??=
+          new GUserData_User_favourites_anime_edges_node_coverImageBuilder();
   set coverImage(
-          GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder?
+          GUserData_User_favourites_anime_edges_node_coverImageBuilder?
               coverImage) =>
       _$this._coverImage = coverImage;
 
-  GUserData_Viewer_favourites_anime_edges_node_startDateBuilder? _startDate;
-  GUserData_Viewer_favourites_anime_edges_node_startDateBuilder get startDate =>
+  GUserData_User_favourites_anime_edges_node_startDateBuilder? _startDate;
+  GUserData_User_favourites_anime_edges_node_startDateBuilder get startDate =>
       _$this._startDate ??=
-          new GUserData_Viewer_favourites_anime_edges_node_startDateBuilder();
+          new GUserData_User_favourites_anime_edges_node_startDateBuilder();
   set startDate(
-          GUserData_Viewer_favourites_anime_edges_node_startDateBuilder?
+          GUserData_User_favourites_anime_edges_node_startDateBuilder?
               startDate) =>
       _$this._startDate = startDate;
 
-  GUserData_Viewer_favourites_anime_edges_nodeBuilder() {
-    GUserData_Viewer_favourites_anime_edges_node._initializeBuilder(this);
+  GUserData_User_favourites_anime_edges_nodeBuilder() {
+    GUserData_User_favourites_anime_edges_node._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_anime_edges_nodeBuilder get _$this {
+  GUserData_User_favourites_anime_edges_nodeBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -5739,32 +5703,30 @@ class GUserData_Viewer_favourites_anime_edges_nodeBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_anime_edges_node other) {
+  void replace(GUserData_User_favourites_anime_edges_node other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_anime_edges_node;
+    _$v = other as _$GUserData_User_favourites_anime_edges_node;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_anime_edges_nodeBuilder)?
+      void Function(GUserData_User_favourites_anime_edges_nodeBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node build() => _build();
+  GUserData_User_favourites_anime_edges_node build() => _build();
 
-  _$GUserData_Viewer_favourites_anime_edges_node _build() {
-    _$GUserData_Viewer_favourites_anime_edges_node _$result;
+  _$GUserData_User_favourites_anime_edges_node _build() {
+    _$GUserData_User_favourites_anime_edges_node _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_anime_edges_node._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename,
-                  r'GUserData_Viewer_favourites_anime_edges_node',
-                  'G__typename'),
+          new _$GUserData_User_favourites_anime_edges_node._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                  r'GUserData_User_favourites_anime_edges_node', 'G__typename'),
               id: BuiltValueNullFieldError.checkNotNull(
-                  id, r'GUserData_Viewer_favourites_anime_edges_node', 'id'),
+                  id, r'GUserData_User_favourites_anime_edges_node', 'id'),
               type: type,
               status: status,
               format: format,
@@ -5784,7 +5746,7 @@ class GUserData_Viewer_favourites_anime_edges_nodeBuilder
         _startDate?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_anime_edges_node',
+            r'GUserData_User_favourites_anime_edges_node',
             _$failedField,
             e.toString());
       }
@@ -5795,44 +5757,43 @@ class GUserData_Viewer_favourites_anime_edges_nodeBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_anime_edges_node_title
-    extends GUserData_Viewer_favourites_anime_edges_node_title {
+class _$GUserData_User_favourites_anime_edges_node_title
+    extends GUserData_User_favourites_anime_edges_node_title {
   @override
   final String G__typename;
   @override
   final String? userPreferred;
 
-  factory _$GUserData_Viewer_favourites_anime_edges_node_title(
+  factory _$GUserData_User_favourites_anime_edges_node_title(
           [void Function(
-                  GUserData_Viewer_favourites_anime_edges_node_titleBuilder)?
+                  GUserData_User_favourites_anime_edges_node_titleBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_anime_edges_node_titleBuilder()
+      (new GUserData_User_favourites_anime_edges_node_titleBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_anime_edges_node_title._(
+  _$GUserData_User_favourites_anime_edges_node_title._(
       {required this.G__typename, this.userPreferred})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_anime_edges_node_title', 'G__typename');
+        r'GUserData_User_favourites_anime_edges_node_title', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_title rebuild(
-          void Function(
-                  GUserData_Viewer_favourites_anime_edges_node_titleBuilder)
+  GUserData_User_favourites_anime_edges_node_title rebuild(
+          void Function(GUserData_User_favourites_anime_edges_node_titleBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_titleBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_anime_edges_node_titleBuilder()
+  GUserData_User_favourites_anime_edges_node_titleBuilder toBuilder() =>
+      new GUserData_User_favourites_anime_edges_node_titleBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_anime_edges_node_title &&
+    return other is GUserData_User_favourites_anime_edges_node_title &&
         G__typename == other.G__typename &&
         userPreferred == other.userPreferred;
   }
@@ -5849,18 +5810,18 @@ class _$GUserData_Viewer_favourites_anime_edges_node_title
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_anime_edges_node_title')
+            r'GUserData_User_favourites_anime_edges_node_title')
           ..add('G__typename', G__typename)
           ..add('userPreferred', userPreferred))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_anime_edges_node_titleBuilder
+class GUserData_User_favourites_anime_edges_node_titleBuilder
     implements
-        Builder<GUserData_Viewer_favourites_anime_edges_node_title,
-            GUserData_Viewer_favourites_anime_edges_node_titleBuilder> {
-  _$GUserData_Viewer_favourites_anime_edges_node_title? _$v;
+        Builder<GUserData_User_favourites_anime_edges_node_title,
+            GUserData_User_favourites_anime_edges_node_titleBuilder> {
+  _$GUserData_User_favourites_anime_edges_node_title? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -5871,11 +5832,11 @@ class GUserData_Viewer_favourites_anime_edges_node_titleBuilder
   set userPreferred(String? userPreferred) =>
       _$this._userPreferred = userPreferred;
 
-  GUserData_Viewer_favourites_anime_edges_node_titleBuilder() {
-    GUserData_Viewer_favourites_anime_edges_node_title._initializeBuilder(this);
+  GUserData_User_favourites_anime_edges_node_titleBuilder() {
+    GUserData_User_favourites_anime_edges_node_title._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_anime_edges_node_titleBuilder get _$this {
+  GUserData_User_favourites_anime_edges_node_titleBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -5886,27 +5847,27 @@ class GUserData_Viewer_favourites_anime_edges_node_titleBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_anime_edges_node_title other) {
+  void replace(GUserData_User_favourites_anime_edges_node_title other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_anime_edges_node_title;
+    _$v = other as _$GUserData_User_favourites_anime_edges_node_title;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_anime_edges_node_titleBuilder)?
+      void Function(GUserData_User_favourites_anime_edges_node_titleBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_title build() => _build();
+  GUserData_User_favourites_anime_edges_node_title build() => _build();
 
-  _$GUserData_Viewer_favourites_anime_edges_node_title _build() {
+  _$GUserData_User_favourites_anime_edges_node_title _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_anime_edges_node_title._(
+        new _$GUserData_User_favourites_anime_edges_node_title._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
-                r'GUserData_Viewer_favourites_anime_edges_node_title',
+                r'GUserData_User_favourites_anime_edges_node_title',
                 'G__typename'),
             userPreferred: userPreferred);
     replace(_$result);
@@ -5914,46 +5875,46 @@ class GUserData_Viewer_favourites_anime_edges_node_titleBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_anime_edges_node_coverImage
-    extends GUserData_Viewer_favourites_anime_edges_node_coverImage {
+class _$GUserData_User_favourites_anime_edges_node_coverImage
+    extends GUserData_User_favourites_anime_edges_node_coverImage {
   @override
   final String G__typename;
   @override
   final String? large;
 
-  factory _$GUserData_Viewer_favourites_anime_edges_node_coverImage(
+  factory _$GUserData_User_favourites_anime_edges_node_coverImage(
           [void Function(
-                  GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder)?
+                  GUserData_User_favourites_anime_edges_node_coverImageBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder()
+      (new GUserData_User_favourites_anime_edges_node_coverImageBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_anime_edges_node_coverImage._(
+  _$GUserData_User_favourites_anime_edges_node_coverImage._(
       {required this.G__typename, this.large})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename,
-        r'GUserData_Viewer_favourites_anime_edges_node_coverImage',
+        r'GUserData_User_favourites_anime_edges_node_coverImage',
         'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_coverImage rebuild(
+  GUserData_User_favourites_anime_edges_node_coverImage rebuild(
           void Function(
-                  GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder)
+                  GUserData_User_favourites_anime_edges_node_coverImageBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder()
+  GUserData_User_favourites_anime_edges_node_coverImageBuilder toBuilder() =>
+      new GUserData_User_favourites_anime_edges_node_coverImageBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_anime_edges_node_coverImage &&
+    return other is GUserData_User_favourites_anime_edges_node_coverImage &&
         G__typename == other.G__typename &&
         large == other.large;
   }
@@ -5970,18 +5931,18 @@ class _$GUserData_Viewer_favourites_anime_edges_node_coverImage
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_anime_edges_node_coverImage')
+            r'GUserData_User_favourites_anime_edges_node_coverImage')
           ..add('G__typename', G__typename)
           ..add('large', large))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder
+class GUserData_User_favourites_anime_edges_node_coverImageBuilder
     implements
-        Builder<GUserData_Viewer_favourites_anime_edges_node_coverImage,
-            GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder> {
-  _$GUserData_Viewer_favourites_anime_edges_node_coverImage? _$v;
+        Builder<GUserData_User_favourites_anime_edges_node_coverImage,
+            GUserData_User_favourites_anime_edges_node_coverImageBuilder> {
+  _$GUserData_User_favourites_anime_edges_node_coverImage? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -5991,12 +5952,12 @@ class GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder
   String? get large => _$this._large;
   set large(String? large) => _$this._large = large;
 
-  GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder() {
-    GUserData_Viewer_favourites_anime_edges_node_coverImage._initializeBuilder(
+  GUserData_User_favourites_anime_edges_node_coverImageBuilder() {
+    GUserData_User_favourites_anime_edges_node_coverImage._initializeBuilder(
         this);
   }
 
-  GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder get _$this {
+  GUserData_User_favourites_anime_edges_node_coverImageBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -6007,28 +5968,28 @@ class GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_anime_edges_node_coverImage other) {
+  void replace(GUserData_User_favourites_anime_edges_node_coverImage other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_anime_edges_node_coverImage;
+    _$v = other as _$GUserData_User_favourites_anime_edges_node_coverImage;
   }
 
   @override
   void update(
       void Function(
-              GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder)?
+              GUserData_User_favourites_anime_edges_node_coverImageBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_coverImage build() => _build();
+  GUserData_User_favourites_anime_edges_node_coverImage build() => _build();
 
-  _$GUserData_Viewer_favourites_anime_edges_node_coverImage _build() {
+  _$GUserData_User_favourites_anime_edges_node_coverImage _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_anime_edges_node_coverImage._(
+        new _$GUserData_User_favourites_anime_edges_node_coverImage._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
-                r'GUserData_Viewer_favourites_anime_edges_node_coverImage',
+                r'GUserData_User_favourites_anime_edges_node_coverImage',
                 'G__typename'),
             large: large);
     replace(_$result);
@@ -6036,46 +5997,44 @@ class GUserData_Viewer_favourites_anime_edges_node_coverImageBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_anime_edges_node_startDate
-    extends GUserData_Viewer_favourites_anime_edges_node_startDate {
+class _$GUserData_User_favourites_anime_edges_node_startDate
+    extends GUserData_User_favourites_anime_edges_node_startDate {
   @override
   final String G__typename;
   @override
   final int? year;
 
-  factory _$GUserData_Viewer_favourites_anime_edges_node_startDate(
+  factory _$GUserData_User_favourites_anime_edges_node_startDate(
           [void Function(
-                  GUserData_Viewer_favourites_anime_edges_node_startDateBuilder)?
+                  GUserData_User_favourites_anime_edges_node_startDateBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_anime_edges_node_startDateBuilder()
+      (new GUserData_User_favourites_anime_edges_node_startDateBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_anime_edges_node_startDate._(
+  _$GUserData_User_favourites_anime_edges_node_startDate._(
       {required this.G__typename, this.year})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(
-        G__typename,
-        r'GUserData_Viewer_favourites_anime_edges_node_startDate',
-        'G__typename');
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GUserData_User_favourites_anime_edges_node_startDate', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_startDate rebuild(
+  GUserData_User_favourites_anime_edges_node_startDate rebuild(
           void Function(
-                  GUserData_Viewer_favourites_anime_edges_node_startDateBuilder)
+                  GUserData_User_favourites_anime_edges_node_startDateBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_startDateBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_anime_edges_node_startDateBuilder()
+  GUserData_User_favourites_anime_edges_node_startDateBuilder toBuilder() =>
+      new GUserData_User_favourites_anime_edges_node_startDateBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_anime_edges_node_startDate &&
+    return other is GUserData_User_favourites_anime_edges_node_startDate &&
         G__typename == other.G__typename &&
         year == other.year;
   }
@@ -6092,18 +6051,18 @@ class _$GUserData_Viewer_favourites_anime_edges_node_startDate
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_anime_edges_node_startDate')
+            r'GUserData_User_favourites_anime_edges_node_startDate')
           ..add('G__typename', G__typename)
           ..add('year', year))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_anime_edges_node_startDateBuilder
+class GUserData_User_favourites_anime_edges_node_startDateBuilder
     implements
-        Builder<GUserData_Viewer_favourites_anime_edges_node_startDate,
-            GUserData_Viewer_favourites_anime_edges_node_startDateBuilder> {
-  _$GUserData_Viewer_favourites_anime_edges_node_startDate? _$v;
+        Builder<GUserData_User_favourites_anime_edges_node_startDate,
+            GUserData_User_favourites_anime_edges_node_startDateBuilder> {
+  _$GUserData_User_favourites_anime_edges_node_startDate? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -6113,12 +6072,12 @@ class GUserData_Viewer_favourites_anime_edges_node_startDateBuilder
   int? get year => _$this._year;
   set year(int? year) => _$this._year = year;
 
-  GUserData_Viewer_favourites_anime_edges_node_startDateBuilder() {
-    GUserData_Viewer_favourites_anime_edges_node_startDate._initializeBuilder(
+  GUserData_User_favourites_anime_edges_node_startDateBuilder() {
+    GUserData_User_favourites_anime_edges_node_startDate._initializeBuilder(
         this);
   }
 
-  GUserData_Viewer_favourites_anime_edges_node_startDateBuilder get _$this {
+  GUserData_User_favourites_anime_edges_node_startDateBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -6129,28 +6088,28 @@ class GUserData_Viewer_favourites_anime_edges_node_startDateBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_anime_edges_node_startDate other) {
+  void replace(GUserData_User_favourites_anime_edges_node_startDate other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_anime_edges_node_startDate;
+    _$v = other as _$GUserData_User_favourites_anime_edges_node_startDate;
   }
 
   @override
   void update(
       void Function(
-              GUserData_Viewer_favourites_anime_edges_node_startDateBuilder)?
+              GUserData_User_favourites_anime_edges_node_startDateBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_anime_edges_node_startDate build() => _build();
+  GUserData_User_favourites_anime_edges_node_startDate build() => _build();
 
-  _$GUserData_Viewer_favourites_anime_edges_node_startDate _build() {
+  _$GUserData_User_favourites_anime_edges_node_startDate _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_anime_edges_node_startDate._(
+        new _$GUserData_User_favourites_anime_edges_node_startDate._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
-                r'GUserData_Viewer_favourites_anime_edges_node_startDate',
+                r'GUserData_User_favourites_anime_edges_node_startDate',
                 'G__typename'),
             year: year);
     replace(_$result);
@@ -6158,37 +6117,36 @@ class GUserData_Viewer_favourites_anime_edges_node_startDateBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_manga
-    extends GUserData_Viewer_favourites_manga {
+class _$GUserData_User_favourites_manga
+    extends GUserData_User_favourites_manga {
   @override
   final String G__typename;
   @override
-  final BuiltList<GUserData_Viewer_favourites_manga_edges?>? edges;
+  final BuiltList<GUserData_User_favourites_manga_edges?>? edges;
 
-  factory _$GUserData_Viewer_favourites_manga(
-          [void Function(GUserData_Viewer_favourites_mangaBuilder)? updates]) =>
-      (new GUserData_Viewer_favourites_mangaBuilder()..update(updates))
-          ._build();
+  factory _$GUserData_User_favourites_manga(
+          [void Function(GUserData_User_favourites_mangaBuilder)? updates]) =>
+      (new GUserData_User_favourites_mangaBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_favourites_manga._({required this.G__typename, this.edges})
+  _$GUserData_User_favourites_manga._({required this.G__typename, this.edges})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_favourites_manga', 'G__typename');
+        G__typename, r'GUserData_User_favourites_manga', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_manga rebuild(
-          void Function(GUserData_Viewer_favourites_mangaBuilder) updates) =>
+  GUserData_User_favourites_manga rebuild(
+          void Function(GUserData_User_favourites_mangaBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_mangaBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_mangaBuilder()..replace(this);
+  GUserData_User_favourites_mangaBuilder toBuilder() =>
+      new GUserData_User_favourites_mangaBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_manga &&
+    return other is GUserData_User_favourites_manga &&
         G__typename == other.G__typename &&
         edges == other.edges;
   }
@@ -6204,35 +6162,35 @@ class _$GUserData_Viewer_favourites_manga
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_favourites_manga')
+    return (newBuiltValueToStringHelper(r'GUserData_User_favourites_manga')
           ..add('G__typename', G__typename)
           ..add('edges', edges))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_mangaBuilder
+class GUserData_User_favourites_mangaBuilder
     implements
-        Builder<GUserData_Viewer_favourites_manga,
-            GUserData_Viewer_favourites_mangaBuilder> {
-  _$GUserData_Viewer_favourites_manga? _$v;
+        Builder<GUserData_User_favourites_manga,
+            GUserData_User_favourites_mangaBuilder> {
+  _$GUserData_User_favourites_manga? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  ListBuilder<GUserData_Viewer_favourites_manga_edges?>? _edges;
-  ListBuilder<GUserData_Viewer_favourites_manga_edges?> get edges =>
+  ListBuilder<GUserData_User_favourites_manga_edges?>? _edges;
+  ListBuilder<GUserData_User_favourites_manga_edges?> get edges =>
       _$this._edges ??=
-          new ListBuilder<GUserData_Viewer_favourites_manga_edges?>();
-  set edges(ListBuilder<GUserData_Viewer_favourites_manga_edges?>? edges) =>
+          new ListBuilder<GUserData_User_favourites_manga_edges?>();
+  set edges(ListBuilder<GUserData_User_favourites_manga_edges?>? edges) =>
       _$this._edges = edges;
 
-  GUserData_Viewer_favourites_mangaBuilder() {
-    GUserData_Viewer_favourites_manga._initializeBuilder(this);
+  GUserData_User_favourites_mangaBuilder() {
+    GUserData_User_favourites_manga._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_mangaBuilder get _$this {
+  GUserData_User_favourites_mangaBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -6243,27 +6201,26 @@ class GUserData_Viewer_favourites_mangaBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_manga other) {
+  void replace(GUserData_User_favourites_manga other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_manga;
+    _$v = other as _$GUserData_User_favourites_manga;
   }
 
   @override
-  void update(
-      void Function(GUserData_Viewer_favourites_mangaBuilder)? updates) {
+  void update(void Function(GUserData_User_favourites_mangaBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_manga build() => _build();
+  GUserData_User_favourites_manga build() => _build();
 
-  _$GUserData_Viewer_favourites_manga _build() {
-    _$GUserData_Viewer_favourites_manga _$result;
+  _$GUserData_User_favourites_manga _build() {
+    _$GUserData_User_favourites_manga _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_manga._(
+          new _$GUserData_User_favourites_manga._(
               G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  r'GUserData_Viewer_favourites_manga', 'G__typename'),
+                  r'GUserData_User_favourites_manga', 'G__typename'),
               edges: _edges?.build());
     } catch (_) {
       late String _$failedField;
@@ -6272,7 +6229,7 @@ class GUserData_Viewer_favourites_mangaBuilder
         _edges?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_manga', _$failedField, e.toString());
+            r'GUserData_User_favourites_manga', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -6281,42 +6238,42 @@ class GUserData_Viewer_favourites_mangaBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_manga_edges
-    extends GUserData_Viewer_favourites_manga_edges {
+class _$GUserData_User_favourites_manga_edges
+    extends GUserData_User_favourites_manga_edges {
   @override
   final String G__typename;
   @override
   final int? favouriteOrder;
   @override
-  final GUserData_Viewer_favourites_manga_edges_node? node;
+  final GUserData_User_favourites_manga_edges_node? node;
 
-  factory _$GUserData_Viewer_favourites_manga_edges(
-          [void Function(GUserData_Viewer_favourites_manga_edgesBuilder)?
+  factory _$GUserData_User_favourites_manga_edges(
+          [void Function(GUserData_User_favourites_manga_edgesBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_manga_edgesBuilder()..update(updates))
+      (new GUserData_User_favourites_manga_edgesBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_manga_edges._(
+  _$GUserData_User_favourites_manga_edges._(
       {required this.G__typename, this.favouriteOrder, this.node})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_favourites_manga_edges', 'G__typename');
+        G__typename, r'GUserData_User_favourites_manga_edges', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges rebuild(
-          void Function(GUserData_Viewer_favourites_manga_edgesBuilder)
+  GUserData_User_favourites_manga_edges rebuild(
+          void Function(GUserData_User_favourites_manga_edgesBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_manga_edgesBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_manga_edgesBuilder()..replace(this);
+  GUserData_User_favourites_manga_edgesBuilder toBuilder() =>
+      new GUserData_User_favourites_manga_edgesBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_manga_edges &&
+    return other is GUserData_User_favourites_manga_edges &&
         G__typename == other.G__typename &&
         favouriteOrder == other.favouriteOrder &&
         node == other.node;
@@ -6335,7 +6292,7 @@ class _$GUserData_Viewer_favourites_manga_edges
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_manga_edges')
+            r'GUserData_User_favourites_manga_edges')
           ..add('G__typename', G__typename)
           ..add('favouriteOrder', favouriteOrder)
           ..add('node', node))
@@ -6343,11 +6300,11 @@ class _$GUserData_Viewer_favourites_manga_edges
   }
 }
 
-class GUserData_Viewer_favourites_manga_edgesBuilder
+class GUserData_User_favourites_manga_edgesBuilder
     implements
-        Builder<GUserData_Viewer_favourites_manga_edges,
-            GUserData_Viewer_favourites_manga_edgesBuilder> {
-  _$GUserData_Viewer_favourites_manga_edges? _$v;
+        Builder<GUserData_User_favourites_manga_edges,
+            GUserData_User_favourites_manga_edgesBuilder> {
+  _$GUserData_User_favourites_manga_edges? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -6358,18 +6315,17 @@ class GUserData_Viewer_favourites_manga_edgesBuilder
   set favouriteOrder(int? favouriteOrder) =>
       _$this._favouriteOrder = favouriteOrder;
 
-  GUserData_Viewer_favourites_manga_edges_nodeBuilder? _node;
-  GUserData_Viewer_favourites_manga_edges_nodeBuilder get node =>
-      _$this._node ??=
-          new GUserData_Viewer_favourites_manga_edges_nodeBuilder();
-  set node(GUserData_Viewer_favourites_manga_edges_nodeBuilder? node) =>
+  GUserData_User_favourites_manga_edges_nodeBuilder? _node;
+  GUserData_User_favourites_manga_edges_nodeBuilder get node =>
+      _$this._node ??= new GUserData_User_favourites_manga_edges_nodeBuilder();
+  set node(GUserData_User_favourites_manga_edges_nodeBuilder? node) =>
       _$this._node = node;
 
-  GUserData_Viewer_favourites_manga_edgesBuilder() {
-    GUserData_Viewer_favourites_manga_edges._initializeBuilder(this);
+  GUserData_User_favourites_manga_edgesBuilder() {
+    GUserData_User_favourites_manga_edges._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_manga_edgesBuilder get _$this {
+  GUserData_User_favourites_manga_edgesBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -6381,27 +6337,27 @@ class GUserData_Viewer_favourites_manga_edgesBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_manga_edges other) {
+  void replace(GUserData_User_favourites_manga_edges other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_manga_edges;
+    _$v = other as _$GUserData_User_favourites_manga_edges;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_manga_edgesBuilder)? updates) {
+      void Function(GUserData_User_favourites_manga_edgesBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges build() => _build();
+  GUserData_User_favourites_manga_edges build() => _build();
 
-  _$GUserData_Viewer_favourites_manga_edges _build() {
-    _$GUserData_Viewer_favourites_manga_edges _$result;
+  _$GUserData_User_favourites_manga_edges _build() {
+    _$GUserData_User_favourites_manga_edges _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_manga_edges._(
+          new _$GUserData_User_favourites_manga_edges._(
               G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  r'GUserData_Viewer_favourites_manga_edges', 'G__typename'),
+                  r'GUserData_User_favourites_manga_edges', 'G__typename'),
               favouriteOrder: favouriteOrder,
               node: _node?.build());
     } catch (_) {
@@ -6411,7 +6367,7 @@ class GUserData_Viewer_favourites_manga_edgesBuilder
         _node?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_manga_edges',
+            r'GUserData_User_favourites_manga_edges',
             _$failedField,
             e.toString());
       }
@@ -6422,8 +6378,8 @@ class GUserData_Viewer_favourites_manga_edgesBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_manga_edges_node
-    extends GUserData_Viewer_favourites_manga_edges_node {
+class _$GUserData_User_favourites_manga_edges_node
+    extends GUserData_User_favourites_manga_edges_node {
   @override
   final String G__typename;
   @override
@@ -6439,20 +6395,19 @@ class _$GUserData_Viewer_favourites_manga_edges_node
   @override
   final String? bannerImage;
   @override
-  final GUserData_Viewer_favourites_manga_edges_node_title? title;
+  final GUserData_User_favourites_manga_edges_node_title? title;
   @override
-  final GUserData_Viewer_favourites_manga_edges_node_coverImage? coverImage;
+  final GUserData_User_favourites_manga_edges_node_coverImage? coverImage;
   @override
-  final GUserData_Viewer_favourites_manga_edges_node_startDate? startDate;
+  final GUserData_User_favourites_manga_edges_node_startDate? startDate;
 
-  factory _$GUserData_Viewer_favourites_manga_edges_node(
-          [void Function(GUserData_Viewer_favourites_manga_edges_nodeBuilder)?
+  factory _$GUserData_User_favourites_manga_edges_node(
+          [void Function(GUserData_User_favourites_manga_edges_nodeBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_manga_edges_nodeBuilder()
-            ..update(updates))
+      (new GUserData_User_favourites_manga_edges_nodeBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_manga_edges_node._(
+  _$GUserData_User_favourites_manga_edges_node._(
       {required this.G__typename,
       required this.id,
       this.type,
@@ -6465,25 +6420,25 @@ class _$GUserData_Viewer_favourites_manga_edges_node
       this.startDate})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_manga_edges_node', 'G__typename');
+        r'GUserData_User_favourites_manga_edges_node', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
-        id, r'GUserData_Viewer_favourites_manga_edges_node', 'id');
+        id, r'GUserData_User_favourites_manga_edges_node', 'id');
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node rebuild(
-          void Function(GUserData_Viewer_favourites_manga_edges_nodeBuilder)
+  GUserData_User_favourites_manga_edges_node rebuild(
+          void Function(GUserData_User_favourites_manga_edges_nodeBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_manga_edges_nodeBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_manga_edges_nodeBuilder()..replace(this);
+  GUserData_User_favourites_manga_edges_nodeBuilder toBuilder() =>
+      new GUserData_User_favourites_manga_edges_nodeBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_manga_edges_node &&
+    return other is GUserData_User_favourites_manga_edges_node &&
         G__typename == other.G__typename &&
         id == other.id &&
         type == other.type &&
@@ -6516,7 +6471,7 @@ class _$GUserData_Viewer_favourites_manga_edges_node
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_manga_edges_node')
+            r'GUserData_User_favourites_manga_edges_node')
           ..add('G__typename', G__typename)
           ..add('id', id)
           ..add('type', type)
@@ -6531,11 +6486,11 @@ class _$GUserData_Viewer_favourites_manga_edges_node
   }
 }
 
-class GUserData_Viewer_favourites_manga_edges_nodeBuilder
+class GUserData_User_favourites_manga_edges_nodeBuilder
     implements
-        Builder<GUserData_Viewer_favourites_manga_edges_node,
-            GUserData_Viewer_favourites_manga_edges_nodeBuilder> {
-  _$GUserData_Viewer_favourites_manga_edges_node? _$v;
+        Builder<GUserData_User_favourites_manga_edges_node,
+            GUserData_User_favourites_manga_edges_nodeBuilder> {
+  _$GUserData_User_favourites_manga_edges_node? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -6565,36 +6520,36 @@ class GUserData_Viewer_favourites_manga_edges_nodeBuilder
   String? get bannerImage => _$this._bannerImage;
   set bannerImage(String? bannerImage) => _$this._bannerImage = bannerImage;
 
-  GUserData_Viewer_favourites_manga_edges_node_titleBuilder? _title;
-  GUserData_Viewer_favourites_manga_edges_node_titleBuilder get title =>
+  GUserData_User_favourites_manga_edges_node_titleBuilder? _title;
+  GUserData_User_favourites_manga_edges_node_titleBuilder get title =>
       _$this._title ??=
-          new GUserData_Viewer_favourites_manga_edges_node_titleBuilder();
-  set title(GUserData_Viewer_favourites_manga_edges_node_titleBuilder? title) =>
+          new GUserData_User_favourites_manga_edges_node_titleBuilder();
+  set title(GUserData_User_favourites_manga_edges_node_titleBuilder? title) =>
       _$this._title = title;
 
-  GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder? _coverImage;
-  GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder
-      get coverImage => _$this._coverImage ??=
-          new GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder();
+  GUserData_User_favourites_manga_edges_node_coverImageBuilder? _coverImage;
+  GUserData_User_favourites_manga_edges_node_coverImageBuilder get coverImage =>
+      _$this._coverImage ??=
+          new GUserData_User_favourites_manga_edges_node_coverImageBuilder();
   set coverImage(
-          GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder?
+          GUserData_User_favourites_manga_edges_node_coverImageBuilder?
               coverImage) =>
       _$this._coverImage = coverImage;
 
-  GUserData_Viewer_favourites_manga_edges_node_startDateBuilder? _startDate;
-  GUserData_Viewer_favourites_manga_edges_node_startDateBuilder get startDate =>
+  GUserData_User_favourites_manga_edges_node_startDateBuilder? _startDate;
+  GUserData_User_favourites_manga_edges_node_startDateBuilder get startDate =>
       _$this._startDate ??=
-          new GUserData_Viewer_favourites_manga_edges_node_startDateBuilder();
+          new GUserData_User_favourites_manga_edges_node_startDateBuilder();
   set startDate(
-          GUserData_Viewer_favourites_manga_edges_node_startDateBuilder?
+          GUserData_User_favourites_manga_edges_node_startDateBuilder?
               startDate) =>
       _$this._startDate = startDate;
 
-  GUserData_Viewer_favourites_manga_edges_nodeBuilder() {
-    GUserData_Viewer_favourites_manga_edges_node._initializeBuilder(this);
+  GUserData_User_favourites_manga_edges_nodeBuilder() {
+    GUserData_User_favourites_manga_edges_node._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_manga_edges_nodeBuilder get _$this {
+  GUserData_User_favourites_manga_edges_nodeBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -6613,32 +6568,30 @@ class GUserData_Viewer_favourites_manga_edges_nodeBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_manga_edges_node other) {
+  void replace(GUserData_User_favourites_manga_edges_node other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_manga_edges_node;
+    _$v = other as _$GUserData_User_favourites_manga_edges_node;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_manga_edges_nodeBuilder)?
+      void Function(GUserData_User_favourites_manga_edges_nodeBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node build() => _build();
+  GUserData_User_favourites_manga_edges_node build() => _build();
 
-  _$GUserData_Viewer_favourites_manga_edges_node _build() {
-    _$GUserData_Viewer_favourites_manga_edges_node _$result;
+  _$GUserData_User_favourites_manga_edges_node _build() {
+    _$GUserData_User_favourites_manga_edges_node _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_manga_edges_node._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename,
-                  r'GUserData_Viewer_favourites_manga_edges_node',
-                  'G__typename'),
+          new _$GUserData_User_favourites_manga_edges_node._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                  r'GUserData_User_favourites_manga_edges_node', 'G__typename'),
               id: BuiltValueNullFieldError.checkNotNull(
-                  id, r'GUserData_Viewer_favourites_manga_edges_node', 'id'),
+                  id, r'GUserData_User_favourites_manga_edges_node', 'id'),
               type: type,
               status: status,
               format: format,
@@ -6658,7 +6611,7 @@ class GUserData_Viewer_favourites_manga_edges_nodeBuilder
         _startDate?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_manga_edges_node',
+            r'GUserData_User_favourites_manga_edges_node',
             _$failedField,
             e.toString());
       }
@@ -6669,44 +6622,43 @@ class GUserData_Viewer_favourites_manga_edges_nodeBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_manga_edges_node_title
-    extends GUserData_Viewer_favourites_manga_edges_node_title {
+class _$GUserData_User_favourites_manga_edges_node_title
+    extends GUserData_User_favourites_manga_edges_node_title {
   @override
   final String G__typename;
   @override
   final String? userPreferred;
 
-  factory _$GUserData_Viewer_favourites_manga_edges_node_title(
+  factory _$GUserData_User_favourites_manga_edges_node_title(
           [void Function(
-                  GUserData_Viewer_favourites_manga_edges_node_titleBuilder)?
+                  GUserData_User_favourites_manga_edges_node_titleBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_manga_edges_node_titleBuilder()
+      (new GUserData_User_favourites_manga_edges_node_titleBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_manga_edges_node_title._(
+  _$GUserData_User_favourites_manga_edges_node_title._(
       {required this.G__typename, this.userPreferred})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_manga_edges_node_title', 'G__typename');
+        r'GUserData_User_favourites_manga_edges_node_title', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_title rebuild(
-          void Function(
-                  GUserData_Viewer_favourites_manga_edges_node_titleBuilder)
+  GUserData_User_favourites_manga_edges_node_title rebuild(
+          void Function(GUserData_User_favourites_manga_edges_node_titleBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_titleBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_manga_edges_node_titleBuilder()
+  GUserData_User_favourites_manga_edges_node_titleBuilder toBuilder() =>
+      new GUserData_User_favourites_manga_edges_node_titleBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_manga_edges_node_title &&
+    return other is GUserData_User_favourites_manga_edges_node_title &&
         G__typename == other.G__typename &&
         userPreferred == other.userPreferred;
   }
@@ -6723,18 +6675,18 @@ class _$GUserData_Viewer_favourites_manga_edges_node_title
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_manga_edges_node_title')
+            r'GUserData_User_favourites_manga_edges_node_title')
           ..add('G__typename', G__typename)
           ..add('userPreferred', userPreferred))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_manga_edges_node_titleBuilder
+class GUserData_User_favourites_manga_edges_node_titleBuilder
     implements
-        Builder<GUserData_Viewer_favourites_manga_edges_node_title,
-            GUserData_Viewer_favourites_manga_edges_node_titleBuilder> {
-  _$GUserData_Viewer_favourites_manga_edges_node_title? _$v;
+        Builder<GUserData_User_favourites_manga_edges_node_title,
+            GUserData_User_favourites_manga_edges_node_titleBuilder> {
+  _$GUserData_User_favourites_manga_edges_node_title? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -6745,11 +6697,11 @@ class GUserData_Viewer_favourites_manga_edges_node_titleBuilder
   set userPreferred(String? userPreferred) =>
       _$this._userPreferred = userPreferred;
 
-  GUserData_Viewer_favourites_manga_edges_node_titleBuilder() {
-    GUserData_Viewer_favourites_manga_edges_node_title._initializeBuilder(this);
+  GUserData_User_favourites_manga_edges_node_titleBuilder() {
+    GUserData_User_favourites_manga_edges_node_title._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_manga_edges_node_titleBuilder get _$this {
+  GUserData_User_favourites_manga_edges_node_titleBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -6760,27 +6712,27 @@ class GUserData_Viewer_favourites_manga_edges_node_titleBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_manga_edges_node_title other) {
+  void replace(GUserData_User_favourites_manga_edges_node_title other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_manga_edges_node_title;
+    _$v = other as _$GUserData_User_favourites_manga_edges_node_title;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_manga_edges_node_titleBuilder)?
+      void Function(GUserData_User_favourites_manga_edges_node_titleBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_title build() => _build();
+  GUserData_User_favourites_manga_edges_node_title build() => _build();
 
-  _$GUserData_Viewer_favourites_manga_edges_node_title _build() {
+  _$GUserData_User_favourites_manga_edges_node_title _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_manga_edges_node_title._(
+        new _$GUserData_User_favourites_manga_edges_node_title._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
-                r'GUserData_Viewer_favourites_manga_edges_node_title',
+                r'GUserData_User_favourites_manga_edges_node_title',
                 'G__typename'),
             userPreferred: userPreferred);
     replace(_$result);
@@ -6788,46 +6740,46 @@ class GUserData_Viewer_favourites_manga_edges_node_titleBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_manga_edges_node_coverImage
-    extends GUserData_Viewer_favourites_manga_edges_node_coverImage {
+class _$GUserData_User_favourites_manga_edges_node_coverImage
+    extends GUserData_User_favourites_manga_edges_node_coverImage {
   @override
   final String G__typename;
   @override
   final String? large;
 
-  factory _$GUserData_Viewer_favourites_manga_edges_node_coverImage(
+  factory _$GUserData_User_favourites_manga_edges_node_coverImage(
           [void Function(
-                  GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder)?
+                  GUserData_User_favourites_manga_edges_node_coverImageBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder()
+      (new GUserData_User_favourites_manga_edges_node_coverImageBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_manga_edges_node_coverImage._(
+  _$GUserData_User_favourites_manga_edges_node_coverImage._(
       {required this.G__typename, this.large})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename,
-        r'GUserData_Viewer_favourites_manga_edges_node_coverImage',
+        r'GUserData_User_favourites_manga_edges_node_coverImage',
         'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_coverImage rebuild(
+  GUserData_User_favourites_manga_edges_node_coverImage rebuild(
           void Function(
-                  GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder)
+                  GUserData_User_favourites_manga_edges_node_coverImageBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder()
+  GUserData_User_favourites_manga_edges_node_coverImageBuilder toBuilder() =>
+      new GUserData_User_favourites_manga_edges_node_coverImageBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_manga_edges_node_coverImage &&
+    return other is GUserData_User_favourites_manga_edges_node_coverImage &&
         G__typename == other.G__typename &&
         large == other.large;
   }
@@ -6844,18 +6796,18 @@ class _$GUserData_Viewer_favourites_manga_edges_node_coverImage
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_manga_edges_node_coverImage')
+            r'GUserData_User_favourites_manga_edges_node_coverImage')
           ..add('G__typename', G__typename)
           ..add('large', large))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder
+class GUserData_User_favourites_manga_edges_node_coverImageBuilder
     implements
-        Builder<GUserData_Viewer_favourites_manga_edges_node_coverImage,
-            GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder> {
-  _$GUserData_Viewer_favourites_manga_edges_node_coverImage? _$v;
+        Builder<GUserData_User_favourites_manga_edges_node_coverImage,
+            GUserData_User_favourites_manga_edges_node_coverImageBuilder> {
+  _$GUserData_User_favourites_manga_edges_node_coverImage? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -6865,12 +6817,12 @@ class GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder
   String? get large => _$this._large;
   set large(String? large) => _$this._large = large;
 
-  GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder() {
-    GUserData_Viewer_favourites_manga_edges_node_coverImage._initializeBuilder(
+  GUserData_User_favourites_manga_edges_node_coverImageBuilder() {
+    GUserData_User_favourites_manga_edges_node_coverImage._initializeBuilder(
         this);
   }
 
-  GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder get _$this {
+  GUserData_User_favourites_manga_edges_node_coverImageBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -6881,28 +6833,28 @@ class GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_manga_edges_node_coverImage other) {
+  void replace(GUserData_User_favourites_manga_edges_node_coverImage other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_manga_edges_node_coverImage;
+    _$v = other as _$GUserData_User_favourites_manga_edges_node_coverImage;
   }
 
   @override
   void update(
       void Function(
-              GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder)?
+              GUserData_User_favourites_manga_edges_node_coverImageBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_coverImage build() => _build();
+  GUserData_User_favourites_manga_edges_node_coverImage build() => _build();
 
-  _$GUserData_Viewer_favourites_manga_edges_node_coverImage _build() {
+  _$GUserData_User_favourites_manga_edges_node_coverImage _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_manga_edges_node_coverImage._(
+        new _$GUserData_User_favourites_manga_edges_node_coverImage._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
-                r'GUserData_Viewer_favourites_manga_edges_node_coverImage',
+                r'GUserData_User_favourites_manga_edges_node_coverImage',
                 'G__typename'),
             large: large);
     replace(_$result);
@@ -6910,46 +6862,44 @@ class GUserData_Viewer_favourites_manga_edges_node_coverImageBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_manga_edges_node_startDate
-    extends GUserData_Viewer_favourites_manga_edges_node_startDate {
+class _$GUserData_User_favourites_manga_edges_node_startDate
+    extends GUserData_User_favourites_manga_edges_node_startDate {
   @override
   final String G__typename;
   @override
   final int? year;
 
-  factory _$GUserData_Viewer_favourites_manga_edges_node_startDate(
+  factory _$GUserData_User_favourites_manga_edges_node_startDate(
           [void Function(
-                  GUserData_Viewer_favourites_manga_edges_node_startDateBuilder)?
+                  GUserData_User_favourites_manga_edges_node_startDateBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_manga_edges_node_startDateBuilder()
+      (new GUserData_User_favourites_manga_edges_node_startDateBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_manga_edges_node_startDate._(
+  _$GUserData_User_favourites_manga_edges_node_startDate._(
       {required this.G__typename, this.year})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(
-        G__typename,
-        r'GUserData_Viewer_favourites_manga_edges_node_startDate',
-        'G__typename');
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GUserData_User_favourites_manga_edges_node_startDate', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_startDate rebuild(
+  GUserData_User_favourites_manga_edges_node_startDate rebuild(
           void Function(
-                  GUserData_Viewer_favourites_manga_edges_node_startDateBuilder)
+                  GUserData_User_favourites_manga_edges_node_startDateBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_startDateBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_manga_edges_node_startDateBuilder()
+  GUserData_User_favourites_manga_edges_node_startDateBuilder toBuilder() =>
+      new GUserData_User_favourites_manga_edges_node_startDateBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_manga_edges_node_startDate &&
+    return other is GUserData_User_favourites_manga_edges_node_startDate &&
         G__typename == other.G__typename &&
         year == other.year;
   }
@@ -6966,18 +6916,18 @@ class _$GUserData_Viewer_favourites_manga_edges_node_startDate
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_manga_edges_node_startDate')
+            r'GUserData_User_favourites_manga_edges_node_startDate')
           ..add('G__typename', G__typename)
           ..add('year', year))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_manga_edges_node_startDateBuilder
+class GUserData_User_favourites_manga_edges_node_startDateBuilder
     implements
-        Builder<GUserData_Viewer_favourites_manga_edges_node_startDate,
-            GUserData_Viewer_favourites_manga_edges_node_startDateBuilder> {
-  _$GUserData_Viewer_favourites_manga_edges_node_startDate? _$v;
+        Builder<GUserData_User_favourites_manga_edges_node_startDate,
+            GUserData_User_favourites_manga_edges_node_startDateBuilder> {
+  _$GUserData_User_favourites_manga_edges_node_startDate? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -6987,12 +6937,12 @@ class GUserData_Viewer_favourites_manga_edges_node_startDateBuilder
   int? get year => _$this._year;
   set year(int? year) => _$this._year = year;
 
-  GUserData_Viewer_favourites_manga_edges_node_startDateBuilder() {
-    GUserData_Viewer_favourites_manga_edges_node_startDate._initializeBuilder(
+  GUserData_User_favourites_manga_edges_node_startDateBuilder() {
+    GUserData_User_favourites_manga_edges_node_startDate._initializeBuilder(
         this);
   }
 
-  GUserData_Viewer_favourites_manga_edges_node_startDateBuilder get _$this {
+  GUserData_User_favourites_manga_edges_node_startDateBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -7003,28 +6953,28 @@ class GUserData_Viewer_favourites_manga_edges_node_startDateBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_manga_edges_node_startDate other) {
+  void replace(GUserData_User_favourites_manga_edges_node_startDate other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_manga_edges_node_startDate;
+    _$v = other as _$GUserData_User_favourites_manga_edges_node_startDate;
   }
 
   @override
   void update(
       void Function(
-              GUserData_Viewer_favourites_manga_edges_node_startDateBuilder)?
+              GUserData_User_favourites_manga_edges_node_startDateBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_manga_edges_node_startDate build() => _build();
+  GUserData_User_favourites_manga_edges_node_startDate build() => _build();
 
-  _$GUserData_Viewer_favourites_manga_edges_node_startDate _build() {
+  _$GUserData_User_favourites_manga_edges_node_startDate _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_manga_edges_node_startDate._(
+        new _$GUserData_User_favourites_manga_edges_node_startDate._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
-                r'GUserData_Viewer_favourites_manga_edges_node_startDate',
+                r'GUserData_User_favourites_manga_edges_node_startDate',
                 'G__typename'),
             year: year);
     replace(_$result);
@@ -7032,40 +6982,39 @@ class GUserData_Viewer_favourites_manga_edges_node_startDateBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_characters
-    extends GUserData_Viewer_favourites_characters {
+class _$GUserData_User_favourites_characters
+    extends GUserData_User_favourites_characters {
   @override
   final String G__typename;
   @override
-  final BuiltList<GUserData_Viewer_favourites_characters_edges?>? edges;
+  final BuiltList<GUserData_User_favourites_characters_edges?>? edges;
 
-  factory _$GUserData_Viewer_favourites_characters(
-          [void Function(GUserData_Viewer_favourites_charactersBuilder)?
+  factory _$GUserData_User_favourites_characters(
+          [void Function(GUserData_User_favourites_charactersBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_charactersBuilder()..update(updates))
+      (new GUserData_User_favourites_charactersBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_characters._(
+  _$GUserData_User_favourites_characters._(
       {required this.G__typename, this.edges})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_favourites_characters', 'G__typename');
+        G__typename, r'GUserData_User_favourites_characters', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_characters rebuild(
-          void Function(GUserData_Viewer_favourites_charactersBuilder)
-              updates) =>
+  GUserData_User_favourites_characters rebuild(
+          void Function(GUserData_User_favourites_charactersBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_charactersBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_charactersBuilder()..replace(this);
+  GUserData_User_favourites_charactersBuilder toBuilder() =>
+      new GUserData_User_favourites_charactersBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_characters &&
+    return other is GUserData_User_favourites_characters &&
         G__typename == other.G__typename &&
         edges == other.edges;
   }
@@ -7081,37 +7030,35 @@ class _$GUserData_Viewer_favourites_characters
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_characters')
+    return (newBuiltValueToStringHelper(r'GUserData_User_favourites_characters')
           ..add('G__typename', G__typename)
           ..add('edges', edges))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_charactersBuilder
+class GUserData_User_favourites_charactersBuilder
     implements
-        Builder<GUserData_Viewer_favourites_characters,
-            GUserData_Viewer_favourites_charactersBuilder> {
-  _$GUserData_Viewer_favourites_characters? _$v;
+        Builder<GUserData_User_favourites_characters,
+            GUserData_User_favourites_charactersBuilder> {
+  _$GUserData_User_favourites_characters? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  ListBuilder<GUserData_Viewer_favourites_characters_edges?>? _edges;
-  ListBuilder<GUserData_Viewer_favourites_characters_edges?> get edges =>
+  ListBuilder<GUserData_User_favourites_characters_edges?>? _edges;
+  ListBuilder<GUserData_User_favourites_characters_edges?> get edges =>
       _$this._edges ??=
-          new ListBuilder<GUserData_Viewer_favourites_characters_edges?>();
-  set edges(
-          ListBuilder<GUserData_Viewer_favourites_characters_edges?>? edges) =>
+          new ListBuilder<GUserData_User_favourites_characters_edges?>();
+  set edges(ListBuilder<GUserData_User_favourites_characters_edges?>? edges) =>
       _$this._edges = edges;
 
-  GUserData_Viewer_favourites_charactersBuilder() {
-    GUserData_Viewer_favourites_characters._initializeBuilder(this);
+  GUserData_User_favourites_charactersBuilder() {
+    GUserData_User_favourites_characters._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_charactersBuilder get _$this {
+  GUserData_User_favourites_charactersBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -7122,27 +7069,27 @@ class GUserData_Viewer_favourites_charactersBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_characters other) {
+  void replace(GUserData_User_favourites_characters other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_characters;
+    _$v = other as _$GUserData_User_favourites_characters;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_charactersBuilder)? updates) {
+      void Function(GUserData_User_favourites_charactersBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_characters build() => _build();
+  GUserData_User_favourites_characters build() => _build();
 
-  _$GUserData_Viewer_favourites_characters _build() {
-    _$GUserData_Viewer_favourites_characters _$result;
+  _$GUserData_User_favourites_characters _build() {
+    _$GUserData_User_favourites_characters _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_characters._(
+          new _$GUserData_User_favourites_characters._(
               G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  r'GUserData_Viewer_favourites_characters', 'G__typename'),
+                  r'GUserData_User_favourites_characters', 'G__typename'),
               edges: _edges?.build());
     } catch (_) {
       late String _$failedField;
@@ -7151,7 +7098,7 @@ class GUserData_Viewer_favourites_charactersBuilder
         _edges?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_characters',
+            r'GUserData_User_favourites_characters',
             _$failedField,
             e.toString());
       }
@@ -7162,43 +7109,42 @@ class GUserData_Viewer_favourites_charactersBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_characters_edges
-    extends GUserData_Viewer_favourites_characters_edges {
+class _$GUserData_User_favourites_characters_edges
+    extends GUserData_User_favourites_characters_edges {
   @override
   final String G__typename;
   @override
   final int? favouriteOrder;
   @override
-  final GUserData_Viewer_favourites_characters_edges_node? node;
+  final GUserData_User_favourites_characters_edges_node? node;
 
-  factory _$GUserData_Viewer_favourites_characters_edges(
-          [void Function(GUserData_Viewer_favourites_characters_edgesBuilder)?
+  factory _$GUserData_User_favourites_characters_edges(
+          [void Function(GUserData_User_favourites_characters_edgesBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_characters_edgesBuilder()
-            ..update(updates))
+      (new GUserData_User_favourites_characters_edgesBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_characters_edges._(
+  _$GUserData_User_favourites_characters_edges._(
       {required this.G__typename, this.favouriteOrder, this.node})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_characters_edges', 'G__typename');
+        r'GUserData_User_favourites_characters_edges', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges rebuild(
-          void Function(GUserData_Viewer_favourites_characters_edgesBuilder)
+  GUserData_User_favourites_characters_edges rebuild(
+          void Function(GUserData_User_favourites_characters_edgesBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_characters_edgesBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_characters_edgesBuilder()..replace(this);
+  GUserData_User_favourites_characters_edgesBuilder toBuilder() =>
+      new GUserData_User_favourites_characters_edgesBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_characters_edges &&
+    return other is GUserData_User_favourites_characters_edges &&
         G__typename == other.G__typename &&
         favouriteOrder == other.favouriteOrder &&
         node == other.node;
@@ -7217,7 +7163,7 @@ class _$GUserData_Viewer_favourites_characters_edges
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_characters_edges')
+            r'GUserData_User_favourites_characters_edges')
           ..add('G__typename', G__typename)
           ..add('favouriteOrder', favouriteOrder)
           ..add('node', node))
@@ -7225,11 +7171,11 @@ class _$GUserData_Viewer_favourites_characters_edges
   }
 }
 
-class GUserData_Viewer_favourites_characters_edgesBuilder
+class GUserData_User_favourites_characters_edgesBuilder
     implements
-        Builder<GUserData_Viewer_favourites_characters_edges,
-            GUserData_Viewer_favourites_characters_edgesBuilder> {
-  _$GUserData_Viewer_favourites_characters_edges? _$v;
+        Builder<GUserData_User_favourites_characters_edges,
+            GUserData_User_favourites_characters_edgesBuilder> {
+  _$GUserData_User_favourites_characters_edges? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -7240,18 +7186,18 @@ class GUserData_Viewer_favourites_characters_edgesBuilder
   set favouriteOrder(int? favouriteOrder) =>
       _$this._favouriteOrder = favouriteOrder;
 
-  GUserData_Viewer_favourites_characters_edges_nodeBuilder? _node;
-  GUserData_Viewer_favourites_characters_edges_nodeBuilder get node =>
+  GUserData_User_favourites_characters_edges_nodeBuilder? _node;
+  GUserData_User_favourites_characters_edges_nodeBuilder get node =>
       _$this._node ??=
-          new GUserData_Viewer_favourites_characters_edges_nodeBuilder();
-  set node(GUserData_Viewer_favourites_characters_edges_nodeBuilder? node) =>
+          new GUserData_User_favourites_characters_edges_nodeBuilder();
+  set node(GUserData_User_favourites_characters_edges_nodeBuilder? node) =>
       _$this._node = node;
 
-  GUserData_Viewer_favourites_characters_edgesBuilder() {
-    GUserData_Viewer_favourites_characters_edges._initializeBuilder(this);
+  GUserData_User_favourites_characters_edgesBuilder() {
+    GUserData_User_favourites_characters_edges._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_characters_edgesBuilder get _$this {
+  GUserData_User_favourites_characters_edgesBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -7263,30 +7209,28 @@ class GUserData_Viewer_favourites_characters_edgesBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_characters_edges other) {
+  void replace(GUserData_User_favourites_characters_edges other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_characters_edges;
+    _$v = other as _$GUserData_User_favourites_characters_edges;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_characters_edgesBuilder)?
+      void Function(GUserData_User_favourites_characters_edgesBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges build() => _build();
+  GUserData_User_favourites_characters_edges build() => _build();
 
-  _$GUserData_Viewer_favourites_characters_edges _build() {
-    _$GUserData_Viewer_favourites_characters_edges _$result;
+  _$GUserData_User_favourites_characters_edges _build() {
+    _$GUserData_User_favourites_characters_edges _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_characters_edges._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename,
-                  r'GUserData_Viewer_favourites_characters_edges',
-                  'G__typename'),
+          new _$GUserData_User_favourites_characters_edges._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                  r'GUserData_User_favourites_characters_edges', 'G__typename'),
               favouriteOrder: favouriteOrder,
               node: _node?.build());
     } catch (_) {
@@ -7296,7 +7240,7 @@ class GUserData_Viewer_favourites_characters_edgesBuilder
         _node?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_characters_edges',
+            r'GUserData_User_favourites_characters_edges',
             _$failedField,
             e.toString());
       }
@@ -7307,50 +7251,49 @@ class GUserData_Viewer_favourites_characters_edgesBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_characters_edges_node
-    extends GUserData_Viewer_favourites_characters_edges_node {
+class _$GUserData_User_favourites_characters_edges_node
+    extends GUserData_User_favourites_characters_edges_node {
   @override
   final String G__typename;
   @override
   final int id;
   @override
-  final GUserData_Viewer_favourites_characters_edges_node_name? name;
+  final GUserData_User_favourites_characters_edges_node_name? name;
   @override
-  final GUserData_Viewer_favourites_characters_edges_node_image? image;
+  final GUserData_User_favourites_characters_edges_node_image? image;
 
-  factory _$GUserData_Viewer_favourites_characters_edges_node(
+  factory _$GUserData_User_favourites_characters_edges_node(
           [void Function(
-                  GUserData_Viewer_favourites_characters_edges_nodeBuilder)?
+                  GUserData_User_favourites_characters_edges_nodeBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_characters_edges_nodeBuilder()
+      (new GUserData_User_favourites_characters_edges_nodeBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_characters_edges_node._(
+  _$GUserData_User_favourites_characters_edges_node._(
       {required this.G__typename, required this.id, this.name, this.image})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_characters_edges_node', 'G__typename');
+        r'GUserData_User_favourites_characters_edges_node', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
-        id, r'GUserData_Viewer_favourites_characters_edges_node', 'id');
+        id, r'GUserData_User_favourites_characters_edges_node', 'id');
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node rebuild(
-          void Function(
-                  GUserData_Viewer_favourites_characters_edges_nodeBuilder)
+  GUserData_User_favourites_characters_edges_node rebuild(
+          void Function(GUserData_User_favourites_characters_edges_nodeBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_characters_edges_nodeBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_characters_edges_nodeBuilder()
+  GUserData_User_favourites_characters_edges_nodeBuilder toBuilder() =>
+      new GUserData_User_favourites_characters_edges_nodeBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_characters_edges_node &&
+    return other is GUserData_User_favourites_characters_edges_node &&
         G__typename == other.G__typename &&
         id == other.id &&
         name == other.name &&
@@ -7371,7 +7314,7 @@ class _$GUserData_Viewer_favourites_characters_edges_node
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_characters_edges_node')
+            r'GUserData_User_favourites_characters_edges_node')
           ..add('G__typename', G__typename)
           ..add('id', id)
           ..add('name', name)
@@ -7380,11 +7323,11 @@ class _$GUserData_Viewer_favourites_characters_edges_node
   }
 }
 
-class GUserData_Viewer_favourites_characters_edges_nodeBuilder
+class GUserData_User_favourites_characters_edges_nodeBuilder
     implements
-        Builder<GUserData_Viewer_favourites_characters_edges_node,
-            GUserData_Viewer_favourites_characters_edges_nodeBuilder> {
-  _$GUserData_Viewer_favourites_characters_edges_node? _$v;
+        Builder<GUserData_User_favourites_characters_edges_node,
+            GUserData_User_favourites_characters_edges_nodeBuilder> {
+  _$GUserData_User_favourites_characters_edges_node? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -7394,29 +7337,27 @@ class GUserData_Viewer_favourites_characters_edges_nodeBuilder
   int? get id => _$this._id;
   set id(int? id) => _$this._id = id;
 
-  GUserData_Viewer_favourites_characters_edges_node_nameBuilder? _name;
-  GUserData_Viewer_favourites_characters_edges_node_nameBuilder get name =>
+  GUserData_User_favourites_characters_edges_node_nameBuilder? _name;
+  GUserData_User_favourites_characters_edges_node_nameBuilder get name =>
       _$this._name ??=
-          new GUserData_Viewer_favourites_characters_edges_node_nameBuilder();
-  set name(
-          GUserData_Viewer_favourites_characters_edges_node_nameBuilder?
-              name) =>
+          new GUserData_User_favourites_characters_edges_node_nameBuilder();
+  set name(GUserData_User_favourites_characters_edges_node_nameBuilder? name) =>
       _$this._name = name;
 
-  GUserData_Viewer_favourites_characters_edges_node_imageBuilder? _image;
-  GUserData_Viewer_favourites_characters_edges_node_imageBuilder get image =>
+  GUserData_User_favourites_characters_edges_node_imageBuilder? _image;
+  GUserData_User_favourites_characters_edges_node_imageBuilder get image =>
       _$this._image ??=
-          new GUserData_Viewer_favourites_characters_edges_node_imageBuilder();
+          new GUserData_User_favourites_characters_edges_node_imageBuilder();
   set image(
-          GUserData_Viewer_favourites_characters_edges_node_imageBuilder?
+          GUserData_User_favourites_characters_edges_node_imageBuilder?
               image) =>
       _$this._image = image;
 
-  GUserData_Viewer_favourites_characters_edges_nodeBuilder() {
-    GUserData_Viewer_favourites_characters_edges_node._initializeBuilder(this);
+  GUserData_User_favourites_characters_edges_nodeBuilder() {
+    GUserData_User_favourites_characters_edges_node._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_characters_edges_nodeBuilder get _$this {
+  GUserData_User_favourites_characters_edges_nodeBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -7429,32 +7370,32 @@ class GUserData_Viewer_favourites_characters_edges_nodeBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_characters_edges_node other) {
+  void replace(GUserData_User_favourites_characters_edges_node other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_characters_edges_node;
+    _$v = other as _$GUserData_User_favourites_characters_edges_node;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_characters_edges_nodeBuilder)?
+      void Function(GUserData_User_favourites_characters_edges_nodeBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node build() => _build();
+  GUserData_User_favourites_characters_edges_node build() => _build();
 
-  _$GUserData_Viewer_favourites_characters_edges_node _build() {
-    _$GUserData_Viewer_favourites_characters_edges_node _$result;
+  _$GUserData_User_favourites_characters_edges_node _build() {
+    _$GUserData_User_favourites_characters_edges_node _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_characters_edges_node._(
+          new _$GUserData_User_favourites_characters_edges_node._(
               G__typename: BuiltValueNullFieldError.checkNotNull(
                   G__typename,
-                  r'GUserData_Viewer_favourites_characters_edges_node',
+                  r'GUserData_User_favourites_characters_edges_node',
                   'G__typename'),
-              id: BuiltValueNullFieldError.checkNotNull(id,
-                  r'GUserData_Viewer_favourites_characters_edges_node', 'id'),
+              id: BuiltValueNullFieldError.checkNotNull(
+                  id, r'GUserData_User_favourites_characters_edges_node', 'id'),
               name: _name?.build(),
               image: _image?.build());
     } catch (_) {
@@ -7466,7 +7407,7 @@ class GUserData_Viewer_favourites_characters_edges_nodeBuilder
         _image?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_characters_edges_node',
+            r'GUserData_User_favourites_characters_edges_node',
             _$failedField,
             e.toString());
       }
@@ -7477,46 +7418,44 @@ class GUserData_Viewer_favourites_characters_edges_nodeBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_characters_edges_node_name
-    extends GUserData_Viewer_favourites_characters_edges_node_name {
+class _$GUserData_User_favourites_characters_edges_node_name
+    extends GUserData_User_favourites_characters_edges_node_name {
   @override
   final String G__typename;
   @override
   final String? userPreferred;
 
-  factory _$GUserData_Viewer_favourites_characters_edges_node_name(
+  factory _$GUserData_User_favourites_characters_edges_node_name(
           [void Function(
-                  GUserData_Viewer_favourites_characters_edges_node_nameBuilder)?
+                  GUserData_User_favourites_characters_edges_node_nameBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_characters_edges_node_nameBuilder()
+      (new GUserData_User_favourites_characters_edges_node_nameBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_characters_edges_node_name._(
+  _$GUserData_User_favourites_characters_edges_node_name._(
       {required this.G__typename, this.userPreferred})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(
-        G__typename,
-        r'GUserData_Viewer_favourites_characters_edges_node_name',
-        'G__typename');
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GUserData_User_favourites_characters_edges_node_name', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node_name rebuild(
+  GUserData_User_favourites_characters_edges_node_name rebuild(
           void Function(
-                  GUserData_Viewer_favourites_characters_edges_node_nameBuilder)
+                  GUserData_User_favourites_characters_edges_node_nameBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node_nameBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_characters_edges_node_nameBuilder()
+  GUserData_User_favourites_characters_edges_node_nameBuilder toBuilder() =>
+      new GUserData_User_favourites_characters_edges_node_nameBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_characters_edges_node_name &&
+    return other is GUserData_User_favourites_characters_edges_node_name &&
         G__typename == other.G__typename &&
         userPreferred == other.userPreferred;
   }
@@ -7533,18 +7472,18 @@ class _$GUserData_Viewer_favourites_characters_edges_node_name
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_characters_edges_node_name')
+            r'GUserData_User_favourites_characters_edges_node_name')
           ..add('G__typename', G__typename)
           ..add('userPreferred', userPreferred))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_characters_edges_node_nameBuilder
+class GUserData_User_favourites_characters_edges_node_nameBuilder
     implements
-        Builder<GUserData_Viewer_favourites_characters_edges_node_name,
-            GUserData_Viewer_favourites_characters_edges_node_nameBuilder> {
-  _$GUserData_Viewer_favourites_characters_edges_node_name? _$v;
+        Builder<GUserData_User_favourites_characters_edges_node_name,
+            GUserData_User_favourites_characters_edges_node_nameBuilder> {
+  _$GUserData_User_favourites_characters_edges_node_name? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -7555,12 +7494,12 @@ class GUserData_Viewer_favourites_characters_edges_node_nameBuilder
   set userPreferred(String? userPreferred) =>
       _$this._userPreferred = userPreferred;
 
-  GUserData_Viewer_favourites_characters_edges_node_nameBuilder() {
-    GUserData_Viewer_favourites_characters_edges_node_name._initializeBuilder(
+  GUserData_User_favourites_characters_edges_node_nameBuilder() {
+    GUserData_User_favourites_characters_edges_node_name._initializeBuilder(
         this);
   }
 
-  GUserData_Viewer_favourites_characters_edges_node_nameBuilder get _$this {
+  GUserData_User_favourites_characters_edges_node_nameBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -7571,28 +7510,28 @@ class GUserData_Viewer_favourites_characters_edges_node_nameBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_characters_edges_node_name other) {
+  void replace(GUserData_User_favourites_characters_edges_node_name other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_characters_edges_node_name;
+    _$v = other as _$GUserData_User_favourites_characters_edges_node_name;
   }
 
   @override
   void update(
       void Function(
-              GUserData_Viewer_favourites_characters_edges_node_nameBuilder)?
+              GUserData_User_favourites_characters_edges_node_nameBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node_name build() => _build();
+  GUserData_User_favourites_characters_edges_node_name build() => _build();
 
-  _$GUserData_Viewer_favourites_characters_edges_node_name _build() {
+  _$GUserData_User_favourites_characters_edges_node_name _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_characters_edges_node_name._(
+        new _$GUserData_User_favourites_characters_edges_node_name._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
-                r'GUserData_Viewer_favourites_characters_edges_node_name',
+                r'GUserData_User_favourites_characters_edges_node_name',
                 'G__typename'),
             userPreferred: userPreferred);
     replace(_$result);
@@ -7600,46 +7539,46 @@ class GUserData_Viewer_favourites_characters_edges_node_nameBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_characters_edges_node_image
-    extends GUserData_Viewer_favourites_characters_edges_node_image {
+class _$GUserData_User_favourites_characters_edges_node_image
+    extends GUserData_User_favourites_characters_edges_node_image {
   @override
   final String G__typename;
   @override
   final String? large;
 
-  factory _$GUserData_Viewer_favourites_characters_edges_node_image(
+  factory _$GUserData_User_favourites_characters_edges_node_image(
           [void Function(
-                  GUserData_Viewer_favourites_characters_edges_node_imageBuilder)?
+                  GUserData_User_favourites_characters_edges_node_imageBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_characters_edges_node_imageBuilder()
+      (new GUserData_User_favourites_characters_edges_node_imageBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_characters_edges_node_image._(
+  _$GUserData_User_favourites_characters_edges_node_image._(
       {required this.G__typename, this.large})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename,
-        r'GUserData_Viewer_favourites_characters_edges_node_image',
+        r'GUserData_User_favourites_characters_edges_node_image',
         'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node_image rebuild(
+  GUserData_User_favourites_characters_edges_node_image rebuild(
           void Function(
-                  GUserData_Viewer_favourites_characters_edges_node_imageBuilder)
+                  GUserData_User_favourites_characters_edges_node_imageBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node_imageBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_characters_edges_node_imageBuilder()
+  GUserData_User_favourites_characters_edges_node_imageBuilder toBuilder() =>
+      new GUserData_User_favourites_characters_edges_node_imageBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_characters_edges_node_image &&
+    return other is GUserData_User_favourites_characters_edges_node_image &&
         G__typename == other.G__typename &&
         large == other.large;
   }
@@ -7656,18 +7595,18 @@ class _$GUserData_Viewer_favourites_characters_edges_node_image
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_characters_edges_node_image')
+            r'GUserData_User_favourites_characters_edges_node_image')
           ..add('G__typename', G__typename)
           ..add('large', large))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_characters_edges_node_imageBuilder
+class GUserData_User_favourites_characters_edges_node_imageBuilder
     implements
-        Builder<GUserData_Viewer_favourites_characters_edges_node_image,
-            GUserData_Viewer_favourites_characters_edges_node_imageBuilder> {
-  _$GUserData_Viewer_favourites_characters_edges_node_image? _$v;
+        Builder<GUserData_User_favourites_characters_edges_node_image,
+            GUserData_User_favourites_characters_edges_node_imageBuilder> {
+  _$GUserData_User_favourites_characters_edges_node_image? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -7677,12 +7616,12 @@ class GUserData_Viewer_favourites_characters_edges_node_imageBuilder
   String? get large => _$this._large;
   set large(String? large) => _$this._large = large;
 
-  GUserData_Viewer_favourites_characters_edges_node_imageBuilder() {
-    GUserData_Viewer_favourites_characters_edges_node_image._initializeBuilder(
+  GUserData_User_favourites_characters_edges_node_imageBuilder() {
+    GUserData_User_favourites_characters_edges_node_image._initializeBuilder(
         this);
   }
 
-  GUserData_Viewer_favourites_characters_edges_node_imageBuilder get _$this {
+  GUserData_User_favourites_characters_edges_node_imageBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -7693,28 +7632,28 @@ class GUserData_Viewer_favourites_characters_edges_node_imageBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_characters_edges_node_image other) {
+  void replace(GUserData_User_favourites_characters_edges_node_image other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_characters_edges_node_image;
+    _$v = other as _$GUserData_User_favourites_characters_edges_node_image;
   }
 
   @override
   void update(
       void Function(
-              GUserData_Viewer_favourites_characters_edges_node_imageBuilder)?
+              GUserData_User_favourites_characters_edges_node_imageBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_characters_edges_node_image build() => _build();
+  GUserData_User_favourites_characters_edges_node_image build() => _build();
 
-  _$GUserData_Viewer_favourites_characters_edges_node_image _build() {
+  _$GUserData_User_favourites_characters_edges_node_image _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_characters_edges_node_image._(
+        new _$GUserData_User_favourites_characters_edges_node_image._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
-                r'GUserData_Viewer_favourites_characters_edges_node_image',
+                r'GUserData_User_favourites_characters_edges_node_image',
                 'G__typename'),
             large: large);
     replace(_$result);
@@ -7722,37 +7661,36 @@ class GUserData_Viewer_favourites_characters_edges_node_imageBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_staff
-    extends GUserData_Viewer_favourites_staff {
+class _$GUserData_User_favourites_staff
+    extends GUserData_User_favourites_staff {
   @override
   final String G__typename;
   @override
-  final BuiltList<GUserData_Viewer_favourites_staff_edges?>? edges;
+  final BuiltList<GUserData_User_favourites_staff_edges?>? edges;
 
-  factory _$GUserData_Viewer_favourites_staff(
-          [void Function(GUserData_Viewer_favourites_staffBuilder)? updates]) =>
-      (new GUserData_Viewer_favourites_staffBuilder()..update(updates))
-          ._build();
+  factory _$GUserData_User_favourites_staff(
+          [void Function(GUserData_User_favourites_staffBuilder)? updates]) =>
+      (new GUserData_User_favourites_staffBuilder()..update(updates))._build();
 
-  _$GUserData_Viewer_favourites_staff._({required this.G__typename, this.edges})
+  _$GUserData_User_favourites_staff._({required this.G__typename, this.edges})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_favourites_staff', 'G__typename');
+        G__typename, r'GUserData_User_favourites_staff', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_staff rebuild(
-          void Function(GUserData_Viewer_favourites_staffBuilder) updates) =>
+  GUserData_User_favourites_staff rebuild(
+          void Function(GUserData_User_favourites_staffBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_staffBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_staffBuilder()..replace(this);
+  GUserData_User_favourites_staffBuilder toBuilder() =>
+      new GUserData_User_favourites_staffBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_staff &&
+    return other is GUserData_User_favourites_staff &&
         G__typename == other.G__typename &&
         edges == other.edges;
   }
@@ -7768,35 +7706,35 @@ class _$GUserData_Viewer_favourites_staff
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_favourites_staff')
+    return (newBuiltValueToStringHelper(r'GUserData_User_favourites_staff')
           ..add('G__typename', G__typename)
           ..add('edges', edges))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_staffBuilder
+class GUserData_User_favourites_staffBuilder
     implements
-        Builder<GUserData_Viewer_favourites_staff,
-            GUserData_Viewer_favourites_staffBuilder> {
-  _$GUserData_Viewer_favourites_staff? _$v;
+        Builder<GUserData_User_favourites_staff,
+            GUserData_User_favourites_staffBuilder> {
+  _$GUserData_User_favourites_staff? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  ListBuilder<GUserData_Viewer_favourites_staff_edges?>? _edges;
-  ListBuilder<GUserData_Viewer_favourites_staff_edges?> get edges =>
+  ListBuilder<GUserData_User_favourites_staff_edges?>? _edges;
+  ListBuilder<GUserData_User_favourites_staff_edges?> get edges =>
       _$this._edges ??=
-          new ListBuilder<GUserData_Viewer_favourites_staff_edges?>();
-  set edges(ListBuilder<GUserData_Viewer_favourites_staff_edges?>? edges) =>
+          new ListBuilder<GUserData_User_favourites_staff_edges?>();
+  set edges(ListBuilder<GUserData_User_favourites_staff_edges?>? edges) =>
       _$this._edges = edges;
 
-  GUserData_Viewer_favourites_staffBuilder() {
-    GUserData_Viewer_favourites_staff._initializeBuilder(this);
+  GUserData_User_favourites_staffBuilder() {
+    GUserData_User_favourites_staff._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_staffBuilder get _$this {
+  GUserData_User_favourites_staffBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -7807,27 +7745,26 @@ class GUserData_Viewer_favourites_staffBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_staff other) {
+  void replace(GUserData_User_favourites_staff other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_staff;
+    _$v = other as _$GUserData_User_favourites_staff;
   }
 
   @override
-  void update(
-      void Function(GUserData_Viewer_favourites_staffBuilder)? updates) {
+  void update(void Function(GUserData_User_favourites_staffBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_staff build() => _build();
+  GUserData_User_favourites_staff build() => _build();
 
-  _$GUserData_Viewer_favourites_staff _build() {
-    _$GUserData_Viewer_favourites_staff _$result;
+  _$GUserData_User_favourites_staff _build() {
+    _$GUserData_User_favourites_staff _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_staff._(
+          new _$GUserData_User_favourites_staff._(
               G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  r'GUserData_Viewer_favourites_staff', 'G__typename'),
+                  r'GUserData_User_favourites_staff', 'G__typename'),
               edges: _edges?.build());
     } catch (_) {
       late String _$failedField;
@@ -7836,7 +7773,7 @@ class GUserData_Viewer_favourites_staffBuilder
         _edges?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_staff', _$failedField, e.toString());
+            r'GUserData_User_favourites_staff', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -7845,42 +7782,42 @@ class GUserData_Viewer_favourites_staffBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_staff_edges
-    extends GUserData_Viewer_favourites_staff_edges {
+class _$GUserData_User_favourites_staff_edges
+    extends GUserData_User_favourites_staff_edges {
   @override
   final String G__typename;
   @override
   final int? favouriteOrder;
   @override
-  final GUserData_Viewer_favourites_staff_edges_node? node;
+  final GUserData_User_favourites_staff_edges_node? node;
 
-  factory _$GUserData_Viewer_favourites_staff_edges(
-          [void Function(GUserData_Viewer_favourites_staff_edgesBuilder)?
+  factory _$GUserData_User_favourites_staff_edges(
+          [void Function(GUserData_User_favourites_staff_edgesBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_staff_edgesBuilder()..update(updates))
+      (new GUserData_User_favourites_staff_edgesBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_staff_edges._(
+  _$GUserData_User_favourites_staff_edges._(
       {required this.G__typename, this.favouriteOrder, this.node})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_favourites_staff_edges', 'G__typename');
+        G__typename, r'GUserData_User_favourites_staff_edges', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges rebuild(
-          void Function(GUserData_Viewer_favourites_staff_edgesBuilder)
+  GUserData_User_favourites_staff_edges rebuild(
+          void Function(GUserData_User_favourites_staff_edgesBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_staff_edgesBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_staff_edgesBuilder()..replace(this);
+  GUserData_User_favourites_staff_edgesBuilder toBuilder() =>
+      new GUserData_User_favourites_staff_edgesBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_staff_edges &&
+    return other is GUserData_User_favourites_staff_edges &&
         G__typename == other.G__typename &&
         favouriteOrder == other.favouriteOrder &&
         node == other.node;
@@ -7899,7 +7836,7 @@ class _$GUserData_Viewer_favourites_staff_edges
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_staff_edges')
+            r'GUserData_User_favourites_staff_edges')
           ..add('G__typename', G__typename)
           ..add('favouriteOrder', favouriteOrder)
           ..add('node', node))
@@ -7907,11 +7844,11 @@ class _$GUserData_Viewer_favourites_staff_edges
   }
 }
 
-class GUserData_Viewer_favourites_staff_edgesBuilder
+class GUserData_User_favourites_staff_edgesBuilder
     implements
-        Builder<GUserData_Viewer_favourites_staff_edges,
-            GUserData_Viewer_favourites_staff_edgesBuilder> {
-  _$GUserData_Viewer_favourites_staff_edges? _$v;
+        Builder<GUserData_User_favourites_staff_edges,
+            GUserData_User_favourites_staff_edgesBuilder> {
+  _$GUserData_User_favourites_staff_edges? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -7922,18 +7859,17 @@ class GUserData_Viewer_favourites_staff_edgesBuilder
   set favouriteOrder(int? favouriteOrder) =>
       _$this._favouriteOrder = favouriteOrder;
 
-  GUserData_Viewer_favourites_staff_edges_nodeBuilder? _node;
-  GUserData_Viewer_favourites_staff_edges_nodeBuilder get node =>
-      _$this._node ??=
-          new GUserData_Viewer_favourites_staff_edges_nodeBuilder();
-  set node(GUserData_Viewer_favourites_staff_edges_nodeBuilder? node) =>
+  GUserData_User_favourites_staff_edges_nodeBuilder? _node;
+  GUserData_User_favourites_staff_edges_nodeBuilder get node =>
+      _$this._node ??= new GUserData_User_favourites_staff_edges_nodeBuilder();
+  set node(GUserData_User_favourites_staff_edges_nodeBuilder? node) =>
       _$this._node = node;
 
-  GUserData_Viewer_favourites_staff_edgesBuilder() {
-    GUserData_Viewer_favourites_staff_edges._initializeBuilder(this);
+  GUserData_User_favourites_staff_edgesBuilder() {
+    GUserData_User_favourites_staff_edges._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_staff_edgesBuilder get _$this {
+  GUserData_User_favourites_staff_edgesBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -7945,27 +7881,27 @@ class GUserData_Viewer_favourites_staff_edgesBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_staff_edges other) {
+  void replace(GUserData_User_favourites_staff_edges other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_staff_edges;
+    _$v = other as _$GUserData_User_favourites_staff_edges;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_staff_edgesBuilder)? updates) {
+      void Function(GUserData_User_favourites_staff_edgesBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges build() => _build();
+  GUserData_User_favourites_staff_edges build() => _build();
 
-  _$GUserData_Viewer_favourites_staff_edges _build() {
-    _$GUserData_Viewer_favourites_staff_edges _$result;
+  _$GUserData_User_favourites_staff_edges _build() {
+    _$GUserData_User_favourites_staff_edges _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_staff_edges._(
+          new _$GUserData_User_favourites_staff_edges._(
               G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  r'GUserData_Viewer_favourites_staff_edges', 'G__typename'),
+                  r'GUserData_User_favourites_staff_edges', 'G__typename'),
               favouriteOrder: favouriteOrder,
               node: _node?.build());
     } catch (_) {
@@ -7975,7 +7911,7 @@ class GUserData_Viewer_favourites_staff_edgesBuilder
         _node?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_staff_edges',
+            r'GUserData_User_favourites_staff_edges',
             _$failedField,
             e.toString());
       }
@@ -7986,47 +7922,46 @@ class GUserData_Viewer_favourites_staff_edgesBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_staff_edges_node
-    extends GUserData_Viewer_favourites_staff_edges_node {
+class _$GUserData_User_favourites_staff_edges_node
+    extends GUserData_User_favourites_staff_edges_node {
   @override
   final String G__typename;
   @override
   final int id;
   @override
-  final GUserData_Viewer_favourites_staff_edges_node_name? name;
+  final GUserData_User_favourites_staff_edges_node_name? name;
   @override
-  final GUserData_Viewer_favourites_staff_edges_node_image? image;
+  final GUserData_User_favourites_staff_edges_node_image? image;
 
-  factory _$GUserData_Viewer_favourites_staff_edges_node(
-          [void Function(GUserData_Viewer_favourites_staff_edges_nodeBuilder)?
+  factory _$GUserData_User_favourites_staff_edges_node(
+          [void Function(GUserData_User_favourites_staff_edges_nodeBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_staff_edges_nodeBuilder()
-            ..update(updates))
+      (new GUserData_User_favourites_staff_edges_nodeBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_staff_edges_node._(
+  _$GUserData_User_favourites_staff_edges_node._(
       {required this.G__typename, required this.id, this.name, this.image})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_staff_edges_node', 'G__typename');
+        r'GUserData_User_favourites_staff_edges_node', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
-        id, r'GUserData_Viewer_favourites_staff_edges_node', 'id');
+        id, r'GUserData_User_favourites_staff_edges_node', 'id');
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node rebuild(
-          void Function(GUserData_Viewer_favourites_staff_edges_nodeBuilder)
+  GUserData_User_favourites_staff_edges_node rebuild(
+          void Function(GUserData_User_favourites_staff_edges_nodeBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_staff_edges_nodeBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_staff_edges_nodeBuilder()..replace(this);
+  GUserData_User_favourites_staff_edges_nodeBuilder toBuilder() =>
+      new GUserData_User_favourites_staff_edges_nodeBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_staff_edges_node &&
+    return other is GUserData_User_favourites_staff_edges_node &&
         G__typename == other.G__typename &&
         id == other.id &&
         name == other.name &&
@@ -8047,7 +7982,7 @@ class _$GUserData_Viewer_favourites_staff_edges_node
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_staff_edges_node')
+            r'GUserData_User_favourites_staff_edges_node')
           ..add('G__typename', G__typename)
           ..add('id', id)
           ..add('name', name)
@@ -8056,11 +7991,11 @@ class _$GUserData_Viewer_favourites_staff_edges_node
   }
 }
 
-class GUserData_Viewer_favourites_staff_edges_nodeBuilder
+class GUserData_User_favourites_staff_edges_nodeBuilder
     implements
-        Builder<GUserData_Viewer_favourites_staff_edges_node,
-            GUserData_Viewer_favourites_staff_edges_nodeBuilder> {
-  _$GUserData_Viewer_favourites_staff_edges_node? _$v;
+        Builder<GUserData_User_favourites_staff_edges_node,
+            GUserData_User_favourites_staff_edges_nodeBuilder> {
+  _$GUserData_User_favourites_staff_edges_node? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -8070,25 +8005,25 @@ class GUserData_Viewer_favourites_staff_edges_nodeBuilder
   int? get id => _$this._id;
   set id(int? id) => _$this._id = id;
 
-  GUserData_Viewer_favourites_staff_edges_node_nameBuilder? _name;
-  GUserData_Viewer_favourites_staff_edges_node_nameBuilder get name =>
+  GUserData_User_favourites_staff_edges_node_nameBuilder? _name;
+  GUserData_User_favourites_staff_edges_node_nameBuilder get name =>
       _$this._name ??=
-          new GUserData_Viewer_favourites_staff_edges_node_nameBuilder();
-  set name(GUserData_Viewer_favourites_staff_edges_node_nameBuilder? name) =>
+          new GUserData_User_favourites_staff_edges_node_nameBuilder();
+  set name(GUserData_User_favourites_staff_edges_node_nameBuilder? name) =>
       _$this._name = name;
 
-  GUserData_Viewer_favourites_staff_edges_node_imageBuilder? _image;
-  GUserData_Viewer_favourites_staff_edges_node_imageBuilder get image =>
+  GUserData_User_favourites_staff_edges_node_imageBuilder? _image;
+  GUserData_User_favourites_staff_edges_node_imageBuilder get image =>
       _$this._image ??=
-          new GUserData_Viewer_favourites_staff_edges_node_imageBuilder();
-  set image(GUserData_Viewer_favourites_staff_edges_node_imageBuilder? image) =>
+          new GUserData_User_favourites_staff_edges_node_imageBuilder();
+  set image(GUserData_User_favourites_staff_edges_node_imageBuilder? image) =>
       _$this._image = image;
 
-  GUserData_Viewer_favourites_staff_edges_nodeBuilder() {
-    GUserData_Viewer_favourites_staff_edges_node._initializeBuilder(this);
+  GUserData_User_favourites_staff_edges_nodeBuilder() {
+    GUserData_User_favourites_staff_edges_node._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_staff_edges_nodeBuilder get _$this {
+  GUserData_User_favourites_staff_edges_nodeBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -8101,32 +8036,30 @@ class GUserData_Viewer_favourites_staff_edges_nodeBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_staff_edges_node other) {
+  void replace(GUserData_User_favourites_staff_edges_node other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_staff_edges_node;
+    _$v = other as _$GUserData_User_favourites_staff_edges_node;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_staff_edges_nodeBuilder)?
+      void Function(GUserData_User_favourites_staff_edges_nodeBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node build() => _build();
+  GUserData_User_favourites_staff_edges_node build() => _build();
 
-  _$GUserData_Viewer_favourites_staff_edges_node _build() {
-    _$GUserData_Viewer_favourites_staff_edges_node _$result;
+  _$GUserData_User_favourites_staff_edges_node _build() {
+    _$GUserData_User_favourites_staff_edges_node _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_staff_edges_node._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename,
-                  r'GUserData_Viewer_favourites_staff_edges_node',
-                  'G__typename'),
+          new _$GUserData_User_favourites_staff_edges_node._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                  r'GUserData_User_favourites_staff_edges_node', 'G__typename'),
               id: BuiltValueNullFieldError.checkNotNull(
-                  id, r'GUserData_Viewer_favourites_staff_edges_node', 'id'),
+                  id, r'GUserData_User_favourites_staff_edges_node', 'id'),
               name: _name?.build(),
               image: _image?.build());
     } catch (_) {
@@ -8138,7 +8071,7 @@ class GUserData_Viewer_favourites_staff_edges_nodeBuilder
         _image?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_staff_edges_node',
+            r'GUserData_User_favourites_staff_edges_node',
             _$failedField,
             e.toString());
       }
@@ -8149,44 +8082,43 @@ class GUserData_Viewer_favourites_staff_edges_nodeBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_staff_edges_node_name
-    extends GUserData_Viewer_favourites_staff_edges_node_name {
+class _$GUserData_User_favourites_staff_edges_node_name
+    extends GUserData_User_favourites_staff_edges_node_name {
   @override
   final String G__typename;
   @override
   final String? userPreferred;
 
-  factory _$GUserData_Viewer_favourites_staff_edges_node_name(
+  factory _$GUserData_User_favourites_staff_edges_node_name(
           [void Function(
-                  GUserData_Viewer_favourites_staff_edges_node_nameBuilder)?
+                  GUserData_User_favourites_staff_edges_node_nameBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_staff_edges_node_nameBuilder()
+      (new GUserData_User_favourites_staff_edges_node_nameBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_staff_edges_node_name._(
+  _$GUserData_User_favourites_staff_edges_node_name._(
       {required this.G__typename, this.userPreferred})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_staff_edges_node_name', 'G__typename');
+        r'GUserData_User_favourites_staff_edges_node_name', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node_name rebuild(
-          void Function(
-                  GUserData_Viewer_favourites_staff_edges_node_nameBuilder)
+  GUserData_User_favourites_staff_edges_node_name rebuild(
+          void Function(GUserData_User_favourites_staff_edges_node_nameBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node_nameBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_staff_edges_node_nameBuilder()
+  GUserData_User_favourites_staff_edges_node_nameBuilder toBuilder() =>
+      new GUserData_User_favourites_staff_edges_node_nameBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_staff_edges_node_name &&
+    return other is GUserData_User_favourites_staff_edges_node_name &&
         G__typename == other.G__typename &&
         userPreferred == other.userPreferred;
   }
@@ -8203,18 +8135,18 @@ class _$GUserData_Viewer_favourites_staff_edges_node_name
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_staff_edges_node_name')
+            r'GUserData_User_favourites_staff_edges_node_name')
           ..add('G__typename', G__typename)
           ..add('userPreferred', userPreferred))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_staff_edges_node_nameBuilder
+class GUserData_User_favourites_staff_edges_node_nameBuilder
     implements
-        Builder<GUserData_Viewer_favourites_staff_edges_node_name,
-            GUserData_Viewer_favourites_staff_edges_node_nameBuilder> {
-  _$GUserData_Viewer_favourites_staff_edges_node_name? _$v;
+        Builder<GUserData_User_favourites_staff_edges_node_name,
+            GUserData_User_favourites_staff_edges_node_nameBuilder> {
+  _$GUserData_User_favourites_staff_edges_node_name? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -8225,11 +8157,11 @@ class GUserData_Viewer_favourites_staff_edges_node_nameBuilder
   set userPreferred(String? userPreferred) =>
       _$this._userPreferred = userPreferred;
 
-  GUserData_Viewer_favourites_staff_edges_node_nameBuilder() {
-    GUserData_Viewer_favourites_staff_edges_node_name._initializeBuilder(this);
+  GUserData_User_favourites_staff_edges_node_nameBuilder() {
+    GUserData_User_favourites_staff_edges_node_name._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_staff_edges_node_nameBuilder get _$this {
+  GUserData_User_favourites_staff_edges_node_nameBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -8240,27 +8172,27 @@ class GUserData_Viewer_favourites_staff_edges_node_nameBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_staff_edges_node_name other) {
+  void replace(GUserData_User_favourites_staff_edges_node_name other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_staff_edges_node_name;
+    _$v = other as _$GUserData_User_favourites_staff_edges_node_name;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_staff_edges_node_nameBuilder)?
+      void Function(GUserData_User_favourites_staff_edges_node_nameBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node_name build() => _build();
+  GUserData_User_favourites_staff_edges_node_name build() => _build();
 
-  _$GUserData_Viewer_favourites_staff_edges_node_name _build() {
+  _$GUserData_User_favourites_staff_edges_node_name _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_staff_edges_node_name._(
+        new _$GUserData_User_favourites_staff_edges_node_name._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
-                r'GUserData_Viewer_favourites_staff_edges_node_name',
+                r'GUserData_User_favourites_staff_edges_node_name',
                 'G__typename'),
             userPreferred: userPreferred);
     replace(_$result);
@@ -8268,44 +8200,43 @@ class GUserData_Viewer_favourites_staff_edges_node_nameBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_staff_edges_node_image
-    extends GUserData_Viewer_favourites_staff_edges_node_image {
+class _$GUserData_User_favourites_staff_edges_node_image
+    extends GUserData_User_favourites_staff_edges_node_image {
   @override
   final String G__typename;
   @override
   final String? large;
 
-  factory _$GUserData_Viewer_favourites_staff_edges_node_image(
+  factory _$GUserData_User_favourites_staff_edges_node_image(
           [void Function(
-                  GUserData_Viewer_favourites_staff_edges_node_imageBuilder)?
+                  GUserData_User_favourites_staff_edges_node_imageBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_staff_edges_node_imageBuilder()
+      (new GUserData_User_favourites_staff_edges_node_imageBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_staff_edges_node_image._(
+  _$GUserData_User_favourites_staff_edges_node_image._(
       {required this.G__typename, this.large})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_staff_edges_node_image', 'G__typename');
+        r'GUserData_User_favourites_staff_edges_node_image', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node_image rebuild(
-          void Function(
-                  GUserData_Viewer_favourites_staff_edges_node_imageBuilder)
+  GUserData_User_favourites_staff_edges_node_image rebuild(
+          void Function(GUserData_User_favourites_staff_edges_node_imageBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node_imageBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_staff_edges_node_imageBuilder()
+  GUserData_User_favourites_staff_edges_node_imageBuilder toBuilder() =>
+      new GUserData_User_favourites_staff_edges_node_imageBuilder()
         ..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_staff_edges_node_image &&
+    return other is GUserData_User_favourites_staff_edges_node_image &&
         G__typename == other.G__typename &&
         large == other.large;
   }
@@ -8322,18 +8253,18 @@ class _$GUserData_Viewer_favourites_staff_edges_node_image
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_staff_edges_node_image')
+            r'GUserData_User_favourites_staff_edges_node_image')
           ..add('G__typename', G__typename)
           ..add('large', large))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_staff_edges_node_imageBuilder
+class GUserData_User_favourites_staff_edges_node_imageBuilder
     implements
-        Builder<GUserData_Viewer_favourites_staff_edges_node_image,
-            GUserData_Viewer_favourites_staff_edges_node_imageBuilder> {
-  _$GUserData_Viewer_favourites_staff_edges_node_image? _$v;
+        Builder<GUserData_User_favourites_staff_edges_node_image,
+            GUserData_User_favourites_staff_edges_node_imageBuilder> {
+  _$GUserData_User_favourites_staff_edges_node_image? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -8343,11 +8274,11 @@ class GUserData_Viewer_favourites_staff_edges_node_imageBuilder
   String? get large => _$this._large;
   set large(String? large) => _$this._large = large;
 
-  GUserData_Viewer_favourites_staff_edges_node_imageBuilder() {
-    GUserData_Viewer_favourites_staff_edges_node_image._initializeBuilder(this);
+  GUserData_User_favourites_staff_edges_node_imageBuilder() {
+    GUserData_User_favourites_staff_edges_node_image._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_staff_edges_node_imageBuilder get _$this {
+  GUserData_User_favourites_staff_edges_node_imageBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -8358,27 +8289,27 @@ class GUserData_Viewer_favourites_staff_edges_node_imageBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_staff_edges_node_image other) {
+  void replace(GUserData_User_favourites_staff_edges_node_image other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_staff_edges_node_image;
+    _$v = other as _$GUserData_User_favourites_staff_edges_node_image;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_staff_edges_node_imageBuilder)?
+      void Function(GUserData_User_favourites_staff_edges_node_imageBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_staff_edges_node_image build() => _build();
+  GUserData_User_favourites_staff_edges_node_image build() => _build();
 
-  _$GUserData_Viewer_favourites_staff_edges_node_image _build() {
+  _$GUserData_User_favourites_staff_edges_node_image _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_staff_edges_node_image._(
+        new _$GUserData_User_favourites_staff_edges_node_image._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
                 G__typename,
-                r'GUserData_Viewer_favourites_staff_edges_node_image',
+                r'GUserData_User_favourites_staff_edges_node_image',
                 'G__typename'),
             large: large);
     replace(_$result);
@@ -8386,39 +8317,37 @@ class GUserData_Viewer_favourites_staff_edges_node_imageBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_studios
-    extends GUserData_Viewer_favourites_studios {
+class _$GUserData_User_favourites_studios
+    extends GUserData_User_favourites_studios {
   @override
   final String G__typename;
   @override
-  final BuiltList<GUserData_Viewer_favourites_studios_edges?>? edges;
+  final BuiltList<GUserData_User_favourites_studios_edges?>? edges;
 
-  factory _$GUserData_Viewer_favourites_studios(
-          [void Function(GUserData_Viewer_favourites_studiosBuilder)?
-              updates]) =>
-      (new GUserData_Viewer_favourites_studiosBuilder()..update(updates))
+  factory _$GUserData_User_favourites_studios(
+          [void Function(GUserData_User_favourites_studiosBuilder)? updates]) =>
+      (new GUserData_User_favourites_studiosBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_studios._(
-      {required this.G__typename, this.edges})
+  _$GUserData_User_favourites_studios._({required this.G__typename, this.edges})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GUserData_Viewer_favourites_studios', 'G__typename');
+        G__typename, r'GUserData_User_favourites_studios', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_studios rebuild(
-          void Function(GUserData_Viewer_favourites_studiosBuilder) updates) =>
+  GUserData_User_favourites_studios rebuild(
+          void Function(GUserData_User_favourites_studiosBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_studiosBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_studiosBuilder()..replace(this);
+  GUserData_User_favourites_studiosBuilder toBuilder() =>
+      new GUserData_User_favourites_studiosBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_studios &&
+    return other is GUserData_User_favourites_studios &&
         G__typename == other.G__typename &&
         edges == other.edges;
   }
@@ -8434,35 +8363,35 @@ class _$GUserData_Viewer_favourites_studios
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserData_Viewer_favourites_studios')
+    return (newBuiltValueToStringHelper(r'GUserData_User_favourites_studios')
           ..add('G__typename', G__typename)
           ..add('edges', edges))
         .toString();
   }
 }
 
-class GUserData_Viewer_favourites_studiosBuilder
+class GUserData_User_favourites_studiosBuilder
     implements
-        Builder<GUserData_Viewer_favourites_studios,
-            GUserData_Viewer_favourites_studiosBuilder> {
-  _$GUserData_Viewer_favourites_studios? _$v;
+        Builder<GUserData_User_favourites_studios,
+            GUserData_User_favourites_studiosBuilder> {
+  _$GUserData_User_favourites_studios? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  ListBuilder<GUserData_Viewer_favourites_studios_edges?>? _edges;
-  ListBuilder<GUserData_Viewer_favourites_studios_edges?> get edges =>
+  ListBuilder<GUserData_User_favourites_studios_edges?>? _edges;
+  ListBuilder<GUserData_User_favourites_studios_edges?> get edges =>
       _$this._edges ??=
-          new ListBuilder<GUserData_Viewer_favourites_studios_edges?>();
-  set edges(ListBuilder<GUserData_Viewer_favourites_studios_edges?>? edges) =>
+          new ListBuilder<GUserData_User_favourites_studios_edges?>();
+  set edges(ListBuilder<GUserData_User_favourites_studios_edges?>? edges) =>
       _$this._edges = edges;
 
-  GUserData_Viewer_favourites_studiosBuilder() {
-    GUserData_Viewer_favourites_studios._initializeBuilder(this);
+  GUserData_User_favourites_studiosBuilder() {
+    GUserData_User_favourites_studios._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_studiosBuilder get _$this {
+  GUserData_User_favourites_studiosBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -8473,27 +8402,27 @@ class GUserData_Viewer_favourites_studiosBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_studios other) {
+  void replace(GUserData_User_favourites_studios other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_studios;
+    _$v = other as _$GUserData_User_favourites_studios;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_studiosBuilder)? updates) {
+      void Function(GUserData_User_favourites_studiosBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_studios build() => _build();
+  GUserData_User_favourites_studios build() => _build();
 
-  _$GUserData_Viewer_favourites_studios _build() {
-    _$GUserData_Viewer_favourites_studios _$result;
+  _$GUserData_User_favourites_studios _build() {
+    _$GUserData_User_favourites_studios _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_studios._(
+          new _$GUserData_User_favourites_studios._(
               G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  r'GUserData_Viewer_favourites_studios', 'G__typename'),
+                  r'GUserData_User_favourites_studios', 'G__typename'),
               edges: _edges?.build());
     } catch (_) {
       late String _$failedField;
@@ -8502,9 +8431,7 @@ class GUserData_Viewer_favourites_studiosBuilder
         _edges?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_studios',
-            _$failedField,
-            e.toString());
+            r'GUserData_User_favourites_studios', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -8513,42 +8440,42 @@ class GUserData_Viewer_favourites_studiosBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_studios_edges
-    extends GUserData_Viewer_favourites_studios_edges {
+class _$GUserData_User_favourites_studios_edges
+    extends GUserData_User_favourites_studios_edges {
   @override
   final String G__typename;
   @override
   final int? favouriteOrder;
   @override
-  final GUserData_Viewer_favourites_studios_edges_node? node;
+  final GUserData_User_favourites_studios_edges_node? node;
 
-  factory _$GUserData_Viewer_favourites_studios_edges(
-          [void Function(GUserData_Viewer_favourites_studios_edgesBuilder)?
+  factory _$GUserData_User_favourites_studios_edges(
+          [void Function(GUserData_User_favourites_studios_edgesBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_studios_edgesBuilder()..update(updates))
+      (new GUserData_User_favourites_studios_edgesBuilder()..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_studios_edges._(
+  _$GUserData_User_favourites_studios_edges._(
       {required this.G__typename, this.favouriteOrder, this.node})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_studios_edges', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        G__typename, r'GUserData_User_favourites_studios_edges', 'G__typename');
   }
 
   @override
-  GUserData_Viewer_favourites_studios_edges rebuild(
-          void Function(GUserData_Viewer_favourites_studios_edgesBuilder)
+  GUserData_User_favourites_studios_edges rebuild(
+          void Function(GUserData_User_favourites_studios_edgesBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_studios_edgesBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_studios_edgesBuilder()..replace(this);
+  GUserData_User_favourites_studios_edgesBuilder toBuilder() =>
+      new GUserData_User_favourites_studios_edgesBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_studios_edges &&
+    return other is GUserData_User_favourites_studios_edges &&
         G__typename == other.G__typename &&
         favouriteOrder == other.favouriteOrder &&
         node == other.node;
@@ -8567,7 +8494,7 @@ class _$GUserData_Viewer_favourites_studios_edges
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_studios_edges')
+            r'GUserData_User_favourites_studios_edges')
           ..add('G__typename', G__typename)
           ..add('favouriteOrder', favouriteOrder)
           ..add('node', node))
@@ -8575,11 +8502,11 @@ class _$GUserData_Viewer_favourites_studios_edges
   }
 }
 
-class GUserData_Viewer_favourites_studios_edgesBuilder
+class GUserData_User_favourites_studios_edgesBuilder
     implements
-        Builder<GUserData_Viewer_favourites_studios_edges,
-            GUserData_Viewer_favourites_studios_edgesBuilder> {
-  _$GUserData_Viewer_favourites_studios_edges? _$v;
+        Builder<GUserData_User_favourites_studios_edges,
+            GUserData_User_favourites_studios_edgesBuilder> {
+  _$GUserData_User_favourites_studios_edges? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -8590,18 +8517,18 @@ class GUserData_Viewer_favourites_studios_edgesBuilder
   set favouriteOrder(int? favouriteOrder) =>
       _$this._favouriteOrder = favouriteOrder;
 
-  GUserData_Viewer_favourites_studios_edges_nodeBuilder? _node;
-  GUserData_Viewer_favourites_studios_edges_nodeBuilder get node =>
+  GUserData_User_favourites_studios_edges_nodeBuilder? _node;
+  GUserData_User_favourites_studios_edges_nodeBuilder get node =>
       _$this._node ??=
-          new GUserData_Viewer_favourites_studios_edges_nodeBuilder();
-  set node(GUserData_Viewer_favourites_studios_edges_nodeBuilder? node) =>
+          new GUserData_User_favourites_studios_edges_nodeBuilder();
+  set node(GUserData_User_favourites_studios_edges_nodeBuilder? node) =>
       _$this._node = node;
 
-  GUserData_Viewer_favourites_studios_edgesBuilder() {
-    GUserData_Viewer_favourites_studios_edges._initializeBuilder(this);
+  GUserData_User_favourites_studios_edgesBuilder() {
+    GUserData_User_favourites_studios_edges._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_studios_edgesBuilder get _$this {
+  GUserData_User_favourites_studios_edgesBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -8613,28 +8540,27 @@ class GUserData_Viewer_favourites_studios_edgesBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_studios_edges other) {
+  void replace(GUserData_User_favourites_studios_edges other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_studios_edges;
+    _$v = other as _$GUserData_User_favourites_studios_edges;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_studios_edgesBuilder)?
-          updates) {
+      void Function(GUserData_User_favourites_studios_edgesBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_studios_edges build() => _build();
+  GUserData_User_favourites_studios_edges build() => _build();
 
-  _$GUserData_Viewer_favourites_studios_edges _build() {
-    _$GUserData_Viewer_favourites_studios_edges _$result;
+  _$GUserData_User_favourites_studios_edges _build() {
+    _$GUserData_User_favourites_studios_edges _$result;
     try {
       _$result = _$v ??
-          new _$GUserData_Viewer_favourites_studios_edges._(
+          new _$GUserData_User_favourites_studios_edges._(
               G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  r'GUserData_Viewer_favourites_studios_edges', 'G__typename'),
+                  r'GUserData_User_favourites_studios_edges', 'G__typename'),
               favouriteOrder: favouriteOrder,
               node: _node?.build());
     } catch (_) {
@@ -8644,7 +8570,7 @@ class GUserData_Viewer_favourites_studios_edgesBuilder
         _node?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserData_Viewer_favourites_studios_edges',
+            r'GUserData_User_favourites_studios_edges',
             _$failedField,
             e.toString());
       }
@@ -8655,8 +8581,8 @@ class GUserData_Viewer_favourites_studios_edgesBuilder
   }
 }
 
-class _$GUserData_Viewer_favourites_studios_edges_node
-    extends GUserData_Viewer_favourites_studios_edges_node {
+class _$GUserData_User_favourites_studios_edges_node
+    extends GUserData_User_favourites_studios_edges_node {
   @override
   final String G__typename;
   @override
@@ -8664,39 +8590,38 @@ class _$GUserData_Viewer_favourites_studios_edges_node
   @override
   final String name;
 
-  factory _$GUserData_Viewer_favourites_studios_edges_node(
-          [void Function(GUserData_Viewer_favourites_studios_edges_nodeBuilder)?
+  factory _$GUserData_User_favourites_studios_edges_node(
+          [void Function(GUserData_User_favourites_studios_edges_nodeBuilder)?
               updates]) =>
-      (new GUserData_Viewer_favourites_studios_edges_nodeBuilder()
+      (new GUserData_User_favourites_studios_edges_nodeBuilder()
             ..update(updates))
           ._build();
 
-  _$GUserData_Viewer_favourites_studios_edges_node._(
+  _$GUserData_User_favourites_studios_edges_node._(
       {required this.G__typename, required this.id, required this.name})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GUserData_Viewer_favourites_studios_edges_node', 'G__typename');
+        r'GUserData_User_favourites_studios_edges_node', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
-        id, r'GUserData_Viewer_favourites_studios_edges_node', 'id');
+        id, r'GUserData_User_favourites_studios_edges_node', 'id');
     BuiltValueNullFieldError.checkNotNull(
-        name, r'GUserData_Viewer_favourites_studios_edges_node', 'name');
+        name, r'GUserData_User_favourites_studios_edges_node', 'name');
   }
 
   @override
-  GUserData_Viewer_favourites_studios_edges_node rebuild(
-          void Function(GUserData_Viewer_favourites_studios_edges_nodeBuilder)
+  GUserData_User_favourites_studios_edges_node rebuild(
+          void Function(GUserData_User_favourites_studios_edges_nodeBuilder)
               updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserData_Viewer_favourites_studios_edges_nodeBuilder toBuilder() =>
-      new GUserData_Viewer_favourites_studios_edges_nodeBuilder()
-        ..replace(this);
+  GUserData_User_favourites_studios_edges_nodeBuilder toBuilder() =>
+      new GUserData_User_favourites_studios_edges_nodeBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is GUserData_Viewer_favourites_studios_edges_node &&
+    return other is GUserData_User_favourites_studios_edges_node &&
         G__typename == other.G__typename &&
         id == other.id &&
         name == other.name;
@@ -8715,7 +8640,7 @@ class _$GUserData_Viewer_favourites_studios_edges_node
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserData_Viewer_favourites_studios_edges_node')
+            r'GUserData_User_favourites_studios_edges_node')
           ..add('G__typename', G__typename)
           ..add('id', id)
           ..add('name', name))
@@ -8723,11 +8648,11 @@ class _$GUserData_Viewer_favourites_studios_edges_node
   }
 }
 
-class GUserData_Viewer_favourites_studios_edges_nodeBuilder
+class GUserData_User_favourites_studios_edges_nodeBuilder
     implements
-        Builder<GUserData_Viewer_favourites_studios_edges_node,
-            GUserData_Viewer_favourites_studios_edges_nodeBuilder> {
-  _$GUserData_Viewer_favourites_studios_edges_node? _$v;
+        Builder<GUserData_User_favourites_studios_edges_node,
+            GUserData_User_favourites_studios_edges_nodeBuilder> {
+  _$GUserData_User_favourites_studios_edges_node? _$v;
 
   String? _G__typename;
   String? get G__typename => _$this._G__typename;
@@ -8741,11 +8666,11 @@ class GUserData_Viewer_favourites_studios_edges_nodeBuilder
   String? get name => _$this._name;
   set name(String? name) => _$this._name = name;
 
-  GUserData_Viewer_favourites_studios_edges_nodeBuilder() {
-    GUserData_Viewer_favourites_studios_edges_node._initializeBuilder(this);
+  GUserData_User_favourites_studios_edges_nodeBuilder() {
+    GUserData_User_favourites_studios_edges_node._initializeBuilder(this);
   }
 
-  GUserData_Viewer_favourites_studios_edges_nodeBuilder get _$this {
+  GUserData_User_favourites_studios_edges_nodeBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -8757,32 +8682,30 @@ class GUserData_Viewer_favourites_studios_edges_nodeBuilder
   }
 
   @override
-  void replace(GUserData_Viewer_favourites_studios_edges_node other) {
+  void replace(GUserData_User_favourites_studios_edges_node other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserData_Viewer_favourites_studios_edges_node;
+    _$v = other as _$GUserData_User_favourites_studios_edges_node;
   }
 
   @override
   void update(
-      void Function(GUserData_Viewer_favourites_studios_edges_nodeBuilder)?
+      void Function(GUserData_User_favourites_studios_edges_nodeBuilder)?
           updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserData_Viewer_favourites_studios_edges_node build() => _build();
+  GUserData_User_favourites_studios_edges_node build() => _build();
 
-  _$GUserData_Viewer_favourites_studios_edges_node _build() {
+  _$GUserData_User_favourites_studios_edges_node _build() {
     final _$result = _$v ??
-        new _$GUserData_Viewer_favourites_studios_edges_node._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GUserData_Viewer_favourites_studios_edges_node',
-                'G__typename'),
+        new _$GUserData_User_favourites_studios_edges_node._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                r'GUserData_User_favourites_studios_edges_node', 'G__typename'),
             id: BuiltValueNullFieldError.checkNotNull(
-                id, r'GUserData_Viewer_favourites_studios_edges_node', 'id'),
-            name: BuiltValueNullFieldError.checkNotNull(name,
-                r'GUserData_Viewer_favourites_studios_edges_node', 'name'));
+                id, r'GUserData_User_favourites_studios_edges_node', 'id'),
+            name: BuiltValueNullFieldError.checkNotNull(
+                name, r'GUserData_User_favourites_studios_edges_node', 'name'));
     replace(_$result);
     return _$result;
   }

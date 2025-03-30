@@ -2,6 +2,7 @@
 // ignore_for_file: type=lint
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
+import 'package:anilist/src/graphql/generated/schema.schema.gql.dart' as _i2;
 import 'package:anilist/src/graphql/generated/serializers.gql.dart' as _i1;
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
@@ -53,9 +54,14 @@ abstract class GProfileData_Viewer
   String? get about;
   GProfileData_Viewer_avatar? get avatar;
   String? get bannerImage;
-  GProfileData_Viewer_statistics? get statistics;
-  GProfileData_Viewer_favourites? get favourites;
   int? get unreadNotificationCount;
+  int? get donatorTier;
+  String? get donatorBadge;
+  BuiltList<_i2.GModRole?>? get moderatorRoles;
+  GProfileData_Viewer_options? get options;
+  GProfileData_Viewer_statistics? get statistics;
+  GProfileData_Viewer_stats? get stats;
+  GProfileData_Viewer_favourites? get favourites;
   static Serializer<GProfileData_Viewer> get serializer =>
       _$gProfileDataViewerSerializer;
 
@@ -98,6 +104,78 @@ abstract class GProfileData_Viewer_avatar
   static GProfileData_Viewer_avatar? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GProfileData_Viewer_avatar.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_options
+    implements
+        Built<GProfileData_Viewer_options, GProfileData_Viewer_optionsBuilder> {
+  GProfileData_Viewer_options._();
+
+  factory GProfileData_Viewer_options(
+          [Function(GProfileData_Viewer_optionsBuilder b) updates]) =
+      _$GProfileData_Viewer_options;
+
+  static void _initializeBuilder(GProfileData_Viewer_optionsBuilder b) =>
+      b..G__typename = 'UserOptions';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  _i2.GUserTitleLanguage? get titleLanguage;
+  _i2.GUserStaffNameLanguage? get staffNameLanguage;
+  bool? get restrictMessagesToFollowing;
+  bool? get airingNotifications;
+  bool? get displayAdultContent;
+  String? get profileColor;
+  BuiltList<GProfileData_Viewer_options_notificationOptions?>?
+      get notificationOptions;
+  static Serializer<GProfileData_Viewer_options> get serializer =>
+      _$gProfileDataViewerOptionsSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_options.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_options? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_options.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_options_notificationOptions
+    implements
+        Built<GProfileData_Viewer_options_notificationOptions,
+            GProfileData_Viewer_options_notificationOptionsBuilder> {
+  GProfileData_Viewer_options_notificationOptions._();
+
+  factory GProfileData_Viewer_options_notificationOptions(
+      [Function(GProfileData_Viewer_options_notificationOptionsBuilder b)
+          updates]) = _$GProfileData_Viewer_options_notificationOptions;
+
+  static void _initializeBuilder(
+          GProfileData_Viewer_options_notificationOptionsBuilder b) =>
+      b..G__typename = 'NotificationOption';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  _i2.GNotificationType? get type;
+  bool? get enabled;
+  static Serializer<GProfileData_Viewer_options_notificationOptions>
+      get serializer =>
+          _$gProfileDataViewerOptionsNotificationOptionsSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_options_notificationOptions.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_options_notificationOptions? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_options_notificationOptions.serializer,
         json,
       );
 }
@@ -155,6 +233,14 @@ abstract class GProfileData_Viewer_statistics_anime
   double get standardDeviation;
   int get minutesWatched;
   int get episodesWatched;
+  BuiltList<GProfileData_Viewer_statistics_anime_genrePreview?>?
+      get genrePreview;
+  BuiltList<GProfileData_Viewer_statistics_anime_scores?>? get scores;
+  BuiltList<GProfileData_Viewer_statistics_anime_lengths?>? get lengths;
+  BuiltList<GProfileData_Viewer_statistics_anime_formats?>? get formats;
+  BuiltList<GProfileData_Viewer_statistics_anime_releaseYears?>?
+      get releaseYears;
+  BuiltList<GProfileData_Viewer_statistics_anime_statuses?>? get statuses;
   static Serializer<GProfileData_Viewer_statistics_anime> get serializer =>
       _$gProfileDataViewerStatisticsAnimeSerializer;
 
@@ -167,6 +253,222 @@ abstract class GProfileData_Viewer_statistics_anime
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GProfileData_Viewer_statistics_anime.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_statistics_anime_genrePreview
+    implements
+        Built<GProfileData_Viewer_statistics_anime_genrePreview,
+            GProfileData_Viewer_statistics_anime_genrePreviewBuilder> {
+  GProfileData_Viewer_statistics_anime_genrePreview._();
+
+  factory GProfileData_Viewer_statistics_anime_genrePreview(
+      [Function(GProfileData_Viewer_statistics_anime_genrePreviewBuilder b)
+          updates]) = _$GProfileData_Viewer_statistics_anime_genrePreview;
+
+  static void _initializeBuilder(
+          GProfileData_Viewer_statistics_anime_genrePreviewBuilder b) =>
+      b..G__typename = 'UserGenreStatistic';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  String? get genre;
+  int get count;
+  static Serializer<GProfileData_Viewer_statistics_anime_genrePreview>
+      get serializer =>
+          _$gProfileDataViewerStatisticsAnimeGenrePreviewSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_statistics_anime_genrePreview.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_statistics_anime_genrePreview? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_statistics_anime_genrePreview.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_statistics_anime_scores
+    implements
+        Built<GProfileData_Viewer_statistics_anime_scores,
+            GProfileData_Viewer_statistics_anime_scoresBuilder> {
+  GProfileData_Viewer_statistics_anime_scores._();
+
+  factory GProfileData_Viewer_statistics_anime_scores(
+      [Function(GProfileData_Viewer_statistics_anime_scoresBuilder b)
+          updates]) = _$GProfileData_Viewer_statistics_anime_scores;
+
+  static void _initializeBuilder(
+          GProfileData_Viewer_statistics_anime_scoresBuilder b) =>
+      b..G__typename = 'UserScoreStatistic';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  int get count;
+  double get meanScore;
+  int get minutesWatched;
+  int? get score;
+  static Serializer<GProfileData_Viewer_statistics_anime_scores>
+      get serializer => _$gProfileDataViewerStatisticsAnimeScoresSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_statistics_anime_scores.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_statistics_anime_scores? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_statistics_anime_scores.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_statistics_anime_lengths
+    implements
+        Built<GProfileData_Viewer_statistics_anime_lengths,
+            GProfileData_Viewer_statistics_anime_lengthsBuilder> {
+  GProfileData_Viewer_statistics_anime_lengths._();
+
+  factory GProfileData_Viewer_statistics_anime_lengths(
+      [Function(GProfileData_Viewer_statistics_anime_lengthsBuilder b)
+          updates]) = _$GProfileData_Viewer_statistics_anime_lengths;
+
+  static void _initializeBuilder(
+          GProfileData_Viewer_statistics_anime_lengthsBuilder b) =>
+      b..G__typename = 'UserLengthStatistic';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  int get count;
+  String? get length;
+  double get meanScore;
+  int get minutesWatched;
+  static Serializer<GProfileData_Viewer_statistics_anime_lengths>
+      get serializer => _$gProfileDataViewerStatisticsAnimeLengthsSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_statistics_anime_lengths.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_statistics_anime_lengths? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_statistics_anime_lengths.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_statistics_anime_formats
+    implements
+        Built<GProfileData_Viewer_statistics_anime_formats,
+            GProfileData_Viewer_statistics_anime_formatsBuilder> {
+  GProfileData_Viewer_statistics_anime_formats._();
+
+  factory GProfileData_Viewer_statistics_anime_formats(
+      [Function(GProfileData_Viewer_statistics_anime_formatsBuilder b)
+          updates]) = _$GProfileData_Viewer_statistics_anime_formats;
+
+  static void _initializeBuilder(
+          GProfileData_Viewer_statistics_anime_formatsBuilder b) =>
+      b..G__typename = 'UserFormatStatistic';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  int get count;
+  _i2.GMediaFormat? get format;
+  int get minutesWatched;
+  double get meanScore;
+  static Serializer<GProfileData_Viewer_statistics_anime_formats>
+      get serializer => _$gProfileDataViewerStatisticsAnimeFormatsSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_statistics_anime_formats.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_statistics_anime_formats? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_statistics_anime_formats.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_statistics_anime_releaseYears
+    implements
+        Built<GProfileData_Viewer_statistics_anime_releaseYears,
+            GProfileData_Viewer_statistics_anime_releaseYearsBuilder> {
+  GProfileData_Viewer_statistics_anime_releaseYears._();
+
+  factory GProfileData_Viewer_statistics_anime_releaseYears(
+      [Function(GProfileData_Viewer_statistics_anime_releaseYearsBuilder b)
+          updates]) = _$GProfileData_Viewer_statistics_anime_releaseYears;
+
+  static void _initializeBuilder(
+          GProfileData_Viewer_statistics_anime_releaseYearsBuilder b) =>
+      b..G__typename = 'UserReleaseYearStatistic';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  int get count;
+  double get meanScore;
+  int? get releaseYear;
+  int get minutesWatched;
+  static Serializer<GProfileData_Viewer_statistics_anime_releaseYears>
+      get serializer =>
+          _$gProfileDataViewerStatisticsAnimeReleaseYearsSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_statistics_anime_releaseYears.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_statistics_anime_releaseYears? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_statistics_anime_releaseYears.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_statistics_anime_statuses
+    implements
+        Built<GProfileData_Viewer_statistics_anime_statuses,
+            GProfileData_Viewer_statistics_anime_statusesBuilder> {
+  GProfileData_Viewer_statistics_anime_statuses._();
+
+  factory GProfileData_Viewer_statistics_anime_statuses(
+      [Function(GProfileData_Viewer_statistics_anime_statusesBuilder b)
+          updates]) = _$GProfileData_Viewer_statistics_anime_statuses;
+
+  static void _initializeBuilder(
+          GProfileData_Viewer_statistics_anime_statusesBuilder b) =>
+      b..G__typename = 'UserStatusStatistic';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  int get count;
+  int get minutesWatched;
+  double get meanScore;
+  _i2.GMediaListStatus? get status;
+  static Serializer<GProfileData_Viewer_statistics_anime_statuses>
+      get serializer => _$gProfileDataViewerStatisticsAnimeStatusesSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_statistics_anime_statuses.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_statistics_anime_statuses? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_statistics_anime_statuses.serializer,
         json,
       );
 }
@@ -188,9 +490,12 @@ abstract class GProfileData_Viewer_statistics_manga
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   int get count;
-  int get episodesWatched;
+  double get meanScore;
+  double get standardDeviation;
   int get chaptersRead;
   int get volumesRead;
+  BuiltList<GProfileData_Viewer_statistics_manga_genrePreview?>?
+      get genrePreview;
   static Serializer<GProfileData_Viewer_statistics_manga> get serializer =>
       _$gProfileDataViewerStatisticsMangaSerializer;
 
@@ -203,6 +508,106 @@ abstract class GProfileData_Viewer_statistics_manga
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GProfileData_Viewer_statistics_manga.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_statistics_manga_genrePreview
+    implements
+        Built<GProfileData_Viewer_statistics_manga_genrePreview,
+            GProfileData_Viewer_statistics_manga_genrePreviewBuilder> {
+  GProfileData_Viewer_statistics_manga_genrePreview._();
+
+  factory GProfileData_Viewer_statistics_manga_genrePreview(
+      [Function(GProfileData_Viewer_statistics_manga_genrePreviewBuilder b)
+          updates]) = _$GProfileData_Viewer_statistics_manga_genrePreview;
+
+  static void _initializeBuilder(
+          GProfileData_Viewer_statistics_manga_genrePreviewBuilder b) =>
+      b..G__typename = 'UserGenreStatistic';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  String? get genre;
+  int get count;
+  static Serializer<GProfileData_Viewer_statistics_manga_genrePreview>
+      get serializer =>
+          _$gProfileDataViewerStatisticsMangaGenrePreviewSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_statistics_manga_genrePreview.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_statistics_manga_genrePreview? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_statistics_manga_genrePreview.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_stats
+    implements
+        Built<GProfileData_Viewer_stats, GProfileData_Viewer_statsBuilder> {
+  GProfileData_Viewer_stats._();
+
+  factory GProfileData_Viewer_stats(
+          [Function(GProfileData_Viewer_statsBuilder b) updates]) =
+      _$GProfileData_Viewer_stats;
+
+  static void _initializeBuilder(GProfileData_Viewer_statsBuilder b) =>
+      b..G__typename = 'UserStats';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  BuiltList<GProfileData_Viewer_stats_activityHistory?>? get activityHistory;
+  static Serializer<GProfileData_Viewer_stats> get serializer =>
+      _$gProfileDataViewerStatsSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_stats.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_stats? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_stats.serializer,
+        json,
+      );
+}
+
+abstract class GProfileData_Viewer_stats_activityHistory
+    implements
+        Built<GProfileData_Viewer_stats_activityHistory,
+            GProfileData_Viewer_stats_activityHistoryBuilder> {
+  GProfileData_Viewer_stats_activityHistory._();
+
+  factory GProfileData_Viewer_stats_activityHistory(
+      [Function(GProfileData_Viewer_stats_activityHistoryBuilder b)
+          updates]) = _$GProfileData_Viewer_stats_activityHistory;
+
+  static void _initializeBuilder(
+          GProfileData_Viewer_stats_activityHistoryBuilder b) =>
+      b..G__typename = 'UserActivityHistory';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  int? get date;
+  int? get amount;
+  int? get level;
+  static Serializer<GProfileData_Viewer_stats_activityHistory> get serializer =>
+      _$gProfileDataViewerStatsActivityHistorySerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GProfileData_Viewer_stats_activityHistory.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProfileData_Viewer_stats_activityHistory? fromJson(
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GProfileData_Viewer_stats_activityHistory.serializer,
         json,
       );
 }

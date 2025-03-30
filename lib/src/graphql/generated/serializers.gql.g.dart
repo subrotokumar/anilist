@@ -279,9 +279,20 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GProfileData_Viewer_favourites_manga_nodes_coverImage.serializer)
       ..add(GProfileData_Viewer_favourites_manga_nodes_title.serializer)
       ..add(GProfileData_Viewer_favourites_manga_pageInfo.serializer)
+      ..add(GProfileData_Viewer_options.serializer)
+      ..add(GProfileData_Viewer_options_notificationOptions.serializer)
       ..add(GProfileData_Viewer_statistics.serializer)
       ..add(GProfileData_Viewer_statistics_anime.serializer)
+      ..add(GProfileData_Viewer_statistics_anime_formats.serializer)
+      ..add(GProfileData_Viewer_statistics_anime_genrePreview.serializer)
+      ..add(GProfileData_Viewer_statistics_anime_lengths.serializer)
+      ..add(GProfileData_Viewer_statistics_anime_releaseYears.serializer)
+      ..add(GProfileData_Viewer_statistics_anime_scores.serializer)
+      ..add(GProfileData_Viewer_statistics_anime_statuses.serializer)
       ..add(GProfileData_Viewer_statistics_manga.serializer)
+      ..add(GProfileData_Viewer_statistics_manga_genrePreview.serializer)
+      ..add(GProfileData_Viewer_stats.serializer)
+      ..add(GProfileData_Viewer_stats_activityHistory.serializer)
       ..add(GProfileQueryData.serializer)
       ..add(GProfileQueryData_Viewer.serializer)
       ..add(GProfileQueryData_Viewer_avatar.serializer)
@@ -410,44 +421,44 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GTrendingAnimeQueryReq.serializer)
       ..add(GTrendingAnimeQueryVars.serializer)
       ..add(GUserData.serializer)
-      ..add(GUserData_Viewer.serializer)
-      ..add(GUserData_Viewer_avatar.serializer)
-      ..add(GUserData_Viewer_favourites.serializer)
-      ..add(GUserData_Viewer_favourites_anime.serializer)
-      ..add(GUserData_Viewer_favourites_anime_edges.serializer)
-      ..add(GUserData_Viewer_favourites_anime_edges_node.serializer)
-      ..add(GUserData_Viewer_favourites_anime_edges_node_coverImage.serializer)
-      ..add(GUserData_Viewer_favourites_anime_edges_node_startDate.serializer)
-      ..add(GUserData_Viewer_favourites_anime_edges_node_title.serializer)
-      ..add(GUserData_Viewer_favourites_characters.serializer)
-      ..add(GUserData_Viewer_favourites_characters_edges.serializer)
-      ..add(GUserData_Viewer_favourites_characters_edges_node.serializer)
-      ..add(GUserData_Viewer_favourites_characters_edges_node_image.serializer)
-      ..add(GUserData_Viewer_favourites_characters_edges_node_name.serializer)
-      ..add(GUserData_Viewer_favourites_manga.serializer)
-      ..add(GUserData_Viewer_favourites_manga_edges.serializer)
-      ..add(GUserData_Viewer_favourites_manga_edges_node.serializer)
-      ..add(GUserData_Viewer_favourites_manga_edges_node_coverImage.serializer)
-      ..add(GUserData_Viewer_favourites_manga_edges_node_startDate.serializer)
-      ..add(GUserData_Viewer_favourites_manga_edges_node_title.serializer)
-      ..add(GUserData_Viewer_favourites_staff.serializer)
-      ..add(GUserData_Viewer_favourites_staff_edges.serializer)
-      ..add(GUserData_Viewer_favourites_staff_edges_node.serializer)
-      ..add(GUserData_Viewer_favourites_staff_edges_node_image.serializer)
-      ..add(GUserData_Viewer_favourites_staff_edges_node_name.serializer)
-      ..add(GUserData_Viewer_favourites_studios.serializer)
-      ..add(GUserData_Viewer_favourites_studios_edges.serializer)
-      ..add(GUserData_Viewer_favourites_studios_edges_node.serializer)
-      ..add(GUserData_Viewer_mediaListOptions.serializer)
-      ..add(GUserData_Viewer_options.serializer)
-      ..add(GUserData_Viewer_previousNames.serializer)
-      ..add(GUserData_Viewer_statistics.serializer)
-      ..add(GUserData_Viewer_statistics_anime.serializer)
-      ..add(GUserData_Viewer_statistics_anime_genrePreview.serializer)
-      ..add(GUserData_Viewer_statistics_manga.serializer)
-      ..add(GUserData_Viewer_statistics_manga_genrePreview.serializer)
-      ..add(GUserData_Viewer_stats.serializer)
-      ..add(GUserData_Viewer_stats_activityHistory.serializer)
+      ..add(GUserData_User.serializer)
+      ..add(GUserData_User_avatar.serializer)
+      ..add(GUserData_User_favourites.serializer)
+      ..add(GUserData_User_favourites_anime.serializer)
+      ..add(GUserData_User_favourites_anime_edges.serializer)
+      ..add(GUserData_User_favourites_anime_edges_node.serializer)
+      ..add(GUserData_User_favourites_anime_edges_node_coverImage.serializer)
+      ..add(GUserData_User_favourites_anime_edges_node_startDate.serializer)
+      ..add(GUserData_User_favourites_anime_edges_node_title.serializer)
+      ..add(GUserData_User_favourites_characters.serializer)
+      ..add(GUserData_User_favourites_characters_edges.serializer)
+      ..add(GUserData_User_favourites_characters_edges_node.serializer)
+      ..add(GUserData_User_favourites_characters_edges_node_image.serializer)
+      ..add(GUserData_User_favourites_characters_edges_node_name.serializer)
+      ..add(GUserData_User_favourites_manga.serializer)
+      ..add(GUserData_User_favourites_manga_edges.serializer)
+      ..add(GUserData_User_favourites_manga_edges_node.serializer)
+      ..add(GUserData_User_favourites_manga_edges_node_coverImage.serializer)
+      ..add(GUserData_User_favourites_manga_edges_node_startDate.serializer)
+      ..add(GUserData_User_favourites_manga_edges_node_title.serializer)
+      ..add(GUserData_User_favourites_staff.serializer)
+      ..add(GUserData_User_favourites_staff_edges.serializer)
+      ..add(GUserData_User_favourites_staff_edges_node.serializer)
+      ..add(GUserData_User_favourites_staff_edges_node_image.serializer)
+      ..add(GUserData_User_favourites_staff_edges_node_name.serializer)
+      ..add(GUserData_User_favourites_studios.serializer)
+      ..add(GUserData_User_favourites_studios_edges.serializer)
+      ..add(GUserData_User_favourites_studios_edges_node.serializer)
+      ..add(GUserData_User_mediaListOptions.serializer)
+      ..add(GUserData_User_options.serializer)
+      ..add(GUserData_User_previousNames.serializer)
+      ..add(GUserData_User_statistics.serializer)
+      ..add(GUserData_User_statistics_anime.serializer)
+      ..add(GUserData_User_statistics_anime_genrePreview.serializer)
+      ..add(GUserData_User_statistics_manga.serializer)
+      ..add(GUserData_User_statistics_manga_genrePreview.serializer)
+      ..add(GUserData_User_stats.serializer)
+      ..add(GUserData_User_stats_activityHistory.serializer)
       ..add(GUserIDData.serializer)
       ..add(GUserIDData_Viewer.serializer)
       ..add(GUserIDReq.serializer)
@@ -667,6 +678,9 @@ Serializers _$serializers = (new Serializers().toBuilder()
           const FullType(BuiltList, const [const FullType.nullable(String)]),
           () => new ListBuilder<String?>())
       ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType.nullable(GModRole)]),
+          () => new ListBuilder<GModRole?>())
+      ..addBuilderFactory(
           const FullType(
               BuiltList, const [const FullType.nullable(GNotificationType)]),
           () => new ListBuilder<GNotificationType?>())
@@ -692,6 +706,65 @@ Serializers _$serializers = (new Serializers().toBuilder()
             const FullType.nullable(GProfileData_Viewer_favourites_manga_nodes)
           ]),
           () => new ListBuilder<GProfileData_Viewer_favourites_manga_nodes?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GProfileData_Viewer_options_notificationOptions)
+          ]),
+          () => new ListBuilder<
+              GProfileData_Viewer_options_notificationOptions?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GProfileData_Viewer_statistics_anime_genrePreview)
+          ]),
+          () => new ListBuilder<
+              GProfileData_Viewer_statistics_anime_genrePreview?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GProfileData_Viewer_statistics_anime_scores)
+          ]),
+          () => new ListBuilder<GProfileData_Viewer_statistics_anime_scores?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GProfileData_Viewer_statistics_anime_lengths)
+          ]),
+          () =>
+              new ListBuilder<GProfileData_Viewer_statistics_anime_lengths?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GProfileData_Viewer_statistics_anime_formats)
+          ]),
+          () =>
+              new ListBuilder<GProfileData_Viewer_statistics_anime_formats?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GProfileData_Viewer_statistics_anime_releaseYears)
+          ]),
+          () => new ListBuilder<
+              GProfileData_Viewer_statistics_anime_releaseYears?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GProfileData_Viewer_statistics_anime_statuses)
+          ]),
+          () =>
+              new ListBuilder<GProfileData_Viewer_statistics_anime_statuses?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GProfileData_Viewer_statistics_manga_genrePreview)
+          ]),
+          () => new ListBuilder<
+              GProfileData_Viewer_statistics_manga_genrePreview?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GProfileData_Viewer_stats_activityHistory)
+          ]),
+          () => new ListBuilder<GProfileData_Viewer_stats_activityHistory?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
             const FullType.nullable(
@@ -789,57 +862,55 @@ Serializers _$serializers = (new Serializers().toBuilder()
           () => new ListBuilder<GTrendingAnimeQueryData_Page_media?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
-            const FullType.nullable(GUserData_Viewer_favourites_anime_edges)
+            const FullType.nullable(GUserData_User_favourites_anime_edges)
           ]),
-          () => new ListBuilder<GUserData_Viewer_favourites_anime_edges?>())
+          () => new ListBuilder<GUserData_User_favourites_anime_edges?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
-            const FullType.nullable(
-                GUserData_Viewer_favourites_characters_edges)
+            const FullType.nullable(GUserData_User_favourites_characters_edges)
           ]),
-          () =>
-              new ListBuilder<GUserData_Viewer_favourites_characters_edges?>())
+          () => new ListBuilder<GUserData_User_favourites_characters_edges?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
-            const FullType.nullable(GUserData_Viewer_favourites_manga_edges)
+            const FullType.nullable(GUserData_User_favourites_manga_edges)
           ]),
-          () => new ListBuilder<GUserData_Viewer_favourites_manga_edges?>())
+          () => new ListBuilder<GUserData_User_favourites_manga_edges?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
-            const FullType.nullable(GUserData_Viewer_favourites_staff_edges)
+            const FullType.nullable(GUserData_User_favourites_staff_edges)
           ]),
-          () => new ListBuilder<GUserData_Viewer_favourites_staff_edges?>())
+          () => new ListBuilder<GUserData_User_favourites_staff_edges?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
-            const FullType.nullable(GUserData_Viewer_favourites_studios_edges)
+            const FullType.nullable(GUserData_User_favourites_studios_edges)
           ]),
-          () => new ListBuilder<GUserData_Viewer_favourites_studios_edges?>())
+          () => new ListBuilder<GUserData_User_favourites_studios_edges?>())
       ..addBuilderFactory(
           const FullType(BuiltList,
-              const [const FullType.nullable(GUserData_Viewer_previousNames)]),
-          () => new ListBuilder<GUserData_Viewer_previousNames?>())
+              const [const FullType.nullable(GUserData_User_previousNames)]),
+          () => new ListBuilder<GUserData_User_previousNames?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType.nullable(GModRole)]),
           () => new ListBuilder<GModRole?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
             const FullType.nullable(
-                GUserData_Viewer_statistics_anime_genrePreview)
+                GUserData_User_statistics_anime_genrePreview)
           ]),
-          () => new ListBuilder<
-              GUserData_Viewer_statistics_anime_genrePreview?>())
+          () =>
+              new ListBuilder<GUserData_User_statistics_anime_genrePreview?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
             const FullType.nullable(
-                GUserData_Viewer_statistics_manga_genrePreview)
+                GUserData_User_statistics_manga_genrePreview)
           ]),
-          () => new ListBuilder<
-              GUserData_Viewer_statistics_manga_genrePreview?>())
+          () =>
+              new ListBuilder<GUserData_User_statistics_manga_genrePreview?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [
-            const FullType.nullable(GUserData_Viewer_stats_activityHistory)
+            const FullType.nullable(GUserData_User_stats_activityHistory)
           ]),
-          () => new ListBuilder<GUserData_Viewer_stats_activityHistory?>())
+          () => new ListBuilder<GUserData_User_stats_activityHistory?>())
       ..addBuilderFactory(
           const FullType(BuiltList,
               const [const FullType.nullable(GtrendingAnimeData_Page_media)]),

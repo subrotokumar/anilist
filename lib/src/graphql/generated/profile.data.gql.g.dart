@@ -12,15 +12,46 @@ Serializer<GProfileData_Viewer> _$gProfileDataViewerSerializer =
     new _$GProfileData_ViewerSerializer();
 Serializer<GProfileData_Viewer_avatar> _$gProfileDataViewerAvatarSerializer =
     new _$GProfileData_Viewer_avatarSerializer();
+Serializer<GProfileData_Viewer_options> _$gProfileDataViewerOptionsSerializer =
+    new _$GProfileData_Viewer_optionsSerializer();
+Serializer<GProfileData_Viewer_options_notificationOptions>
+    _$gProfileDataViewerOptionsNotificationOptionsSerializer =
+    new _$GProfileData_Viewer_options_notificationOptionsSerializer();
 Serializer<GProfileData_Viewer_statistics>
     _$gProfileDataViewerStatisticsSerializer =
     new _$GProfileData_Viewer_statisticsSerializer();
 Serializer<GProfileData_Viewer_statistics_anime>
     _$gProfileDataViewerStatisticsAnimeSerializer =
     new _$GProfileData_Viewer_statistics_animeSerializer();
+Serializer<GProfileData_Viewer_statistics_anime_genrePreview>
+    _$gProfileDataViewerStatisticsAnimeGenrePreviewSerializer =
+    new _$GProfileData_Viewer_statistics_anime_genrePreviewSerializer();
+Serializer<GProfileData_Viewer_statistics_anime_scores>
+    _$gProfileDataViewerStatisticsAnimeScoresSerializer =
+    new _$GProfileData_Viewer_statistics_anime_scoresSerializer();
+Serializer<GProfileData_Viewer_statistics_anime_lengths>
+    _$gProfileDataViewerStatisticsAnimeLengthsSerializer =
+    new _$GProfileData_Viewer_statistics_anime_lengthsSerializer();
+Serializer<GProfileData_Viewer_statistics_anime_formats>
+    _$gProfileDataViewerStatisticsAnimeFormatsSerializer =
+    new _$GProfileData_Viewer_statistics_anime_formatsSerializer();
+Serializer<GProfileData_Viewer_statistics_anime_releaseYears>
+    _$gProfileDataViewerStatisticsAnimeReleaseYearsSerializer =
+    new _$GProfileData_Viewer_statistics_anime_releaseYearsSerializer();
+Serializer<GProfileData_Viewer_statistics_anime_statuses>
+    _$gProfileDataViewerStatisticsAnimeStatusesSerializer =
+    new _$GProfileData_Viewer_statistics_anime_statusesSerializer();
 Serializer<GProfileData_Viewer_statistics_manga>
     _$gProfileDataViewerStatisticsMangaSerializer =
     new _$GProfileData_Viewer_statistics_mangaSerializer();
+Serializer<GProfileData_Viewer_statistics_manga_genrePreview>
+    _$gProfileDataViewerStatisticsMangaGenrePreviewSerializer =
+    new _$GProfileData_Viewer_statistics_manga_genrePreviewSerializer();
+Serializer<GProfileData_Viewer_stats> _$gProfileDataViewerStatsSerializer =
+    new _$GProfileData_Viewer_statsSerializer();
+Serializer<GProfileData_Viewer_stats_activityHistory>
+    _$gProfileDataViewerStatsActivityHistorySerializer =
+    new _$GProfileData_Viewer_stats_activityHistorySerializer();
 Serializer<GProfileData_Viewer_favourites>
     _$gProfileDataViewerFavouritesSerializer =
     new _$GProfileData_Viewer_favouritesSerializer();
@@ -168,6 +199,40 @@ class _$GProfileData_ViewerSerializer
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
+    value = object.unreadNotificationCount;
+    if (value != null) {
+      result
+        ..add('unreadNotificationCount')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    value = object.donatorTier;
+    if (value != null) {
+      result
+        ..add('donatorTier')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    value = object.donatorBadge;
+    if (value != null) {
+      result
+        ..add('donatorBadge')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
+    value = object.moderatorRoles;
+    if (value != null) {
+      result
+        ..add('moderatorRoles')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(
+                BuiltList, const [const FullType.nullable(_i2.GModRole)])));
+    }
+    value = object.options;
+    if (value != null) {
+      result
+        ..add('options')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(GProfileData_Viewer_options)));
+    }
     value = object.statistics;
     if (value != null) {
       result
@@ -175,18 +240,19 @@ class _$GProfileData_ViewerSerializer
         ..add(serializers.serialize(value,
             specifiedType: const FullType(GProfileData_Viewer_statistics)));
     }
+    value = object.stats;
+    if (value != null) {
+      result
+        ..add('stats')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(GProfileData_Viewer_stats)));
+    }
     value = object.favourites;
     if (value != null) {
       result
         ..add('favourites')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(GProfileData_Viewer_favourites)));
-    }
-    value = object.unreadNotificationCount;
-    if (value != null) {
-      result
-        ..add('unreadNotificationCount')
-        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -228,21 +294,45 @@ class _$GProfileData_ViewerSerializer
           result.bannerImage = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
           break;
+        case 'unreadNotificationCount':
+          result.unreadNotificationCount = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+        case 'donatorTier':
+          result.donatorTier = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+        case 'donatorBadge':
+          result.donatorBadge = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
+          break;
+        case 'moderatorRoles':
+          result.moderatorRoles.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(_i2.GModRole)
+              ]))! as BuiltList<Object?>);
+          break;
+        case 'options':
+          result.options.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(GProfileData_Viewer_options))!
+              as GProfileData_Viewer_options);
+          break;
         case 'statistics':
           result.statistics.replace(serializers.deserialize(value,
                   specifiedType:
                       const FullType(GProfileData_Viewer_statistics))!
               as GProfileData_Viewer_statistics);
           break;
+        case 'stats':
+          result.stats.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(GProfileData_Viewer_stats))!
+              as GProfileData_Viewer_stats);
+          break;
         case 'favourites':
           result.favourites.replace(serializers.deserialize(value,
                   specifiedType:
                       const FullType(GProfileData_Viewer_favourites))!
               as GProfileData_Viewer_favourites);
-          break;
-        case 'unreadNotificationCount':
-          result.unreadNotificationCount = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -311,6 +401,207 @@ class _$GProfileData_Viewer_avatarSerializer
         case 'medium':
           result.medium = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_optionsSerializer
+    implements StructuredSerializer<GProfileData_Viewer_options> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_options,
+    _$GProfileData_Viewer_options
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_options';
+
+  @override
+  Iterable<Object?> serialize(
+      Serializers serializers, GProfileData_Viewer_options object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+    ];
+    Object? value;
+    value = object.titleLanguage;
+    if (value != null) {
+      result
+        ..add('titleLanguage')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i2.GUserTitleLanguage)));
+    }
+    value = object.staffNameLanguage;
+    if (value != null) {
+      result
+        ..add('staffNameLanguage')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i2.GUserStaffNameLanguage)));
+    }
+    value = object.restrictMessagesToFollowing;
+    if (value != null) {
+      result
+        ..add('restrictMessagesToFollowing')
+        ..add(
+            serializers.serialize(value, specifiedType: const FullType(bool)));
+    }
+    value = object.airingNotifications;
+    if (value != null) {
+      result
+        ..add('airingNotifications')
+        ..add(
+            serializers.serialize(value, specifiedType: const FullType(bool)));
+    }
+    value = object.displayAdultContent;
+    if (value != null) {
+      result
+        ..add('displayAdultContent')
+        ..add(
+            serializers.serialize(value, specifiedType: const FullType(bool)));
+    }
+    value = object.profileColor;
+    if (value != null) {
+      result
+        ..add('profileColor')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
+    value = object.notificationOptions;
+    if (value != null) {
+      result
+        ..add('notificationOptions')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(
+                  GProfileData_Viewer_options_notificationOptions)
+            ])));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_options deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GProfileData_Viewer_optionsBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'titleLanguage':
+          result.titleLanguage = serializers.deserialize(value,
+                  specifiedType: const FullType(_i2.GUserTitleLanguage))
+              as _i2.GUserTitleLanguage?;
+          break;
+        case 'staffNameLanguage':
+          result.staffNameLanguage = serializers.deserialize(value,
+                  specifiedType: const FullType(_i2.GUserStaffNameLanguage))
+              as _i2.GUserStaffNameLanguage?;
+          break;
+        case 'restrictMessagesToFollowing':
+          result.restrictMessagesToFollowing = serializers.deserialize(value,
+              specifiedType: const FullType(bool)) as bool?;
+          break;
+        case 'airingNotifications':
+          result.airingNotifications = serializers.deserialize(value,
+              specifiedType: const FullType(bool)) as bool?;
+          break;
+        case 'displayAdultContent':
+          result.displayAdultContent = serializers.deserialize(value,
+              specifiedType: const FullType(bool)) as bool?;
+          break;
+        case 'profileColor':
+          result.profileColor = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
+          break;
+        case 'notificationOptions':
+          result.notificationOptions.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GProfileData_Viewer_options_notificationOptions)
+              ]))! as BuiltList<Object?>);
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_options_notificationOptionsSerializer
+    implements
+        StructuredSerializer<GProfileData_Viewer_options_notificationOptions> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_options_notificationOptions,
+    _$GProfileData_Viewer_options_notificationOptions
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_options_notificationOptions';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GProfileData_Viewer_options_notificationOptions object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+    ];
+    Object? value;
+    value = object.type;
+    if (value != null) {
+      result
+        ..add('type')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i2.GNotificationType)));
+    }
+    value = object.enabled;
+    if (value != null) {
+      result
+        ..add('enabled')
+        ..add(
+            serializers.serialize(value, specifiedType: const FullType(bool)));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_options_notificationOptions deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GProfileData_Viewer_options_notificationOptionsBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'type':
+          result.type = serializers.deserialize(value,
+                  specifiedType: const FullType(_i2.GNotificationType))
+              as _i2.GNotificationType?;
+          break;
+        case 'enabled':
+          result.enabled = serializers.deserialize(value,
+              specifiedType: const FullType(bool)) as bool?;
           break;
       }
     }
@@ -426,7 +717,67 @@ class _$GProfileData_Viewer_statistics_animeSerializer
       serializers.serialize(object.episodesWatched,
           specifiedType: const FullType(int)),
     ];
-
+    Object? value;
+    value = object.genrePreview;
+    if (value != null) {
+      result
+        ..add('genrePreview')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(
+                  GProfileData_Viewer_statistics_anime_genrePreview)
+            ])));
+    }
+    value = object.scores;
+    if (value != null) {
+      result
+        ..add('scores')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(
+                  GProfileData_Viewer_statistics_anime_scores)
+            ])));
+    }
+    value = object.lengths;
+    if (value != null) {
+      result
+        ..add('lengths')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(
+                  GProfileData_Viewer_statistics_anime_lengths)
+            ])));
+    }
+    value = object.formats;
+    if (value != null) {
+      result
+        ..add('formats')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(
+                  GProfileData_Viewer_statistics_anime_formats)
+            ])));
+    }
+    value = object.releaseYears;
+    if (value != null) {
+      result
+        ..add('releaseYears')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(
+                  GProfileData_Viewer_statistics_anime_releaseYears)
+            ])));
+    }
+    value = object.statuses;
+    if (value != null) {
+      result
+        ..add('statuses')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(
+                  GProfileData_Viewer_statistics_anime_statuses)
+            ])));
+    }
     return result;
   }
 
@@ -466,6 +817,506 @@ class _$GProfileData_Viewer_statistics_animeSerializer
           result.episodesWatched = serializers.deserialize(value,
               specifiedType: const FullType(int))! as int;
           break;
+        case 'genrePreview':
+          result.genrePreview.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GProfileData_Viewer_statistics_anime_genrePreview)
+              ]))! as BuiltList<Object?>);
+          break;
+        case 'scores':
+          result.scores.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GProfileData_Viewer_statistics_anime_scores)
+              ]))! as BuiltList<Object?>);
+          break;
+        case 'lengths':
+          result.lengths.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GProfileData_Viewer_statistics_anime_lengths)
+              ]))! as BuiltList<Object?>);
+          break;
+        case 'formats':
+          result.formats.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GProfileData_Viewer_statistics_anime_formats)
+              ]))! as BuiltList<Object?>);
+          break;
+        case 'releaseYears':
+          result.releaseYears.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GProfileData_Viewer_statistics_anime_releaseYears)
+              ]))! as BuiltList<Object?>);
+          break;
+        case 'statuses':
+          result.statuses.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GProfileData_Viewer_statistics_anime_statuses)
+              ]))! as BuiltList<Object?>);
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_genrePreviewSerializer
+    implements
+        StructuredSerializer<
+            GProfileData_Viewer_statistics_anime_genrePreview> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_statistics_anime_genrePreview,
+    _$GProfileData_Viewer_statistics_anime_genrePreview
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_statistics_anime_genrePreview';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GProfileData_Viewer_statistics_anime_genrePreview object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+      'count',
+      serializers.serialize(object.count, specifiedType: const FullType(int)),
+    ];
+    Object? value;
+    value = object.genre;
+    if (value != null) {
+      result
+        ..add('genre')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_genrePreview deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result =
+        new GProfileData_Viewer_statistics_anime_genrePreviewBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'genre':
+          result.genre = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
+          break;
+        case 'count':
+          result.count = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_scoresSerializer
+    implements
+        StructuredSerializer<GProfileData_Viewer_statistics_anime_scores> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_statistics_anime_scores,
+    _$GProfileData_Viewer_statistics_anime_scores
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_statistics_anime_scores';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GProfileData_Viewer_statistics_anime_scores object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+      'count',
+      serializers.serialize(object.count, specifiedType: const FullType(int)),
+      'meanScore',
+      serializers.serialize(object.meanScore,
+          specifiedType: const FullType(double)),
+      'minutesWatched',
+      serializers.serialize(object.minutesWatched,
+          specifiedType: const FullType(int)),
+    ];
+    Object? value;
+    value = object.score;
+    if (value != null) {
+      result
+        ..add('score')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_scores deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GProfileData_Viewer_statistics_anime_scoresBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'count':
+          result.count = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'meanScore':
+          result.meanScore = serializers.deserialize(value,
+              specifiedType: const FullType(double))! as double;
+          break;
+        case 'minutesWatched':
+          result.minutesWatched = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'score':
+          result.score = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_lengthsSerializer
+    implements
+        StructuredSerializer<GProfileData_Viewer_statistics_anime_lengths> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_statistics_anime_lengths,
+    _$GProfileData_Viewer_statistics_anime_lengths
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_statistics_anime_lengths';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GProfileData_Viewer_statistics_anime_lengths object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+      'count',
+      serializers.serialize(object.count, specifiedType: const FullType(int)),
+      'meanScore',
+      serializers.serialize(object.meanScore,
+          specifiedType: const FullType(double)),
+      'minutesWatched',
+      serializers.serialize(object.minutesWatched,
+          specifiedType: const FullType(int)),
+    ];
+    Object? value;
+    value = object.length;
+    if (value != null) {
+      result
+        ..add('length')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_lengths deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GProfileData_Viewer_statistics_anime_lengthsBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'count':
+          result.count = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'length':
+          result.length = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
+          break;
+        case 'meanScore':
+          result.meanScore = serializers.deserialize(value,
+              specifiedType: const FullType(double))! as double;
+          break;
+        case 'minutesWatched':
+          result.minutesWatched = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_formatsSerializer
+    implements
+        StructuredSerializer<GProfileData_Viewer_statistics_anime_formats> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_statistics_anime_formats,
+    _$GProfileData_Viewer_statistics_anime_formats
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_statistics_anime_formats';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GProfileData_Viewer_statistics_anime_formats object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+      'count',
+      serializers.serialize(object.count, specifiedType: const FullType(int)),
+      'minutesWatched',
+      serializers.serialize(object.minutesWatched,
+          specifiedType: const FullType(int)),
+      'meanScore',
+      serializers.serialize(object.meanScore,
+          specifiedType: const FullType(double)),
+    ];
+    Object? value;
+    value = object.format;
+    if (value != null) {
+      result
+        ..add('format')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i2.GMediaFormat)));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_formats deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GProfileData_Viewer_statistics_anime_formatsBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'count':
+          result.count = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'format':
+          result.format = serializers.deserialize(value,
+                  specifiedType: const FullType(_i2.GMediaFormat))
+              as _i2.GMediaFormat?;
+          break;
+        case 'minutesWatched':
+          result.minutesWatched = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'meanScore':
+          result.meanScore = serializers.deserialize(value,
+              specifiedType: const FullType(double))! as double;
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_releaseYearsSerializer
+    implements
+        StructuredSerializer<
+            GProfileData_Viewer_statistics_anime_releaseYears> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_statistics_anime_releaseYears,
+    _$GProfileData_Viewer_statistics_anime_releaseYears
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_statistics_anime_releaseYears';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GProfileData_Viewer_statistics_anime_releaseYears object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+      'count',
+      serializers.serialize(object.count, specifiedType: const FullType(int)),
+      'meanScore',
+      serializers.serialize(object.meanScore,
+          specifiedType: const FullType(double)),
+      'minutesWatched',
+      serializers.serialize(object.minutesWatched,
+          specifiedType: const FullType(int)),
+    ];
+    Object? value;
+    value = object.releaseYear;
+    if (value != null) {
+      result
+        ..add('releaseYear')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_releaseYears deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result =
+        new GProfileData_Viewer_statistics_anime_releaseYearsBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'count':
+          result.count = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'meanScore':
+          result.meanScore = serializers.deserialize(value,
+              specifiedType: const FullType(double))! as double;
+          break;
+        case 'releaseYear':
+          result.releaseYear = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+        case 'minutesWatched':
+          result.minutesWatched = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_statusesSerializer
+    implements
+        StructuredSerializer<GProfileData_Viewer_statistics_anime_statuses> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_statistics_anime_statuses,
+    _$GProfileData_Viewer_statistics_anime_statuses
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_statistics_anime_statuses';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GProfileData_Viewer_statistics_anime_statuses object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+      'count',
+      serializers.serialize(object.count, specifiedType: const FullType(int)),
+      'minutesWatched',
+      serializers.serialize(object.minutesWatched,
+          specifiedType: const FullType(int)),
+      'meanScore',
+      serializers.serialize(object.meanScore,
+          specifiedType: const FullType(double)),
+    ];
+    Object? value;
+    value = object.status;
+    if (value != null) {
+      result
+        ..add('status')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i2.GMediaListStatus)));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_statuses deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GProfileData_Viewer_statistics_anime_statusesBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'count':
+          result.count = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'minutesWatched':
+          result.minutesWatched = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+        case 'meanScore':
+          result.meanScore = serializers.deserialize(value,
+              specifiedType: const FullType(double))! as double;
+          break;
+        case 'status':
+          result.status = serializers.deserialize(value,
+                  specifiedType: const FullType(_i2.GMediaListStatus))
+              as _i2.GMediaListStatus?;
+          break;
       }
     }
 
@@ -493,9 +1344,12 @@ class _$GProfileData_Viewer_statistics_mangaSerializer
           specifiedType: const FullType(String)),
       'count',
       serializers.serialize(object.count, specifiedType: const FullType(int)),
-      'episodesWatched',
-      serializers.serialize(object.episodesWatched,
-          specifiedType: const FullType(int)),
+      'meanScore',
+      serializers.serialize(object.meanScore,
+          specifiedType: const FullType(double)),
+      'standardDeviation',
+      serializers.serialize(object.standardDeviation,
+          specifiedType: const FullType(double)),
       'chaptersRead',
       serializers.serialize(object.chaptersRead,
           specifiedType: const FullType(int)),
@@ -503,7 +1357,17 @@ class _$GProfileData_Viewer_statistics_mangaSerializer
       serializers.serialize(object.volumesRead,
           specifiedType: const FullType(int)),
     ];
-
+    Object? value;
+    value = object.genrePreview;
+    if (value != null) {
+      result
+        ..add('genrePreview')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(
+                  GProfileData_Viewer_statistics_manga_genrePreview)
+            ])));
+    }
     return result;
   }
 
@@ -527,9 +1391,13 @@ class _$GProfileData_Viewer_statistics_mangaSerializer
           result.count = serializers.deserialize(value,
               specifiedType: const FullType(int))! as int;
           break;
-        case 'episodesWatched':
-          result.episodesWatched = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+        case 'meanScore':
+          result.meanScore = serializers.deserialize(value,
+              specifiedType: const FullType(double))! as double;
+          break;
+        case 'standardDeviation':
+          result.standardDeviation = serializers.deserialize(value,
+              specifiedType: const FullType(double))! as double;
           break;
         case 'chaptersRead':
           result.chaptersRead = serializers.deserialize(value,
@@ -538,6 +1406,217 @@ class _$GProfileData_Viewer_statistics_mangaSerializer
         case 'volumesRead':
           result.volumesRead = serializers.deserialize(value,
               specifiedType: const FullType(int))! as int;
+          break;
+        case 'genrePreview':
+          result.genrePreview.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GProfileData_Viewer_statistics_manga_genrePreview)
+              ]))! as BuiltList<Object?>);
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_statistics_manga_genrePreviewSerializer
+    implements
+        StructuredSerializer<
+            GProfileData_Viewer_statistics_manga_genrePreview> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_statistics_manga_genrePreview,
+    _$GProfileData_Viewer_statistics_manga_genrePreview
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_statistics_manga_genrePreview';
+
+  @override
+  Iterable<Object?> serialize(Serializers serializers,
+      GProfileData_Viewer_statistics_manga_genrePreview object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+      'count',
+      serializers.serialize(object.count, specifiedType: const FullType(int)),
+    ];
+    Object? value;
+    value = object.genre;
+    if (value != null) {
+      result
+        ..add('genre')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_statistics_manga_genrePreview deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result =
+        new GProfileData_Viewer_statistics_manga_genrePreviewBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'genre':
+          result.genre = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
+          break;
+        case 'count':
+          result.count = serializers.deserialize(value,
+              specifiedType: const FullType(int))! as int;
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_statsSerializer
+    implements StructuredSerializer<GProfileData_Viewer_stats> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_stats,
+    _$GProfileData_Viewer_stats
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_stats';
+
+  @override
+  Iterable<Object?> serialize(
+      Serializers serializers, GProfileData_Viewer_stats object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+    ];
+    Object? value;
+    value = object.activityHistory;
+    if (value != null) {
+      result
+        ..add('activityHistory')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(GProfileData_Viewer_stats_activityHistory)
+            ])));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_stats deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GProfileData_Viewer_statsBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'activityHistory':
+          result.activityHistory.replace(serializers.deserialize(value,
+              specifiedType: const FullType(BuiltList, const [
+                const FullType.nullable(
+                    GProfileData_Viewer_stats_activityHistory)
+              ]))! as BuiltList<Object?>);
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProfileData_Viewer_stats_activityHistorySerializer
+    implements StructuredSerializer<GProfileData_Viewer_stats_activityHistory> {
+  @override
+  final Iterable<Type> types = const [
+    GProfileData_Viewer_stats_activityHistory,
+    _$GProfileData_Viewer_stats_activityHistory
+  ];
+  @override
+  final String wireName = 'GProfileData_Viewer_stats_activityHistory';
+
+  @override
+  Iterable<Object?> serialize(
+      Serializers serializers, GProfileData_Viewer_stats_activityHistory object,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = <Object?>[
+      '__typename',
+      serializers.serialize(object.G__typename,
+          specifiedType: const FullType(String)),
+    ];
+    Object? value;
+    value = object.date;
+    if (value != null) {
+      result
+        ..add('date')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    value = object.amount;
+    if (value != null) {
+      result
+        ..add('amount')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    value = object.level;
+    if (value != null) {
+      result
+        ..add('level')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    return result;
+  }
+
+  @override
+  GProfileData_Viewer_stats_activityHistory deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = new GProfileData_Viewer_stats_activityHistoryBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case '__typename':
+          result.G__typename = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
+          break;
+        case 'date':
+          result.date = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+        case 'amount':
+          result.amount = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
+          break;
+        case 'level':
+          result.level = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -1947,11 +3026,21 @@ class _$GProfileData_Viewer extends GProfileData_Viewer {
   @override
   final String? bannerImage;
   @override
+  final int? unreadNotificationCount;
+  @override
+  final int? donatorTier;
+  @override
+  final String? donatorBadge;
+  @override
+  final BuiltList<_i2.GModRole?>? moderatorRoles;
+  @override
+  final GProfileData_Viewer_options? options;
+  @override
   final GProfileData_Viewer_statistics? statistics;
   @override
-  final GProfileData_Viewer_favourites? favourites;
+  final GProfileData_Viewer_stats? stats;
   @override
-  final int? unreadNotificationCount;
+  final GProfileData_Viewer_favourites? favourites;
 
   factory _$GProfileData_Viewer(
           [void Function(GProfileData_ViewerBuilder)? updates]) =>
@@ -1964,9 +3053,14 @@ class _$GProfileData_Viewer extends GProfileData_Viewer {
       this.about,
       this.avatar,
       this.bannerImage,
+      this.unreadNotificationCount,
+      this.donatorTier,
+      this.donatorBadge,
+      this.moderatorRoles,
+      this.options,
       this.statistics,
-      this.favourites,
-      this.unreadNotificationCount})
+      this.stats,
+      this.favourites})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename, r'GProfileData_Viewer', 'G__typename');
@@ -1993,9 +3087,14 @@ class _$GProfileData_Viewer extends GProfileData_Viewer {
         about == other.about &&
         avatar == other.avatar &&
         bannerImage == other.bannerImage &&
+        unreadNotificationCount == other.unreadNotificationCount &&
+        donatorTier == other.donatorTier &&
+        donatorBadge == other.donatorBadge &&
+        moderatorRoles == other.moderatorRoles &&
+        options == other.options &&
         statistics == other.statistics &&
-        favourites == other.favourites &&
-        unreadNotificationCount == other.unreadNotificationCount;
+        stats == other.stats &&
+        favourites == other.favourites;
   }
 
   @override
@@ -2007,9 +3106,14 @@ class _$GProfileData_Viewer extends GProfileData_Viewer {
     _$hash = $jc(_$hash, about.hashCode);
     _$hash = $jc(_$hash, avatar.hashCode);
     _$hash = $jc(_$hash, bannerImage.hashCode);
-    _$hash = $jc(_$hash, statistics.hashCode);
-    _$hash = $jc(_$hash, favourites.hashCode);
     _$hash = $jc(_$hash, unreadNotificationCount.hashCode);
+    _$hash = $jc(_$hash, donatorTier.hashCode);
+    _$hash = $jc(_$hash, donatorBadge.hashCode);
+    _$hash = $jc(_$hash, moderatorRoles.hashCode);
+    _$hash = $jc(_$hash, options.hashCode);
+    _$hash = $jc(_$hash, statistics.hashCode);
+    _$hash = $jc(_$hash, stats.hashCode);
+    _$hash = $jc(_$hash, favourites.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -2023,9 +3127,14 @@ class _$GProfileData_Viewer extends GProfileData_Viewer {
           ..add('about', about)
           ..add('avatar', avatar)
           ..add('bannerImage', bannerImage)
+          ..add('unreadNotificationCount', unreadNotificationCount)
+          ..add('donatorTier', donatorTier)
+          ..add('donatorBadge', donatorBadge)
+          ..add('moderatorRoles', moderatorRoles)
+          ..add('options', options)
           ..add('statistics', statistics)
-          ..add('favourites', favourites)
-          ..add('unreadNotificationCount', unreadNotificationCount))
+          ..add('stats', stats)
+          ..add('favourites', favourites))
         .toString();
   }
 }
@@ -2060,22 +3169,47 @@ class GProfileData_ViewerBuilder
   String? get bannerImage => _$this._bannerImage;
   set bannerImage(String? bannerImage) => _$this._bannerImage = bannerImage;
 
+  int? _unreadNotificationCount;
+  int? get unreadNotificationCount => _$this._unreadNotificationCount;
+  set unreadNotificationCount(int? unreadNotificationCount) =>
+      _$this._unreadNotificationCount = unreadNotificationCount;
+
+  int? _donatorTier;
+  int? get donatorTier => _$this._donatorTier;
+  set donatorTier(int? donatorTier) => _$this._donatorTier = donatorTier;
+
+  String? _donatorBadge;
+  String? get donatorBadge => _$this._donatorBadge;
+  set donatorBadge(String? donatorBadge) => _$this._donatorBadge = donatorBadge;
+
+  ListBuilder<_i2.GModRole?>? _moderatorRoles;
+  ListBuilder<_i2.GModRole?> get moderatorRoles =>
+      _$this._moderatorRoles ??= new ListBuilder<_i2.GModRole?>();
+  set moderatorRoles(ListBuilder<_i2.GModRole?>? moderatorRoles) =>
+      _$this._moderatorRoles = moderatorRoles;
+
+  GProfileData_Viewer_optionsBuilder? _options;
+  GProfileData_Viewer_optionsBuilder get options =>
+      _$this._options ??= new GProfileData_Viewer_optionsBuilder();
+  set options(GProfileData_Viewer_optionsBuilder? options) =>
+      _$this._options = options;
+
   GProfileData_Viewer_statisticsBuilder? _statistics;
   GProfileData_Viewer_statisticsBuilder get statistics =>
       _$this._statistics ??= new GProfileData_Viewer_statisticsBuilder();
   set statistics(GProfileData_Viewer_statisticsBuilder? statistics) =>
       _$this._statistics = statistics;
 
+  GProfileData_Viewer_statsBuilder? _stats;
+  GProfileData_Viewer_statsBuilder get stats =>
+      _$this._stats ??= new GProfileData_Viewer_statsBuilder();
+  set stats(GProfileData_Viewer_statsBuilder? stats) => _$this._stats = stats;
+
   GProfileData_Viewer_favouritesBuilder? _favourites;
   GProfileData_Viewer_favouritesBuilder get favourites =>
       _$this._favourites ??= new GProfileData_Viewer_favouritesBuilder();
   set favourites(GProfileData_Viewer_favouritesBuilder? favourites) =>
       _$this._favourites = favourites;
-
-  int? _unreadNotificationCount;
-  int? get unreadNotificationCount => _$this._unreadNotificationCount;
-  set unreadNotificationCount(int? unreadNotificationCount) =>
-      _$this._unreadNotificationCount = unreadNotificationCount;
 
   GProfileData_ViewerBuilder() {
     GProfileData_Viewer._initializeBuilder(this);
@@ -2090,9 +3224,14 @@ class GProfileData_ViewerBuilder
       _about = $v.about;
       _avatar = $v.avatar?.toBuilder();
       _bannerImage = $v.bannerImage;
-      _statistics = $v.statistics?.toBuilder();
-      _favourites = $v.favourites?.toBuilder();
       _unreadNotificationCount = $v.unreadNotificationCount;
+      _donatorTier = $v.donatorTier;
+      _donatorBadge = $v.donatorBadge;
+      _moderatorRoles = $v.moderatorRoles?.toBuilder();
+      _options = $v.options?.toBuilder();
+      _statistics = $v.statistics?.toBuilder();
+      _stats = $v.stats?.toBuilder();
+      _favourites = $v.favourites?.toBuilder();
       _$v = null;
     }
     return this;
@@ -2126,17 +3265,28 @@ class GProfileData_ViewerBuilder
               about: about,
               avatar: _avatar?.build(),
               bannerImage: bannerImage,
+              unreadNotificationCount: unreadNotificationCount,
+              donatorTier: donatorTier,
+              donatorBadge: donatorBadge,
+              moderatorRoles: _moderatorRoles?.build(),
+              options: _options?.build(),
               statistics: _statistics?.build(),
-              favourites: _favourites?.build(),
-              unreadNotificationCount: unreadNotificationCount);
+              stats: _stats?.build(),
+              favourites: _favourites?.build());
     } catch (_) {
       late String _$failedField;
       try {
         _$failedField = 'avatar';
         _avatar?.build();
 
+        _$failedField = 'moderatorRoles';
+        _moderatorRoles?.build();
+        _$failedField = 'options';
+        _options?.build();
         _$failedField = 'statistics';
         _statistics?.build();
+        _$failedField = 'stats';
+        _stats?.build();
         _$failedField = 'favourites';
         _favourites?.build();
       } catch (e) {
@@ -2260,6 +3410,338 @@ class GProfileData_Viewer_avatarBuilder
                 G__typename, r'GProfileData_Viewer_avatar', 'G__typename'),
             large: large,
             medium: medium);
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_options extends GProfileData_Viewer_options {
+  @override
+  final String G__typename;
+  @override
+  final _i2.GUserTitleLanguage? titleLanguage;
+  @override
+  final _i2.GUserStaffNameLanguage? staffNameLanguage;
+  @override
+  final bool? restrictMessagesToFollowing;
+  @override
+  final bool? airingNotifications;
+  @override
+  final bool? displayAdultContent;
+  @override
+  final String? profileColor;
+  @override
+  final BuiltList<GProfileData_Viewer_options_notificationOptions?>?
+      notificationOptions;
+
+  factory _$GProfileData_Viewer_options(
+          [void Function(GProfileData_Viewer_optionsBuilder)? updates]) =>
+      (new GProfileData_Viewer_optionsBuilder()..update(updates))._build();
+
+  _$GProfileData_Viewer_options._(
+      {required this.G__typename,
+      this.titleLanguage,
+      this.staffNameLanguage,
+      this.restrictMessagesToFollowing,
+      this.airingNotifications,
+      this.displayAdultContent,
+      this.profileColor,
+      this.notificationOptions})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(
+        G__typename, r'GProfileData_Viewer_options', 'G__typename');
+  }
+
+  @override
+  GProfileData_Viewer_options rebuild(
+          void Function(GProfileData_Viewer_optionsBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_optionsBuilder toBuilder() =>
+      new GProfileData_Viewer_optionsBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_options &&
+        G__typename == other.G__typename &&
+        titleLanguage == other.titleLanguage &&
+        staffNameLanguage == other.staffNameLanguage &&
+        restrictMessagesToFollowing == other.restrictMessagesToFollowing &&
+        airingNotifications == other.airingNotifications &&
+        displayAdultContent == other.displayAdultContent &&
+        profileColor == other.profileColor &&
+        notificationOptions == other.notificationOptions;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, titleLanguage.hashCode);
+    _$hash = $jc(_$hash, staffNameLanguage.hashCode);
+    _$hash = $jc(_$hash, restrictMessagesToFollowing.hashCode);
+    _$hash = $jc(_$hash, airingNotifications.hashCode);
+    _$hash = $jc(_$hash, displayAdultContent.hashCode);
+    _$hash = $jc(_$hash, profileColor.hashCode);
+    _$hash = $jc(_$hash, notificationOptions.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'GProfileData_Viewer_options')
+          ..add('G__typename', G__typename)
+          ..add('titleLanguage', titleLanguage)
+          ..add('staffNameLanguage', staffNameLanguage)
+          ..add('restrictMessagesToFollowing', restrictMessagesToFollowing)
+          ..add('airingNotifications', airingNotifications)
+          ..add('displayAdultContent', displayAdultContent)
+          ..add('profileColor', profileColor)
+          ..add('notificationOptions', notificationOptions))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_optionsBuilder
+    implements
+        Builder<GProfileData_Viewer_options,
+            GProfileData_Viewer_optionsBuilder> {
+  _$GProfileData_Viewer_options? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  _i2.GUserTitleLanguage? _titleLanguage;
+  _i2.GUserTitleLanguage? get titleLanguage => _$this._titleLanguage;
+  set titleLanguage(_i2.GUserTitleLanguage? titleLanguage) =>
+      _$this._titleLanguage = titleLanguage;
+
+  _i2.GUserStaffNameLanguage? _staffNameLanguage;
+  _i2.GUserStaffNameLanguage? get staffNameLanguage =>
+      _$this._staffNameLanguage;
+  set staffNameLanguage(_i2.GUserStaffNameLanguage? staffNameLanguage) =>
+      _$this._staffNameLanguage = staffNameLanguage;
+
+  bool? _restrictMessagesToFollowing;
+  bool? get restrictMessagesToFollowing => _$this._restrictMessagesToFollowing;
+  set restrictMessagesToFollowing(bool? restrictMessagesToFollowing) =>
+      _$this._restrictMessagesToFollowing = restrictMessagesToFollowing;
+
+  bool? _airingNotifications;
+  bool? get airingNotifications => _$this._airingNotifications;
+  set airingNotifications(bool? airingNotifications) =>
+      _$this._airingNotifications = airingNotifications;
+
+  bool? _displayAdultContent;
+  bool? get displayAdultContent => _$this._displayAdultContent;
+  set displayAdultContent(bool? displayAdultContent) =>
+      _$this._displayAdultContent = displayAdultContent;
+
+  String? _profileColor;
+  String? get profileColor => _$this._profileColor;
+  set profileColor(String? profileColor) => _$this._profileColor = profileColor;
+
+  ListBuilder<GProfileData_Viewer_options_notificationOptions?>?
+      _notificationOptions;
+  ListBuilder<GProfileData_Viewer_options_notificationOptions?>
+      get notificationOptions => _$this._notificationOptions ??=
+          new ListBuilder<GProfileData_Viewer_options_notificationOptions?>();
+  set notificationOptions(
+          ListBuilder<GProfileData_Viewer_options_notificationOptions?>?
+              notificationOptions) =>
+      _$this._notificationOptions = notificationOptions;
+
+  GProfileData_Viewer_optionsBuilder() {
+    GProfileData_Viewer_options._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_optionsBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _titleLanguage = $v.titleLanguage;
+      _staffNameLanguage = $v.staffNameLanguage;
+      _restrictMessagesToFollowing = $v.restrictMessagesToFollowing;
+      _airingNotifications = $v.airingNotifications;
+      _displayAdultContent = $v.displayAdultContent;
+      _profileColor = $v.profileColor;
+      _notificationOptions = $v.notificationOptions?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_options other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_options;
+  }
+
+  @override
+  void update(void Function(GProfileData_Viewer_optionsBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_options build() => _build();
+
+  _$GProfileData_Viewer_options _build() {
+    _$GProfileData_Viewer_options _$result;
+    try {
+      _$result = _$v ??
+          new _$GProfileData_Viewer_options._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(
+                  G__typename, r'GProfileData_Viewer_options', 'G__typename'),
+              titleLanguage: titleLanguage,
+              staffNameLanguage: staffNameLanguage,
+              restrictMessagesToFollowing: restrictMessagesToFollowing,
+              airingNotifications: airingNotifications,
+              displayAdultContent: displayAdultContent,
+              profileColor: profileColor,
+              notificationOptions: _notificationOptions?.build());
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'notificationOptions';
+        _notificationOptions?.build();
+      } catch (e) {
+        throw new BuiltValueNestedFieldError(
+            r'GProfileData_Viewer_options', _$failedField, e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_options_notificationOptions
+    extends GProfileData_Viewer_options_notificationOptions {
+  @override
+  final String G__typename;
+  @override
+  final _i2.GNotificationType? type;
+  @override
+  final bool? enabled;
+
+  factory _$GProfileData_Viewer_options_notificationOptions(
+          [void Function(
+                  GProfileData_Viewer_options_notificationOptionsBuilder)?
+              updates]) =>
+      (new GProfileData_Viewer_options_notificationOptionsBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GProfileData_Viewer_options_notificationOptions._(
+      {required this.G__typename, this.type, this.enabled})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GProfileData_Viewer_options_notificationOptions', 'G__typename');
+  }
+
+  @override
+  GProfileData_Viewer_options_notificationOptions rebuild(
+          void Function(GProfileData_Viewer_options_notificationOptionsBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_options_notificationOptionsBuilder toBuilder() =>
+      new GProfileData_Viewer_options_notificationOptionsBuilder()
+        ..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_options_notificationOptions &&
+        G__typename == other.G__typename &&
+        type == other.type &&
+        enabled == other.enabled;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, type.hashCode);
+    _$hash = $jc(_$hash, enabled.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GProfileData_Viewer_options_notificationOptions')
+          ..add('G__typename', G__typename)
+          ..add('type', type)
+          ..add('enabled', enabled))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_options_notificationOptionsBuilder
+    implements
+        Builder<GProfileData_Viewer_options_notificationOptions,
+            GProfileData_Viewer_options_notificationOptionsBuilder> {
+  _$GProfileData_Viewer_options_notificationOptions? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  _i2.GNotificationType? _type;
+  _i2.GNotificationType? get type => _$this._type;
+  set type(_i2.GNotificationType? type) => _$this._type = type;
+
+  bool? _enabled;
+  bool? get enabled => _$this._enabled;
+  set enabled(bool? enabled) => _$this._enabled = enabled;
+
+  GProfileData_Viewer_options_notificationOptionsBuilder() {
+    GProfileData_Viewer_options_notificationOptions._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_options_notificationOptionsBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _type = $v.type;
+      _enabled = $v.enabled;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_options_notificationOptions other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_options_notificationOptions;
+  }
+
+  @override
+  void update(
+      void Function(GProfileData_Viewer_options_notificationOptionsBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_options_notificationOptions build() => _build();
+
+  _$GProfileData_Viewer_options_notificationOptions _build() {
+    final _$result = _$v ??
+        new _$GProfileData_Viewer_options_notificationOptions._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename,
+                r'GProfileData_Viewer_options_notificationOptions',
+                'G__typename'),
+            type: type,
+            enabled: enabled);
     replace(_$result);
     return _$result;
   }
@@ -2414,6 +3896,20 @@ class _$GProfileData_Viewer_statistics_anime
   final int minutesWatched;
   @override
   final int episodesWatched;
+  @override
+  final BuiltList<GProfileData_Viewer_statistics_anime_genrePreview?>?
+      genrePreview;
+  @override
+  final BuiltList<GProfileData_Viewer_statistics_anime_scores?>? scores;
+  @override
+  final BuiltList<GProfileData_Viewer_statistics_anime_lengths?>? lengths;
+  @override
+  final BuiltList<GProfileData_Viewer_statistics_anime_formats?>? formats;
+  @override
+  final BuiltList<GProfileData_Viewer_statistics_anime_releaseYears?>?
+      releaseYears;
+  @override
+  final BuiltList<GProfileData_Viewer_statistics_anime_statuses?>? statuses;
 
   factory _$GProfileData_Viewer_statistics_anime(
           [void Function(GProfileData_Viewer_statistics_animeBuilder)?
@@ -2427,7 +3923,13 @@ class _$GProfileData_Viewer_statistics_anime
       required this.meanScore,
       required this.standardDeviation,
       required this.minutesWatched,
-      required this.episodesWatched})
+      required this.episodesWatched,
+      this.genrePreview,
+      this.scores,
+      this.lengths,
+      this.formats,
+      this.releaseYears,
+      this.statuses})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename, r'GProfileData_Viewer_statistics_anime', 'G__typename');
@@ -2461,7 +3963,13 @@ class _$GProfileData_Viewer_statistics_anime
         meanScore == other.meanScore &&
         standardDeviation == other.standardDeviation &&
         minutesWatched == other.minutesWatched &&
-        episodesWatched == other.episodesWatched;
+        episodesWatched == other.episodesWatched &&
+        genrePreview == other.genrePreview &&
+        scores == other.scores &&
+        lengths == other.lengths &&
+        formats == other.formats &&
+        releaseYears == other.releaseYears &&
+        statuses == other.statuses;
   }
 
   @override
@@ -2473,6 +3981,12 @@ class _$GProfileData_Viewer_statistics_anime
     _$hash = $jc(_$hash, standardDeviation.hashCode);
     _$hash = $jc(_$hash, minutesWatched.hashCode);
     _$hash = $jc(_$hash, episodesWatched.hashCode);
+    _$hash = $jc(_$hash, genrePreview.hashCode);
+    _$hash = $jc(_$hash, scores.hashCode);
+    _$hash = $jc(_$hash, lengths.hashCode);
+    _$hash = $jc(_$hash, formats.hashCode);
+    _$hash = $jc(_$hash, releaseYears.hashCode);
+    _$hash = $jc(_$hash, statuses.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -2485,7 +3999,13 @@ class _$GProfileData_Viewer_statistics_anime
           ..add('meanScore', meanScore)
           ..add('standardDeviation', standardDeviation)
           ..add('minutesWatched', minutesWatched)
-          ..add('episodesWatched', episodesWatched))
+          ..add('episodesWatched', episodesWatched)
+          ..add('genrePreview', genrePreview)
+          ..add('scores', scores)
+          ..add('lengths', lengths)
+          ..add('formats', formats)
+          ..add('releaseYears', releaseYears)
+          ..add('statuses', statuses))
         .toString();
   }
 }
@@ -2523,6 +4043,61 @@ class GProfileData_Viewer_statistics_animeBuilder
   set episodesWatched(int? episodesWatched) =>
       _$this._episodesWatched = episodesWatched;
 
+  ListBuilder<GProfileData_Viewer_statistics_anime_genrePreview?>?
+      _genrePreview;
+  ListBuilder<GProfileData_Viewer_statistics_anime_genrePreview?>
+      get genrePreview => _$this._genrePreview ??=
+          new ListBuilder<GProfileData_Viewer_statistics_anime_genrePreview?>();
+  set genrePreview(
+          ListBuilder<GProfileData_Viewer_statistics_anime_genrePreview?>?
+              genrePreview) =>
+      _$this._genrePreview = genrePreview;
+
+  ListBuilder<GProfileData_Viewer_statistics_anime_scores?>? _scores;
+  ListBuilder<GProfileData_Viewer_statistics_anime_scores?> get scores =>
+      _$this._scores ??=
+          new ListBuilder<GProfileData_Viewer_statistics_anime_scores?>();
+  set scores(
+          ListBuilder<GProfileData_Viewer_statistics_anime_scores?>? scores) =>
+      _$this._scores = scores;
+
+  ListBuilder<GProfileData_Viewer_statistics_anime_lengths?>? _lengths;
+  ListBuilder<GProfileData_Viewer_statistics_anime_lengths?> get lengths =>
+      _$this._lengths ??=
+          new ListBuilder<GProfileData_Viewer_statistics_anime_lengths?>();
+  set lengths(
+          ListBuilder<GProfileData_Viewer_statistics_anime_lengths?>?
+              lengths) =>
+      _$this._lengths = lengths;
+
+  ListBuilder<GProfileData_Viewer_statistics_anime_formats?>? _formats;
+  ListBuilder<GProfileData_Viewer_statistics_anime_formats?> get formats =>
+      _$this._formats ??=
+          new ListBuilder<GProfileData_Viewer_statistics_anime_formats?>();
+  set formats(
+          ListBuilder<GProfileData_Viewer_statistics_anime_formats?>?
+              formats) =>
+      _$this._formats = formats;
+
+  ListBuilder<GProfileData_Viewer_statistics_anime_releaseYears?>?
+      _releaseYears;
+  ListBuilder<GProfileData_Viewer_statistics_anime_releaseYears?>
+      get releaseYears => _$this._releaseYears ??=
+          new ListBuilder<GProfileData_Viewer_statistics_anime_releaseYears?>();
+  set releaseYears(
+          ListBuilder<GProfileData_Viewer_statistics_anime_releaseYears?>?
+              releaseYears) =>
+      _$this._releaseYears = releaseYears;
+
+  ListBuilder<GProfileData_Viewer_statistics_anime_statuses?>? _statuses;
+  ListBuilder<GProfileData_Viewer_statistics_anime_statuses?> get statuses =>
+      _$this._statuses ??=
+          new ListBuilder<GProfileData_Viewer_statistics_anime_statuses?>();
+  set statuses(
+          ListBuilder<GProfileData_Viewer_statistics_anime_statuses?>?
+              statuses) =>
+      _$this._statuses = statuses;
+
   GProfileData_Viewer_statistics_animeBuilder() {
     GProfileData_Viewer_statistics_anime._initializeBuilder(this);
   }
@@ -2536,6 +4111,12 @@ class GProfileData_Viewer_statistics_animeBuilder
       _standardDeviation = $v.standardDeviation;
       _minutesWatched = $v.minutesWatched;
       _episodesWatched = $v.episodesWatched;
+      _genrePreview = $v.genrePreview?.toBuilder();
+      _scores = $v.scores?.toBuilder();
+      _lengths = $v.lengths?.toBuilder();
+      _formats = $v.formats?.toBuilder();
+      _releaseYears = $v.releaseYears?.toBuilder();
+      _statuses = $v.statuses?.toBuilder();
       _$v = null;
     }
     return this;
@@ -2557,24 +4138,1006 @@ class GProfileData_Viewer_statistics_animeBuilder
   GProfileData_Viewer_statistics_anime build() => _build();
 
   _$GProfileData_Viewer_statistics_anime _build() {
+    _$GProfileData_Viewer_statistics_anime _$result;
+    try {
+      _$result = _$v ??
+          new _$GProfileData_Viewer_statistics_anime._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(
+                  G__typename, r'GProfileData_Viewer_statistics_anime', 'G__typename'),
+              count: BuiltValueNullFieldError.checkNotNull(
+                  count, r'GProfileData_Viewer_statistics_anime', 'count'),
+              meanScore: BuiltValueNullFieldError.checkNotNull(
+                  meanScore, r'GProfileData_Viewer_statistics_anime', 'meanScore'),
+              standardDeviation: BuiltValueNullFieldError.checkNotNull(
+                  standardDeviation,
+                  r'GProfileData_Viewer_statistics_anime',
+                  'standardDeviation'),
+              minutesWatched: BuiltValueNullFieldError.checkNotNull(
+                  minutesWatched, r'GProfileData_Viewer_statistics_anime', 'minutesWatched'),
+              episodesWatched: BuiltValueNullFieldError.checkNotNull(
+                  episodesWatched,
+                  r'GProfileData_Viewer_statistics_anime',
+                  'episodesWatched'),
+              genrePreview: _genrePreview?.build(),
+              scores: _scores?.build(),
+              lengths: _lengths?.build(),
+              formats: _formats?.build(),
+              releaseYears: _releaseYears?.build(),
+              statuses: _statuses?.build());
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'genrePreview';
+        _genrePreview?.build();
+        _$failedField = 'scores';
+        _scores?.build();
+        _$failedField = 'lengths';
+        _lengths?.build();
+        _$failedField = 'formats';
+        _formats?.build();
+        _$failedField = 'releaseYears';
+        _releaseYears?.build();
+        _$failedField = 'statuses';
+        _statuses?.build();
+      } catch (e) {
+        throw new BuiltValueNestedFieldError(
+            r'GProfileData_Viewer_statistics_anime',
+            _$failedField,
+            e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_genrePreview
+    extends GProfileData_Viewer_statistics_anime_genrePreview {
+  @override
+  final String G__typename;
+  @override
+  final String? genre;
+  @override
+  final int count;
+
+  factory _$GProfileData_Viewer_statistics_anime_genrePreview(
+          [void Function(
+                  GProfileData_Viewer_statistics_anime_genrePreviewBuilder)?
+              updates]) =>
+      (new GProfileData_Viewer_statistics_anime_genrePreviewBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GProfileData_Viewer_statistics_anime_genrePreview._(
+      {required this.G__typename, this.genre, required this.count})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GProfileData_Viewer_statistics_anime_genrePreview', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        count, r'GProfileData_Viewer_statistics_anime_genrePreview', 'count');
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_genrePreview rebuild(
+          void Function(
+                  GProfileData_Viewer_statistics_anime_genrePreviewBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_statistics_anime_genrePreviewBuilder toBuilder() =>
+      new GProfileData_Viewer_statistics_anime_genrePreviewBuilder()
+        ..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_statistics_anime_genrePreview &&
+        G__typename == other.G__typename &&
+        genre == other.genre &&
+        count == other.count;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, genre.hashCode);
+    _$hash = $jc(_$hash, count.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GProfileData_Viewer_statistics_anime_genrePreview')
+          ..add('G__typename', G__typename)
+          ..add('genre', genre)
+          ..add('count', count))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_statistics_anime_genrePreviewBuilder
+    implements
+        Builder<GProfileData_Viewer_statistics_anime_genrePreview,
+            GProfileData_Viewer_statistics_anime_genrePreviewBuilder> {
+  _$GProfileData_Viewer_statistics_anime_genrePreview? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  String? _genre;
+  String? get genre => _$this._genre;
+  set genre(String? genre) => _$this._genre = genre;
+
+  int? _count;
+  int? get count => _$this._count;
+  set count(int? count) => _$this._count = count;
+
+  GProfileData_Viewer_statistics_anime_genrePreviewBuilder() {
+    GProfileData_Viewer_statistics_anime_genrePreview._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_statistics_anime_genrePreviewBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _genre = $v.genre;
+      _count = $v.count;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_statistics_anime_genrePreview other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_statistics_anime_genrePreview;
+  }
+
+  @override
+  void update(
+      void Function(GProfileData_Viewer_statistics_anime_genrePreviewBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_genrePreview build() => _build();
+
+  _$GProfileData_Viewer_statistics_anime_genrePreview _build() {
     final _$result = _$v ??
-        new _$GProfileData_Viewer_statistics_anime._(
+        new _$GProfileData_Viewer_statistics_anime_genrePreview._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GProfileData_Viewer_statistics_anime', 'G__typename'),
+                G__typename,
+                r'GProfileData_Viewer_statistics_anime_genrePreview',
+                'G__typename'),
+            genre: genre,
+            count: BuiltValueNullFieldError.checkNotNull(count,
+                r'GProfileData_Viewer_statistics_anime_genrePreview', 'count'));
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_scores
+    extends GProfileData_Viewer_statistics_anime_scores {
+  @override
+  final String G__typename;
+  @override
+  final int count;
+  @override
+  final double meanScore;
+  @override
+  final int minutesWatched;
+  @override
+  final int? score;
+
+  factory _$GProfileData_Viewer_statistics_anime_scores(
+          [void Function(GProfileData_Viewer_statistics_anime_scoresBuilder)?
+              updates]) =>
+      (new GProfileData_Viewer_statistics_anime_scoresBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GProfileData_Viewer_statistics_anime_scores._(
+      {required this.G__typename,
+      required this.count,
+      required this.meanScore,
+      required this.minutesWatched,
+      this.score})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GProfileData_Viewer_statistics_anime_scores', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        count, r'GProfileData_Viewer_statistics_anime_scores', 'count');
+    BuiltValueNullFieldError.checkNotNull(
+        meanScore, r'GProfileData_Viewer_statistics_anime_scores', 'meanScore');
+    BuiltValueNullFieldError.checkNotNull(minutesWatched,
+        r'GProfileData_Viewer_statistics_anime_scores', 'minutesWatched');
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_scores rebuild(
+          void Function(GProfileData_Viewer_statistics_anime_scoresBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_statistics_anime_scoresBuilder toBuilder() =>
+      new GProfileData_Viewer_statistics_anime_scoresBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_statistics_anime_scores &&
+        G__typename == other.G__typename &&
+        count == other.count &&
+        meanScore == other.meanScore &&
+        minutesWatched == other.minutesWatched &&
+        score == other.score;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, count.hashCode);
+    _$hash = $jc(_$hash, meanScore.hashCode);
+    _$hash = $jc(_$hash, minutesWatched.hashCode);
+    _$hash = $jc(_$hash, score.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GProfileData_Viewer_statistics_anime_scores')
+          ..add('G__typename', G__typename)
+          ..add('count', count)
+          ..add('meanScore', meanScore)
+          ..add('minutesWatched', minutesWatched)
+          ..add('score', score))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_statistics_anime_scoresBuilder
+    implements
+        Builder<GProfileData_Viewer_statistics_anime_scores,
+            GProfileData_Viewer_statistics_anime_scoresBuilder> {
+  _$GProfileData_Viewer_statistics_anime_scores? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  int? _count;
+  int? get count => _$this._count;
+  set count(int? count) => _$this._count = count;
+
+  double? _meanScore;
+  double? get meanScore => _$this._meanScore;
+  set meanScore(double? meanScore) => _$this._meanScore = meanScore;
+
+  int? _minutesWatched;
+  int? get minutesWatched => _$this._minutesWatched;
+  set minutesWatched(int? minutesWatched) =>
+      _$this._minutesWatched = minutesWatched;
+
+  int? _score;
+  int? get score => _$this._score;
+  set score(int? score) => _$this._score = score;
+
+  GProfileData_Viewer_statistics_anime_scoresBuilder() {
+    GProfileData_Viewer_statistics_anime_scores._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_statistics_anime_scoresBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _count = $v.count;
+      _meanScore = $v.meanScore;
+      _minutesWatched = $v.minutesWatched;
+      _score = $v.score;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_statistics_anime_scores other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_statistics_anime_scores;
+  }
+
+  @override
+  void update(
+      void Function(GProfileData_Viewer_statistics_anime_scoresBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_scores build() => _build();
+
+  _$GProfileData_Viewer_statistics_anime_scores _build() {
+    final _$result = _$v ??
+        new _$GProfileData_Viewer_statistics_anime_scores._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                r'GProfileData_Viewer_statistics_anime_scores', 'G__typename'),
             count: BuiltValueNullFieldError.checkNotNull(
-                count, r'GProfileData_Viewer_statistics_anime', 'count'),
-            meanScore: BuiltValueNullFieldError.checkNotNull(
-                meanScore, r'GProfileData_Viewer_statistics_anime', 'meanScore'),
-            standardDeviation: BuiltValueNullFieldError.checkNotNull(
-                standardDeviation,
-                r'GProfileData_Viewer_statistics_anime',
-                'standardDeviation'),
+                count, r'GProfileData_Viewer_statistics_anime_scores', 'count'),
+            meanScore: BuiltValueNullFieldError.checkNotNull(meanScore,
+                r'GProfileData_Viewer_statistics_anime_scores', 'meanScore'),
             minutesWatched: BuiltValueNullFieldError.checkNotNull(
-                minutesWatched, r'GProfileData_Viewer_statistics_anime', 'minutesWatched'),
-            episodesWatched: BuiltValueNullFieldError.checkNotNull(
-                episodesWatched,
-                r'GProfileData_Viewer_statistics_anime',
-                'episodesWatched'));
+                minutesWatched,
+                r'GProfileData_Viewer_statistics_anime_scores',
+                'minutesWatched'),
+            score: score);
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_lengths
+    extends GProfileData_Viewer_statistics_anime_lengths {
+  @override
+  final String G__typename;
+  @override
+  final int count;
+  @override
+  final String? length;
+  @override
+  final double meanScore;
+  @override
+  final int minutesWatched;
+
+  factory _$GProfileData_Viewer_statistics_anime_lengths(
+          [void Function(GProfileData_Viewer_statistics_anime_lengthsBuilder)?
+              updates]) =>
+      (new GProfileData_Viewer_statistics_anime_lengthsBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GProfileData_Viewer_statistics_anime_lengths._(
+      {required this.G__typename,
+      required this.count,
+      this.length,
+      required this.meanScore,
+      required this.minutesWatched})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GProfileData_Viewer_statistics_anime_lengths', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        count, r'GProfileData_Viewer_statistics_anime_lengths', 'count');
+    BuiltValueNullFieldError.checkNotNull(meanScore,
+        r'GProfileData_Viewer_statistics_anime_lengths', 'meanScore');
+    BuiltValueNullFieldError.checkNotNull(minutesWatched,
+        r'GProfileData_Viewer_statistics_anime_lengths', 'minutesWatched');
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_lengths rebuild(
+          void Function(GProfileData_Viewer_statistics_anime_lengthsBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_statistics_anime_lengthsBuilder toBuilder() =>
+      new GProfileData_Viewer_statistics_anime_lengthsBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_statistics_anime_lengths &&
+        G__typename == other.G__typename &&
+        count == other.count &&
+        length == other.length &&
+        meanScore == other.meanScore &&
+        minutesWatched == other.minutesWatched;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, count.hashCode);
+    _$hash = $jc(_$hash, length.hashCode);
+    _$hash = $jc(_$hash, meanScore.hashCode);
+    _$hash = $jc(_$hash, minutesWatched.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GProfileData_Viewer_statistics_anime_lengths')
+          ..add('G__typename', G__typename)
+          ..add('count', count)
+          ..add('length', length)
+          ..add('meanScore', meanScore)
+          ..add('minutesWatched', minutesWatched))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_statistics_anime_lengthsBuilder
+    implements
+        Builder<GProfileData_Viewer_statistics_anime_lengths,
+            GProfileData_Viewer_statistics_anime_lengthsBuilder> {
+  _$GProfileData_Viewer_statistics_anime_lengths? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  int? _count;
+  int? get count => _$this._count;
+  set count(int? count) => _$this._count = count;
+
+  String? _length;
+  String? get length => _$this._length;
+  set length(String? length) => _$this._length = length;
+
+  double? _meanScore;
+  double? get meanScore => _$this._meanScore;
+  set meanScore(double? meanScore) => _$this._meanScore = meanScore;
+
+  int? _minutesWatched;
+  int? get minutesWatched => _$this._minutesWatched;
+  set minutesWatched(int? minutesWatched) =>
+      _$this._minutesWatched = minutesWatched;
+
+  GProfileData_Viewer_statistics_anime_lengthsBuilder() {
+    GProfileData_Viewer_statistics_anime_lengths._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_statistics_anime_lengthsBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _count = $v.count;
+      _length = $v.length;
+      _meanScore = $v.meanScore;
+      _minutesWatched = $v.minutesWatched;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_statistics_anime_lengths other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_statistics_anime_lengths;
+  }
+
+  @override
+  void update(
+      void Function(GProfileData_Viewer_statistics_anime_lengthsBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_lengths build() => _build();
+
+  _$GProfileData_Viewer_statistics_anime_lengths _build() {
+    final _$result = _$v ??
+        new _$GProfileData_Viewer_statistics_anime_lengths._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                r'GProfileData_Viewer_statistics_anime_lengths', 'G__typename'),
+            count: BuiltValueNullFieldError.checkNotNull(count,
+                r'GProfileData_Viewer_statistics_anime_lengths', 'count'),
+            length: length,
+            meanScore: BuiltValueNullFieldError.checkNotNull(meanScore,
+                r'GProfileData_Viewer_statistics_anime_lengths', 'meanScore'),
+            minutesWatched: BuiltValueNullFieldError.checkNotNull(
+                minutesWatched,
+                r'GProfileData_Viewer_statistics_anime_lengths',
+                'minutesWatched'));
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_formats
+    extends GProfileData_Viewer_statistics_anime_formats {
+  @override
+  final String G__typename;
+  @override
+  final int count;
+  @override
+  final _i2.GMediaFormat? format;
+  @override
+  final int minutesWatched;
+  @override
+  final double meanScore;
+
+  factory _$GProfileData_Viewer_statistics_anime_formats(
+          [void Function(GProfileData_Viewer_statistics_anime_formatsBuilder)?
+              updates]) =>
+      (new GProfileData_Viewer_statistics_anime_formatsBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GProfileData_Viewer_statistics_anime_formats._(
+      {required this.G__typename,
+      required this.count,
+      this.format,
+      required this.minutesWatched,
+      required this.meanScore})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GProfileData_Viewer_statistics_anime_formats', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        count, r'GProfileData_Viewer_statistics_anime_formats', 'count');
+    BuiltValueNullFieldError.checkNotNull(minutesWatched,
+        r'GProfileData_Viewer_statistics_anime_formats', 'minutesWatched');
+    BuiltValueNullFieldError.checkNotNull(meanScore,
+        r'GProfileData_Viewer_statistics_anime_formats', 'meanScore');
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_formats rebuild(
+          void Function(GProfileData_Viewer_statistics_anime_formatsBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_statistics_anime_formatsBuilder toBuilder() =>
+      new GProfileData_Viewer_statistics_anime_formatsBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_statistics_anime_formats &&
+        G__typename == other.G__typename &&
+        count == other.count &&
+        format == other.format &&
+        minutesWatched == other.minutesWatched &&
+        meanScore == other.meanScore;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, count.hashCode);
+    _$hash = $jc(_$hash, format.hashCode);
+    _$hash = $jc(_$hash, minutesWatched.hashCode);
+    _$hash = $jc(_$hash, meanScore.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GProfileData_Viewer_statistics_anime_formats')
+          ..add('G__typename', G__typename)
+          ..add('count', count)
+          ..add('format', format)
+          ..add('minutesWatched', minutesWatched)
+          ..add('meanScore', meanScore))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_statistics_anime_formatsBuilder
+    implements
+        Builder<GProfileData_Viewer_statistics_anime_formats,
+            GProfileData_Viewer_statistics_anime_formatsBuilder> {
+  _$GProfileData_Viewer_statistics_anime_formats? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  int? _count;
+  int? get count => _$this._count;
+  set count(int? count) => _$this._count = count;
+
+  _i2.GMediaFormat? _format;
+  _i2.GMediaFormat? get format => _$this._format;
+  set format(_i2.GMediaFormat? format) => _$this._format = format;
+
+  int? _minutesWatched;
+  int? get minutesWatched => _$this._minutesWatched;
+  set minutesWatched(int? minutesWatched) =>
+      _$this._minutesWatched = minutesWatched;
+
+  double? _meanScore;
+  double? get meanScore => _$this._meanScore;
+  set meanScore(double? meanScore) => _$this._meanScore = meanScore;
+
+  GProfileData_Viewer_statistics_anime_formatsBuilder() {
+    GProfileData_Viewer_statistics_anime_formats._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_statistics_anime_formatsBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _count = $v.count;
+      _format = $v.format;
+      _minutesWatched = $v.minutesWatched;
+      _meanScore = $v.meanScore;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_statistics_anime_formats other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_statistics_anime_formats;
+  }
+
+  @override
+  void update(
+      void Function(GProfileData_Viewer_statistics_anime_formatsBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_formats build() => _build();
+
+  _$GProfileData_Viewer_statistics_anime_formats _build() {
+    final _$result = _$v ??
+        new _$GProfileData_Viewer_statistics_anime_formats._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                r'GProfileData_Viewer_statistics_anime_formats', 'G__typename'),
+            count: BuiltValueNullFieldError.checkNotNull(count,
+                r'GProfileData_Viewer_statistics_anime_formats', 'count'),
+            format: format,
+            minutesWatched: BuiltValueNullFieldError.checkNotNull(
+                minutesWatched,
+                r'GProfileData_Viewer_statistics_anime_formats',
+                'minutesWatched'),
+            meanScore: BuiltValueNullFieldError.checkNotNull(meanScore,
+                r'GProfileData_Viewer_statistics_anime_formats', 'meanScore'));
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_releaseYears
+    extends GProfileData_Viewer_statistics_anime_releaseYears {
+  @override
+  final String G__typename;
+  @override
+  final int count;
+  @override
+  final double meanScore;
+  @override
+  final int? releaseYear;
+  @override
+  final int minutesWatched;
+
+  factory _$GProfileData_Viewer_statistics_anime_releaseYears(
+          [void Function(
+                  GProfileData_Viewer_statistics_anime_releaseYearsBuilder)?
+              updates]) =>
+      (new GProfileData_Viewer_statistics_anime_releaseYearsBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GProfileData_Viewer_statistics_anime_releaseYears._(
+      {required this.G__typename,
+      required this.count,
+      required this.meanScore,
+      this.releaseYear,
+      required this.minutesWatched})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GProfileData_Viewer_statistics_anime_releaseYears', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        count, r'GProfileData_Viewer_statistics_anime_releaseYears', 'count');
+    BuiltValueNullFieldError.checkNotNull(meanScore,
+        r'GProfileData_Viewer_statistics_anime_releaseYears', 'meanScore');
+    BuiltValueNullFieldError.checkNotNull(minutesWatched,
+        r'GProfileData_Viewer_statistics_anime_releaseYears', 'minutesWatched');
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_releaseYears rebuild(
+          void Function(
+                  GProfileData_Viewer_statistics_anime_releaseYearsBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_statistics_anime_releaseYearsBuilder toBuilder() =>
+      new GProfileData_Viewer_statistics_anime_releaseYearsBuilder()
+        ..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_statistics_anime_releaseYears &&
+        G__typename == other.G__typename &&
+        count == other.count &&
+        meanScore == other.meanScore &&
+        releaseYear == other.releaseYear &&
+        minutesWatched == other.minutesWatched;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, count.hashCode);
+    _$hash = $jc(_$hash, meanScore.hashCode);
+    _$hash = $jc(_$hash, releaseYear.hashCode);
+    _$hash = $jc(_$hash, minutesWatched.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GProfileData_Viewer_statistics_anime_releaseYears')
+          ..add('G__typename', G__typename)
+          ..add('count', count)
+          ..add('meanScore', meanScore)
+          ..add('releaseYear', releaseYear)
+          ..add('minutesWatched', minutesWatched))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_statistics_anime_releaseYearsBuilder
+    implements
+        Builder<GProfileData_Viewer_statistics_anime_releaseYears,
+            GProfileData_Viewer_statistics_anime_releaseYearsBuilder> {
+  _$GProfileData_Viewer_statistics_anime_releaseYears? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  int? _count;
+  int? get count => _$this._count;
+  set count(int? count) => _$this._count = count;
+
+  double? _meanScore;
+  double? get meanScore => _$this._meanScore;
+  set meanScore(double? meanScore) => _$this._meanScore = meanScore;
+
+  int? _releaseYear;
+  int? get releaseYear => _$this._releaseYear;
+  set releaseYear(int? releaseYear) => _$this._releaseYear = releaseYear;
+
+  int? _minutesWatched;
+  int? get minutesWatched => _$this._minutesWatched;
+  set minutesWatched(int? minutesWatched) =>
+      _$this._minutesWatched = minutesWatched;
+
+  GProfileData_Viewer_statistics_anime_releaseYearsBuilder() {
+    GProfileData_Viewer_statistics_anime_releaseYears._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_statistics_anime_releaseYearsBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _count = $v.count;
+      _meanScore = $v.meanScore;
+      _releaseYear = $v.releaseYear;
+      _minutesWatched = $v.minutesWatched;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_statistics_anime_releaseYears other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_statistics_anime_releaseYears;
+  }
+
+  @override
+  void update(
+      void Function(GProfileData_Viewer_statistics_anime_releaseYearsBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_releaseYears build() => _build();
+
+  _$GProfileData_Viewer_statistics_anime_releaseYears _build() {
+    final _$result = _$v ??
+        new _$GProfileData_Viewer_statistics_anime_releaseYears._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename,
+                r'GProfileData_Viewer_statistics_anime_releaseYears',
+                'G__typename'),
+            count: BuiltValueNullFieldError.checkNotNull(count,
+                r'GProfileData_Viewer_statistics_anime_releaseYears', 'count'),
+            meanScore: BuiltValueNullFieldError.checkNotNull(
+                meanScore,
+                r'GProfileData_Viewer_statistics_anime_releaseYears',
+                'meanScore'),
+            releaseYear: releaseYear,
+            minutesWatched: BuiltValueNullFieldError.checkNotNull(
+                minutesWatched,
+                r'GProfileData_Viewer_statistics_anime_releaseYears',
+                'minutesWatched'));
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_statistics_anime_statuses
+    extends GProfileData_Viewer_statistics_anime_statuses {
+  @override
+  final String G__typename;
+  @override
+  final int count;
+  @override
+  final int minutesWatched;
+  @override
+  final double meanScore;
+  @override
+  final _i2.GMediaListStatus? status;
+
+  factory _$GProfileData_Viewer_statistics_anime_statuses(
+          [void Function(GProfileData_Viewer_statistics_anime_statusesBuilder)?
+              updates]) =>
+      (new GProfileData_Viewer_statistics_anime_statusesBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GProfileData_Viewer_statistics_anime_statuses._(
+      {required this.G__typename,
+      required this.count,
+      required this.minutesWatched,
+      required this.meanScore,
+      this.status})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GProfileData_Viewer_statistics_anime_statuses', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        count, r'GProfileData_Viewer_statistics_anime_statuses', 'count');
+    BuiltValueNullFieldError.checkNotNull(minutesWatched,
+        r'GProfileData_Viewer_statistics_anime_statuses', 'minutesWatched');
+    BuiltValueNullFieldError.checkNotNull(meanScore,
+        r'GProfileData_Viewer_statistics_anime_statuses', 'meanScore');
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_statuses rebuild(
+          void Function(GProfileData_Viewer_statistics_anime_statusesBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_statistics_anime_statusesBuilder toBuilder() =>
+      new GProfileData_Viewer_statistics_anime_statusesBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_statistics_anime_statuses &&
+        G__typename == other.G__typename &&
+        count == other.count &&
+        minutesWatched == other.minutesWatched &&
+        meanScore == other.meanScore &&
+        status == other.status;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, count.hashCode);
+    _$hash = $jc(_$hash, minutesWatched.hashCode);
+    _$hash = $jc(_$hash, meanScore.hashCode);
+    _$hash = $jc(_$hash, status.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GProfileData_Viewer_statistics_anime_statuses')
+          ..add('G__typename', G__typename)
+          ..add('count', count)
+          ..add('minutesWatched', minutesWatched)
+          ..add('meanScore', meanScore)
+          ..add('status', status))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_statistics_anime_statusesBuilder
+    implements
+        Builder<GProfileData_Viewer_statistics_anime_statuses,
+            GProfileData_Viewer_statistics_anime_statusesBuilder> {
+  _$GProfileData_Viewer_statistics_anime_statuses? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  int? _count;
+  int? get count => _$this._count;
+  set count(int? count) => _$this._count = count;
+
+  int? _minutesWatched;
+  int? get minutesWatched => _$this._minutesWatched;
+  set minutesWatched(int? minutesWatched) =>
+      _$this._minutesWatched = minutesWatched;
+
+  double? _meanScore;
+  double? get meanScore => _$this._meanScore;
+  set meanScore(double? meanScore) => _$this._meanScore = meanScore;
+
+  _i2.GMediaListStatus? _status;
+  _i2.GMediaListStatus? get status => _$this._status;
+  set status(_i2.GMediaListStatus? status) => _$this._status = status;
+
+  GProfileData_Viewer_statistics_anime_statusesBuilder() {
+    GProfileData_Viewer_statistics_anime_statuses._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_statistics_anime_statusesBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _count = $v.count;
+      _minutesWatched = $v.minutesWatched;
+      _meanScore = $v.meanScore;
+      _status = $v.status;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_statistics_anime_statuses other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_statistics_anime_statuses;
+  }
+
+  @override
+  void update(
+      void Function(GProfileData_Viewer_statistics_anime_statusesBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_statistics_anime_statuses build() => _build();
+
+  _$GProfileData_Viewer_statistics_anime_statuses _build() {
+    final _$result = _$v ??
+        new _$GProfileData_Viewer_statistics_anime_statuses._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename,
+                r'GProfileData_Viewer_statistics_anime_statuses',
+                'G__typename'),
+            count: BuiltValueNullFieldError.checkNotNull(count,
+                r'GProfileData_Viewer_statistics_anime_statuses', 'count'),
+            minutesWatched: BuiltValueNullFieldError.checkNotNull(
+                minutesWatched,
+                r'GProfileData_Viewer_statistics_anime_statuses',
+                'minutesWatched'),
+            meanScore: BuiltValueNullFieldError.checkNotNull(meanScore,
+                r'GProfileData_Viewer_statistics_anime_statuses', 'meanScore'),
+            status: status);
     replace(_$result);
     return _$result;
   }
@@ -2587,11 +5150,16 @@ class _$GProfileData_Viewer_statistics_manga
   @override
   final int count;
   @override
-  final int episodesWatched;
+  final double meanScore;
+  @override
+  final double standardDeviation;
   @override
   final int chaptersRead;
   @override
   final int volumesRead;
+  @override
+  final BuiltList<GProfileData_Viewer_statistics_manga_genrePreview?>?
+      genrePreview;
 
   factory _$GProfileData_Viewer_statistics_manga(
           [void Function(GProfileData_Viewer_statistics_mangaBuilder)?
@@ -2602,16 +5170,20 @@ class _$GProfileData_Viewer_statistics_manga
   _$GProfileData_Viewer_statistics_manga._(
       {required this.G__typename,
       required this.count,
-      required this.episodesWatched,
+      required this.meanScore,
+      required this.standardDeviation,
       required this.chaptersRead,
-      required this.volumesRead})
+      required this.volumesRead,
+      this.genrePreview})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename, r'GProfileData_Viewer_statistics_manga', 'G__typename');
     BuiltValueNullFieldError.checkNotNull(
         count, r'GProfileData_Viewer_statistics_manga', 'count');
-    BuiltValueNullFieldError.checkNotNull(episodesWatched,
-        r'GProfileData_Viewer_statistics_manga', 'episodesWatched');
+    BuiltValueNullFieldError.checkNotNull(
+        meanScore, r'GProfileData_Viewer_statistics_manga', 'meanScore');
+    BuiltValueNullFieldError.checkNotNull(standardDeviation,
+        r'GProfileData_Viewer_statistics_manga', 'standardDeviation');
     BuiltValueNullFieldError.checkNotNull(
         chaptersRead, r'GProfileData_Viewer_statistics_manga', 'chaptersRead');
     BuiltValueNullFieldError.checkNotNull(
@@ -2633,9 +5205,11 @@ class _$GProfileData_Viewer_statistics_manga
     return other is GProfileData_Viewer_statistics_manga &&
         G__typename == other.G__typename &&
         count == other.count &&
-        episodesWatched == other.episodesWatched &&
+        meanScore == other.meanScore &&
+        standardDeviation == other.standardDeviation &&
         chaptersRead == other.chaptersRead &&
-        volumesRead == other.volumesRead;
+        volumesRead == other.volumesRead &&
+        genrePreview == other.genrePreview;
   }
 
   @override
@@ -2643,9 +5217,11 @@ class _$GProfileData_Viewer_statistics_manga
     var _$hash = 0;
     _$hash = $jc(_$hash, G__typename.hashCode);
     _$hash = $jc(_$hash, count.hashCode);
-    _$hash = $jc(_$hash, episodesWatched.hashCode);
+    _$hash = $jc(_$hash, meanScore.hashCode);
+    _$hash = $jc(_$hash, standardDeviation.hashCode);
     _$hash = $jc(_$hash, chaptersRead.hashCode);
     _$hash = $jc(_$hash, volumesRead.hashCode);
+    _$hash = $jc(_$hash, genrePreview.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -2655,9 +5231,11 @@ class _$GProfileData_Viewer_statistics_manga
     return (newBuiltValueToStringHelper(r'GProfileData_Viewer_statistics_manga')
           ..add('G__typename', G__typename)
           ..add('count', count)
-          ..add('episodesWatched', episodesWatched)
+          ..add('meanScore', meanScore)
+          ..add('standardDeviation', standardDeviation)
           ..add('chaptersRead', chaptersRead)
-          ..add('volumesRead', volumesRead))
+          ..add('volumesRead', volumesRead)
+          ..add('genrePreview', genrePreview))
         .toString();
   }
 }
@@ -2676,10 +5254,14 @@ class GProfileData_Viewer_statistics_mangaBuilder
   int? get count => _$this._count;
   set count(int? count) => _$this._count = count;
 
-  int? _episodesWatched;
-  int? get episodesWatched => _$this._episodesWatched;
-  set episodesWatched(int? episodesWatched) =>
-      _$this._episodesWatched = episodesWatched;
+  double? _meanScore;
+  double? get meanScore => _$this._meanScore;
+  set meanScore(double? meanScore) => _$this._meanScore = meanScore;
+
+  double? _standardDeviation;
+  double? get standardDeviation => _$this._standardDeviation;
+  set standardDeviation(double? standardDeviation) =>
+      _$this._standardDeviation = standardDeviation;
 
   int? _chaptersRead;
   int? get chaptersRead => _$this._chaptersRead;
@@ -2688,6 +5270,16 @@ class GProfileData_Viewer_statistics_mangaBuilder
   int? _volumesRead;
   int? get volumesRead => _$this._volumesRead;
   set volumesRead(int? volumesRead) => _$this._volumesRead = volumesRead;
+
+  ListBuilder<GProfileData_Viewer_statistics_manga_genrePreview?>?
+      _genrePreview;
+  ListBuilder<GProfileData_Viewer_statistics_manga_genrePreview?>
+      get genrePreview => _$this._genrePreview ??=
+          new ListBuilder<GProfileData_Viewer_statistics_manga_genrePreview?>();
+  set genrePreview(
+          ListBuilder<GProfileData_Viewer_statistics_manga_genrePreview?>?
+              genrePreview) =>
+      _$this._genrePreview = genrePreview;
 
   GProfileData_Viewer_statistics_mangaBuilder() {
     GProfileData_Viewer_statistics_manga._initializeBuilder(this);
@@ -2698,9 +5290,11 @@ class GProfileData_Viewer_statistics_mangaBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _count = $v.count;
-      _episodesWatched = $v.episodesWatched;
+      _meanScore = $v.meanScore;
+      _standardDeviation = $v.standardDeviation;
       _chaptersRead = $v.chaptersRead;
       _volumesRead = $v.volumesRead;
+      _genrePreview = $v.genrePreview?.toBuilder();
       _$v = null;
     }
     return this;
@@ -2722,20 +5316,426 @@ class GProfileData_Viewer_statistics_mangaBuilder
   GProfileData_Viewer_statistics_manga build() => _build();
 
   _$GProfileData_Viewer_statistics_manga _build() {
+    _$GProfileData_Viewer_statistics_manga _$result;
+    try {
+      _$result = _$v ??
+          new _$GProfileData_Viewer_statistics_manga._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(
+                  G__typename, r'GProfileData_Viewer_statistics_manga', 'G__typename'),
+              count: BuiltValueNullFieldError.checkNotNull(
+                  count, r'GProfileData_Viewer_statistics_manga', 'count'),
+              meanScore: BuiltValueNullFieldError.checkNotNull(
+                  meanScore, r'GProfileData_Viewer_statistics_manga', 'meanScore'),
+              standardDeviation: BuiltValueNullFieldError.checkNotNull(
+                  standardDeviation,
+                  r'GProfileData_Viewer_statistics_manga',
+                  'standardDeviation'),
+              chaptersRead: BuiltValueNullFieldError.checkNotNull(chaptersRead,
+                  r'GProfileData_Viewer_statistics_manga', 'chaptersRead'),
+              volumesRead: BuiltValueNullFieldError.checkNotNull(
+                  volumesRead, r'GProfileData_Viewer_statistics_manga', 'volumesRead'),
+              genrePreview: _genrePreview?.build());
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'genrePreview';
+        _genrePreview?.build();
+      } catch (e) {
+        throw new BuiltValueNestedFieldError(
+            r'GProfileData_Viewer_statistics_manga',
+            _$failedField,
+            e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_statistics_manga_genrePreview
+    extends GProfileData_Viewer_statistics_manga_genrePreview {
+  @override
+  final String G__typename;
+  @override
+  final String? genre;
+  @override
+  final int count;
+
+  factory _$GProfileData_Viewer_statistics_manga_genrePreview(
+          [void Function(
+                  GProfileData_Viewer_statistics_manga_genrePreviewBuilder)?
+              updates]) =>
+      (new GProfileData_Viewer_statistics_manga_genrePreviewBuilder()
+            ..update(updates))
+          ._build();
+
+  _$GProfileData_Viewer_statistics_manga_genrePreview._(
+      {required this.G__typename, this.genre, required this.count})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GProfileData_Viewer_statistics_manga_genrePreview', 'G__typename');
+    BuiltValueNullFieldError.checkNotNull(
+        count, r'GProfileData_Viewer_statistics_manga_genrePreview', 'count');
+  }
+
+  @override
+  GProfileData_Viewer_statistics_manga_genrePreview rebuild(
+          void Function(
+                  GProfileData_Viewer_statistics_manga_genrePreviewBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_statistics_manga_genrePreviewBuilder toBuilder() =>
+      new GProfileData_Viewer_statistics_manga_genrePreviewBuilder()
+        ..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_statistics_manga_genrePreview &&
+        G__typename == other.G__typename &&
+        genre == other.genre &&
+        count == other.count;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, genre.hashCode);
+    _$hash = $jc(_$hash, count.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GProfileData_Viewer_statistics_manga_genrePreview')
+          ..add('G__typename', G__typename)
+          ..add('genre', genre)
+          ..add('count', count))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_statistics_manga_genrePreviewBuilder
+    implements
+        Builder<GProfileData_Viewer_statistics_manga_genrePreview,
+            GProfileData_Viewer_statistics_manga_genrePreviewBuilder> {
+  _$GProfileData_Viewer_statistics_manga_genrePreview? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  String? _genre;
+  String? get genre => _$this._genre;
+  set genre(String? genre) => _$this._genre = genre;
+
+  int? _count;
+  int? get count => _$this._count;
+  set count(int? count) => _$this._count = count;
+
+  GProfileData_Viewer_statistics_manga_genrePreviewBuilder() {
+    GProfileData_Viewer_statistics_manga_genrePreview._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_statistics_manga_genrePreviewBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _genre = $v.genre;
+      _count = $v.count;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_statistics_manga_genrePreview other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_statistics_manga_genrePreview;
+  }
+
+  @override
+  void update(
+      void Function(GProfileData_Viewer_statistics_manga_genrePreviewBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_statistics_manga_genrePreview build() => _build();
+
+  _$GProfileData_Viewer_statistics_manga_genrePreview _build() {
     final _$result = _$v ??
-        new _$GProfileData_Viewer_statistics_manga._(
+        new _$GProfileData_Viewer_statistics_manga_genrePreview._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename,
+                r'GProfileData_Viewer_statistics_manga_genrePreview',
+                'G__typename'),
+            genre: genre,
+            count: BuiltValueNullFieldError.checkNotNull(count,
+                r'GProfileData_Viewer_statistics_manga_genrePreview', 'count'));
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_stats extends GProfileData_Viewer_stats {
+  @override
+  final String G__typename;
+  @override
+  final BuiltList<GProfileData_Viewer_stats_activityHistory?>? activityHistory;
+
+  factory _$GProfileData_Viewer_stats(
+          [void Function(GProfileData_Viewer_statsBuilder)? updates]) =>
+      (new GProfileData_Viewer_statsBuilder()..update(updates))._build();
+
+  _$GProfileData_Viewer_stats._(
+      {required this.G__typename, this.activityHistory})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(
+        G__typename, r'GProfileData_Viewer_stats', 'G__typename');
+  }
+
+  @override
+  GProfileData_Viewer_stats rebuild(
+          void Function(GProfileData_Viewer_statsBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_statsBuilder toBuilder() =>
+      new GProfileData_Viewer_statsBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_stats &&
+        G__typename == other.G__typename &&
+        activityHistory == other.activityHistory;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, activityHistory.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'GProfileData_Viewer_stats')
+          ..add('G__typename', G__typename)
+          ..add('activityHistory', activityHistory))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_statsBuilder
+    implements
+        Builder<GProfileData_Viewer_stats, GProfileData_Viewer_statsBuilder> {
+  _$GProfileData_Viewer_stats? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  ListBuilder<GProfileData_Viewer_stats_activityHistory?>? _activityHistory;
+  ListBuilder<GProfileData_Viewer_stats_activityHistory?> get activityHistory =>
+      _$this._activityHistory ??=
+          new ListBuilder<GProfileData_Viewer_stats_activityHistory?>();
+  set activityHistory(
+          ListBuilder<GProfileData_Viewer_stats_activityHistory?>?
+              activityHistory) =>
+      _$this._activityHistory = activityHistory;
+
+  GProfileData_Viewer_statsBuilder() {
+    GProfileData_Viewer_stats._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_statsBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _activityHistory = $v.activityHistory?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_stats other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_stats;
+  }
+
+  @override
+  void update(void Function(GProfileData_Viewer_statsBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_stats build() => _build();
+
+  _$GProfileData_Viewer_stats _build() {
+    _$GProfileData_Viewer_stats _$result;
+    try {
+      _$result = _$v ??
+          new _$GProfileData_Viewer_stats._(
+              G__typename: BuiltValueNullFieldError.checkNotNull(
+                  G__typename, r'GProfileData_Viewer_stats', 'G__typename'),
+              activityHistory: _activityHistory?.build());
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'activityHistory';
+        _activityHistory?.build();
+      } catch (e) {
+        throw new BuiltValueNestedFieldError(
+            r'GProfileData_Viewer_stats', _$failedField, e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProfileData_Viewer_stats_activityHistory
+    extends GProfileData_Viewer_stats_activityHistory {
+  @override
+  final String G__typename;
+  @override
+  final int? date;
+  @override
+  final int? amount;
+  @override
+  final int? level;
+
+  factory _$GProfileData_Viewer_stats_activityHistory(
+          [void Function(GProfileData_Viewer_stats_activityHistoryBuilder)?
+              updates]) =>
+      (new GProfileData_Viewer_stats_activityHistoryBuilder()..update(updates))
+          ._build();
+
+  _$GProfileData_Viewer_stats_activityHistory._(
+      {required this.G__typename, this.date, this.amount, this.level})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(G__typename,
+        r'GProfileData_Viewer_stats_activityHistory', 'G__typename');
+  }
+
+  @override
+  GProfileData_Viewer_stats_activityHistory rebuild(
+          void Function(GProfileData_Viewer_stats_activityHistoryBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProfileData_Viewer_stats_activityHistoryBuilder toBuilder() =>
+      new GProfileData_Viewer_stats_activityHistoryBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProfileData_Viewer_stats_activityHistory &&
+        G__typename == other.G__typename &&
+        date == other.date &&
+        amount == other.amount &&
+        level == other.level;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, date.hashCode);
+    _$hash = $jc(_$hash, amount.hashCode);
+    _$hash = $jc(_$hash, level.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'GProfileData_Viewer_stats_activityHistory')
+          ..add('G__typename', G__typename)
+          ..add('date', date)
+          ..add('amount', amount)
+          ..add('level', level))
+        .toString();
+  }
+}
+
+class GProfileData_Viewer_stats_activityHistoryBuilder
+    implements
+        Builder<GProfileData_Viewer_stats_activityHistory,
+            GProfileData_Viewer_stats_activityHistoryBuilder> {
+  _$GProfileData_Viewer_stats_activityHistory? _$v;
+
+  String? _G__typename;
+  String? get G__typename => _$this._G__typename;
+  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
+
+  int? _date;
+  int? get date => _$this._date;
+  set date(int? date) => _$this._date = date;
+
+  int? _amount;
+  int? get amount => _$this._amount;
+  set amount(int? amount) => _$this._amount = amount;
+
+  int? _level;
+  int? get level => _$this._level;
+  set level(int? level) => _$this._level = level;
+
+  GProfileData_Viewer_stats_activityHistoryBuilder() {
+    GProfileData_Viewer_stats_activityHistory._initializeBuilder(this);
+  }
+
+  GProfileData_Viewer_stats_activityHistoryBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _G__typename = $v.G__typename;
+      _date = $v.date;
+      _amount = $v.amount;
+      _level = $v.level;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProfileData_Viewer_stats_activityHistory other) {
+    ArgumentError.checkNotNull(other, 'other');
+    _$v = other as _$GProfileData_Viewer_stats_activityHistory;
+  }
+
+  @override
+  void update(
+      void Function(GProfileData_Viewer_stats_activityHistoryBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProfileData_Viewer_stats_activityHistory build() => _build();
+
+  _$GProfileData_Viewer_stats_activityHistory _build() {
+    final _$result = _$v ??
+        new _$GProfileData_Viewer_stats_activityHistory._(
             G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GProfileData_Viewer_statistics_manga', 'G__typename'),
-            count: BuiltValueNullFieldError.checkNotNull(
-                count, r'GProfileData_Viewer_statistics_manga', 'count'),
-            episodesWatched: BuiltValueNullFieldError.checkNotNull(
-                episodesWatched,
-                r'GProfileData_Viewer_statistics_manga',
-                'episodesWatched'),
-            chaptersRead: BuiltValueNullFieldError.checkNotNull(chaptersRead,
-                r'GProfileData_Viewer_statistics_manga', 'chaptersRead'),
-            volumesRead: BuiltValueNullFieldError.checkNotNull(volumesRead,
-                r'GProfileData_Viewer_statistics_manga', 'volumesRead'));
+                r'GProfileData_Viewer_stats_activityHistory', 'G__typename'),
+            date: date,
+            amount: amount,
+            level: level);
     replace(_$result);
     return _$result;
   }

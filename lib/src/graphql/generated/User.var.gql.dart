@@ -13,6 +13,8 @@ abstract class GUserVars implements Built<GUserVars, GUserVarsBuilder> {
 
   factory GUserVars([Function(GUserVarsBuilder b) updates]) = _$GUserVars;
 
+  int? get id;
+  String? get name;
   static Serializer<GUserVars> get serializer => _$gUserVarsSerializer;
 
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(

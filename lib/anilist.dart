@@ -1,7 +1,7 @@
 import 'package:ferry/ferry.dart';
 import 'package:gql_http_link/gql_http_link.dart';
 
-export 'package:ferry_flutter/ferry_flutter.dart';
+// export 'package:ferry_flutter/ferry_flutter.dart';
 export 'package:ferry_hive_store/ferry_hive_store.dart';
 export 'package:gql_http_link/gql_http_link.dart';
 export 'src/airing_schedule_query.dart';
@@ -30,13 +30,14 @@ export 'src/userid.dart';
 
 Client initClient({String? accessToken}) {
   late HttpLink httpLink;
-  if (accessToken == null) {
-    httpLink = HttpLink('https://graphql.anilist.co');
-  } else {
-    httpLink = HttpLink(
-      'https://src/graphql.anilist.co',
-      defaultHeaders: {'Authorization': 'Bearer $accessToken'},
-    );
-  }
+  const uri = "https://graphql.anilist.co";
+
+  httpLink = accessToken == null
+      ? HttpLink(uri)
+      : httpLink = HttpLink(
+          uri,
+          defaultHeaders: {'Authorization': 'Bearer $accessToken'},
+        );
+
   return Client(link: httpLink);
 }

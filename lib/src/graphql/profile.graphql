@@ -8,6 +8,22 @@ query Profile {
       medium
     }
     bannerImage
+    unreadNotificationCount
+    donatorTier
+    donatorBadge
+    moderatorRoles
+    options {
+      titleLanguage
+      staffNameLanguage
+      restrictMessagesToFollowing
+      airingNotifications
+      displayAdultContent
+      profileColor
+      notificationOptions {
+        type
+        enabled
+      }
+    }
     statistics {
       anime {
         count
@@ -15,12 +31,58 @@ query Profile {
         standardDeviation
         minutesWatched
         episodesWatched
+        genrePreview: genres(limit: 10, sort: COUNT_DESC) {
+          genre
+          count
+        }
+        scores {
+          count
+          meanScore
+          minutesWatched
+          score
+        }
+        lengths {
+          count
+          length
+          meanScore
+          minutesWatched
+        }
+        formats {
+          count
+          format
+          minutesWatched
+          meanScore
+        }
+        releaseYears {
+          count
+          meanScore
+          releaseYear
+          minutesWatched
+        }
+        statuses {
+          count
+          minutesWatched
+          meanScore
+          status
+        }
       }
       manga {
         count
-        episodesWatched
+        meanScore
+        standardDeviation
         chaptersRead
         volumesRead
+        genrePreview: genres(limit: 10, sort: COUNT_DESC) {
+          genre
+          count
+        }
+      }
+    }
+    stats {
+      activityHistory {
+        date
+        amount
+        level
       }
     }
     favourites {
@@ -84,6 +146,5 @@ query Profile {
         }
       }
     }
-    unreadNotificationCount
   }
 }
