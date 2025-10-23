@@ -1,6 +1,6 @@
 name: anilist
 description: Anilist src/graphql client for Kurumi
-version: 3.0.0
+version: 3.0.1
 repository: https://github.com/subrotokumar/anilist
 
 environment:

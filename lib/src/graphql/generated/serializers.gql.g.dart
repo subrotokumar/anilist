@@ -194,6 +194,9 @@ Serializers _$serializers = (new Serializers().toBuilder()
           GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntry
               .serializer)
       ..add(
+          GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode
+              .serializer)
+      ..add(
           GMediaListCollectionData_MediaListCollection_lists_entries_media_title
               .serializer)
       ..add(GMediaListCollectionReq.serializer)

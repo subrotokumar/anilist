@@ -186,6 +186,7 @@ import 'package:anilist/src/graphql/generated/medialist_collection.data.gql.dart
         GMediaListCollectionData_MediaListCollection_lists_entries_media,
         GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage,
         GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntry,
+        GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode,
         GMediaListCollectionData_MediaListCollection_lists_entries_media_title;
 import 'package:anilist/src/graphql/generated/medialist_collection.req.gql.dart'
     show GMediaListCollectionReq;
@@ -693,6 +694,7 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GMediaListCollectionData_MediaListCollection_lists_entries_media,
   GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage,
   GMediaListCollectionData_MediaListCollection_lists_entries_media_mediaListEntry,
+  GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode,
   GMediaListCollectionData_MediaListCollection_lists_entries_media_title,
   GMediaListCollectionReq,
   GMediaListCollectionVars,

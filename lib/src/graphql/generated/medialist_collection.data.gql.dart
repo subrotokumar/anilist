@@ -173,6 +173,8 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media
       get title;
   GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage?
       get coverImage;
+  GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode?
+      get nextAiringEpisode;
   String? get bannerImage;
   _i2.GMediaStatus? get status;
   int? get episodes;
@@ -327,6 +329,48 @@ abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media_
   static GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage?
       fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
             GMediaListCollectionData_MediaListCollection_lists_entries_media_coverImage
+                .serializer,
+            json,
+          );
+}
+
+abstract class GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode
+    implements
+        Built<
+            GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode,
+            GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisodeBuilder> {
+  GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode._();
+
+  factory GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode(
+          [Function(
+                  GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisodeBuilder
+                      b)
+              updates]) =
+      _$GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode;
+
+  static void _initializeBuilder(
+          GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisodeBuilder
+              b) =>
+      b..G__typename = 'AiringSchedule';
+
+  @BuiltValueField(wireName: '__typename')
+  String get G__typename;
+  int get airingAt;
+  int get episode;
+  static Serializer<
+          GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode>
+      get serializer =>
+          _$gMediaListCollectionDataMediaListCollectionListsEntriesMediaNextAiringEpisodeSerializer;
+
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode
+            .serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode?
+      fromJson(Map<String, dynamic> json) => _i1.serializers.deserializeWith(
+            GMediaListCollectionData_MediaListCollection_lists_entries_media_nextAiringEpisode
                 .serializer,
             json,
           );
