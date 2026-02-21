@@ -1,6 +1,26 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 
+import 'package:anilist/src/graphql/generated/ActivitiesQuery.data.gql.dart'
+    show
+        GActivitiesQueryData_Page_activities,
+        GActivitiesQueryData,
+        GActivitiesQueryData_Page,
+        GActivitiesQueryData_Page_activities__asListActivity,
+        GActivitiesQueryData_Page_activities__asListActivity_media,
+        GActivitiesQueryData_Page_activities__asListActivity_media_coverImage,
+        GActivitiesQueryData_Page_activities__asListActivity_media_title,
+        GActivitiesQueryData_Page_activities__asListActivity_user,
+        GActivitiesQueryData_Page_activities__asListActivity_user_avatar,
+        GActivitiesQueryData_Page_activities__asTextActivity,
+        GActivitiesQueryData_Page_activities__asTextActivity_user,
+        GActivitiesQueryData_Page_activities__asTextActivity_user_avatar,
+        GActivitiesQueryData_Page_activities__base,
+        GActivitiesQueryData_Page_pageInfo;
+import 'package:anilist/src/graphql/generated/ActivitiesQuery.req.gql.dart'
+    show GActivitiesQueryReq;
+import 'package:anilist/src/graphql/generated/ActivitiesQuery.var.gql.dart'
+    show GActivitiesQueryVars;
 import 'package:anilist/src/graphql/generated/airing_schedule_query.data.gql.dart'
     show
         GAiringScheduleQueryData,
@@ -517,11 +537,11 @@ import 'package:anilist/src/graphql/generated/User.data.gql.dart'
         GUserData_User_stats_activityHistory;
 import 'package:anilist/src/graphql/generated/User.req.gql.dart' show GUserReq;
 import 'package:anilist/src/graphql/generated/User.var.gql.dart' show GUserVars;
-import 'package:anilist/src/graphql/generated/UserId.data.gql.dart'
+import 'package:anilist/src/graphql/generated/userid.data.gql.dart'
     show GUserIDData, GUserIDData_Viewer;
-import 'package:anilist/src/graphql/generated/UserId.req.gql.dart'
+import 'package:anilist/src/graphql/generated/userid.req.gql.dart'
     show GUserIDReq;
-import 'package:anilist/src/graphql/generated/UserId.var.gql.dart'
+import 'package:anilist/src/graphql/generated/userid.var.gql.dart'
     show GUserIDVars;
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/serializer.dart';
@@ -534,9 +554,25 @@ part 'serializers.gql.g.dart';
 
 final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   ..add(OperationSerializer())
+  ..add(GActivitiesQueryData_Page_activities.serializer)
   ..add(GNotificationsQueryData_Page_notifications.serializer)
   ..addPlugin(StandardJsonPlugin());
 @SerializersFor([
+  GActivitiesQueryData,
+  GActivitiesQueryData_Page,
+  GActivitiesQueryData_Page_activities__asListActivity,
+  GActivitiesQueryData_Page_activities__asListActivity_media,
+  GActivitiesQueryData_Page_activities__asListActivity_media_coverImage,
+  GActivitiesQueryData_Page_activities__asListActivity_media_title,
+  GActivitiesQueryData_Page_activities__asListActivity_user,
+  GActivitiesQueryData_Page_activities__asListActivity_user_avatar,
+  GActivitiesQueryData_Page_activities__asTextActivity,
+  GActivitiesQueryData_Page_activities__asTextActivity_user,
+  GActivitiesQueryData_Page_activities__asTextActivity_user_avatar,
+  GActivitiesQueryData_Page_activities__base,
+  GActivitiesQueryData_Page_pageInfo,
+  GActivitiesQueryReq,
+  GActivitiesQueryVars,
   GActivitySort,
   GActivityType,
   GAiringScheduleInput,

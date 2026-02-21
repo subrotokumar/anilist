@@ -1,26 +1,32 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'userid.req.gql.dart';
+part of 'ActivitiesQuery.req.gql.dart';
 
 // **************************************************************************
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<GUserIDReq> _$gUserIDReqSerializer = new _$GUserIDReqSerializer();
+Serializer<GActivitiesQueryReq> _$gActivitiesQueryReqSerializer =
+    new _$GActivitiesQueryReqSerializer();
 
-class _$GUserIDReqSerializer implements StructuredSerializer<GUserIDReq> {
+class _$GActivitiesQueryReqSerializer
+    implements StructuredSerializer<GActivitiesQueryReq> {
   @override
-  final Iterable<Type> types = const [GUserIDReq, _$GUserIDReq];
+  final Iterable<Type> types = const [
+    GActivitiesQueryReq,
+    _$GActivitiesQueryReq
+  ];
   @override
-  final String wireName = 'GUserIDReq';
+  final String wireName = 'GActivitiesQueryReq';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GUserIDReq object,
+  Iterable<Object?> serialize(
+      Serializers serializers, GActivitiesQueryReq object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       'vars',
       serializers.serialize(object.vars,
-          specifiedType: const FullType(_i3.GUserIDVars)),
+          specifiedType: const FullType(_i3.GActivitiesQueryVars)),
       'operation',
       serializers.serialize(object.operation,
           specifiedType: const FullType(_i4.Operation)),
@@ -41,7 +47,7 @@ class _$GUserIDReqSerializer implements StructuredSerializer<GUserIDReq> {
       result
         ..add('optimisticResponse')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GUserIDData)));
+            specifiedType: const FullType(_i2.GActivitiesQueryData)));
     }
     value = object.updateCacheHandlerKey;
     if (value != null) {
@@ -69,9 +75,10 @@ class _$GUserIDReqSerializer implements StructuredSerializer<GUserIDReq> {
   }
 
   @override
-  GUserIDReq deserialize(Serializers serializers, Iterable<Object?> serialized,
+  GActivitiesQueryReq deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new GUserIDReqBuilder();
+    final result = new GActivitiesQueryReqBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -81,8 +88,8 @@ class _$GUserIDReqSerializer implements StructuredSerializer<GUserIDReq> {
       switch (key) {
         case 'vars':
           result.vars.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GUserIDVars))!
-              as _i3.GUserIDVars);
+                  specifiedType: const FullType(_i3.GActivitiesQueryVars))!
+              as _i3.GActivitiesQueryVars);
           break;
         case 'operation':
           result.operation = serializers.deserialize(value,
@@ -94,8 +101,8 @@ class _$GUserIDReqSerializer implements StructuredSerializer<GUserIDReq> {
           break;
         case 'optimisticResponse':
           result.optimisticResponse.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GUserIDData))!
-              as _i2.GUserIDData);
+                  specifiedType: const FullType(_i2.GActivitiesQueryData))!
+              as _i2.GActivitiesQueryData);
           break;
         case 'updateCacheHandlerKey':
           result.updateCacheHandlerKey = serializers.deserialize(value,
@@ -124,18 +131,18 @@ class _$GUserIDReqSerializer implements StructuredSerializer<GUserIDReq> {
   }
 }
 
-class _$GUserIDReq extends GUserIDReq {
+class _$GActivitiesQueryReq extends GActivitiesQueryReq {
   @override
-  final _i3.GUserIDVars vars;
+  final _i3.GActivitiesQueryVars vars;
   @override
   final _i4.Operation operation;
   @override
   final String? requestId;
   @override
-  final _i2.GUserIDData? Function(_i2.GUserIDData?, _i2.GUserIDData?)?
-      updateResult;
+  final _i2.GActivitiesQueryData? Function(
+      _i2.GActivitiesQueryData?, _i2.GActivitiesQueryData?)? updateResult;
   @override
-  final _i2.GUserIDData? optimisticResponse;
+  final _i2.GActivitiesQueryData? optimisticResponse;
   @override
   final String? updateCacheHandlerKey;
   @override
@@ -145,10 +152,11 @@ class _$GUserIDReq extends GUserIDReq {
   @override
   final bool executeOnListen;
 
-  factory _$GUserIDReq([void Function(GUserIDReqBuilder)? updates]) =>
-      (new GUserIDReqBuilder()..update(updates))._build();
+  factory _$GActivitiesQueryReq(
+          [void Function(GActivitiesQueryReqBuilder)? updates]) =>
+      (new GActivitiesQueryReqBuilder()..update(updates))._build();
 
-  _$GUserIDReq._(
+  _$GActivitiesQueryReq._(
       {required this.vars,
       required this.operation,
       this.requestId,
@@ -159,25 +167,27 @@ class _$GUserIDReq extends GUserIDReq {
       this.fetchPolicy,
       required this.executeOnListen})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(vars, r'GUserIDReq', 'vars');
+    BuiltValueNullFieldError.checkNotNull(vars, r'GActivitiesQueryReq', 'vars');
     BuiltValueNullFieldError.checkNotNull(
-        operation, r'GUserIDReq', 'operation');
+        operation, r'GActivitiesQueryReq', 'operation');
     BuiltValueNullFieldError.checkNotNull(
-        executeOnListen, r'GUserIDReq', 'executeOnListen');
+        executeOnListen, r'GActivitiesQueryReq', 'executeOnListen');
   }
 
   @override
-  GUserIDReq rebuild(void Function(GUserIDReqBuilder) updates) =>
+  GActivitiesQueryReq rebuild(
+          void Function(GActivitiesQueryReqBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GUserIDReqBuilder toBuilder() => new GUserIDReqBuilder()..replace(this);
+  GActivitiesQueryReqBuilder toBuilder() =>
+      new GActivitiesQueryReqBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
     final dynamic _$dynamicOther = other;
-    return other is GUserIDReq &&
+    return other is GActivitiesQueryReq &&
         vars == other.vars &&
         operation == other.operation &&
         requestId == other.requestId &&
@@ -207,7 +217,7 @@ class _$GUserIDReq extends GUserIDReq {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GUserIDReq')
+    return (newBuiltValueToStringHelper(r'GActivitiesQueryReq')
           ..add('vars', vars)
           ..add('operation', operation)
           ..add('requestId', requestId)
@@ -221,13 +231,14 @@ class _$GUserIDReq extends GUserIDReq {
   }
 }
 
-class GUserIDReqBuilder implements Builder<GUserIDReq, GUserIDReqBuilder> {
-  _$GUserIDReq? _$v;
+class GActivitiesQueryReqBuilder
+    implements Builder<GActivitiesQueryReq, GActivitiesQueryReqBuilder> {
+  _$GActivitiesQueryReq? _$v;
 
-  _i3.GUserIDVarsBuilder? _vars;
-  _i3.GUserIDVarsBuilder get vars =>
-      _$this._vars ??= new _i3.GUserIDVarsBuilder();
-  set vars(_i3.GUserIDVarsBuilder? vars) => _$this._vars = vars;
+  _i3.GActivitiesQueryVarsBuilder? _vars;
+  _i3.GActivitiesQueryVarsBuilder get vars =>
+      _$this._vars ??= new _i3.GActivitiesQueryVarsBuilder();
+  set vars(_i3.GActivitiesQueryVarsBuilder? vars) => _$this._vars = vars;
 
   _i4.Operation? _operation;
   _i4.Operation? get operation => _$this._operation;
@@ -237,18 +248,21 @@ class GUserIDReqBuilder implements Builder<GUserIDReq, GUserIDReqBuilder> {
   String? get requestId => _$this._requestId;
   set requestId(String? requestId) => _$this._requestId = requestId;
 
-  _i2.GUserIDData? Function(_i2.GUserIDData?, _i2.GUserIDData?)? _updateResult;
-  _i2.GUserIDData? Function(_i2.GUserIDData?, _i2.GUserIDData?)?
+  _i2.GActivitiesQueryData? Function(
+      _i2.GActivitiesQueryData?, _i2.GActivitiesQueryData?)? _updateResult;
+  _i2.GActivitiesQueryData? Function(
+          _i2.GActivitiesQueryData?, _i2.GActivitiesQueryData?)?
       get updateResult => _$this._updateResult;
   set updateResult(
-          _i2.GUserIDData? Function(_i2.GUserIDData?, _i2.GUserIDData?)?
+          _i2.GActivitiesQueryData? Function(
+                  _i2.GActivitiesQueryData?, _i2.GActivitiesQueryData?)?
               updateResult) =>
       _$this._updateResult = updateResult;
 
-  _i2.GUserIDDataBuilder? _optimisticResponse;
-  _i2.GUserIDDataBuilder get optimisticResponse =>
-      _$this._optimisticResponse ??= new _i2.GUserIDDataBuilder();
-  set optimisticResponse(_i2.GUserIDDataBuilder? optimisticResponse) =>
+  _i2.GActivitiesQueryDataBuilder? _optimisticResponse;
+  _i2.GActivitiesQueryDataBuilder get optimisticResponse =>
+      _$this._optimisticResponse ??= new _i2.GActivitiesQueryDataBuilder();
+  set optimisticResponse(_i2.GActivitiesQueryDataBuilder? optimisticResponse) =>
       _$this._optimisticResponse = optimisticResponse;
 
   String? _updateCacheHandlerKey;
@@ -273,11 +287,11 @@ class GUserIDReqBuilder implements Builder<GUserIDReq, GUserIDReqBuilder> {
   set executeOnListen(bool? executeOnListen) =>
       _$this._executeOnListen = executeOnListen;
 
-  GUserIDReqBuilder() {
-    GUserIDReq._initializeBuilder(this);
+  GActivitiesQueryReqBuilder() {
+    GActivitiesQueryReq._initializeBuilder(this);
   }
 
-  GUserIDReqBuilder get _$this {
+  GActivitiesQueryReqBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _vars = $v.vars.toBuilder();
@@ -295,27 +309,27 @@ class GUserIDReqBuilder implements Builder<GUserIDReq, GUserIDReqBuilder> {
   }
 
   @override
-  void replace(GUserIDReq other) {
+  void replace(GActivitiesQueryReq other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GUserIDReq;
+    _$v = other as _$GActivitiesQueryReq;
   }
 
   @override
-  void update(void Function(GUserIDReqBuilder)? updates) {
+  void update(void Function(GActivitiesQueryReqBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  GUserIDReq build() => _build();
+  GActivitiesQueryReq build() => _build();
 
-  _$GUserIDReq _build() {
-    _$GUserIDReq _$result;
+  _$GActivitiesQueryReq _build() {
+    _$GActivitiesQueryReq _$result;
     try {
       _$result = _$v ??
-          new _$GUserIDReq._(
+          new _$GActivitiesQueryReq._(
               vars: vars.build(),
               operation: BuiltValueNullFieldError.checkNotNull(
-                  operation, r'GUserIDReq', 'operation'),
+                  operation, r'GActivitiesQueryReq', 'operation'),
               requestId: requestId,
               updateResult: updateResult,
               optimisticResponse: _optimisticResponse?.build(),
@@ -323,7 +337,7 @@ class GUserIDReqBuilder implements Builder<GUserIDReq, GUserIDReqBuilder> {
               updateCacheHandlerContext: updateCacheHandlerContext,
               fetchPolicy: fetchPolicy,
               executeOnListen: BuiltValueNullFieldError.checkNotNull(
-                  executeOnListen, r'GUserIDReq', 'executeOnListen'));
+                  executeOnListen, r'GActivitiesQueryReq', 'executeOnListen'));
     } catch (_) {
       late String _$failedField;
       try {
@@ -334,7 +348,7 @@ class GUserIDReqBuilder implements Builder<GUserIDReq, GUserIDReqBuilder> {
         _optimisticResponse?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserIDReq', _$failedField, e.toString());
+            r'GActivitiesQueryReq', _$failedField, e.toString());
       }
       rethrow;
     }

@@ -6,7 +6,7 @@ import 'package:anilist/src/graphql/generated/serializers.gql.dart' as _i1;
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
-part 'UserId.data.gql.g.dart';
+part 'userid.data.gql.g.dart';
 
 abstract class GUserIDData implements Built<GUserIDData, GUserIDDataBuilder> {
   GUserIDData._();

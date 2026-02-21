@@ -8,6 +8,29 @@ part of 'serializers.gql.dart';
 
 Serializers _$serializers = (new Serializers().toBuilder()
       ..add(FetchPolicy.serializer)
+      ..add(GActivitiesQueryData.serializer)
+      ..add(GActivitiesQueryData_Page.serializer)
+      ..add(GActivitiesQueryData_Page_activities__asListActivity.serializer)
+      ..add(
+          GActivitiesQueryData_Page_activities__asListActivity_media.serializer)
+      ..add(
+          GActivitiesQueryData_Page_activities__asListActivity_media_coverImage
+              .serializer)
+      ..add(GActivitiesQueryData_Page_activities__asListActivity_media_title
+          .serializer)
+      ..add(
+          GActivitiesQueryData_Page_activities__asListActivity_user.serializer)
+      ..add(GActivitiesQueryData_Page_activities__asListActivity_user_avatar
+          .serializer)
+      ..add(GActivitiesQueryData_Page_activities__asTextActivity.serializer)
+      ..add(
+          GActivitiesQueryData_Page_activities__asTextActivity_user.serializer)
+      ..add(GActivitiesQueryData_Page_activities__asTextActivity_user_avatar
+          .serializer)
+      ..add(GActivitiesQueryData_Page_activities__base.serializer)
+      ..add(GActivitiesQueryData_Page_pageInfo.serializer)
+      ..add(GActivitiesQueryReq.serializer)
+      ..add(GActivitiesQueryVars.serializer)
       ..add(GActivitySort.serializer)
       ..add(GActivityType.serializer)
       ..add(GAiringScheduleInput.serializer)
@@ -482,6 +505,11 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GtrendingAnimeVars.serializer)
       ..addBuilderFactory(
           const FullType(BuiltList, const [
+            const FullType.nullable(GActivitiesQueryData_Page_activities)
+          ]),
+          () => new ListBuilder<GActivitiesQueryData_Page_activities?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
             const FullType.nullable(
                 GAiringScheduleQueryData_Page_airingSchedules)
           ]),
@@ -680,6 +708,9 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType.nullable(String)]),
           () => new ListBuilder<String?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType.nullable(GModRole)]),
+          () => new ListBuilder<GModRole?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType.nullable(GModRole)]),
           () => new ListBuilder<GModRole?>())
