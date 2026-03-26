@@ -18,6 +18,8 @@ export 'src/medialist_collection.dart';
 export 'src/medialist_entry_mutation.dart';
 export 'src/notification_query.dart';
 export 'src/activities_query.dart';
+export 'src/activity_replies_query.dart';
+export 'src/activity_toggle_like_mutation.dart';
 export 'src/profile.dart';
 export 'src/review_query.dart';
 export 'src/search_anime_query.dart';

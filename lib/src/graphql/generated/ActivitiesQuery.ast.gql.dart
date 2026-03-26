@@ -59,7 +59,7 @@ const ActivitiesQuery = _i1.OperationDefinitionNode(
         ),
         _i1.ArgumentNode(
           name: _i1.NameNode(value: 'perPage'),
-          value: _i1.IntValueNode(value: '25'),
+          value: _i1.IntValueNode(value: '50'),
         ),
       ],
       directives: [],

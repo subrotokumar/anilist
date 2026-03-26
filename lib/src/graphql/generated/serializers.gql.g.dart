@@ -31,6 +31,30 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GActivitiesQueryData_Page_pageInfo.serializer)
       ..add(GActivitiesQueryReq.serializer)
       ..add(GActivitiesQueryVars.serializer)
+      ..add(GActivityLikeToggleMutationData.serializer)
+      ..add(GActivityLikeToggleMutationData_ToggleLike__asActivityReply
+          .serializer)
+      ..add(
+          GActivityLikeToggleMutationData_ToggleLike__asListActivity.serializer)
+      ..add(GActivityLikeToggleMutationData_ToggleLike__asMessageActivity
+          .serializer)
+      ..add(
+          GActivityLikeToggleMutationData_ToggleLike__asTextActivity.serializer)
+      ..add(GActivityLikeToggleMutationData_ToggleLike__asThread.serializer)
+      ..add(GActivityLikeToggleMutationData_ToggleLike__asThreadComment
+          .serializer)
+      ..add(GActivityLikeToggleMutationData_ToggleLike__base.serializer)
+      ..add(GActivityLikeToggleMutationReq.serializer)
+      ..add(GActivityLikeToggleMutationVars.serializer)
+      ..add(GActivityRepliesQueryData.serializer)
+      ..add(GActivityRepliesQueryData_Page.serializer)
+      ..add(GActivityRepliesQueryData_Page_activityReplies.serializer)
+      ..add(GActivityRepliesQueryData_Page_activityReplies_user.serializer)
+      ..add(
+          GActivityRepliesQueryData_Page_activityReplies_user_avatar.serializer)
+      ..add(GActivityRepliesQueryData_Page_pageInfo.serializer)
+      ..add(GActivityRepliesQueryReq.serializer)
+      ..add(GActivityRepliesQueryVars.serializer)
       ..add(GActivitySort.serializer)
       ..add(GActivityType.serializer)
       ..add(GAiringScheduleInput.serializer)
@@ -511,6 +535,13 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..addBuilderFactory(
           const FullType(BuiltList, const [
             const FullType.nullable(
+                GActivityRepliesQueryData_Page_activityReplies)
+          ]),
+          () => new ListBuilder<
+              GActivityRepliesQueryData_Page_activityReplies?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
                 GAiringScheduleQueryData_Page_airingSchedules)
           ]),
           () =>
@@ -708,6 +739,9 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType.nullable(String)]),
           () => new ListBuilder<String?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType.nullable(GModRole)]),
+          () => new ListBuilder<GModRole?>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType.nullable(GModRole)]),
           () => new ListBuilder<GModRole?>())

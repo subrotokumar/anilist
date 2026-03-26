@@ -21,6 +21,33 @@ import 'package:anilist/src/graphql/generated/ActivitiesQuery.req.gql.dart'
     show GActivitiesQueryReq;
 import 'package:anilist/src/graphql/generated/ActivitiesQuery.var.gql.dart'
     show GActivitiesQueryVars;
+import 'package:anilist/src/graphql/generated/ActivityLikeToggleMutation.data.gql.dart'
+    show
+        GActivityLikeToggleMutationData_ToggleLike,
+        GActivityLikeToggleMutationData,
+        GActivityLikeToggleMutationData_ToggleLike__asActivityReply,
+        GActivityLikeToggleMutationData_ToggleLike__asListActivity,
+        GActivityLikeToggleMutationData_ToggleLike__asMessageActivity,
+        GActivityLikeToggleMutationData_ToggleLike__asTextActivity,
+        GActivityLikeToggleMutationData_ToggleLike__asThread,
+        GActivityLikeToggleMutationData_ToggleLike__asThreadComment,
+        GActivityLikeToggleMutationData_ToggleLike__base;
+import 'package:anilist/src/graphql/generated/ActivityLikeToggleMutation.req.gql.dart'
+    show GActivityLikeToggleMutationReq;
+import 'package:anilist/src/graphql/generated/ActivityLikeToggleMutation.var.gql.dart'
+    show GActivityLikeToggleMutationVars;
+import 'package:anilist/src/graphql/generated/ActivityRepliesQuery.data.gql.dart'
+    show
+        GActivityRepliesQueryData,
+        GActivityRepliesQueryData_Page,
+        GActivityRepliesQueryData_Page_activityReplies,
+        GActivityRepliesQueryData_Page_activityReplies_user,
+        GActivityRepliesQueryData_Page_activityReplies_user_avatar,
+        GActivityRepliesQueryData_Page_pageInfo;
+import 'package:anilist/src/graphql/generated/ActivityRepliesQuery.req.gql.dart'
+    show GActivityRepliesQueryReq;
+import 'package:anilist/src/graphql/generated/ActivityRepliesQuery.var.gql.dart'
+    show GActivityRepliesQueryVars;
 import 'package:anilist/src/graphql/generated/airing_schedule_query.data.gql.dart'
     show
         GAiringScheduleQueryData,
@@ -555,6 +582,7 @@ part 'serializers.gql.g.dart';
 final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   ..add(OperationSerializer())
   ..add(GActivitiesQueryData_Page_activities.serializer)
+  ..add(GActivityLikeToggleMutationData_ToggleLike.serializer)
   ..add(GNotificationsQueryData_Page_notifications.serializer)
   ..addPlugin(StandardJsonPlugin());
 @SerializersFor([
@@ -573,6 +601,24 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GActivitiesQueryData_Page_pageInfo,
   GActivitiesQueryReq,
   GActivitiesQueryVars,
+  GActivityLikeToggleMutationData,
+  GActivityLikeToggleMutationData_ToggleLike__asActivityReply,
+  GActivityLikeToggleMutationData_ToggleLike__asListActivity,
+  GActivityLikeToggleMutationData_ToggleLike__asMessageActivity,
+  GActivityLikeToggleMutationData_ToggleLike__asTextActivity,
+  GActivityLikeToggleMutationData_ToggleLike__asThread,
+  GActivityLikeToggleMutationData_ToggleLike__asThreadComment,
+  GActivityLikeToggleMutationData_ToggleLike__base,
+  GActivityLikeToggleMutationReq,
+  GActivityLikeToggleMutationVars,
+  GActivityRepliesQueryData,
+  GActivityRepliesQueryData_Page,
+  GActivityRepliesQueryData_Page_activityReplies,
+  GActivityRepliesQueryData_Page_activityReplies_user,
+  GActivityRepliesQueryData_Page_activityReplies_user_avatar,
+  GActivityRepliesQueryData_Page_pageInfo,
+  GActivityRepliesQueryReq,
+  GActivityRepliesQueryVars,
   GActivitySort,
   GActivityType,
   GAiringScheduleInput,

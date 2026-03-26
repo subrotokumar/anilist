@@ -1,0 +1,28 @@
+query ActivityRepliesQuery($id: Int, $page: Int) {
+  Page(page: $page, perPage: 25) {
+    pageInfo {
+      total
+      perPage
+      currentPage
+      lastPage
+      hasNextPage
+    }
+    activityReplies(activityId: $id) {
+      id
+      userId
+      text
+      createdAt
+      activityId
+      isLiked
+      likeCount
+      user {
+        id
+        name
+        moderatorRoles
+        avatar {
+          large
+        }
+      }
+    }
+  }
+}

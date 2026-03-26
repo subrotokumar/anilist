@@ -4,7 +4,7 @@ query ActivitiesQuery(
   $activityType: ActivityType
   $page: Int
 ) {
-  Page(page: $page, perPage: 25) {
+  Page(page: $page, perPage: 50) {
     pageInfo {
       total
       perPage
