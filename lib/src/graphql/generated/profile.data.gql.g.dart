@@ -14,9 +14,6 @@ Serializer<GProfileData_Viewer_avatar> _$gProfileDataViewerAvatarSerializer =
     new _$GProfileData_Viewer_avatarSerializer();
 Serializer<GProfileData_Viewer_options> _$gProfileDataViewerOptionsSerializer =
     new _$GProfileData_Viewer_optionsSerializer();
-Serializer<GProfileData_Viewer_options_notificationOptions>
-    _$gProfileDataViewerOptionsNotificationOptionsSerializer =
-    new _$GProfileData_Viewer_options_notificationOptionsSerializer();
 Serializer<GProfileData_Viewer_statistics>
     _$gProfileDataViewerStatisticsSerializer =
     new _$GProfileData_Viewer_statisticsSerializer();
@@ -471,16 +468,6 @@ class _$GProfileData_Viewer_optionsSerializer
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    value = object.notificationOptions;
-    if (value != null) {
-      result
-        ..add('notificationOptions')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(
-                  GProfileData_Viewer_options_notificationOptions)
-            ])));
-    }
     return result;
   }
 
@@ -525,83 +512,6 @@ class _$GProfileData_Viewer_optionsSerializer
         case 'profileColor':
           result.profileColor = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
-          break;
-        case 'notificationOptions':
-          result.notificationOptions.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(
-                    GProfileData_Viewer_options_notificationOptions)
-              ]))! as BuiltList<Object?>);
-          break;
-      }
-    }
-
-    return result.build();
-  }
-}
-
-class _$GProfileData_Viewer_options_notificationOptionsSerializer
-    implements
-        StructuredSerializer<GProfileData_Viewer_options_notificationOptions> {
-  @override
-  final Iterable<Type> types = const [
-    GProfileData_Viewer_options_notificationOptions,
-    _$GProfileData_Viewer_options_notificationOptions
-  ];
-  @override
-  final String wireName = 'GProfileData_Viewer_options_notificationOptions';
-
-  @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GProfileData_Viewer_options_notificationOptions object,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object?>[
-      '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
-    ];
-    Object? value;
-    value = object.type;
-    if (value != null) {
-      result
-        ..add('type')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GNotificationType)));
-    }
-    value = object.enabled;
-    if (value != null) {
-      result
-        ..add('enabled')
-        ..add(
-            serializers.serialize(value, specifiedType: const FullType(bool)));
-    }
-    return result;
-  }
-
-  @override
-  GProfileData_Viewer_options_notificationOptions deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = new GProfileData_Viewer_options_notificationOptionsBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current! as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
-          break;
-        case 'type':
-          result.type = serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GNotificationType))
-              as _i2.GNotificationType?;
-          break;
-        case 'enabled':
-          result.enabled = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool?;
           break;
       }
     }
@@ -3430,9 +3340,6 @@ class _$GProfileData_Viewer_options extends GProfileData_Viewer_options {
   final bool? displayAdultContent;
   @override
   final String? profileColor;
-  @override
-  final BuiltList<GProfileData_Viewer_options_notificationOptions?>?
-      notificationOptions;
 
   factory _$GProfileData_Viewer_options(
           [void Function(GProfileData_Viewer_optionsBuilder)? updates]) =>
@@ -3445,8 +3352,7 @@ class _$GProfileData_Viewer_options extends GProfileData_Viewer_options {
       this.restrictMessagesToFollowing,
       this.airingNotifications,
       this.displayAdultContent,
-      this.profileColor,
-      this.notificationOptions})
+      this.profileColor})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         G__typename, r'GProfileData_Viewer_options', 'G__typename');
@@ -3471,8 +3377,7 @@ class _$GProfileData_Viewer_options extends GProfileData_Viewer_options {
         restrictMessagesToFollowing == other.restrictMessagesToFollowing &&
         airingNotifications == other.airingNotifications &&
         displayAdultContent == other.displayAdultContent &&
-        profileColor == other.profileColor &&
-        notificationOptions == other.notificationOptions;
+        profileColor == other.profileColor;
   }
 
   @override
@@ -3485,7 +3390,6 @@ class _$GProfileData_Viewer_options extends GProfileData_Viewer_options {
     _$hash = $jc(_$hash, airingNotifications.hashCode);
     _$hash = $jc(_$hash, displayAdultContent.hashCode);
     _$hash = $jc(_$hash, profileColor.hashCode);
-    _$hash = $jc(_$hash, notificationOptions.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -3499,8 +3403,7 @@ class _$GProfileData_Viewer_options extends GProfileData_Viewer_options {
           ..add('restrictMessagesToFollowing', restrictMessagesToFollowing)
           ..add('airingNotifications', airingNotifications)
           ..add('displayAdultContent', displayAdultContent)
-          ..add('profileColor', profileColor)
-          ..add('notificationOptions', notificationOptions))
+          ..add('profileColor', profileColor))
         .toString();
   }
 }
@@ -3545,16 +3448,6 @@ class GProfileData_Viewer_optionsBuilder
   String? get profileColor => _$this._profileColor;
   set profileColor(String? profileColor) => _$this._profileColor = profileColor;
 
-  ListBuilder<GProfileData_Viewer_options_notificationOptions?>?
-      _notificationOptions;
-  ListBuilder<GProfileData_Viewer_options_notificationOptions?>
-      get notificationOptions => _$this._notificationOptions ??=
-          new ListBuilder<GProfileData_Viewer_options_notificationOptions?>();
-  set notificationOptions(
-          ListBuilder<GProfileData_Viewer_options_notificationOptions?>?
-              notificationOptions) =>
-      _$this._notificationOptions = notificationOptions;
-
   GProfileData_Viewer_optionsBuilder() {
     GProfileData_Viewer_options._initializeBuilder(this);
   }
@@ -3569,7 +3462,6 @@ class GProfileData_Viewer_optionsBuilder
       _airingNotifications = $v.airingNotifications;
       _displayAdultContent = $v.displayAdultContent;
       _profileColor = $v.profileColor;
-      _notificationOptions = $v.notificationOptions?.toBuilder();
       _$v = null;
     }
     return this;
@@ -3590,158 +3482,16 @@ class GProfileData_Viewer_optionsBuilder
   GProfileData_Viewer_options build() => _build();
 
   _$GProfileData_Viewer_options _build() {
-    _$GProfileData_Viewer_options _$result;
-    try {
-      _$result = _$v ??
-          new _$GProfileData_Viewer_options._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GProfileData_Viewer_options', 'G__typename'),
-              titleLanguage: titleLanguage,
-              staffNameLanguage: staffNameLanguage,
-              restrictMessagesToFollowing: restrictMessagesToFollowing,
-              airingNotifications: airingNotifications,
-              displayAdultContent: displayAdultContent,
-              profileColor: profileColor,
-              notificationOptions: _notificationOptions?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'notificationOptions';
-        _notificationOptions?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            r'GProfileData_Viewer_options', _$failedField, e.toString());
-      }
-      rethrow;
-    }
-    replace(_$result);
-    return _$result;
-  }
-}
-
-class _$GProfileData_Viewer_options_notificationOptions
-    extends GProfileData_Viewer_options_notificationOptions {
-  @override
-  final String G__typename;
-  @override
-  final _i2.GNotificationType? type;
-  @override
-  final bool? enabled;
-
-  factory _$GProfileData_Viewer_options_notificationOptions(
-          [void Function(
-                  GProfileData_Viewer_options_notificationOptionsBuilder)?
-              updates]) =>
-      (new GProfileData_Viewer_options_notificationOptionsBuilder()
-            ..update(updates))
-          ._build();
-
-  _$GProfileData_Viewer_options_notificationOptions._(
-      {required this.G__typename, this.type, this.enabled})
-      : super._() {
-    BuiltValueNullFieldError.checkNotNull(G__typename,
-        r'GProfileData_Viewer_options_notificationOptions', 'G__typename');
-  }
-
-  @override
-  GProfileData_Viewer_options_notificationOptions rebuild(
-          void Function(GProfileData_Viewer_options_notificationOptionsBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
-
-  @override
-  GProfileData_Viewer_options_notificationOptionsBuilder toBuilder() =>
-      new GProfileData_Viewer_options_notificationOptionsBuilder()
-        ..replace(this);
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(other, this)) return true;
-    return other is GProfileData_Viewer_options_notificationOptions &&
-        G__typename == other.G__typename &&
-        type == other.type &&
-        enabled == other.enabled;
-  }
-
-  @override
-  int get hashCode {
-    var _$hash = 0;
-    _$hash = $jc(_$hash, G__typename.hashCode);
-    _$hash = $jc(_$hash, type.hashCode);
-    _$hash = $jc(_$hash, enabled.hashCode);
-    _$hash = $jf(_$hash);
-    return _$hash;
-  }
-
-  @override
-  String toString() {
-    return (newBuiltValueToStringHelper(
-            r'GProfileData_Viewer_options_notificationOptions')
-          ..add('G__typename', G__typename)
-          ..add('type', type)
-          ..add('enabled', enabled))
-        .toString();
-  }
-}
-
-class GProfileData_Viewer_options_notificationOptionsBuilder
-    implements
-        Builder<GProfileData_Viewer_options_notificationOptions,
-            GProfileData_Viewer_options_notificationOptionsBuilder> {
-  _$GProfileData_Viewer_options_notificationOptions? _$v;
-
-  String? _G__typename;
-  String? get G__typename => _$this._G__typename;
-  set G__typename(String? G__typename) => _$this._G__typename = G__typename;
-
-  _i2.GNotificationType? _type;
-  _i2.GNotificationType? get type => _$this._type;
-  set type(_i2.GNotificationType? type) => _$this._type = type;
-
-  bool? _enabled;
-  bool? get enabled => _$this._enabled;
-  set enabled(bool? enabled) => _$this._enabled = enabled;
-
-  GProfileData_Viewer_options_notificationOptionsBuilder() {
-    GProfileData_Viewer_options_notificationOptions._initializeBuilder(this);
-  }
-
-  GProfileData_Viewer_options_notificationOptionsBuilder get _$this {
-    final $v = _$v;
-    if ($v != null) {
-      _G__typename = $v.G__typename;
-      _type = $v.type;
-      _enabled = $v.enabled;
-      _$v = null;
-    }
-    return this;
-  }
-
-  @override
-  void replace(GProfileData_Viewer_options_notificationOptions other) {
-    ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GProfileData_Viewer_options_notificationOptions;
-  }
-
-  @override
-  void update(
-      void Function(GProfileData_Viewer_options_notificationOptionsBuilder)?
-          updates) {
-    if (updates != null) updates(this);
-  }
-
-  @override
-  GProfileData_Viewer_options_notificationOptions build() => _build();
-
-  _$GProfileData_Viewer_options_notificationOptions _build() {
     final _$result = _$v ??
-        new _$GProfileData_Viewer_options_notificationOptions._(
+        new _$GProfileData_Viewer_options._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GProfileData_Viewer_options_notificationOptions',
-                'G__typename'),
-            type: type,
-            enabled: enabled);
+                G__typename, r'GProfileData_Viewer_options', 'G__typename'),
+            titleLanguage: titleLanguage,
+            staffNameLanguage: staffNameLanguage,
+            restrictMessagesToFollowing: restrictMessagesToFollowing,
+            airingNotifications: airingNotifications,
+            displayAdultContent: displayAdultContent,
+            profileColor: profileColor);
     replace(_$result);
     return _$result;
   }

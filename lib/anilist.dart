@@ -21,6 +21,7 @@ export 'src/activities_query.dart';
 export 'src/activity_replies_query.dart';
 export 'src/activity_toggle_like_mutation.dart';
 export 'src/profile.dart';
+export 'src/profile_query.dart';
 export 'src/review_query.dart';
 export 'src/search_anime_query.dart';
 export 'src/search_query.dart';

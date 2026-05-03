@@ -330,7 +330,6 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GProfileData_Viewer_favourites_manga_nodes_title.serializer)
       ..add(GProfileData_Viewer_favourites_manga_pageInfo.serializer)
       ..add(GProfileData_Viewer_options.serializer)
-      ..add(GProfileData_Viewer_options_notificationOptions.serializer)
       ..add(GProfileData_Viewer_statistics.serializer)
       ..add(GProfileData_Viewer_statistics_anime.serializer)
       ..add(GProfileData_Viewer_statistics_anime_formats.serializer)
@@ -343,34 +342,6 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GProfileData_Viewer_statistics_manga_genrePreview.serializer)
       ..add(GProfileData_Viewer_stats.serializer)
       ..add(GProfileData_Viewer_stats_activityHistory.serializer)
-      ..add(GProfileQueryData.serializer)
-      ..add(GProfileQueryData_Viewer.serializer)
-      ..add(GProfileQueryData_Viewer_avatar.serializer)
-      ..add(GProfileQueryData_Viewer_favourites.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_anime.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_anime_nodes.serializer)
-      ..add(
-          GProfileQueryData_Viewer_favourites_anime_nodes_coverImage.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_anime_nodes_title.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_anime_pageInfo.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_characters.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_characters_nodes.serializer)
-      ..add(
-          GProfileQueryData_Viewer_favourites_characters_nodes_image.serializer)
-      ..add(
-          GProfileQueryData_Viewer_favourites_characters_nodes_name.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_characters_pageInfo.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_manga.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_manga_nodes.serializer)
-      ..add(
-          GProfileQueryData_Viewer_favourites_manga_nodes_coverImage.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_manga_nodes_title.serializer)
-      ..add(GProfileQueryData_Viewer_favourites_manga_pageInfo.serializer)
-      ..add(GProfileQueryData_Viewer_statistics.serializer)
-      ..add(GProfileQueryData_Viewer_statistics_anime.serializer)
-      ..add(GProfileQueryData_Viewer_statistics_manga.serializer)
-      ..add(GProfileQueryReq.serializer)
-      ..add(GProfileQueryVars.serializer)
       ..add(GProfileReq.serializer)
       ..add(GProfileVars.serializer)
       ..add(GRecommendationRating.serializer)
@@ -777,13 +748,6 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..addBuilderFactory(
           const FullType(BuiltList, const [
             const FullType.nullable(
-                GProfileData_Viewer_options_notificationOptions)
-          ]),
-          () => new ListBuilder<
-              GProfileData_Viewer_options_notificationOptions?>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [
-            const FullType.nullable(
                 GProfileData_Viewer_statistics_anime_genrePreview)
           ]),
           () => new ListBuilder<
@@ -833,27 +797,6 @@ Serializers _$serializers = (new Serializers().toBuilder()
             const FullType.nullable(GProfileData_Viewer_stats_activityHistory)
           ]),
           () => new ListBuilder<GProfileData_Viewer_stats_activityHistory?>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [
-            const FullType.nullable(
-                GProfileQueryData_Viewer_favourites_anime_nodes)
-          ]),
-          () => new ListBuilder<
-              GProfileQueryData_Viewer_favourites_anime_nodes?>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [
-            const FullType.nullable(
-                GProfileQueryData_Viewer_favourites_characters_nodes)
-          ]),
-          () => new ListBuilder<
-              GProfileQueryData_Viewer_favourites_characters_nodes?>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [
-            const FullType.nullable(
-                GProfileQueryData_Viewer_favourites_manga_nodes)
-          ]),
-          () => new ListBuilder<
-              GProfileQueryData_Viewer_favourites_manga_nodes?>())
       ..addBuilderFactory(
           const FullType(BuiltList,
               const [const FullType.nullable(GReviewQueryData_Page_reviews)]),

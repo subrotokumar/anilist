@@ -19,10 +19,6 @@ query Profile {
       airingNotifications
       displayAdultContent
       profileColor
-      notificationOptions {
-        type
-        enabled
-      }
     }
     statistics {
       anime {

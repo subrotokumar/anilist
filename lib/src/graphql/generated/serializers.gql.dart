@@ -295,7 +295,6 @@ import 'package:anilist/src/graphql/generated/profile.data.gql.dart'
         GProfileData_Viewer_favourites_manga_nodes_title,
         GProfileData_Viewer_favourites_manga_pageInfo,
         GProfileData_Viewer_options,
-        GProfileData_Viewer_options_notificationOptions,
         GProfileData_Viewer_statistics,
         GProfileData_Viewer_statistics_anime,
         GProfileData_Viewer_statistics_anime_formats,
@@ -312,34 +311,6 @@ import 'package:anilist/src/graphql/generated/profile.req.gql.dart'
     show GProfileReq;
 import 'package:anilist/src/graphql/generated/profile.var.gql.dart'
     show GProfileVars;
-import 'package:anilist/src/graphql/generated/ProfileQuery.data.gql.dart'
-    show
-        GProfileQueryData,
-        GProfileQueryData_Viewer,
-        GProfileQueryData_Viewer_avatar,
-        GProfileQueryData_Viewer_favourites,
-        GProfileQueryData_Viewer_favourites_anime,
-        GProfileQueryData_Viewer_favourites_anime_nodes,
-        GProfileQueryData_Viewer_favourites_anime_nodes_coverImage,
-        GProfileQueryData_Viewer_favourites_anime_nodes_title,
-        GProfileQueryData_Viewer_favourites_anime_pageInfo,
-        GProfileQueryData_Viewer_favourites_characters,
-        GProfileQueryData_Viewer_favourites_characters_nodes,
-        GProfileQueryData_Viewer_favourites_characters_nodes_image,
-        GProfileQueryData_Viewer_favourites_characters_nodes_name,
-        GProfileQueryData_Viewer_favourites_characters_pageInfo,
-        GProfileQueryData_Viewer_favourites_manga,
-        GProfileQueryData_Viewer_favourites_manga_nodes,
-        GProfileQueryData_Viewer_favourites_manga_nodes_coverImage,
-        GProfileQueryData_Viewer_favourites_manga_nodes_title,
-        GProfileQueryData_Viewer_favourites_manga_pageInfo,
-        GProfileQueryData_Viewer_statistics,
-        GProfileQueryData_Viewer_statistics_anime,
-        GProfileQueryData_Viewer_statistics_manga;
-import 'package:anilist/src/graphql/generated/ProfileQuery.req.gql.dart'
-    show GProfileQueryReq;
-import 'package:anilist/src/graphql/generated/ProfileQuery.var.gql.dart'
-    show GProfileQueryVars;
 import 'package:anilist/src/graphql/generated/ReviewQuery.data.gql.dart'
     show
         GReviewQueryData,
@@ -841,7 +812,6 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GProfileData_Viewer_favourites_manga_nodes_title,
   GProfileData_Viewer_favourites_manga_pageInfo,
   GProfileData_Viewer_options,
-  GProfileData_Viewer_options_notificationOptions,
   GProfileData_Viewer_statistics,
   GProfileData_Viewer_statistics_anime,
   GProfileData_Viewer_statistics_anime_formats,
@@ -854,30 +824,6 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GProfileData_Viewer_statistics_manga_genrePreview,
   GProfileData_Viewer_stats,
   GProfileData_Viewer_stats_activityHistory,
-  GProfileQueryData,
-  GProfileQueryData_Viewer,
-  GProfileQueryData_Viewer_avatar,
-  GProfileQueryData_Viewer_favourites,
-  GProfileQueryData_Viewer_favourites_anime,
-  GProfileQueryData_Viewer_favourites_anime_nodes,
-  GProfileQueryData_Viewer_favourites_anime_nodes_coverImage,
-  GProfileQueryData_Viewer_favourites_anime_nodes_title,
-  GProfileQueryData_Viewer_favourites_anime_pageInfo,
-  GProfileQueryData_Viewer_favourites_characters,
-  GProfileQueryData_Viewer_favourites_characters_nodes,
-  GProfileQueryData_Viewer_favourites_characters_nodes_image,
-  GProfileQueryData_Viewer_favourites_characters_nodes_name,
-  GProfileQueryData_Viewer_favourites_characters_pageInfo,
-  GProfileQueryData_Viewer_favourites_manga,
-  GProfileQueryData_Viewer_favourites_manga_nodes,
-  GProfileQueryData_Viewer_favourites_manga_nodes_coverImage,
-  GProfileQueryData_Viewer_favourites_manga_nodes_title,
-  GProfileQueryData_Viewer_favourites_manga_pageInfo,
-  GProfileQueryData_Viewer_statistics,
-  GProfileQueryData_Viewer_statistics_anime,
-  GProfileQueryData_Viewer_statistics_manga,
-  GProfileQueryReq,
-  GProfileQueryVars,
   GProfileReq,
   GProfileVars,
   GRecommendationRating,

@@ -128,8 +128,6 @@ abstract class GProfileData_Viewer_options
   bool? get airingNotifications;
   bool? get displayAdultContent;
   String? get profileColor;
-  BuiltList<GProfileData_Viewer_options_notificationOptions?>?
-      get notificationOptions;
   static Serializer<GProfileData_Viewer_options> get serializer =>
       _$gProfileDataViewerOptionsSerializer;
 
@@ -141,41 +139,6 @@ abstract class GProfileData_Viewer_options
   static GProfileData_Viewer_options? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
         GProfileData_Viewer_options.serializer,
-        json,
-      );
-}
-
-abstract class GProfileData_Viewer_options_notificationOptions
-    implements
-        Built<GProfileData_Viewer_options_notificationOptions,
-            GProfileData_Viewer_options_notificationOptionsBuilder> {
-  GProfileData_Viewer_options_notificationOptions._();
-
-  factory GProfileData_Viewer_options_notificationOptions(
-      [Function(GProfileData_Viewer_options_notificationOptionsBuilder b)
-          updates]) = _$GProfileData_Viewer_options_notificationOptions;
-
-  static void _initializeBuilder(
-          GProfileData_Viewer_options_notificationOptionsBuilder b) =>
-      b..G__typename = 'NotificationOption';
-
-  @BuiltValueField(wireName: '__typename')
-  String get G__typename;
-  _i2.GNotificationType? get type;
-  bool? get enabled;
-  static Serializer<GProfileData_Viewer_options_notificationOptions>
-      get serializer =>
-          _$gProfileDataViewerOptionsNotificationOptionsSerializer;
-
-  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-        GProfileData_Viewer_options_notificationOptions.serializer,
-        this,
-      ) as Map<String, dynamic>);
-
-  static GProfileData_Viewer_options_notificationOptions? fromJson(
-          Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(
-        GProfileData_Viewer_options_notificationOptions.serializer,
         json,
       );
 }
